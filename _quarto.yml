@@ -1,0 +1,55 @@
+project:
+  type: website
+  resources: 
+    - "library/"
+bibliography:
+  - "bibliography/aviation.bib"
+  - "bibliography/legislation.bib"
+execute: 
+  cache: true
+
+
+website:
+  title: "AIU Portal"
+  favicon: "favicon.png"
+  # google-analytics: "G-RJ3R0C35X7"
+  # page navigation false only for some pages?
+  navbar:
+    title: false
+    logo: images/EUROCONTROL-logo-standard-rgb.png
+    logo-alt: "EUROCONTROL website"
+    logo-href: https://eurocontrol.int
+    search: true
+    background: "#f8f9fa"
+    left:
+      - href: index.qmd
+        text: AIU Home
+      - text: About
+        menu: 
+          - text: About PRC
+            href: about/prc/index.qmd
+          - text: About PRU
+            href: about/pru/index.qmd
+      - text: Data
+        href: data/index.qmd
+      - text: Reference
+        menu: 
+          - text: Acronyms
+            href: acronym/index.qmd
+          - text: Methodology
+            href: methodology/index.qmd
+          - text: Bibliography
+            href: bibliography/index.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    # grid: 
+    #   body-width: 1200px
+    # include-after-body:
+    #   - "_subscribe.qmd"
+
+
+

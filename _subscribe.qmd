@@ -1,0 +1,9 @@
+<div class="container text-center">
+<a href='https://www.eurocontrol.int/form/aviation-intelligence-unit-aiu-newsletter'
+class="btn btn-primary btn-sm">Subscribe to get informed about updates <i class="fa fa-envelope"></i></a><br>
+<a href="/about/privacy/">Read our Privacy protection statement</a>
+</div>
+
+
+
+
