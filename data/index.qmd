@@ -51,10 +51,8 @@ params:
 
 toc: false
 engine: knitr
-format:
-  html:
-    grid: 
-      body-width: 1000px
+grid: 
+  body-width: 1000px
 
 aliases: ["/data/performancearea/"]
 ndwk_i: <i class="fa pru flask"></i>
