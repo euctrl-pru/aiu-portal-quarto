@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.543">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>AIU Portal - Composite Risk Index Methodology</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="https://eurocontrol.int" class="navbar-brand navbar-brand-logo">
+    <img src="../images/EUROCONTROL-logo-standard-rgb.png" alt="EUROCONTROL website" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">AIU Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../about/prc/index.html">
+ <span class="dropdown-text">About PRC</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/pru/index.html">
+ <span class="dropdown-text">About PRU</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../data/index.html"> 
+<span class="menu-text">Data</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reference" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Reference</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-reference">    
+        <li>
+    <a class="dropdown-item" href="../acronym/index.html">
+ <span class="dropdown-text">Acronyms</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../methodology/index.html">
+ <span class="dropdown-text">Methodology</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../bibliography/index.html">
+ <span class="dropdown-text">Bibliography</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Composite Risk Index Methodology</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This page provides a technical description of the preliminary methodology used to calculate the Composite Risk Index (CRI).</p>
+<p><span style="color: red;">NOTE: The CRI methodology has been improved to also consider specific local operating conditions, airspace size, capacity and/or complexity. For more information please visit <a href="..\methodology/cri-pi/" title="Composite Risk Index (CRI) Methodology Update">Composite Risk Index (CRI) Methodology Update</a>.</span></p>
+<p>The CRI represents a cumulative risk value aggregating all reported, assessed and severity classified safety-related incidents to form an index. This measure of risk exposure is based on probability and severity that considers the human perception of equivalent risk.</p>
+<p>Note that CRI can be calculated for any given entity, provider or the State.</p>
+<p>Figure @ref(fig:cri-components) shows all components of proposed CRI index.</p>
+<p>(ref:cri-components) Composite Risk Index components.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="cri-components.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800"></p>
+<figcaption>(ref:cri-components)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="acronyms-and-terminology" class="level2">
+<h2 class="anchored" data-anchor-id="acronyms-and-terminology">Acronyms and terminology</h2>
+<table class="table">
+<caption>(#tab:acronyms) Acronyms and terminology</caption>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="..\acronym/cri/" title="CRI">CRI</a></td>
+<td>Composite Risk Index</td>
+</tr>
+<tr class="even">
+<td><a href="..\acronym/crinorm/" title="CRInorm">CRInorm</a></td>
+<td>Composite Risk Index normalised by flight hours</td>
+</tr>
+<tr class="odd">
+<td><a href="..\acronym/ri/" title="RI">RI</a></td>
+<td>Runway Incursion</td>
+</tr>
+<tr class="even">
+<td><a href="..\acronym/upa/" title="UPA">UPA</a></td>
+<td>Unauthorised Penetration of Airspace</td>
+</tr>
+<tr class="odd">
+<td><a href="..\acronym/smi/" title="SMI">SMI</a></td>
+<td>Separation Minima Infringement</td>
+</tr>
+<tr class="even">
+<td><a href="..\acronym/atms/" title="TECH">TECH</a></td>
+<td>ATM Specific / Technical occurrences</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<p>As a proxy of safety risk within certain airspace, State, or any Entity, the concept of exposure to risk, based on reported / historical safety information was proposed.</p>
+<p>In order to calculate the composite risk, each historical, reported occurrence had to have assigned severity (using Risk Assessment Tool methodology) and probability (calculated from historical safety data).</p>
+<p>Modelling can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements.</p>
+<p>The CRI calculations are based on the following information:</p>
+<ul>
+<li>Accidents</li>
+<li>Operation occurrences (high/medium risk incidents with Severity A to C):
+<ul>
+<li>runway incursions (RI)</li>
+<li>separation minima infringements (SMI)</li>
+<li>unauthorized penetrations of airspace (UPA)</li>
+</ul></li>
+<li>Other operational occurrences</li>
+<li>Technical occurrences (high/medium risk incidents with Severity AA/A to C)</li>
+</ul>
+<p>A detailed data description can be found at the end of this page.</p>
+<p>To take into account the local conditions within each Entity, exposure data, i.e.&nbsp;the total number of flight hours within each Entity is used as an additional input (CRI normalised results).</p>
+<p>The process is visualised in Figure @ref(fig:cri-data-input).</p>
+<p>(ref:cri-data-input) Composite Risk Index process.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="cri-data-input.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800"></p>
+<figcaption>(ref:cri-data-input)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="occurrences-with-no-severity-classification" class="level3">
+<h3 class="anchored" data-anchor-id="occurrences-with-no-severity-classification">Occurrences with no severity classification</h3>
+<p>All severity unclassified/not assessed events (Severity Category D) are distributed into groups A to E, based on historical distribution (determined using the all available safety data).</p>
+<p>The probability of occurrence being assigned to a specific severity category is calculated using historical data, separately for each State/Entity in order to simulate/take into consideration the local conditions.</p>
+<p>Figure @ref(fig:cri-sevD) shows how unassessed occurences (severity D) are distributed into other severity groups.</p>
+<p>(ref:cri-sevD) Distribution of unassessed occurences (severity D) into other severity groups.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="cri-sevD.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800"></p>
+<figcaption>(ref:cri-sevD)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="estimated-numbers-of-occurrences" class="level3">
+<h3 class="anchored" data-anchor-id="estimated-numbers-of-occurrences">Estimated numbers of occurrences</h3>
+<p>The formula how the total numbers of specific type of occurrence were determined using the distribution based on probability of unclassified occurrences is presented below.</p>
+<p><span class="math display">\[
+\text{No_occ_est}_i = ((\text{No_D}_i * P_i) + \text{No_occ}_i)
+\]</span></p>
+<p>where</p>
+<dl>
+<dt><span class="math inline">\(\text{No_occ_est}_i\)</span></dt>
+<dd>
+estimated number of safety occurrence type <span class="math inline">\(i\)</span>
+</dd>
+<dt><span class="math inline">\(\text{No_D}_i\)</span></dt>
+<dd>
+number of reported occurrences of Severity Classification D (not determined) for occurrence type <span class="math inline">\(i\)</span>
+</dd>
+<dt><span class="math inline">\(P_i\)</span></dt>
+<dd>
+probability of safety occurrence type <span class="math inline">\(i\)</span>
+</dd>
+<dt><span class="math inline">\(\text{No_D}_i\)</span></dt>
+<dd>
+number of reported safety occurrences of type <span class="math inline">\(i\)</span>
+</dd>
+</dl>
+<p>The probability of each type of occurrence is calculated using the simple principle:</p>
+<p><span class="math display">\[
+P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
+\]</span></p>
+<dl>
+<dt><span class="math inline">\(\text{No_occ}_i\)</span></dt>
+<dd>
+number of reported safety occurrences type <span class="math inline">\(i\)</span> in a year
+</dd>
+<dt><span class="math inline">\(\text{Total No}_{{occ}_i}\)</span></dt>
+<dd>
+total number of reported safety occurrences type <span class="math inline">\(i\)</span> in a group in all years
+</dd>
+</dl>
+</section>
+<section id="cri-calculation-using-human-perception-of-risk" class="level3">
+<h3 class="anchored" data-anchor-id="cri-calculation-using-human-perception-of-risk">CRI calculation using human perception of risk</h3>
+<p>Using the estimated total number of occurrences for each type and adding to it the human perception of their risk, it is possible to calculate the CRI for each Entity separately. The simple formula to calculate the CRI is presented below.</p>
+<p><span class="math display">\[\begin{align}
+\text{CRI}_i &amp; = \text{No}_{\text{occ_est_i}} * w_i \\
+
+\text{CRI}  &amp; = \sum_{i}^{} \frac{\text{CRI}_i}{\text{Total No}_{{occ}}}
+\end{align}\]</span></p>
+<p>where</p>
+<dl>
+<dt><span class="math inline">\(\text{CRI}_i\)</span></dt>
+<dd>
+CRI index for occurrence type <span class="math inline">\(i\)</span>
+</dd>
+<dt><span class="math inline">\(w_i\)</span></dt>
+<dd>
+weight (based on severity and human perception) assigned to specific type of safety occurrence
+</dd>
+<dt><span class="math inline">\(\text{Total No}_{{occ}}\)</span></dt>
+<dd>
+total number of all occurrences in a year
+</dd>
+</dl>
+<p>In the formula above the Weights added to each equation represent the additional human perception of the risk for the specific event so that the CRI can at the end consider the human perception of equivalent risk.</p>
+<p>Introduction of Weights to express the severity of the event allows their description in non-monetary terms which have a meaningful and understandable explanation in human perception.</p>
+<p>Each weight value for specific Severity category is determined by using the optimisation technique, with the aim to select a combination of weights that will not disturb the computation of the CRI from year to year if significant changes in reporting are introduced. In other words, the optimisation will find which combination of weights result in the lowest standard deviation of CRI values between the years for each Entity.</p>
+<p>Due to a large number of variables involved and the enormous number of combinations possible, the optimisation and selection of the Weights combination is done in stages:</p>
+<ol type="1">
+<li><p>Selection of Weights for accident, all OPS occurrences and TECH occurrences</p></li>
+<li><p>Selection of Weights for OPS occurrences based on their type (RI, SMI, UPA, OTHER), taking into consideration overall OPS Weight determined in Step 1</p></li>
+<li><p>Selection of Weights for OPS and TECH occurrences based on their severity (AA/A, B, C), taking into consideration overall OPS Weight determined in Step 2</p></li>
+</ol>
+<p>In addition, each type of weight selection has predefined weight ranges, to allow for an incremental Severity classification order, based on human perception of risk (from accident to Severity C incident, i.e.&nbsp;from high risk to low risk). In other words, each range has an expectation value associated with it. See further details in the methodology report <span class="citation" data-cites="performancereviewcommissionCompositeRiskIndex2019">(<a href="#ref-performancereviewcommissionCompositeRiskIndex2019" role="doc-biblioref">Commission 2019</a>)</span></p>
+</section>
+<section id="cri-normalisation" class="level3">
+<h3 class="anchored" data-anchor-id="cri-normalisation">CRI normalisation</h3>
+<p>To allow the applicability of the CRI to airspaces with different traffic levels, the CRI is normalised by flight hours for each Entity. The CRInorm is calculated based on the following formula:</p>
+<p>CRInorm =CRI/(Number of Flight Hours)</p>
+</section>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>For CRI calculation, each historical, reported occurrence besides classification, has to have assigned severity and probability.</p>
+<p>Modelling of Weights can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements as in the table below. Note, that safety data, should include occurrence severity, reported and calculated using severity classification of the <a href="..\acronym/rat/" title="RAT">Risk Assessment Methodology</a>.</p>
+<table class="table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Entity</td>
+<td>the name of Entity within State, ANSP, or department</td>
+</tr>
+<tr class="even">
+<td>accident</td>
+<td>safety occurrence where: a person is fatally or seriously injured; the aircraft sustains damage or structural failure; the aircraft is missing or is completely inaccessible”</td>
+</tr>
+<tr class="odd">
+<td>total_no_of_ops_occurrences</td>
+<td>the sum of safety occurrences (incidents) related to OPS</td>
+</tr>
+<tr class="even">
+<td>ri_a</td>
+<td>runway incursions severity A</td>
+</tr>
+<tr class="odd">
+<td>smi_a</td>
+<td>separation minima infringments severity A</td>
+</tr>
+<tr class="even">
+<td>upa_a</td>
+<td>unauthorised penetration of airspace severity A</td>
+</tr>
+<tr class="odd">
+<td>ri_b</td>
+<td>runway incursions severity B</td>
+</tr>
+<tr class="even">
+<td>smi_b</td>
+<td>separation minima infringments severity B</td>
+</tr>
+<tr class="odd">
+<td>upa_b</td>
+<td>unauthorised penetration of airspace severity B</td>
+</tr>
+<tr class="even">
+<td>ri_c</td>
+<td>runway incursions severity C</td>
+</tr>
+<tr class="odd">
+<td>smi_c</td>
+<td>separation minima infringments severity C</td>
+</tr>
+<tr class="even">
+<td>upa_c</td>
+<td>unauthorised penetration of airspace severity C</td>
+</tr>
+<tr class="odd">
+<td>ri_d</td>
+<td>runway incursions severity D</td>
+</tr>
+<tr class="even">
+<td>smi_d</td>
+<td>separation minima infringments severity D</td>
+</tr>
+<tr class="odd">
+<td>upa_d</td>
+<td>unauthorised penetration of airspace severity D</td>
+</tr>
+<tr class="even">
+<td>ri_e</td>
+<td>runway incursions severity E</td>
+</tr>
+<tr class="odd">
+<td>smi_e</td>
+<td>separation minima infringments severity E</td>
+</tr>
+<tr class="even">
+<td>upa_e</td>
+<td>unauthorised penetration of airspace severity E</td>
+</tr>
+<tr class="odd">
+<td>total_no_of_tech_occurrences</td>
+<td>the sum of safety occurrences related to technical reasons</td>
+</tr>
+<tr class="even">
+<td>t_aa</td>
+<td>technical occurrences severity AA</td>
+</tr>
+<tr class="odd">
+<td>t_a</td>
+<td>techechnical occurrences severity A</td>
+</tr>
+<tr class="even">
+<td>t_b</td>
+<td>techchnical occurrences severity B</td>
+</tr>
+<tr class="odd">
+<td>t_c</td>
+<td>techechnical occurrences severity C</td>
+</tr>
+<tr class="even">
+<td>t_d</td>
+<td>techechnical occurrences severity D</td>
+</tr>
+<tr class="odd">
+<td>t_e</td>
+<td>techechnical occurrences severity E</td>
+</tr>
+<tr class="even">
+<td>total_number_of_all_reported_occurrences</td>
+<td>sum of all OPS and TECH occurences</td>
+</tr>
+<tr class="odd">
+<td>year</td>
+<td>year</td>
+</tr>
+<tr class="even">
+<td>flight_hours</td>
+<td>sum of flight hours in Entity for year n</td>
+</tr>
+</tbody>
+</table>
+<section id="severity" class="level3">
+<h3 class="anchored" data-anchor-id="severity">Severity</h3>
+<p>The classification scheme for safety occurrences in ATM specifies six severity categories for ATM related occurrences impacting the safe operations of the aircraft (as per ESARR2).</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Severity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>serious incident</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>major incident</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>significant incident</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>not determined</td>
+</tr>
+<tr class="odd">
+<td>E</td>
+<td>no safety effect</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="frequency" class="level3">
+<h3 class="anchored" data-anchor-id="frequency">Frequency</h3>
+<p>The RAT classification scheme specifies five qualitative frequency categories (repeatability). However, these values are not commonly reported through the AST. Each State/Entity in principle should develop their own quantitative boundaries, which should consider national traffic volumes and specific operating conditions of the national ATM system.</p>
+<p>Therefore, the occurrence probability is calculated using historical data from all available years separately for each Entity in order to simulate/take into consideration the local conditions.</p>
+</section>
+</section>
+<section id="further-information" class="level2">
+<h2 class="anchored" data-anchor-id="further-information">Further Information</h2>
+<p>For further information on the preliminary methodology please refer also to the report explaining the development of the methodology <span class="citation" data-cites="performancereviewcommissionCompositeRiskIndex2019">(<a href="#ref-performancereviewcommissionCompositeRiskIndex2019" role="doc-biblioref">Commission 2019</a>)</span>.</p>
+<p>For more detailed information on the updated methodology, please see the <a href="..\library/tn_prc_2021_01_Composite_Risk_Index_Methodology.pdf" title="PRC Technical Note - Composite Risk Index">PRC Technical Note</a> explaining the further development of the methodology <span class="citation" data-cites="performancereviewcommissionCompositeRiskIndex2020">(<a href="#ref-performancereviewcommissionCompositeRiskIndex2020" role="doc-biblioref">Commission 2020</a>)</span>. The technical note explains several statistical methods used to model index weights, overall computation, logic behind it, its use and limitations, and lastly areas of further improvement and expansion.</p>
+</section>
+<section id="working-example" class="level2">
+<h2 class="anchored" data-anchor-id="working-example">Working example</h2>
+<p>Script calculating the CRI using the explained methodology and sample data are available for testing purposes [here] <a href="https://www.eurocontrol.int/performance/data/download/other/CRI-External.zip">crizip</a>.</p>
+<p>Please feel free to use sample data provided to get familiar with the methodology.</p>
+<p>User guide how to set up the environment can be found at ‘README.pdf’ file within repository.</p>
+</section>
+<section id="references" class="level2">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-performancereviewcommissionCompositeRiskIndex2019" class="csl-entry" role="listitem">
+Commission, Performance Review. 2019. <span>“Composite <span>Risk Index</span> (<span>CRI</span>) - Methodology.”</span> <span>EUROCONTROL</span>. <a href="https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf">https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf</a>.
+</div>
+<div id="ref-performancereviewcommissionCompositeRiskIndex2020" class="csl-entry" role="listitem">
+———. 2020. <span>“Updated Composite <span>Risk Index</span> (<span>CRI</span>) - Methodology.”</span> <span>EUROCONTROL</span>. <a href="https://ansperformance.eu/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf">https://ansperformance.eu/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
