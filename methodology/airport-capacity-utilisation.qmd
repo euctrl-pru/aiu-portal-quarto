@@ -23,7 +23,7 @@ constraints or requirements of the capacity declaration process.
 ![Capacity Coverage Chart.](ccc.png){height=400px} 
 
 The capacity coverage chart (i.e. CCC) describes the ordered set of observed
-throughputs at an airport. As depicted in Figure \@ref(fig:ccc), the CCC varies
+throughputs at an airport. As depicted in @fig-ccc), the CCC varies
 dependent on the traffic, enviromental factors, and/or operational
 constraints. Ordering the observed (hourly) throughputs for the airport
 establishes a generally decreasing step function over the time horizon (e.g.
