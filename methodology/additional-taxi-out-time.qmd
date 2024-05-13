@@ -4,10 +4,6 @@ title: Additional taxi out time
 link-citations: true
 slug: additional-taxi-out-time
 ---
-```{r echo = FALSE, message = FALSE, warning = FALSE}
-# run setup script
-source(here::here("_common.R"))
-```
 
 The document describing the methodology for the calculation of the additional taxi-out time can be downloaded [here](/library/ATXOT_indicator_documentation_mar23.pdf).
 

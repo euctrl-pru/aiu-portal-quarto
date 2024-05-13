@@ -4,11 +4,6 @@ title: Vertical Flight Efficiency during Climb and Descent
 link-citations: true
 slug: cd-vertical-flight-efficiency-pi
 ---
-```{r echo = FALSE, message = FALSE, warning = FALSE}
-# run setup script
-source(here::here("_common.R"))
-```
-
 
 This document provides a technical description on the methodology used in the analysis of the
 vertical profile of the aircraft’s trajectory during climb and descent phases of flights.
@@ -19,12 +14,13 @@ to find out reasons for particular observations.
 
 ## Acronyms and terminology
 
-Table: (\#tab:acronyms) Acronyms and terminology
 
 | Term  | Definition |
 |-------|------------|
 | [CPF][cpf]   | Correlated Position reports for a Flight |
 | [PRISME][prisme] | Pan-European Repository of Information Supporting the Management of EATM |
+
+: Acronyms and terminology {#tbl-acronyms}
 
 
 ## Methodology
@@ -49,12 +45,8 @@ Finally, the results are calculated and processed for presentation.
 This process is visualised in Figure 1.
 
 
-(ref:vfe-cd-figure-001) Different steps of the analysis.
 
-
-```{r pli-bli, out.width=c('800px', '400px'), fig.cap='(ref:vfe-cd-figure-001)'}
-knitr::include_graphics("vfe-cd-figure-001.png")
-```
+![Different steps of the analysis.](vfe-cd-figure-001.png){#fig-pli-bli}
 
 
 ### Loading of the trajectories information
@@ -155,13 +147,8 @@ determined. The trajectory part between two points on that trajectory is
 considered as level when the trajectory stays within a fictional window as can
 be seen in Figure \@ref(fig:vfe-cd-figure-002).
 
-(ref:vfe-cd-figure-002) Rolling window for level segment detection.
 
-
-```{r vfe-cd-figure-002, out.width=c('500px', '300px'), fig.cap ='(ref:vfe-cd-figure-002)'}
-knitr::include_graphics("vfe-cd-figure-002.png")
-```
-
+![Rolling window for level segment detection.](vfe-cd-figure-002.png){#fig-vfe-cd-figure-002 height=300px}
 
 This window has temporal and altitude dimensions related to a specific vertical
 velocity that is considered to be the limit between level flight and
@@ -234,8 +221,6 @@ level segments and their allowed lengths or durations.
 
 The formulas used for the calculation of all these results are shown in Table \@ref(tab:formulas).
 
-Table: (\#tab:formulas) Formulas used for the calculation of the results
-
 
 |   Result                                                     |    Formula                      |
 |--------------------------------------------------------------|:--------------------------------|
@@ -250,6 +235,9 @@ Table: (\#tab:formulas) Formulas used for the calculation of the results
 | Average number of level segments per flight                  | (ref:avg-level-segs)            |
 | Median value of the number of level segments                 | (ref:median-level-segs)         |
 | Percentage of flights considered as CCO or CDO               | $$P = \frac{n_0}{n} \cdot 100$$ |
+
+: Formulas used for the calculation of the results {#tbl-formulas}
+
 
 
 (ref:total-flown-cd) $$D_f^+ = \begin{cases} D_{3000, f} - D_{\textrm{TOC} - \textrm{CCO}, f}, & \text{climbs} \\ D_{\textrm{TOD} - \textrm{CDO}, f} - D_{1800, f}, & \text{descents} \end{cases}$$

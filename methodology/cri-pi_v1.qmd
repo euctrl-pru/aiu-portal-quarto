@@ -5,10 +5,6 @@ link-citations: true
 filters:
   - color-text.lua
 ---
-```{r echo = FALSE, message = FALSE, warning = FALSE}
-# run setup script
-source(here::here("_common.R"))
-```
 
 This page provides a technical description of the preliminary methodology used to calculate the Composite Risk Index (CRI).
 
@@ -18,18 +14,14 @@ The CRI represents a cumulative risk value aggregating all reported, assessed an
 
 Note that CRI can be calculated for any given entity, provider or the State.
 
-Figure \@ref(fig:cri-components) shows all components of proposed CRI index.
+@fig-cri-components) shows all components of proposed CRI index.
 
-(ref:cri-components) Composite Risk Index components.
 
-```{r cri-components, out.width=c('800px', '400px'), fig.cap ='(ref:cri-components)'}
-knitr::include_graphics("cri-components.png")
-```
+![Composite Risk Index components.](cri-components.png){#fig-cri-components height=400px}
 
 
 ## Acronyms and terminology
 
-Table: (\#tab:acronyms) Acronyms and terminology
 
 | Term             | Definition                                                               |
 |------------------|--------------------------------------------------------------------------|
@@ -39,6 +31,7 @@ Table: (\#tab:acronyms) Acronyms and terminology
 | [UPA][upa]       | Unauthorised Penetration of Airspace                                     |
 | [SMI][smi]       | Separation Minima Infringement                                           |
 | [TECH][atms]       | ATM Specific / Technical occurrences                                   |
+: Acronyms and terminology {#tbl-acronyms}
 
 
 ## Methodology
@@ -64,13 +57,9 @@ A detailed data description can be found at the end of this page.
 
 To take into account the local conditions within each Entity, exposure data, i.e. the total number of flight hours within each Entity is used as an additional input (CRI normalised results).
 
-The process is visualised in Figure \@ref(fig:cri-data-input).
+The process is visualised in @fig-cri-data-input.
 
-(ref:cri-data-input) Composite Risk Index process.
-
-```{r cri-data-input, out.width=c('800px', '400px'), fig.cap ='(ref:cri-data-input)'}
-knitr::include_graphics("cri-data-input.png")
-```
+![Composite Risk Index process.](cri-data-input.png){#fig-cri-data-input height=400px}
 
 
 ### Occurrences with no severity classification
@@ -78,13 +67,10 @@ All severity unclassified/not assessed events (Severity Category D) are distribu
 
 The probability of occurrence being assigned to a specific severity category is calculated using historical data, separately for each State/Entity in order to simulate/take into consideration the local conditions. 
  
-Figure \@ref(fig:cri-sevD) shows how unassessed occurences (severity D) are distributed into other severity groups.
+fig-cri-sevD shows how unassessed occurences (severity D) are distributed into other severity groups.
 
-(ref:cri-sevD) Distribution of unassessed occurences (severity D) into other severity groups.
+![Distribution of unassessed occurences (severity D) into other severity groups.](cri-sevD.png){#fig-cri-sevD height=400px}
 
-```{r cri-sevD, out.width=c('800px', '400px'), fig.cap ='(ref:cri-sevD)'}
-knitr::include_graphics("cri-sevD.png")
-```
 
 ### Estimated numbers of occurrences
 The formula how the total numbers of specific type of occurrence were determined using the distribution based on probability of unclassified occurrences is presented below.

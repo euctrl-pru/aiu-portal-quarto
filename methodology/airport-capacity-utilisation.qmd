@@ -4,11 +4,6 @@ title: Airport Capacity Utilisation Methodology
 link-citations: true
 slug: airport-capacity-utilisation
 ---
-```{r echo = FALSE, message = FALSE, warning = FALSE}
-# run setup script
-source(here::here("_common.R"))
-```
-
 
 ## Overview
 
@@ -25,13 +20,7 @@ average delay to a reasonable level. The latter may also be impacted by local
 constraints or requirements of the capacity declaration process.
 
 
-(ref:ccc) Capacity Coverage Chart.
-
-
-```{r ccc, out.width=c('400px', '400px'), fig.cap='(ref:ccc)'}
-knitr::include_graphics("ccc.png")
-```
-
+![Capacity Coverage Chart.](ccc.png){height=400px} 
 
 The capacity coverage chart (i.e. CCC) describes the ordered set of observed
 throughputs at an airport. As depicted in Figure \@ref(fig:ccc), the CCC varies
@@ -47,12 +36,7 @@ These characteristic values, i.e. basic load index (BLI) and peak load index (PL
 are based on the observed operational throughput of the airport.
 
 
-(ref:pli-bli) Capacity Coverage Chart and PLI calculation.
-
-
-```{r pli-bli, out.width=c('400px', '400px'), fig.cap='(ref:pli-bli)'}
-knitr::include_graphics("pli_bli.png")
-```
+![Capacity Coverage Chart and PLI calculation.](pli_bli.png){height=400px}
 
 
 The Base Load Index (BLI) refers to the share of time an airport operates above a defined base
@@ -66,12 +50,7 @@ base level throughout ($0.65 < \textrm{BLI} < 0.8$), London Heathrow (LHR) in th
 shows a clear exceptional capacity utilisation.
 
 
-(ref:pli-bli-prr) BLI over PLI for major European airports.
-
-
-```{r pli-bli-prr, out.width=c('400px', '400px'), fig.cap='(ref:pli-bli-prr)'}
-knitr::include_graphics("pli_bli_prr.png")
-```
+![BLI over PLI for major European airports.](pli_bli_prr.png){#fig-pli-bli-prr height=400px}
 
 
 For a more detailed explanation of the methodology see [@apt-capacity-utilisation].

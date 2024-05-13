@@ -4,10 +4,6 @@ title: Additional ASMA time
 link-citations: true
 slug: additional-asma-time
 ---
-```{r echo = FALSE, message = FALSE, warning = FALSE}
-# run setup script
-source(here::here("_common.R"))
-```
 
 The document describing the methodology for the calculation of the additional Arrival Sequencing and Metering (ASMA) time can be downloaded [here](/library/AddASMA_indicator_documentation_mar23.pdf).
 

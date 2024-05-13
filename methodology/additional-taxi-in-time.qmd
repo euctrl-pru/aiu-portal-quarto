@@ -4,10 +4,7 @@ title: Additional taxi in time
 link-citations: true
 slug: additional-taxi-in-time
 ---
-```{r echo = FALSE, message = FALSE, warning = FALSE}
-# run setup script
-source(here::here("_common.R"))
-```
+
 The document describing the methodology for the calculation of the additional taxi-in time can be downloaded [here](/library/ATXIT_indicator_documentation_mar23.pdf).
 
 This methodology is the result of a review process of the previous methodology (used up to December 2022 in the EUROCONTROL Performance Review System). 

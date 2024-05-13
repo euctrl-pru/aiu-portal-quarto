@@ -1,0 +1,15 @@
+{
+  "hash": "1885fa6ca4637e435dbe481b01c7d310",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Additional ASMA time\n# bibliography: [\"./../bibliography/legislation.bib\", \"./../bibibliography/aviation.bib\"]\nlink-citations: true\nslug: additional-asma-time\n---\n\n::: {.cell}\n\n:::\n\n\nThe document describing the methodology for the calculation of the additional Arrival Sequencing and Metering (ASMA) time can be downloaded [here](/library/AddASMA_indicator_documentation_mar23.pdf).\n\nThis methodology is the result of a review process of the previous methodology (used up to December 2022 in the EUROCONTROL Performance Review System). \n\nThe review was done in collaboration with stakeholders through the creating of a working group. All details about the review work can be found [here](/publications/studies/2022_11_17_prc_apt_cons/).\n\nResults with the old methodology up to December 2022 are available for consultation in our [download page](/data/) and were used in performance reports up to and including PRR 2022.",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,13 +1,8 @@
 ---
 title: Composite Risk Index (CRI) Methodology Update
 # bibliography: "bibliography/aviation.bib"
-link-citations: true
-output: blogdown::html_page
 ---
-```{r echo = FALSE, message = FALSE, warning = FALSE}
-# run setup script
-source(here::here("_common.R"))
-```
+
 ## Background
 
 In 2019 the PRC published (in PRR2018) its preliminary concept of the Composite Risk Index (CRI) and the corresponding methodology that could be used to measure the performance of the European ATM system, either as a whole or of its individual entities (service providers, Member States). 
@@ -50,11 +45,10 @@ At the same time, the PRC also has highlighted that there could be possibilities
 3.	Complexity (namely adjusted density, structural index and Complexity index), and
 4.	Reporting practices (described through parameters of reporting rate and reporting culture).
 
-Figure \@ref(fig:crimethod) shows all components of the proposed CRI index.
+@fig-crimethod shows all components of the proposed CRI index.
 
-```{r crimethod, out.width=c('800px', '400px'), fig.cap ='CRI Methodology Components'}
-knitr::include_graphics("cri-meth-comp.png")
-```
+![CRI Methodology Components.](cri-meth-comp.png){#fig-crimethod height=400px}
+
 
 ## 	Further Information
 
