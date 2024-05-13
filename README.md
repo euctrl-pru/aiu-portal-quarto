@@ -13,7 +13,7 @@ current AIU Portal based on blogdown and Hugo to a Quarto based version.
    BUT it can be enabled locally; maybe useful for Methodology ages.
 1. add `library` as a resource in `_quarto.yml`: this is to store the PDF of interesting
    blibliography works or other materia, typically PDF files.
-1. in **Methodology**: links to images either the markdown way, i.e. remove
+1. in **Methodology** and everywhere: links to images either the markdown way, i.e. remove
    `knitr::include_graphics()` or remove `/images/`
 1. in **Methodology** main page: remove images from the bullets, too difficult to
    port it in Quarto.
@@ -21,6 +21,7 @@ current AIU Portal based on blogdown and Hugo to a Quarto based version.
 1. **Acronyms**: listing in Quarto can take care of it.
    *TODO*: do we want to have the letter of alphabets links?
 1. **Data**: embed the params in the YML for the file
+1. spot use of `@ref()` and substiture with relevant `@fig-`/`@tbl-`,...
 
 
 # Notes
