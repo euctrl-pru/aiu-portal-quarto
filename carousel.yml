@@ -1,8 +1,20 @@
 
 - caption: "Published: EUROCONTROL Data Snapshot #42"
-  image: "/images/landing/ds_snapshot_43.jpg"
+  image: "images/landing/ds_snapshot_43.jpg"
   link: "https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-43-centre-gravity-european-aviation"
   
 - caption: "Portal Update: Improved Data Access"
-  image: "/images/landing/portal_update_data_access.jpg"
+  image: "images/landing/portal_update_data_access.jpg"
   link: "https://ansperformance.eu/csv/"
+
+- caption: "Released: EUROCONTROL DATA app on Apple Store"
+  image: "images/landing/eurocontrol-data.png"
+  link: "https://apps.apple.com/tr/app/eurocontrol-data/id6467232405"
+
+- caption: "Released: EUROCONTROL DATA app on Google Play"
+  image: "images/landing/eurocontrol-data.png"
+  link: "https://play.google.com/store/apps/details?id=com.performancereviewunit.eurocontroldata"
+
+- caption: "Performance Data Update: March 2024"
+  image: "images/landing/data_icon.jpg"
+  link: "data/"
