@@ -1,0 +1,11 @@
+
+- category: Focus areas
+  tiles:
+    - title: Traffic
+      subtitle: ": IFR flight and service unit evolution and forecast"
+      href: /traffic
+      thumbnail: images/landing/ectl_traff_th.jpg
+    - title: "Capacity & Delay"
+      subtitle: ": En-route and airport ATFM delays"
+      href: /capacity
+      thumbnail: images/landing/ectl_cap_th.jpg
