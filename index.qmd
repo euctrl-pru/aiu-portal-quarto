@@ -29,6 +29,10 @@ For feedback or questions please contact us at:
 
 
 :::
+::: {#whatsnew .headline .g-col-lg-6 .g-col-12 .g-col-md-12}
+::: h3
+What's New
+:::
 
 ```{r}
 #| classes: '.g-col-lg-6 .g-col-12 .g-col-md-12'
@@ -37,6 +41,7 @@ source("carousel.R")
 carousel("gallery-carousel", 5000, 
          yaml.load_file("carousel.yml"))
 ```
+:::
 :::
 :::
 
@@ -81,8 +86,9 @@ html {
   padding-top: 2em;
 }
 
-#gallery-carousel {
-  padding-top: 6em;
+#whatsnew {
+  padding-top: 3em;
+  text-align:center;
 }
 
 .carousel img {
