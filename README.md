@@ -24,6 +24,8 @@ current AIU Portal based on blogdown and Hugo to a Quarto based version.
 1. spot use of `@ref()` and substiture with relevant `@fig-`/`@tbl-`,...
 1. added carousel as from [Quarto's Gallery page](https://quarto.org/docs/gallery/).
    It can be changed/improved but minimalistically ok
+1. images for the carousel should be converted to 11:6 aspect ratio
+   (you can use `magick convert in.jpg -gravity center -crop 11:6 out.jpg`)
 
 # Notes
 
