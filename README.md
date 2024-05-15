@@ -22,7 +22,8 @@ current AIU Portal based on blogdown and Hugo to a Quarto based version.
    *TODO*: do we want to have the letter of alphabets links?
 1. **Data**: embed the params in the YML for the file
 1. spot use of `@ref()` and substiture with relevant `@fig-`/`@tbl-`,...
-
+1. added carousel as from [Quarto's Gallery page](https://quarto.org/docs/gallery/).
+   It can be changed/improved but minimalistically ok
 
 # Notes
 
