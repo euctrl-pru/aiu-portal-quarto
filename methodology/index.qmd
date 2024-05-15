@@ -23,14 +23,14 @@ In order to encourage collaboration, transparency and reproducibility of perform
   * [ATM Cost-Efficiency (ACE) Handbook][ace]
 
 
-[atfmdelay]: /methodology/atfm-delay-calculation/ "ATFM delay computation"
-[hfe]: /methodology/horizontal-flight-efficiency-pi/ "Horizontal Flight Efficiency performance indicators"
-[ervfe]: /methodology/en-route-vertical-flight-efficiency-pi/ "En-route Vertical Flight Efficiency"
+[atfmdelay]: atfm-delay-calculation/ "ATFM delay computation"
+[hfe]:  horizontal-flight-efficiency-pi/ "Horizontal Flight Efficiency performance indicators"
+[ervfe]:  en-route-vertical-flight-efficiency-pi/ "En-route Vertical Flight Efficiency"
 [cri-pi]: cri-pi/ "Composite Risk Index"
 
-[ASMA]: /methodology/additional-asma-time/ "Additional ASMA Time"
-[ATXOT]: /methodology/additional-taxi-out-time/ "Additional Taxi-out Time"
-[ATXIT]: /methodology/additional-taxi-in-time/ "Additional Taxi-in Time"
-[cdvfe]: /methodology/cd-vertical-flight-efficiency-pi/ "Vertical Flight Efficiency during Climb and Descent"
-[acu]: /methodology/airport-capacity-utilisation/ "Airport Capacity Utilisation"
+[ASMA]:  additional-asma-time/ "Additional ASMA Time"
+[ATXOT]:  additional-taxi-out-time/ "Additional Taxi-out Time"
+[ATXIT]:  additional-taxi-in-time/ "Additional Taxi-in Time"
+[cdvfe]:  cd-vertical-flight-efficiency-pi/ "Vertical Flight Efficiency during Climb and Descent"
+[acu]:  airport-capacity-utilisation/ "Airport Capacity Utilisation"
 [ace]: /economics/ace/ace-handbook/ "ATM Cost-Efficiency (ACE)"
