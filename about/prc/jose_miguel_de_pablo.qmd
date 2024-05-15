@@ -2,6 +2,7 @@
 title: "José Miguel de Pablo Guerrero"
 subtitle: ""
 description: "Focus: ANSP/Management"
+rank: 3
 image: prc_JM.jpg
 ---
 

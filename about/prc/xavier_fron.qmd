@@ -2,6 +2,7 @@
 title: "Xavier Fron"
 subtitle: ""
 description: "Focus: Economics"
+rank: 1
 image: prc_XF.jpg
 ---
 

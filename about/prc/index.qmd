@@ -6,10 +6,13 @@ listing:
     grid-columns: 3
     image-height: 268px
     fields: [image, title, subtitle, description]
+    sort: rank
     contents: 
-      - xavier_fron.qmd
-      - piotr_ikanowicz.qmd
-      - jose_miguel_de_pablo.qmd
+      - "*.qmd"
+      # - xavier_fron.qmd
+      # - piotr_ikanowicz.qmd
+      # - jose_miguel_de_pablo.qmd
+      # - daniel_weder.qmd
       
 ---
 
