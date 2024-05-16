@@ -1,5 +1,5 @@
 
-- caption: "Published: EUROCONTROL Data Snapshot #42"
+- caption: "EUROCONTROL Data Snapshot #42"
   image: "images/landing/ds_snapshot_43.jpg"
   link: "https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-43-centre-gravity-european-aviation"
   
@@ -8,11 +8,11 @@
   link: "https://ansperformance.eu/csv/"
 
 - caption: "EUROCONTROL DATA app on Apple Store"
-  image: "images/landing/eurocontrol-data.png"
+  image: "images/landing/eurocontrol-data-apple.png"
   link: "https://apps.apple.com/tr/app/eurocontrol-data/id6467232405"
 
 - caption: "EUROCONTROL DATA app on Google Play"
-  image: "images/landing/eurocontrol-data.png"
+  image: "images/landing/eurocontrol-data-google.png"
   link: "https://play.google.com/store/apps/details?id=com.performancereviewunit.eurocontroldata"
 
 - caption: "Performance Data Update: March 2024"
