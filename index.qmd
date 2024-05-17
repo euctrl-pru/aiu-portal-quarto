@@ -21,7 +21,7 @@ include-in-header:
 {{< include "_network-dashboard.qmd" >}}
 :::
 
-::: {#hero-banner .column-page}
+::: {#hero-banner .column-screen}
 ::: {.grid .column-page}
 ::: {.headline .g-col-lg-6 .g-col-12 .g-col-md-12}
 ::: h1
@@ -60,6 +60,32 @@ carousel("gallery-carousel", 5000,
 
 ```{=html}
 <style>
+
+#network-dashboard {
+  display: flex;
+}
+
+#nw-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#container-cell {
+  display: flex;
+  flex-direction: row;
+}
+
+#total-flights-cell {
+  margin: 10px;
+}
+
+#container-cell > div {
+  margin: 10px;
+}
+#container-cell > div > p {
+  margin: 0px !important;
+}
+
 
 #hero-banner {
   padding-top: 0px;
