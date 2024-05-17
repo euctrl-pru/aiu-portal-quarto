@@ -53,7 +53,7 @@ dif_y2d_prev_year = Math.round(my_view_traffic.getValue(0, 36)*100);
 dif_y2d_prev_year = (dif_y2d_prev_year >= 0) ? "+" + dif_y2d_prev_year : "" + dif_y2d_prev_year;
 
 // Update scorecard values
-document.getElementById("y2d_day_text").innerHTML =  "Latest network traffic situation: " + y2d_day_text; 
+document.getElementById("y2d_day_text").innerHTML =  "" + y2d_day_text; 
 document.getElementById("y2d_traffic").innerHTML = String(y2d_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
 document.getElementById("avg_y2d_traffic").innerHTML = String(avg_y2d_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
 document.getElementById("dif_y2d_2019").innerHTML = String(dif_y2d_2019) + '%' ;

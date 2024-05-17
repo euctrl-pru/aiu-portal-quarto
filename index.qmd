@@ -16,9 +16,10 @@ include-in-header:
       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
       <script type="text/javascript" src="js/network-dashboard.js"></script>
 ---
-
+::: {.center-block}
 ::: {#network-dashboard .column-page}
 {{< include "_network-dashboard.qmd" >}}
+:::
 :::
 
 ::: {#hero-banner .column-screen}
@@ -65,9 +66,13 @@ carousel("gallery-carousel", 5000,
   display: flex;
 }
 
-#nw-container {
-  display: flex;
-  flex-direction: column;
+#y2d_day_text {
+  font-weight: bold;
+}
+
+#nw-container > h4, h5 {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 #container-cell {
@@ -75,16 +80,19 @@ carousel("gallery-carousel", 5000,
   flex-direction: row;
 }
 
-#total-flights-cell {
-  margin: 10px;
+#container-cell > div {
+  margin: 7px;
 }
 
-#container-cell > div {
-  margin: 10px;
-}
 #container-cell > div > p {
   margin: 0px !important;
 }
+
+#container-cell > div > p:nth-child(2) {
+  font-weight:700;
+  color:#0070c0";
+}
+
 
 
 #hero-banner {
