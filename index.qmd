@@ -6,16 +6,31 @@ format:
 search: false
 execute:
   echo: false
+  freeze: false
 engine: knitr
 listing:
   - id: gallery
     template: gallery.ejs
     contents: gallery.yml
-include-in-header: 
-  - text: |
-      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-      <script type="text/javascript" src="js/network-dashboard.js"></script>
 ---
+
+```{ojs}
+//| echo: false
+url_api = "https://aiu-portal.pockethost.io/api/collections/network_situation/records?sort=-date&perPage=1&skipTotal=1"
+network_latest = await d3.json(url_api);
+dd = network_latest.items[0];
+formatTime = d3.utcFormat("%d %B %Y");
+latest_date = formatTime(d3.isoParse(dd.date))
+
+ld = d3.select("#y2d_day_text").text("01 Jan - " + latest_date);
+tr = d3.select("#y2d_traffic").text(d3.format(",")(dd.y2d_flights_total));
+av = d3.select("#avg_y2d_traffic").text(d3.format(",")(Math.round(dd.y2d_flights_daily_average)));
+y9 = d3.select("#dif_y2d_2019").text(d3.format("+.0%")(dd.y2d_diff_2019_year_percentage));
+yp = d3.select("#dif_y2d_prev_year").text(d3.format("+.0%")(dd.y2d_diff_previous_year_percentage));
+
+```
+
+
 ::: {.center-block}
 ::: {#network-dashboard .column-page}
 {{< include "_network-dashboard.qmd" >}}
