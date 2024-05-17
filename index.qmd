@@ -11,9 +11,17 @@ listing:
   - id: gallery
     template: gallery.ejs
     contents: gallery.yml
+include-in-header: 
+  - text: |
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript" src="js/network-dashboard.js"></script>
 ---
 
-::: {#hero-banner .column-screen}
+::: {#network-dashboard .column-page}
+{{< include "_network-dashboard.qmd" >}}
+:::
+
+::: {#hero-banner .column-page}
 ::: {.grid .column-page}
 ::: {.headline .g-col-lg-6 .g-col-12 .g-col-md-12}
 ::: h1
