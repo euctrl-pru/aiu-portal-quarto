@@ -1,0 +1,50 @@
+---
+title: "Traffic Overview"
+format: 
+  html:
+    include-in-header:
+      - text: |
+          <script type="module" src="./traffic.js"></script>
+          <link rel="stylesheet" href="./traffic.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+---
+
+```{r, echo=FALSE, include=FALSE}
+# All defaults
+## libraries
+library(fs)
+library(tibble)
+library(dplyr)
+library(stringr)
+library(googlesheets4)
+library(lubridate)
+library(plotly)
+```
+
+
+This page provides an overview of the traffic, [ATFM delay](/definition/atfm-delay/),
+[punctuality (OTP15)](/definition/punctuality/) and percentage of
+[operated schedules](/definition/opschedules/) in the [EUROCONTROL Area](/definition/eurocontrol-area/).
+For a more detailed analysis consult our 
+[Daily traffic variation dashboard][daily_traffic_var]{target="_blank"}.
+Information on en-route and terminal [service units](/acronym/su/) from the 
+[Central Route Charges Office (CRCO)][crco]{target="_blank"} of EUROCONTROL is available from our
+[Service Units dashboard][su_dah]{target="_blank"}.
+
+[daily_traffic_var]: <https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html> "Daily Traffic Variation"
+[crco]: <https://www.eurocontrol.int/crco> "Central Route Charges Office"
+[su_dah]: <https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html> "Service units dashboard"
+
+::: {.panel-tabset}
+
+## Flights
+
+{{< include _flights.qmd >}}
+
+## ATFM Delays
+
+
+## Punctuality
+
+
+:::
