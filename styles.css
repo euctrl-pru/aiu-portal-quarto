@@ -1,1 +1,10 @@
-/* css styles */
+.nw-values-cell {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.nw-values-cell p {
+    margin-bottom: 0.0rem;
+}

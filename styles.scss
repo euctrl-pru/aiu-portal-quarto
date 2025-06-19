@@ -1,0 +1,11 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+.nw-col-name {
+  @extend .text-muted;
+  @extend .small;
+}
+
+.nw-col-value {
+  font-weight: 700 !important;
+}

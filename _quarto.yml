@@ -44,17 +44,19 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    css: style.css
+    theme:
+      - cosmo
+      - styles.scss
     toc: false
     # grid: 
     #   body-width: 1200px
     # include-after-body:
     #   - "_subscribe.qmd"
-    grid:
-      sidebar-width: 300px
-      body-width: 900px
-      margin-width: 300px
-      gutter-width: 1.5rem
+    # grid:
+    #   sidebar-width: 300px
+    #   body-width: 900px
+    #   margin-width: 300px
+    #   gutter-width: 1.5rem
 
 
