@@ -1,0 +1,132 @@
+```{ojs}
+// Day
+day_date = d3.select("#day_date")
+  .text(latest_date);
+day_traffic = d3.select("#day_traffic")
+  .text(d3.format(",")(dd.day_traffic));
+dif_day_prev_week = d3.select("#dif_day_prev_week")
+  .text(d3.format(".0%")(dd.dif_day_prev_week));
+dif_day_prev_year = d3.select("#dif_day_prev_year")
+  .text(d3.format("+.0%")(dd.dif_day_prev_year));
+dif_day_2019 = d3.select("#dif_day_2019")
+  .text(d3.format("+.0%")(dd.dif_day_2019));
+
+
+// Week
+week_date = d3.select("#week_date")
+  .text(latest_week);
+week_traffic = d3.select("#week_traffic")
+  .text(d3.format(",")(Math.round(dd.avg_week_traffic)));
+dif_week_prev_week = d3.select("#dif_week_prev_week")
+  .text(d3.format(".0%")(dd.dif_week_prev_week));
+dif_week_prev_year = d3.select("#dif_week_prev_year")
+  .text(d3.format("+.0%")(dd.dif_week_prev_year));
+dif_week_2019 = d3.select("#dif_week_2019")
+  .text(d3.format("+.0%")(dd.dif_week_2019));
+
+
+// Year
+y2d_date = d3.select("#y2d_date")
+  .text(latest_y2d);
+y2d_traffic = d3.select("#y2d_traffic")
+  .text(d3.format(",")(dd.y2d_flights_total));
+avg_y2d_traffic = d3.select("#avg_y2d_traffic")
+  .text(d3.format(",")(Math.round(dd.y2d_flights_daily_average)));
+dif_y2d_prev_year = d3.select("#dif_y2d_prev_year")
+  .text(d3.format("+.0%")(dd.y2d_diff_previous_year_percentage));
+dif_y2d_2019 = d3.select("#dif_y2d_2019")
+  .text(d3.format("+.0%")(dd.y2d_diff_2019_year_percentage));
+
+```
+
+
+:::: {#tab-flights .panel-tabset}
+## Day
+
+```{=html}
+<div class="nw-values-cell">
+  <p id="day_date" class="nw-col-value">n/a</p>
+  <div>
+    <p class="nw-col-name">Total flights</p>
+    <p id="day_traffic" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs prev. week</p>
+    <p id="dif_day_prev_week" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs prev. year</p>
+    <p id="dif_day_prev_year" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs 2019</p>
+    <p id="dif_day_2019" class="nw-col-value">n/a</p>
+  </div>
+</div>
+```
+
+
+
+## Week
+
+```{=html}
+<div class="nw-values-cell">
+  <p id="week_date" class="nw-col-value">n/a</p>
+  <div>
+    <p class="nw-col-name">Avg. daily flights</p>
+    <p id="week_traffic" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs prev. week</p>
+    <p id="dif_week_prev_week" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs prev. year</p>
+    <p id="dif_week_prev_year" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs 2019</p>
+    <p id="dif_week_2019" class="nw-col-value">n/a</p>
+  </div>
+</div>
+```
+
+
+
+## Y2D
+
+```{=html}
+<div class="nw-values-cell">
+  <p id="y2d_date" class="nw-col-value">n/a</p>
+  <div>
+    <p class="nw-col-name">Total flights</p>
+    <p id="y2d_traffic" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Avg. daily flights</p>
+    <p id="avg_y2d_traffic" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs prev. year</p>
+    <p id="dif_y2d_prev_year" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs 2019</p>
+    <p id="dif_y2d_2019" class="nw-col-value">n/a</p>
+  </div>
+</div>
+
+```
+
+
+::::
+
+```{=html}
+<div>
+  <iframe style="border: 0; width: 100%; height: 380px;"
+          src="https://www.eurocontrol.int/Economics/Oscar/plot-traffic-lp_new.html"           frameborder="0"
+          scrolling="no"
+          allowfullscreen>
+  </iframe>
+</div>
+```

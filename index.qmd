@@ -20,7 +20,7 @@ listing:
 
 
 :::: {#network-dashboard}
-#### Network status on [NA]{#y2d_day_text}
+#### Network status on [NA]{#nw_day_date}
 {{< include "_network-dashboard.qmd" >}}
 ::::
 

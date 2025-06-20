@@ -44,7 +44,7 @@ website:
 
 format:
   html:
-    css: style.css
+    css: styles.css
     theme:
       - cosmo
       - styles.scss

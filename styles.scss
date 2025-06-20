@@ -9,3 +9,18 @@
 .nw-col-value {
   font-weight: 700 !important;
 }
+
+#network-status-flights > .nav-tabs {
+  @extend .justify-content-center;
+  @extend .nav-pills;
+}
+
+#tab-flights > .nav-tabs {
+  @extend .justify-content-end;
+  @extend .nav-pills;
+}
+
+#tab-delay > .nav-tabs {
+  @extend .justify-content-end;
+  @extend .nav-pills;
+}

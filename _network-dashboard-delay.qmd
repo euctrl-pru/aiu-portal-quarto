@@ -1,0 +1,134 @@
+```{ojs}
+// Day
+day_delay_date = d3.select("#day_delay_date")
+  .text(latest_date);
+day_delay = d3.select("#day_delay")
+  .text(d3.format(",")(dd.day_delay));
+dif_day_delay_prev_year_perc = d3.select("#dif_day_delay_prev_year_perc")
+  .text(d3.format("+.0%")(dd.dif_day_delay_prev_year_perc));
+dif_day_delay_2019_perc = d3.select("#dif_day_delay_2019_perc")
+  .text(d3.format("+.0%")(dd.dif_day_delay_2019_perc));
+
+delay_per_flight = (dd.day_traffic == 0) ? 0 : Math.round(dd.day_delay / dd.day_traffic * 100) / 100;
+day_delay_flight = d3.select("#day_delay_flight")
+  .text(d3.format(",")(delay_per_flight));
+
+
+// Week
+week_delay_date = d3.select("#week_delay_date")
+  .text(latest_week);
+avg_week_delay = d3.select("#avg_week_delay")
+  .text(d3.format(",")(Math.round(dd.avg_week_delay)));
+dif_week_delay_prev_year_perc = d3.select("#dif_week_delay_prev_year_perc")
+  .text(d3.format("+.0%")(dd.dif_week_delay_prev_year_perc));
+dif_week_delay_2019_perc = d3.select("#dif_week_delay_2019_perc")
+  .text(d3.format("+.0%")(dd.dif_week_delay_2019_perc));
+
+week_delay_per_flight = (dd.avg_week_traffic == 0) ? 0 : Math.round(dd.avg_week_delay / dd.avg_week_traffic * 100) / 100;
+
+week_delay_flight = d3.select("#week_delay_flight")
+  .text(d3.format(",")(week_delay_per_flight));
+
+
+// Year
+y2d_delay_date = d3.select("#y2d_delay_date")
+  .text(latest_y2d);
+y2d_delay_daily_average = d3.select("#y2d_delay_daily_average")
+  .text(d3.format(",")(Math.round(dd.y2d_delay_daily_average)));
+dif_y2d_delay_prev_year_perc = d3.select("#dif_y2d_delay_prev_year_perc")
+  .text(d3.format("+.0%")(dd.dif_y2d_delay_prev_year_perc));
+dif_y2d_delay_2019_perc = d3.select("#dif_y2d_delay_2019_perc")
+  .text(d3.format("+.0%")(dd.dif_y2d_delay_2019_perc));
+
+y2d_delay_per_flight = (dd.y2d_flights_total == 0) ? 0 : Math.round(dd.y2d_delay_total / dd.y2d_flights_total * 100) / 100;
+
+y2d_delay_flight = d3.select("#y2d_delay_flight")
+  .text(d3.format(",")(y2d_delay_per_flight));
+
+```
+
+
+:::: {#tab-delay .panel-tabset}
+## Day
+
+```{=html}
+<div class="nw-values-cell">
+  <p id="day_delay_date" class="nw-col-value">n/a</p>
+  <div>
+    <p class="nw-col-name">Total delay</p>
+    <p id="day_delay" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs prev. year</p>
+    <p id="dif_day_delay_prev_year_perc" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs 2019</p>
+    <p id="dif_day_delay_2019_perc" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Delay/flight</p>
+    <p id="day_delay_flight" class="nw-col-value">n/a</p>
+  </div>
+</div>
+```
+
+
+
+## Week
+
+```{=html}
+<div class="nw-values-cell">
+  <p id="week_delay_date" class="nw-col-value">n/a</p>
+  <div>
+    <p class="nw-col-name">Avg. daily delay</p>
+    <p id="avg_week_delay" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs prev. year</p>
+    <p id="dif_week_delay_prev_year_perc" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs 2019</p>
+    <p id="dif_week_delay_2019_perc" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Avg. delay/flight</p>
+    <p id="week_delay_flight" class="nw-col-value">n/a</p>
+  </div>
+</div>
+```
+
+
+
+## Y2D
+
+```{=html}
+<div class="nw-values-cell">
+  <p id="y2d_delay_date" class="nw-col-value">n/a</p>
+  <div>
+    <p class="nw-col-name">Avg. daily delay</p>
+    <p id="y2d_delay_daily_average" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs prev. year</p>
+    <p id="dif_y2d_delay_prev_year_perc" class="nw-col-value">n/a</p>
+  </div>
+  <div>
+    <p class="nw-col-name">Vs 2019</p>
+    <p id="dif_y2d_delay_2019_perc" class="nw-col-value">n/a</p>
+  </div>
+</div>
+  <div>
+    <p class="nw-col-name">Avg. delay/flight</p>
+    <p id="y2d_delay_flight" class="nw-col-value">n/a</p>
+  </div>
+
+```
+
+
+::::
+
+
+<iframe id="delay-plot" class="resp-iframe" style="border: 0; width: 100%; height: 380px;" src="https://www.eurocontrol.int/Economics/Oscar/plot-delay-traffic-lp.html" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
