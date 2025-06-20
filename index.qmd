@@ -3,9 +3,13 @@ title: "Aviation Intelligence Portal"
 description: The portal provides insights into various aviation performance areas
   and is developed by the EUROCONTROL Aviation Intelligence Unit.
 
+
 format:
   html:
     toc: false
+    grid:
+      body-width: 900px
+
 search: false
 execute:
   echo: false
@@ -18,13 +22,14 @@ listing:
 ---
 
 
+::::: {#status-and-news .grid}
 
-:::: {#network-dashboard}
+:::: {#network-dashboard .g-col-8}
 #### Network status on [NA]{#nw_day_date}
 {{< include "_network-dashboard.qmd" >}}
 ::::
 
-:::: {#whatsnew}
+:::: {#whatsnew .g-col-4}
 #### What's New
 
 ```{r}
@@ -36,11 +41,7 @@ carousel("gallery-carousel", 5000,
 ```
 ::::
 
+:::::
 
 ::: {#gallery .column-page}
-::::
-```{=html}
-<style>
-
-</style>
-```
+:::
