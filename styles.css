@@ -1,7 +1,8 @@
-##status-and-news {
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
+
+#status-and-news {
+/*  flex-direction: row;
+  display: flex; 
+  justify-content: center; */
   background-color: #f8f9fa!important;
 }
 

@@ -14,13 +14,11 @@ website:
   title: "AIU Portal"
   favicon: "favicon.png"
   # google-analytics: "G-RJ3R0C35X7"
-  # page navigation false only for some pages?
-  navbar:
   # Note: You need to install: ```quarto install extension mcanouil/quarto-iconify```
-  # For the icons to work.
+  navbar:
     background: dark
     search: true
-    logo: "media/EUROCONTROL-logo-standard-rgb.png"
+    logo: "images/EUROCONTROL-logo-standard-rgb.png"
     right:
       - text: "Home"
         href: https://ansperformance.eu/
@@ -29,7 +27,7 @@ website:
           - text: "{{< iconify fa6-solid th >}}&nbsp;Balanced scorecard"
             href: "https://www.eurocontrol.int/Economics/BalancedScorecard.html"
           - text: "{{< iconify fa6-solid plane-departure >}}&nbsp;Traffic"
-            href: https://ansperformance.eu/traffic/
+            href: "https://ansperformance.eu/traffic/"
           - text: "&nbsp;&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Daily traffic dashboard</span>"
             href: "https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html"
           - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Service units</span>"
@@ -134,6 +132,15 @@ website:
             href: https://ansperformance.eu/post/
           - text: "Disclaimer"
             href: https://ansperformance.eu/about/disclaimer/
+  page-footer: 
+    left: "Copyright 2025 EUROCONTROL" 
+    background: "#053253"
+    foreground: white
+    right: 
+      - icon: github
+        href: https://github.com/
+      - icon: twitter 
+        href: https://twitter.com/
 format:
   html:
     css: styles.css
