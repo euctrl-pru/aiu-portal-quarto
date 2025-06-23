@@ -1,3 +1,15 @@
+.navbar-brand-logo {
+    width: 100%;
+    min-width: 10rem !important;
+    max-width: 10rem !important;
+}
+
+.navbar-logo {
+    max-height: 76px;
+    width: auto;
+    padding-right: 4px;
+}
+
 
 #status-and-news {
 /*  flex-direction: row;
