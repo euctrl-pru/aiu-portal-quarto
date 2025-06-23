@@ -42,6 +42,8 @@ dif_y2d_2019 = d3.select("#dif_y2d_2019")
 
 :::: {#tab-flights .panel-tabset}
 ## Day
+Evolution of daily flights in the EUROCONTROL area  
+[(7-day average)]{.text-muted margin-bottom="0rem"}
 
 ```{=html}
 <div class="nw-values-cell">
@@ -68,6 +70,8 @@ dif_y2d_2019 = d3.select("#dif_y2d_2019")
 
 
 ## Week
+Evolution of daily flights in the EUROCONTROL area  
+[(7-day average)]{.text-muted margin-bottom="0rem"}
 
 ```{=html}
 <div class="nw-values-cell">
@@ -94,6 +98,8 @@ dif_y2d_2019 = d3.select("#dif_y2d_2019")
 
 
 ## Y2D
+Evolution of daily flights in the EUROCONTROL area  
+[(7-day average)]{.text-muted margin-bottom="0rem"}
 
 ```{=html}
 <div class="nw-values-cell">

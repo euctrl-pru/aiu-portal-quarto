@@ -48,8 +48,6 @@ nw_date = d3.select("#nw_day_date")
 
 ::: {#network-status-flights .panel-tabset}
 ## Flights
-Evolution of daily flights in the EUROCONTROL area  
-[(7-day average)]{.text-muted margin-bottom="0rem"}
 
 {{< include "_network-dashboard-flights.qmd" >}}
 
