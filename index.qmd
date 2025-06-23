@@ -17,8 +17,8 @@ execute:
 engine: knitr
 listing:
   - id: gallery
-    template: gallery.ejs
-    contents: gallery.yml
+    template: ejs/performance-areas-gallery.ejs
+    contents: performance-areas-gallery.yml
 ---
 
 
