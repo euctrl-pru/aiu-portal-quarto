@@ -124,9 +124,9 @@ website:
       - text: "About"
         menu:
           - text: "About the PRC"
-            href: https://ansperformance.eu/about/prc/
+            href: about/prc/
           - text: "About the AIU"
-            href: https://ansperformance.eu/about/aiu/
+            href: about/aiu/
           - text: "About the PRU"
             href: https://ansperformance.eu/about/us/
           - text: "Release notes"
