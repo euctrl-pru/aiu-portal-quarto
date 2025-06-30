@@ -22,7 +22,7 @@ website:
     logo-alt: "EUROCONTROL Supporting European Aviation"
     right:
       - text: "Home"
-        href: https://ansperformance.eu/
+        href: /
       - text: "Performance areas"
         menu:
           - text: "{{< iconify fa6-solid th >}}&nbsp;Balanced scorecard"
@@ -132,11 +132,16 @@ website:
           - text: "Release notes"
             href: post/
           - text: "Disclaimer"
-            href: https://ansperformance.eu/about/disclaimer/
+            href: /about/disclaimer/
   page-footer: 
-    left: "Copyright 2025 EUROCONTROL" 
     background: "#053253"
     foreground: white
+    left: 
+      - text: "© EUROCONTROL" 
+      - text: "**Disclaimer**"
+        href: /about/disclaimer/
+      - text: "**Privacy**"
+        href: https://www.eurocontrol.int/info/privacy-and-website-terms-use
     right: 
       - icon: github
         href: https://github.com/

@@ -3,6 +3,6 @@ title: About
 ---
 
 * [About the PRC](/about/prc/)
-* [About the PRU](/about/us/)
+* [About the PRU](/about/pru/)
 * [Release notes](/posts/)
 * [Disclaimer](/about/disclaimer/)
