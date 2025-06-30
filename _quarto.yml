@@ -128,9 +128,9 @@ website:
           - text: "About the AIU"
             href: about/aiu/
           - text: "About the PRU"
-            href: https://ansperformance.eu/about/us/
+            href: about/pru/
           - text: "Release notes"
-            href: https://ansperformance.eu/post/
+            href: post/
           - text: "Disclaimer"
             href: https://ansperformance.eu/about/disclaimer/
   page-footer: 

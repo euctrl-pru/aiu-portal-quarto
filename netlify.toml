@@ -121,3 +121,7 @@ package = "@quarto/netlify-plugin-quarto"
   to = "https://www.eurocontrol.int/performance/data/download/:splat"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/about/us/"
+  to = "about/pru/"
