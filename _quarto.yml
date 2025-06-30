@@ -21,9 +21,9 @@ website:
     logo: "/images/EUROCONTROL-logo-standard-rgb.svg"
     logo-alt: "EUROCONTROL Supporting European Aviation"
     right:
-      - text: "Home"
+      - text: "**Home**"
         href: /
-      - text: "Performance areas"
+      - text: "**Performance areas**"
         menu:
           - text: "{{< iconify fa6-solid th >}}&nbsp;Balanced scorecard"
             href: "https://www.eurocontrol.int/Economics/BalancedScorecard.html"
@@ -80,7 +80,7 @@ website:
           - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Standard Inputs for Economic Analyses</span>"
             href: https://ansperformance.eu/economics/cba/
 
-      - text: "Stakeholder views"
+      - text: "**Stakeholder views**"
         menu:
           - text: "{{< iconify fa6-solid plane-arrival >}}&nbsp;Airports"
             href: https://ansperformance.eu/dashboard/stakeholder/airport/
@@ -89,13 +89,13 @@ website:
           - text: "{{< iconify fa6-solid globe >}}&nbsp;States"
             href: https://ansperformance.eu/dashboard/stakeholder/state/
 
-      - text: "Data"
+      - text: "**Data**"
         href: /data/
 
-      - text: "Publications"
+      - text: "**Publications**"
         href: https://ansperformance.eu/publications/
 
-      - text: "Reference"
+      - text: "**Reference**"
         menu:
           - text: "{{< iconify fa6-solid marker >}}&nbsp;Definitions"
             href: https://ansperformance.eu/definition/
@@ -106,7 +106,7 @@ website:
           - text: "{{< iconify fa6-solid book >}}&nbsp;Bibliography"
             href: https://ansperformance.eu/bibliography/
 
-      - text: "Links"
+      - text: "**Links**"
         menu:
           - text: "EUROCONTROL <i class='fas fa-xs fa-external-link-alt'></i>"
             href: "https://www.eurocontrol.int/"
@@ -121,7 +121,7 @@ website:
           - text: "PRC Open Performance Data Initiative"
             href: "https://opdi.aero"
 
-      - text: "About"
+      - text: "**About**"
         menu:
           - text: "About the PRC"
             href: about/prc/
