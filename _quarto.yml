@@ -90,7 +90,7 @@ website:
             href: https://ansperformance.eu/dashboard/stakeholder/state/
 
       - text: "Data"
-        href: https://ansperformance.eu/data/
+        href: /data/
 
       - text: "Publications"
         href: https://ansperformance.eu/publications/
@@ -100,9 +100,9 @@ website:
           - text: "{{< iconify fa6-solid marker >}}&nbsp;Definitions"
             href: https://ansperformance.eu/definition/
           - text: "{{< iconify fa6-solid wrench >}}&nbsp;Methodology"
-            href: https://ansperformance.eu/methodology/
+            href: /methodology/
           - text: "{{< iconify fa6-solid quote-left >}}&nbsp;Acronyms"
-            href: https://ansperformance.eu/acronym/
+            href: /acronym/
           - text: "{{< iconify fa6-solid book >}}&nbsp;Bibliography"
             href: https://ansperformance.eu/bibliography/
 
