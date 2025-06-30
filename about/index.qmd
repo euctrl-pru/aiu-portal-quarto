@@ -4,5 +4,6 @@ title: About
 
 * [About the PRC](/about/prc/)
 * [About the PRU](/about/pru/)
+* [About the AIU](/about/aiu/)
 * [Release notes](/posts/)
 * [Disclaimer](/about/disclaimer/)
