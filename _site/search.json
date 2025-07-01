@@ -102,7 +102,7 @@
     "href": "acronym/iata.html#see-also",
     "title": "IATA - International Air Transport Association",
     "section": "See Also",
-    "text": "See Also"
+    "text": "See Also\n\nIATA"
   },
   {
     "objectID": "acronym/rp2.html",
@@ -389,7 +389,7 @@
     "href": "acronym/airac.html#see-also",
     "title": "AIRAC - Aeronautical Information Regulation And Control",
     "section": "See Also",
-    "text": "See Also\n\nAIRAC  page at  website."
+    "text": "See Also\n\nAIRAC  page at ICAO website."
   },
   {
     "objectID": "acronym/fmp.html",
@@ -466,7 +466,7 @@
     "href": "acronym/sesar.html#see-also",
     "title": "SESAR - Single European Sky ATM Research programme",
     "section": "See Also",
-    "text": "See Also\n\n Home page."
+    "text": "See Also\n\nSESAR Home page."
   },
   {
     "objectID": "acronym/cpf.html",
@@ -697,7 +697,7 @@
     "href": "acronym/bada.html",
     "title": "BADA - Base of Aircraft Data",
     "section": "",
-    "text": "The Base of Aircraft Data (BADA) is an Aircraft Performance Model developed and maintained by EUROCONTROL, with the active cooperation of aircraft manufacturers and operating airlines.\nThe BADA APM is designed for simulation and prediction of aircraft trajectories for purposes of ATM research and operations. Aircraft performance parameters and trajectories can be calculated using information and data contained in BADA.\nTo replicate reality in both operational and research modelling and simulation systems, each and every real aircraft needs a corresponding aircraft model.\nMore information is available from the ."
+    "text": "The Base of Aircraft Data (BADA) is an Aircraft Performance Model developed and maintained by EUROCONTROL, with the active cooperation of aircraft manufacturers and operating airlines.\nThe BADA APM is designed for simulation and prediction of aircraft trajectories for purposes of ATM research and operations. Aircraft performance parameters and trajectories can be calculated using information and data contained in BADA.\nTo replicate reality in both operational and research modelling and simulation systems, each and every real aircraft needs a corresponding aircraft model.\nMore information is available from the EUROCONTROL BADA web page  page at EUROCONTROL website.."
   },
   {
     "objectID": "acronym/etot.html",
@@ -725,14 +725,14 @@
     "href": "acronym/fir.html",
     "title": "FIR - Flight Information Region",
     "section": "",
-    "text": "An airspace of defined dimensions within which flight information service and alerting service are provided.\nCredit: Flight Information Regions by Xavier Olive and Enrico Spinielli"
+    "text": "An airspace of defined dimensions within which flight information service and alerting service are provided."
   },
   {
     "objectID": "acronym/fir.html#see-also",
     "href": "acronym/fir.html#see-also",
     "title": "FIR - Flight Information Region",
     "section": "See Also",
-    "text": "See Also\n\nFlight Information Regions  page at  website.\nFIR  page at Skybrary website."
+    "text": "See Also\n\nFlight Information Regions  page at Observable website.\nFIR  page at Skybrary website."
   },
   {
     "objectID": "acronym/prr.html",
@@ -767,7 +767,7 @@
     "href": "acronym/ganp.html#see-also",
     "title": "GANP - Global Air Navigation Plan",
     "section": "See Also",
-    "text": "See Also\n\nGANP - Capacity and Efficiency (PDF)  page at  website.\nGANP resources  page at  website."
+    "text": "See Also\n\nGANP - Capacity and Efficiency (PDF)  page at ICAO website.\nGANP resources  page at ICAO website."
   },
   {
     "objectID": "acronym/tdi.html",
@@ -886,7 +886,7 @@
     "href": "acronym/ast.html",
     "title": "AST - Annual Summary Template",
     "section": "",
-    "text": "The template for annual safety data statistics in accordance with the safety data reporting requirements documented in ."
+    "text": "The template for annual safety data statistics in accordance with the safety data reporting requirements documented in ESARR 2  page at Skybrary website.."
   },
   {
     "objectID": "acronym/ast.html#see-also",
@@ -1152,7 +1152,7 @@
     "href": "definition/air-transport-statistics.html",
     "title": "Air transport statistics",
     "section": "",
-    "text": "The following links provide perspectives on Statistics in Air Transport:\n\nAir Transports Statistics Explained  page at  website.\nReference Manual on Air Transport Statistics - Version 14  page at  website.\nIllustrated Glossary for Transport Statistics  page at  website."
+    "text": "The following links provide perspectives on Statistics in Air Transport:\n\nAir Transports Statistics Explained  page at Eurostat website.\nReference Manual on Air Transport Statistics - Version 14  page at Eurostat website.\nIllustrated Glossary for Transport Statistics  page at Eurostat website."
   },
   {
     "objectID": "definition/iata-delay-codes.html",
@@ -1271,7 +1271,7 @@
     "href": "about/prc/daniel_weder.html",
     "title": "Daniel WEDER",
     "section": "",
-    "text": "Daniel «Dani» Weder joined the PRC in 2021 as the focal point for ATC/OPS.\nDani works as independent board member and adviser. He is based in Switzerland and is a.o. President of the Board of ACR Switzerland, a private start-up ANSP and a 100% subsidiary of the Swedish mother company ACR GROUP AB. 2017-2021 he was member of the Performance Review Body (PRB). 2007-2017 he has been in charge as CEO of Skyguide responsible for Swiss air navigation services. Before joining Skyguide, he worked for the airlines Swissair and SWISS. He was a.o. in charge as VP Strategic Marketing, VP Product Development, EVP Marketing & Services as well EVP Airport Services & Operations Control.\nMore information under  www.daniweder.ch"
+    "text": "Daniel «Dani» Weder joined the PRC in 2021 as the focal point for ATC/OPS.\nDani works as independent board member and adviser. He is based in Switzerland and is a.o. President of the Board of ACR Switzerland, a private start-up ANSP and a 100% subsidiary of the Swedish mother company ACR GROUP AB. 2017-2021 he was member of the Performance Review Body (PRB). 2007-2017 he has been in charge as CEO of Skyguide responsible for Swiss air navigation services. Before joining Skyguide, he worked for the airlines Swissair and SWISS. He was a.o. in charge as VP Strategic Marketing, VP Product Development, EVP Marketing & Services as well EVP Airport Services & Operations Control.\nMore information under www.daniweder.ch."
   },
   {
     "objectID": "about/aiu/index.html",
@@ -1754,7 +1754,7 @@
     "href": "definition/movements.html#see-also",
     "title": "Movements (STATFOR definition)",
     "section": "See Also",
-    "text": "See Also\n\nr blogdown::shortcode(\"a_blank ectrl\", \"EUROCONTROL - Forecasting\", \"https://www.eurocontrol.int/forecasting\")"
+    "text": "See Also\n\nEUROCONTROL - Forecasting  page at EUROCONTROL website."
   },
   {
     "objectID": "definition/ecac-area.html",
@@ -1866,7 +1866,7 @@
     "href": "definition/en-route-charging-zone.html#see-also",
     "title": "En-route Charging Zone",
     "section": "See Also",
-    "text": "See Also\n\nr blogdown::shortcode(\"a_blank ectrl\", \"CRCO - Central Route Charges Office\", \"https://www.eurocontrol.int/crco\")"
+    "text": "See Also\n\nCRCO - Central Route Charges Office  page at EUROCONTROL website."
   },
   {
     "objectID": "definition/eco-cost-eff.html",
@@ -1971,7 +1971,7 @@
     "href": "acronym/bli.html#see-also",
     "title": "BLI - Basic Load Index",
     "section": "See Also",
-    "text": "See Also\n\nPeak Load Index (PLI).\nAirport Capacity Utilisation page in the Methodology section.\nSchinwald, and Hornung (2014) “Methodical Approach to determine the capacity utilisation of airports: the development of the European Air Traffic System between 2008 and 2012”, Deutscher Luft- und Raumfahrtkongress 2014, DocumentID: 340138, [PDF}(http://www.dglr.de/publikationen/2014/340138.pdf){target=blank_}"
+    "text": "See Also\n\nPeak Load Index (PLI).\nAirport Capacity Utilisation page in the Methodology section.\nSchinwald, and Hornung (2014) “Methodical Approach to determine the capacity utilisation of airports: the development of the European Air Traffic System between 2008 and 2012”, Deutscher Luft- und Raumfahrtkongress 2014, DocumentID: 340138, [PDF}(http://www.dglr.de/publikationen/2014/340138.pdf){target=“_blank”}"
   },
   {
     "objectID": "acronym/atm.html",
@@ -1992,7 +1992,7 @@
     "href": "acronym/usoap.html#see-also",
     "title": "USOAP - Universal Safety Oversight Audit Programme",
     "section": "See Also",
-    "text": "See Also\n\nUSOAP  page at Skybrary website.\nUSOAP  page at  website."
+    "text": "See Also\n\nUSOAP  page at Skybrary website.\nUSOAP  page at ICAO website."
   },
   {
     "objectID": "acronym/alosp.html",
@@ -2020,7 +2020,7 @@
     "href": "acronym/cco.html#see-also",
     "title": "CCO - Continuous Climb Operation",
     "section": "See Also",
-    "text": "See Also\n\nASBU CCO  page at  website."
+    "text": "See Also\n\nASBU CCO  page at ICAO website."
   },
   {
     "objectID": "acronym/ais.html",
@@ -2363,7 +2363,7 @@
     "href": "acronym/icao.html#see-also",
     "title": "ICAO - International Civil Aviation Organization",
     "section": "See Also",
-    "text": "See Also"
+    "text": "See Also\n\nICAO"
   },
   {
     "objectID": "acronym/index.html",
@@ -2510,7 +2510,7 @@
     "href": "acronym/ace.html",
     "title": "ACE - Benchmarking Report",
     "section": "",
-    "text": "The ATM Cost Effectiveness (ACE) reports present yearly factual data and analysis on cost-effectiveness and productivity for Air Navigation Service Providers (ANSPs) in Europe.\nThe analysis focuses primarily on costs that are under ANSPs’ direct control and responsibility, namely the ATM/CNS provision costs.\nThe reports are available on the ."
+    "text": "The ATM Cost Effectiveness (ACE) reports present yearly factual data and analysis on cost-effectiveness and productivity for Air Navigation Service Providers (ANSPs) in Europe.\nThe analysis focuses primarily on costs that are under ANSPs’ direct control and responsibility, namely the ATM/CNS provision costs.\nThe reports are available on the EUROCONTROL PRC page  page at EUROCONTROL website.."
   },
   {
     "objectID": "acronym/alos.html",
@@ -2538,7 +2538,7 @@
     "href": "acronym/caep.html#see-also",
     "title": "CAEP - Committee on Aviation Environmental Protection",
     "section": "See Also",
-    "text": "See Also\n\nCAEP  page at  website."
+    "text": "See Also\n\nCAEP  page at ICAO website."
   },
   {
     "objectID": "acronym/metar.html",
@@ -2671,7 +2671,7 @@
     "href": "acronym/asbu.html#see-also",
     "title": "ASBU - Aviation System Block Upgrade",
     "section": "See Also",
-    "text": "See Also\n\nASBU  page at EUROCONTROL website.\nASBU  page at  website."
+    "text": "See Also\n\nASBU  page at EUROCONTROL website.\nASBU  page at ICAO website."
   },
   {
     "objectID": "acronym/pi.html",
