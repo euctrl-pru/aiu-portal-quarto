@@ -6,4 +6,5 @@ listing:
     fields: [title]
     contents: 
       - "*.qmd"
+      - "*.md"
 ---

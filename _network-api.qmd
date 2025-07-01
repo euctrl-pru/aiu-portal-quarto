@@ -1,0 +1,89 @@
+```{ojs}
+//| echo: false
+
+// poll again in 10 hours
+dd = {
+  const url_api =
+    "https://aiu-portal.pockethost.io/api/collections/network_situation/records?sort=-date&perPage=1&skipTotal=1";
+  let nl = await d3.json(url_api);
+  yield nl.items[0];
+  while (true) {
+    nl = await d3.json(url_api);
+    yield Promises.delay(3600 * 10 * 1000, nl.items[0]);
+  }
+}
+```
+
+```{ojs}
+//| echo: false
+
+format_DD = d3.utcFormat("%d")
+format_DD_MON = d3.utcFormat("%d %B")
+format_DD_MON_YYYY = d3.utcFormat("%d %B %Y");
+
+week_interval = function (til) {
+  const wef = d3.utcDay.offset(til, -6);
+  let res = "";
+  if (wef.getFullYear() != til.getFullYear()) {
+    res = format_DD_MON_YYYY(wef) + " – " + format_DD_MON_YYYY(til);
+  } else if (wef.getMonth() != til.getMonth()) {
+    res = format_DD_MON(wef) + " – " + format_DD_MON_YYYY(til);
+  } else {
+    res = format_DD(wef) + " – " + format_DD_MON_YYYY(til);
+  }
+
+  return res;
+}
+
+til = d3.isoParse(dd.date)
+latest_date = format_DD_MON_YYYY(til)
+latest_week = week_interval(til)
+latest_y2d = "1 Jan – " + format_DD_MON_YYYY(til)
+
+nw_date = d3.select("#nw_day_date")
+  .text(latest_date);
+```
+
+
+```{ojs}
+//| echo: false
+
+// Day
+day_date = d3.select("#day_date")
+  .text(latest_date);
+day_traffic = d3.select("#day_traffic")
+  .text(d3.format(",")(dd.day_traffic));
+dif_day_prev_week = d3.select("#dif_day_prev_week")
+  .text(d3.format(".0%")(dd.dif_day_prev_week));
+dif_day_prev_year = d3.select("#dif_day_prev_year")
+  .text(d3.format("+.0%")(dd.dif_day_prev_year));
+dif_day_2019 = d3.select("#dif_day_2019")
+  .text(d3.format("+.0%")(dd.dif_day_2019));
+
+
+// Week
+week_date = d3.select("#week_date")
+  .text(latest_week);
+week_traffic = d3.select("#week_traffic")
+  .text(d3.format(",")(Math.round(dd.avg_week_traffic)));
+dif_week_prev_week = d3.select("#dif_week_prev_week")
+  .text(d3.format(".0%")(dd.dif_week_prev_week));
+dif_week_prev_year = d3.select("#dif_week_prev_year")
+  .text(d3.format("+.0%")(dd.dif_week_prev_year));
+dif_week_2019 = d3.select("#dif_week_2019")
+  .text(d3.format("+.0%")(dd.dif_week_2019));
+
+
+// Year
+y2d_date = d3.select("#y2d_date")
+  .text(latest_y2d);
+y2d_traffic = d3.select("#y2d_traffic")
+  .text(d3.format(",")(dd.y2d_flights_total));
+avg_y2d_traffic = d3.select("#avg_y2d_traffic")
+  .text(d3.format(",")(Math.round(dd.y2d_flights_daily_average)));
+dif_y2d_prev_year = d3.select("#dif_y2d_prev_year")
+  .text(d3.format("+.0%")(dd.y2d_diff_previous_year_percentage));
+dif_y2d_2019 = d3.select("#dif_y2d_2019")
+  .text(d3.format("+.0%")(dd.y2d_diff_2019_year_percentage));
+
+```

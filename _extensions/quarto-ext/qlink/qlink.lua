@@ -12,9 +12,10 @@ local function is_valid_org(org)
   end
   local org_table = {
     ["ec"]          = "European Union",
+    ["ivao"]        = "IVAO",
     ["wiki"]        = "Wikipedia",
     ["wikipedia"]   = "Wikipedia",
-    ["euctrl"]      = "EUROCONTROL",
+    ["ectrl"]       = "EUROCONTROL",
     ["eurocontrol"] = "EUROCONTROL",
     ["skybrary"]    = "Skybrary"
   }
@@ -33,9 +34,10 @@ local function is_valid_url(org)
   end
   local url_table = {
     ["ec"]          = "https://ec.europa.eu/commission/index_en",
+    ["ivao"]        = "https://ivao.aero",
     ["wiki"]        = "https://wikipedia.org",
     ["wikipedia"]   = "https://wikipedia.org",
-    ["euctrl"]      = "https://eurocontrol.int",
+    ["ectrl"]       = "https://eurocontrol.int",
     ["eurocontrol"] = "https://eurocontrol.int",
     ["skybrary"]    = "https://www.skybrary.aero"
   }
