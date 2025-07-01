@@ -1,5 +1,5 @@
 [[plugins]]
-package = "@quarto/netlify-plugin-quarto"
+#package = "@quarto/netlify-plugin-quarto"
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
