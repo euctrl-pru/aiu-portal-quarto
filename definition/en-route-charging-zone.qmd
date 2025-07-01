@@ -31,7 +31,4 @@ new Runtime().module(define, name => {
 
 ## See Also
 
-* `r blogdown::shortcode("a_blank ectrl", "CRCO - Central Route Charges Office", "https://www.eurocontrol.int/crco")`
-
-
-
+* {{< a_blank ectrl "CRCO - Central Route Charges Office" "https://www.eurocontrol.int/crco" >}}

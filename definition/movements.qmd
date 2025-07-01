@@ -46,5 +46,5 @@ An airport cannot have overflights.
 
 ## See Also
 
-* `r blogdown::shortcode("a_blank ectrl", "EUROCONTROL - Forecasting", "https://www.eurocontrol.int/forecasting")`
+* {{< a_blank ectrl "EUROCONTROL - Forecasting" "https://www.eurocontrol.int/forecasting" >}}
 

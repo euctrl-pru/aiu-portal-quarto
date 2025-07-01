@@ -21,4 +21,4 @@ already used.
 
 * [Peak Load Index (PLI)](pli.md).
 * [Airport Capacity Utilisation](/methodology/airport-capacity-utilisation.html) page in the [Methodology](/methodology/) section.
-* Schinwald, and Hornung (2014) "_Methodical Approach to determine the capacity utilisation of airports: the development of the European Air Traffic System between 2008 and 2012_", Deutscher Luft- und Raumfahrtkongress 2014, DocumentID: 340138, [PDF}(http://www.dglr.de/publikationen/2014/340138.pdf){target=blank_}
+* Schinwald, and Hornung (2014) "_Methodical Approach to determine the capacity utilisation of airports: the development of the European Air Traffic System between 2008 and 2012_", Deutscher Luft- und Raumfahrtkongress 2014, DocumentID: 340138, [PDF}(http://www.dglr.de/publikationen/2014/340138.pdf){target="_blank"}

@@ -10,4 +10,4 @@ of the world’s airlines. It supports airline activity and helps
 
 ## See Also
 
-* {{< a_blank "IATA" "http://www.iata.org" >}}
+* [IATA](http://www.iata.org){target="_blank"}

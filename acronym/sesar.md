@@ -9,4 +9,4 @@ new generation of ATM.
 
 ## See Also
 
-* {{< a_blank "SESAR" "http://www.sesarju.eu/" >}} Home page.
+* [SESAR](http://www.sesarju.eu/){target="_blank"} Home page.
