@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.30">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>En-route Vertical Flight Efficiency</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-978f3077c05b287ae57beef2a5c3d2de.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/EUROCONTROL-logo-standard-rgb.svg" alt="EUROCONTROL Supporting European Aviation" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../"> 
+<span class="menu-text"><strong>Home</strong></span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-performance-areas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Performance areas</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-performance-areas">    
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/Economics/BalancedScorecard.html">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:th" aria-label="Icon th from fa6-solid Iconify.design set." title="Icon th from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Balanced scorecard</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:plane-departure" aria-label="Icon plane-departure from fa6-solid Iconify.design set." title="Icon plane-departure from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Traffic</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Daily traffic dashboard</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Service units</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/statfor/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Traffic forecast</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/punctuality/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:calendar" aria-label="Icon calendar from fa6-solid Iconify.design set." title="Icon calendar from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Punctuality</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/Economics/DailyPunctuality-States.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Daily punctuality dashboard</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/punctuality/#eurocontrol-area-network-view-1">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Network punctuality</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/punctuality/#state-view-1">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">State &amp; airport punctuality</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../capacity/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:clock" aria-label="Icon clock from fa6-solid Iconify.design set." title="Icon clock from fa6-solid Iconify.design set."></iconify-icon>&nbsp;En-route &amp; airport delays</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/Economics/DailyDelay-States.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Daily ATFM delays dashboard</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../capacity/atfm_ert/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">En-route ATFM delays</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../capacity/atfm_apt/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Airport ATFM delays</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../capacity/tot_dly">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">All-causes delays</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:leaf" aria-label="Icon leaf from fa6-solid Iconify.design set." title="Icon leaf from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Efficiency &amp; environment</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/emissions/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">CO<sub>2</sub> emissions</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/hfe/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Horizontal flight efficiency</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/vfe/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Vertical flight efficiency</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/asma/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Terminal holdings</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/taxiout/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Taxi-out</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/taxiin/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Taxi-in</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../economics/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:euro-sign" aria-label="Icon euro-sign from fa6-solid Iconify.design set." title="Icon euro-sign from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Economics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../economics/ace-overview/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">ATM cost-effectiveness (ACE)</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteUnitRates.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Unit rates and costs</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Service units</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../economics/finance/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">ANSPs financial dashboard</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../economics/cba/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Standard Inputs for Economic Analyses</span></span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stakeholder-views" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Stakeholder views</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-stakeholder-views">    
+        <li>
+    <a class="dropdown-item" href="../dashboard/stakeholder/airport/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:plane-arrival" aria-label="Icon plane-arrival from fa6-solid Iconify.design set." title="Icon plane-arrival from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Airports</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../dashboard/stakeholder/ansp/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:compass" aria-label="Icon compass from fa6-solid Iconify.design set." title="Icon compass from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Air navigation service provider</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../dashboard/stakeholder/state/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:globe" aria-label="Icon globe from fa6-solid Iconify.design set." title="Icon globe from fa6-solid Iconify.design set."></iconify-icon>&nbsp;States</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../data/"> 
+<span class="menu-text"><strong>Data</strong></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications/"> 
+<span class="menu-text"><strong>Publications</strong></span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Reference</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-reference">    
+        <li>
+    <a class="dropdown-item" href="../definition/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:marker" aria-label="Icon marker from fa6-solid Iconify.design set." title="Icon marker from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Definitions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../methodology/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:wrench" aria-label="Icon wrench from fa6-solid Iconify.design set." title="Icon wrench from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Methodology</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../acronym/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:quote-left" aria-label="Icon quote-left from fa6-solid Iconify.design set." title="Icon quote-left from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Acronyms</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../bibliography/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:book" aria-label="Icon book from fa6-solid Iconify.design set." title="Icon book from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Bibliography</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-links" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Links</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-links">    
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/">
+ <span class="dropdown-text">EUROCONTROL <i class="fas fa-xs fa-external-link-alt"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/prudata/dashboard/">
+ <span class="dropdown-text">Single European Sky (SES) portal <i class="fas fa-xs fa-external-link-alt"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www4.icao.int/ganpportal/">
+ <span class="dropdown-text">ICAO GANP <i class="fas fa-xs fa-external-link-alt"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://ext.eurocontrol.int/connectivity_web/from">
+ <span class="dropdown-text">Connectivity dashboard <i class="fas fa-xs fa-external-link-alt"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../transformation/">
+ <span class="dropdown-text">PRC Transformation Strategy</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://opdi.aero">
+ <span class="dropdown-text">PRC Open Performance Data Initiative</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>About</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../about/prc/">
+ <span class="dropdown-text">About the PRC</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/aiu/">
+ <span class="dropdown-text">About the AIU</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/pru/">
+ <span class="dropdown-text">About the PRU</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../post/">
+ <span class="dropdown-text">Release notes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/disclaimer/">
+ <span class="dropdown-text">Disclaimer</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">En-route Vertical Flight Efficiency</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This document provides a technical description on the methodology used in the analysis of the vertical profile of the aircraft’s trajectory during the en-route phase of flight. The objective of the methodology is to measure and observe vertical flight efficiency without highlighting specific reasons for the observed behaviour. More detailed case studies are needed to find out reasons for particular observations.</p>
+<section id="acronyms-and-terminology" class="level2">
+<h2 class="anchored" data-anchor-id="acronyms-and-terminology">Acronyms and terminology</h2>
+<div id="tbl-acronyms" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-acronyms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Acronyms and terminology
+</figcaption>
+<div aria-describedby="tbl-acronyms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="../acronym/ftfm/" title="FTFM">FTFM</a></td>
+<td>Trajectory information based on the last filed flight plan</td>
+</tr>
+<tr class="even">
+<td><a href="../acronym/gcd/" title="GCD">GCD</a></td>
+<td>Great Circle Distance</td>
+</tr>
+<tr class="odd">
+<td><a href="../acronym/prisme/" title="PRISME">PRISME</a></td>
+<td>Pan-European Repository of Information Supporting the Management of EATM</td>
+</tr>
+<tr class="even">
+<td><a href="../acronym/rad/" title="RAD">RAD</a></td>
+<td>Route Availability Document</td>
+</tr>
+<tr class="odd">
+<td>VFI</td>
+<td>Vertical Flight Inefficiency</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<section id="approach-and-assumptions" class="level3">
+<h3 class="anchored" data-anchor-id="approach-and-assumptions">Approach and assumptions</h3>
+<p>The general approach of the analysis is to compare the maximum altitudes in the flight plans of flights between a specific airport pair with the maximum altitudes of flights between similar airport pairs, hereafter called reference flights. Reference flights are flights between unconstrained (in terms of RAD restrictions) airport pairs which have a great circle distance close to the one of the examined airport pair.</p>
+<p>Since the aircraft type has a significant influence on the nominal cruising altitude, the analysis is done using specific aircraft types with similar performance (e.g.&nbsp;only jet aircraft, turboprop aircraft …) Currently only Airbus and Boeing aircraft are considered since they account for the biggest portion of scheduled commercial flights.</p>
+<p>The use of the maximum altitude in the flight plan leads to an underestimation of the vertical flight inefficiency because there can be lower cruise segments before or after the moment the maximum altitude is reached. These cruise segments can be even more inefficient since the fuel consumption at lower altitudes is in general higher.</p>
+<p>To account for statistical uncertainty, the lowest and highest 10 percent of the flights (when sorted according to their maximum altitudes) are excluded.</p>
+</section>
+<section id="general-overview" class="level3">
+<h3 class="anchored" data-anchor-id="general-overview">General overview</h3>
+<p>The analysis is done in 4 major steps. First, the necessary data are extracted from the data source. Then the reference distributions are calculated such that they can be used for all the airport pairs under investigation. For each considered airport pair, the maximum altitudes in the flight plan are processed in order to be compared with the reference. In the last step the different metrics are calculated. The process is visualised in <a href="#fig-vfe-er-figure-001" class="quarto-xref">Figure&nbsp;1</a>.</p>
+<div id="fig-vfe-er-figure-001" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-vfe-er-figure-001-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="vfe-er-figure-001.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vfe-er-figure-001-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Different steps of the analysis.
+</figcaption>
+</figure>
+</div>
+<p>The following paragraphs explain these steps in further detail.</p>
+</section>
+<section id="loading-of-the-trajectories-information" class="level3">
+<h3 class="anchored" data-anchor-id="loading-of-the-trajectories-information">Loading of the trajectories information</h3>
+<p>The data used for the analysis are downloaded from the PRISME database. FTFM data is used in order to assess the maximum altitudes in the flight plans. The most important data fields for the analysis are the altitude and time information.</p>
+</section>
+<section id="definition-of-the-reference-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="definition-of-the-reference-distribution">Definition of the reference distribution</h3>
+<p>Reference airport pairs are airport pairs with a great circle distance (GCD) close to the great circle distance of the considered airport pair and which have no constraints in the RAD.</p>
+<p>Reference distributions are calculated for buckets of GCD ranges, e.g.&nbsp;a reference is calculated for all airport pairs in the GCD ranges [0,10) NM, [10,20) NM, etc. This approach reduces the calculation time significantly since only one calculation is needed and the reference for a specific airport pair will be the one of the corresponding bucket.</p>
+<p>The reference distribution is created using a large number of flights with no specific filtering except for the aircraft type. This is done in order to get a reference distribution irrespective of factors such as aircraft weights, weather phenomena, company policies…</p>
+<p>The reference is based on the assumption that flights between airport pairs with similar GCDs, performed with a similar aircraft type, would file for similar maximum altitudes. The differentiating factor between the two sets of flights can be the presence of RAD constraints, scenarios, airline policy, mistakes in the flight planning system, etc., and if the distribution of the maximum altitudes of flights on the chosen airport pair doesn’t follow the reference distribution, this could be an indication of inefficiency.</p>
+</section>
+<section id="distribution-of-the-maximum-altitudes" class="level3">
+<h3 class="anchored" data-anchor-id="distribution-of-the-maximum-altitudes">Distribution of the maximum altitudes</h3>
+<p>As is done for the reference, the distribution of the maximum altitudes flown on the considered airport pair is determined. Having the distributions of the reference and the considered flow on the airport pair allows for plotting a diagram as in the <a href="#fig-vfe-er-figure-002" class="quarto-xref">Figure&nbsp;2</a>.</p>
+<p><a href="#fig-vfe-er-figure-002" class="quarto-xref">Figure&nbsp;2</a> shows the histograms of the maximum filed altitudes both for the reference flights and the flights on the chosen airport pair. The numbers on the right of the bars indicate the number of flights while the length of the bar indicates the percentage of flights. E.g. the large blue bar at FL350 represents 260 flights, being 76.2% of the total number of flights on the chosen airport pair. The sum of the percentages corresponding to the lengths of the bars is 100% both for the blue and for the red bars. As can be seen from the values of the number of flights, there are a lot more flights in the reference distribution which makes it a stable reference.</p>
+<div id="fig-vfe-er-figure-002" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-vfe-er-figure-002-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="vfe-er-figure-002.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vfe-er-figure-002-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Example distribution of maximum altitudes.
+</figcaption>
+</figure>
+</div>
+<p>The data in <a href="#fig-vfe-er-figure-002" class="quarto-xref">Figure&nbsp;2</a> above can be represented differently, using percentiles as shown in <a href="#fig-vfe-er-figure-003" class="quarto-xref">Figure&nbsp;3</a>. To obtain this, the percentages from <a href="#fig-vfe-er-figure-002" class="quarto-xref">Figure&nbsp;2</a> are simply put successively. E.g. the percentages of the chosen airport pair (blue bars: 2.6% at FL310, 21.1% at FL330 and 76.2% at FL350) are plotted at their respective altitudes to get the blue line in <a href="#fig-vfe-er-figure-003" class="quarto-xref">Figure&nbsp;3</a>. The same is done for the reference.</p>
+<p>The example represents an airport pair on which, in general, flights are filing higher than the reference. There are however some percentiles where reference flights are filing higher than the flights on the considered airport pair. Only this part is used in the calculation of vertical flight inefficiency (VFI) in order to flag only the inefficiencies. The red shaded area in <a href="#fig-vfe-er-figure-003" class="quarto-xref">Figure&nbsp;3</a> indicates the VFI. The dark grey areas on the left and right highlight the percentiles that are excluded to account for statistical uncertainty as mentioned before.</p>
+<div id="fig-vfe-er-figure-003" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-vfe-er-figure-003-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="vfe-er-figure-003.png" class="img-fluid figure-img" width="900">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vfe-er-figure-003-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Example distribution of maximum altitudes.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="calculation-of-the-metrics" class="level3">
+<h3 class="anchored" data-anchor-id="calculation-of-the-metrics">Calculation of the metrics</h3>
+<p>The VFI is calculated using the percentiles as shown in <a href="#fig-vfe-er-figure-003" class="quarto-xref">Figure&nbsp;3</a>. For each percentile range, the altitude value of the airport pair is subtracted from the reference value. When the airport pair value is higher than the reference value, the result of the subtraction is negative. This might appear as if the flights are more efficient than the reference flights. Nevertheless, the focus is put on finding the inefficiencies so negative values are set to 0.</p>
+<p>The result of the percentile range is then multiplied by the number of flights corresponding to the percentile range (e.g.&nbsp;if the width of the percentile range is 1%, the number of flights corresponding to the percentile range is 1% of the total number of flights on the airport pair).</p>
+<p>Summing up over all percentile ranges gives the total vertical flight inefficiency. The vertical flight inefficiency per flight value is then calculated by dividing the total vertical flight inefficiency by the number of flights on the considered airport pair (the number of flights for this calculation step is 80% of the total number of flights on the airport pair since the lowest 10% and highest 10% of the flights are not used).</p>
+<p><a href="#tbl-formulas" class="quarto-xref">Table&nbsp;2</a> summarises the formulas used for the calculation of the VFI metrics.</p>
+<div id="tbl-formulas" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-formulas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Formulas used for the calculation of the results
+</figcaption>
+<div aria-describedby="tbl-formulas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 76%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Result</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Total vertical flight inefficiency (Total VFI)</td>
+<td><a href="#eq-total-vfi" class="quarto-xref">Equation&nbsp;1</a></td>
+</tr>
+<tr class="even">
+<td>Vertical flight inefficiency per flight (VFI per flight)</td>
+<td><a href="#eq-vfi-flight" class="quarto-xref">Equation&nbsp;2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><span id="eq-total-vfi"><span class="math display">\[VFI_{\mathrm{tot}} = \sum_{i} \max(L_{\mathrm{ref}, i} - L_{\mathrm{act}, i}, 0) \cdot n_{\mathrm{act}, i} \tag{1}\]</span></span></p>
+<p><span id="eq-vfi-flight"><span class="math display">\[\frac{VFI_{\mathrm{tot}} }{\sum_{i} n_{\textrm{act}, i}} \tag{2}\]</span></span></p>
+<p>With:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(i\)</span></td>
+<td>Percentile range</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(L_{ {ref}, i}\)</span></td>
+<td>Flight level of the <span class="math inline">\(i^{th}\)</span> percentile range over all reference flights in the GCD bucket around the GCD of the considered airport pair.</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(L_{ {act}, i}\)</span></td>
+<td>Flight level of the <span class="math inline">\(i^{th}\)</span> percentile range over all flights on the considered airport pair.</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(n_{ {act}, i}\)</span></td>
+<td>Number of flights on the considered airport pair in the percentile range.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="further-information" class="level2">
+<h2 class="anchored" data-anchor-id="further-information">Further Information</h2>
+<p>For further information please refer also to <span class="citation" data-cites="icns-vfe en-route-vertical-flight-efficiency_consultation">(<a href="#ref-icns-vfe" role="doc-biblioref">S. Peeters et al. 2016</a>; <a href="#ref-en-route-vertical-flight-efficiency_consultation" role="doc-biblioref">Sam Peeters and Guastalla 2017</a>)</span>.</p>
+</section>
+<section id="references" class="level2">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-en-route-vertical-flight-efficiency_consultation" class="csl-entry" role="listitem">
+Peeters, Sam, and Guglielmo Guastalla. 2017. <span>“Analysis of En-Route Vertical Flight Efficiency.”</span> 00-04. <span>Eurocontrol/PRU</span>. <a href="http://ansperformance.eu/library/en-route-vertical-flight-efficiency_consultation.pdf">http://ansperformance.eu/library/en-route-vertical-flight-efficiency_consultation.pdf</a>.
+</div>
+<div id="ref-icns-vfe" class="csl-entry" role="listitem">
+Peeters, S., H. Koelman, R. Koelle, R. Galaviz-Schomisch, J. Gulding, and M. Meekma. 2016. <span>“Towards a Common Analysis of Vertical Flight Efficiency.”</span> In <em>2016 <span>Integrated Communications Navigation</span> and <span>Surveillance</span> (<span>ICNS</span>)</em>, 7A2-1-7A2-11. <span>Herndon, VA, USA</span>: <span>IEEE</span>. <a href="https://doi.org/10.1109/ICNSURV.2016.7486368">https://doi.org/10.1109/ICNSURV.2016.7486368</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © EUROCONTROL
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../about/disclaimer/">
+<p><strong>Disclaimer</strong></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.eurocontrol.int/info/privacy-and-website-terms-use">
+<p><strong>Privacy</strong></p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

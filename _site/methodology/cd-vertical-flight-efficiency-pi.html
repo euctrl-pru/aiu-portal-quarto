@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.30">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Vertical Flight Efficiency during Climb and Descent</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-978f3077c05b287ae57beef2a5c3d2de.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/EUROCONTROL-logo-standard-rgb.svg" alt="EUROCONTROL Supporting European Aviation" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../"> 
+<span class="menu-text"><strong>Home</strong></span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-performance-areas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Performance areas</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-performance-areas">    
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/Economics/BalancedScorecard.html">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:th" aria-label="Icon th from fa6-solid Iconify.design set." title="Icon th from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Balanced scorecard</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:plane-departure" aria-label="Icon plane-departure from fa6-solid Iconify.design set." title="Icon plane-departure from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Traffic</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Daily traffic dashboard</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Service units</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/statfor/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Traffic forecast</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/punctuality/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:calendar" aria-label="Icon calendar from fa6-solid Iconify.design set." title="Icon calendar from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Punctuality</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/Economics/DailyPunctuality-States.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Daily punctuality dashboard</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/punctuality/#eurocontrol-area-network-view-1">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Network punctuality</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/punctuality/#state-view-1">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">State &amp; airport punctuality</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../capacity/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:clock" aria-label="Icon clock from fa6-solid Iconify.design set." title="Icon clock from fa6-solid Iconify.design set."></iconify-icon>&nbsp;En-route &amp; airport delays</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/Economics/DailyDelay-States.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Daily ATFM delays dashboard</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../capacity/atfm_ert/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">En-route ATFM delays</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../capacity/atfm_apt/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Airport ATFM delays</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../capacity/tot_dly">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">All-causes delays</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:leaf" aria-label="Icon leaf from fa6-solid Iconify.design set." title="Icon leaf from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Efficiency &amp; environment</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/emissions/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">CO<sub>2</sub> emissions</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/hfe/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Horizontal flight efficiency</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/vfe/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Vertical flight efficiency</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/asma/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Terminal holdings</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/taxiout/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Taxi-out</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/taxiin/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Taxi-in</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../economics/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:euro-sign" aria-label="Icon euro-sign from fa6-solid Iconify.design set." title="Icon euro-sign from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Economics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../economics/ace-overview/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">ATM cost-effectiveness (ACE)</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteUnitRates.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Unit rates and costs</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Service units</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../economics/finance/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">ANSPs financial dashboard</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../economics/cba/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Standard Inputs for Economic Analyses</span></span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stakeholder-views" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Stakeholder views</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-stakeholder-views">    
+        <li>
+    <a class="dropdown-item" href="../dashboard/stakeholder/airport/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:plane-arrival" aria-label="Icon plane-arrival from fa6-solid Iconify.design set." title="Icon plane-arrival from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Airports</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../dashboard/stakeholder/ansp/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:compass" aria-label="Icon compass from fa6-solid Iconify.design set." title="Icon compass from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Air navigation service provider</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../dashboard/stakeholder/state/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:globe" aria-label="Icon globe from fa6-solid Iconify.design set." title="Icon globe from fa6-solid Iconify.design set."></iconify-icon>&nbsp;States</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../data/"> 
+<span class="menu-text"><strong>Data</strong></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications/"> 
+<span class="menu-text"><strong>Publications</strong></span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Reference</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-reference">    
+        <li>
+    <a class="dropdown-item" href="../definition/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:marker" aria-label="Icon marker from fa6-solid Iconify.design set." title="Icon marker from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Definitions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../methodology/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:wrench" aria-label="Icon wrench from fa6-solid Iconify.design set." title="Icon wrench from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Methodology</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../acronym/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:quote-left" aria-label="Icon quote-left from fa6-solid Iconify.design set." title="Icon quote-left from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Acronyms</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../bibliography/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:book" aria-label="Icon book from fa6-solid Iconify.design set." title="Icon book from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Bibliography</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-links" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Links</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-links">    
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/">
+ <span class="dropdown-text">EUROCONTROL <i class="fas fa-xs fa-external-link-alt"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/prudata/dashboard/">
+ <span class="dropdown-text">Single European Sky (SES) portal <i class="fas fa-xs fa-external-link-alt"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www4.icao.int/ganpportal/">
+ <span class="dropdown-text">ICAO GANP <i class="fas fa-xs fa-external-link-alt"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://ext.eurocontrol.int/connectivity_web/from">
+ <span class="dropdown-text">Connectivity dashboard <i class="fas fa-xs fa-external-link-alt"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../transformation/">
+ <span class="dropdown-text">PRC Transformation Strategy</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://opdi.aero">
+ <span class="dropdown-text">PRC Open Performance Data Initiative</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>About</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../about/prc/">
+ <span class="dropdown-text">About the PRC</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/aiu/">
+ <span class="dropdown-text">About the AIU</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/pru/">
+ <span class="dropdown-text">About the PRU</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../post/">
+ <span class="dropdown-text">Release notes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/disclaimer/">
+ <span class="dropdown-text">Disclaimer</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Vertical Flight Efficiency during Climb and Descent</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This document provides a technical description on the methodology used in the analysis of the vertical profile of the aircraft’s trajectory during climb and descent phases of flights. The objective of the methodology is to measure and observe vertical flight efficiency without highlighting specific reasons for the observed behaviour. More detailed case studies are needed to find out reasons for particular observations.</p>
+<section id="acronyms-and-terminology" class="level2">
+<h2 class="anchored" data-anchor-id="acronyms-and-terminology">Acronyms and terminology</h2>
+<div id="tbl-acronyms" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-acronyms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Acronyms and terminology
+</figcaption>
+<div aria-describedby="tbl-acronyms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="../acronym/cpf/" title="CPF">CPF</a></td>
+<td>Correlated Position reports for a Flight</td>
+</tr>
+<tr class="even">
+<td><a href="../acronym/prisme/" title="PRISME">PRISME</a></td>
+<td>Pan-European Repository of Information Supporting the Management of EATM</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<p>The main assumption for the analysis of vertical flight efficiency during climb and descent is that, all other factors being equal, level flight is considered as inefficient. The methodology presented here is very similar for the climb and descent phases so the results for the climb and descent phases are directly comparable.</p>
+<section id="general-overview" class="level3">
+<h3 class="anchored" data-anchor-id="general-overview">General overview</h3>
+<p>The analysis is performed in 5 major steps. First, the trajectory data has to be loaded into the analysis software. Then the climb or descent part is identified in these trajectories. In these parts of the trajectories the level segments are detected and saved and additional filters are applied. The next step is the determination of the Top of Climb or Top of Descent. Finally, the results are calculated and processed for presentation. This process is visualised in Figure 1.</p>
+<div id="fig-pli-bli" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pli-bli-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="vfe-cd-figure-001.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pli-bli-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Different steps of the analysis.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="loading-of-the-trajectories-information" class="level3">
+<h3 class="anchored" data-anchor-id="loading-of-the-trajectories-information">Loading of the trajectories information</h3>
+<p>The data used for the analysis are downloaded from the PRISME database. <a href="../acronym/cpf/" title="CPF">CPF</a> data is used in order to assess the actually flown trajectories.</p>
+<p>The most important data fields that are of interest for the analysis are the altitude, position (latitude and longitude) and time information.</p>
+</section>
+<section id="identification-of-the-climb-or-descent-part-of-the-flight" class="level3">
+<h3 class="anchored" data-anchor-id="identification-of-the-climb-or-descent-part-of-the-flight">Identification of the climb or descent part of the flight</h3>
+<p>For each flight, the climb part is defined as the part of the trajectory before the Top of Climb (ToC) and the descent part as the part of the trajectory after the Top of Descent (ToD).</p>
+<p>Optimal climb and descent parts until/from the cruising altitude generally require less than 200NM of track distance from/until the airport, especially when the cost index is low or high for respectively the climb and descent <span class="citation" data-cites="airbus-cost-index sam-thesis">(<a href="#ref-airbus-cost-index" role="doc-biblioref">Airbus 1998</a>; <a href="#ref-sam-thesis" role="doc-biblioref">Sam Peeters 2013</a>)</span>. With this in mind, the analysis is limited to the parts of the trajectories within a 200NM radius around the departure/arrival airport. This is to avoid including into the analysis climbs during the cruise phase which are used to optimise the flight altitude to account for the reducing weight of the aircraft.</p>
+<p>The identification method of the climb or descent part corresponds strongly to the method proposed by the CCO/CDO Task Force and is further detailed below. It should be noted that the CCO/CDO Task Force uses a 300NM radius for the climbs instead of 200NM as used in this analysis. The reasons for choosing a 200NM radius for the climb are threefold:</p>
+<ul>
+<li><p>Having the same radius for both the climb and descent analysis enables a direct comparison between the climb and descent results; and</p></li>
+<li><p>Examination of aircraft trajectories showed that when a radius of 300NM is used, a lot of level flight at slightly lower altitudes than the cruising altitude is detected as inefficient, while this could be a consequence of the optimisation of the cruising altitude with respect to the aircraft’s weight. This type of level flight should not be seen as being inefficient and can influence the final results significantly in such a way that the results are not representative; and</p></li>
+<li><p>300NM was chosen by the CCO/CDO Task Force because some very heavy aircraft could not be able to reach the cruising altitude within a 200NM radius. Nevertheless, it is preferred to have a stable methodology that suits best the behaviour of most of the flights and provides statistically correct results and analyses.</p></li>
+</ul>
+</section>
+<section id="identification-of-the-climb-part-of-a-flight" class="level3">
+<h3 class="anchored" data-anchor-id="identification-of-the-climb-part-of-a-flight">Identification of the climb part of a flight</h3>
+<p>For each flight, the 4D point where the flight crosses the 200NM radius around the departure airport (for the first time) is determined. This point is defined as D200. Within the part of the trajectory from take-off until D200 included, the first 4D point at which the aircraft reaches the highest altitude is defined as the ToC-D200. If the aircraft is still climbing when passing the 200NM radius, D200 and ToC-D200 are the same.</p>
+<p>The climb phase is considered to start at 3000 feet AGL since the Noise Abatement Departure Procedures (NADP) defined by ICAO end at this altitude <span class="citation" data-cites="icao:8168">(<a href="#ref-icao:8168" role="doc-biblioref">ICAO 2006</a>)</span>.</p>
+<p>Overall, the part of the trajectory considered for the analysis goes from 3000 feet AGL (included) until ToC-D200.</p>
+<p>The CCO/CDO Task Force uses 2500 feet as lower limit which is chosen in relation to the availability of trajectory data.</p>
+</section>
+<section id="identification-of-the-descent-part-of-a-flight" class="level3">
+<h3 class="anchored" data-anchor-id="identification-of-the-descent-part-of-a-flight">Identification of the descent part of a flight</h3>
+<p>For each flight, the 4D point where the flight crosses the 200NM radius around the destination airport (for the last time) is determined. This point is defined as A200. Within the part of the trajectory from A200 included until touchdown, the last 4D point at which the aircraft leaves the highest altitude is defined as the ToD-A200.</p>
+<p>The descent phase is considered to end at 1800 feet AGL because the interception altitude for ILS systems is generally at or above this altitude. Using 1800 feet AGL as lower limit allows capturing the level segments before ILS interception but on the other hand disregarding the trajectory below 1800 feet AGL where the aircraft are on the ILS glideslope and no level segments should occur.</p>
+<p>Overall, the part of the trajectory considered for the analysis goes from ToD-A200 until 1800 feet AGL (included).</p>
+</section>
+</section>
+<section id="detection-of-the-level-segments" class="level2">
+<h2 class="anchored" data-anchor-id="detection-of-the-level-segments">Detection of the level segments</h2>
+<p>In the climb or descent parts of the trajectories the level segments should be determined. The trajectory part between two points on that trajectory is considered as level when the trajectory stays within a fictional window as can be seen in Figure @ref(fig:vfe-cd-figure-002).</p>
+<div id="fig-vfe-cd-figure-002" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-vfe-cd-figure-002-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="vfe-cd-figure-002.png" height="300" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vfe-cd-figure-002-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Rolling window for level segment detection.
+</figcaption>
+</figure>
+</div>
+<p>This window has temporal and altitude dimensions related to a specific vertical velocity that is considered to be the limit between level flight and climb/descent. After consultation in the CCO/CDO Task Force, this vertical velocity is chosen to be 300 feet per minute. Consequently, the dimensions of the window have to adhere to the following relationship:</p>
+<p><span class="math display">\[
+\frac{Y}{X} = 300 \  \textrm{feet per minute}
+\]</span></p>
+<p>E.g. when a temporal size of 10 seconds is used, the window is 50 feet high. In this case the altitude information of the climb or descent trajectory is considered at every interval of 10 seconds. However, since the CPF data are a discrete representation of the actual trajectories, the necessary altitude information is not available for every required time instance. Because of this and whenever required, a linear interpolation is done to obtain the information needed for the analysis.</p>
+</section>
+<section id="toctod-determination" class="level2">
+<h2 class="anchored" data-anchor-id="toctod-determination">ToC/ToD determination</h2>
+<p>In order to avoid considering level segments that happen slightly below the cruising altitude of a flight, an exclusion box is defined. The exclusion box ranges from the altitude of ToC-D200 or ToD-A200 down to 90% of this altitude. When a level segment is detected inside the exclusion box and it lasts longer than 5 minutes, it is not considered in the final results. The new top of climb or top of descent is in that case put at the start of (the first of) such segment(s) for climbs or at the end of (the last of) such segment(s) for descents. This new ToC or ToD is called respectively ToC-CCO or ToD-CDO. When no level segments longer than 5 minutes are detected inside the exclusion box, ToC-CCO/ToD-CDO coincides with ToC-D200/ToD-A200.</p>
+<p>The determination of the ToC-CCO or ToD-CDO corresponds as well to the CCO/CDO Task Force’s approach.</p>
+</section>
+<section id="processing-of-the-results" class="level2">
+<h2 class="anchored" data-anchor-id="processing-of-the-results">Processing of the results</h2>
+<p>The final results are calculated taking into account all level segments before ToC-CCO for the climbs and after ToD-CDO for the descents.</p>
+<p>The results of the analysis include the total number of flights, the average value and median value of the distance flown level, the percentage of distance flown level with respect to the total climb or descent distance, the average value and median value of the time flown level, the percentage of time flown level with respect to the total climb or descent time and the average value and median value of the number of level segments.</p>
+<p>An additional metric is the median CDO/CCO altitude. This metric is calculated by taking the altitude of the lowest level segment for each flight. This information is then aggregated by taking the median value over all considered flights. The rationale for using the lowest level segment is the following. It is best to have no level flight because this increases the fuel burn. However, if needed, the higher the level segment occurs, the better because the higher the level segment occurs, the lower the fuel burn. E.g. a level segment of a fixed duration at FL100 burns more fuel than at FL300. So, the lowest level segment is considered since it has the highest environmental impact.</p>
+<p>In addition, each flight can be assessed as being CCO (Continuous Climb Operations) or CDO (Continuous Descent Operations). The fact whether a flight is considered as being CCO or CDO depends on the allowed amount of level segments and their allowed lengths or durations.</p>
+<p>The formulas used for the calculation of all these results are shown in Table @ref(tab:formulas).</p>
+<div id="tbl-formulas" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-formulas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Formulas used for the calculation of the results
+</figcaption>
+<div aria-describedby="tbl-formulas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 65%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Result</th>
+<th style="text-align: left;">Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Total distance flown by flight <span class="math inline">\(f\)</span> during the climb/descent</td>
+<td style="text-align: left;">(ref:total-flown-cd)</td>
+</tr>
+<tr class="even">
+<td>Percentage of distance flown level during the climb/descent</td>
+<td style="text-align: left;">(ref:perc-flown-level-cd)</td>
+</tr>
+<tr class="odd">
+<td>Average value of the distance flown level per flight</td>
+<td style="text-align: left;">(ref:avg-flown-flight-level)</td>
+</tr>
+<tr class="even">
+<td>Median value of the level distance</td>
+<td style="text-align: left;">(ref:median-level-dist)</td>
+</tr>
+<tr class="odd">
+<td>Total time flown by flight <span class="math inline">\(f\)</span> during the climb/descent</td>
+<td style="text-align: left;">(ref:total-flown-flight-cd)</td>
+</tr>
+<tr class="even">
+<td>Percentage of time flown level during the climb/descent</td>
+<td style="text-align: left;">(ref:perc-flown-flight-level)</td>
+</tr>
+<tr class="odd">
+<td>Average time flown level per flight</td>
+<td style="text-align: left;">(ref:avg-time-flight-level)</td>
+</tr>
+<tr class="even">
+<td>Median value of the level time</td>
+<td style="text-align: left;">(ref:median-time)</td>
+</tr>
+<tr class="odd">
+<td>Average number of level segments per flight</td>
+<td style="text-align: left;">(ref:avg-level-segs)</td>
+</tr>
+<tr class="even">
+<td>Median value of the number of level segments</td>
+<td style="text-align: left;">(ref:median-level-segs)</td>
+</tr>
+<tr class="odd">
+<td>Percentage of flights considered as CCO or CDO</td>
+<td style="text-align: left;"><span class="math display">\[P = \frac{n_0}{n} \cdot 100\]</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>(ref:total-flown-cd) <span class="math display">\[D_f^+ = \begin{cases} D_{3000, f} - D_{\textrm{TOC} - \textrm{CCO}, f}, &amp; \text{climbs} \\ D_{\textrm{TOD} - \textrm{CDO}, f} - D_{1800, f}, &amp; \text{descents} \end{cases}\]</span></p>
+<p>(ref:perc-flown-level-cd) <span class="math display">\[D_{\textrm{perc}} = \frac{ \sum_{f} D_f}{\sum_{f} D_f^+} \cdot 100\]</span></p>
+<p>(ref:avg-flown-flight-level) <span class="math display">\[D_{\textrm{avg}} = \frac{ \sum_{f} D_f}{n}\]</span></p>
+<p>(ref:median-level-dist) <span class="math display">\[D_{med} = \begin{cases} D_m &amp; \text{$n$ is odd, $m = (n+1)/2$} \\ \frac{D_m + D_{m+1}}{2}, &amp; \text{$n$ is even, $m = n/2$} \end{cases}\]</span></p>
+<p>(ref:total-flown-flight-cd) <span class="math display">\[T_f^+ = \begin{cases} T_{3000, f} - T_{\textrm{TOC} - \textrm{CCO}, f}, &amp; \text{climbs} \\ T_{\textrm{TOD} - \textrm{CDO}, f} - T_{1800, f}, &amp; \text{descents} \end{cases}\]</span></p>
+<p>(ref:perc-flown-flight-level) <span class="math display">\[T_{\textrm{perc}} = \frac{\sum_f T_f}{\sum_f T_f^+}\]</span></p>
+<p>(ref:avg-time-flight-level) <span class="math display">\[T_{\textrm{avg}} = \frac{\sum_f T_f}{n}\]</span></p>
+<p>(ref:median-time) <span class="math display">\[T_{med} = \begin{cases} T_m &amp; \text{$n$ is odd, $m = (n+1)/2$} \\ \frac{T_m + T_{m+1}}{2}, &amp; \text{$n$ is even, $m = n/2$} \end{cases}\]</span></p>
+<p>(ref:avg-level-segs) <span class="math display">\[_{\textrm{avg}} = \frac{\sum_f L_f}{n}\]</span></p>
+<p>(ref:median-level-segs) <span class="math display">\[L_{med} = \begin{cases} \displaystyle L_m &amp; \text{$n$ is odd, $m = (n+1)/2$} \\ \frac{L_m + L_{m+1}}{2}, &amp; \text{$n$ is even, $m = n/2$} \end{cases}\]</span></p>
+<p>With:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(n\)</span></td>
+<td>Total number of flights considered in the analysis</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(n_0\)</span></td>
+<td>Number of flights considered as CCO or CDO</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(L_f\)</span></td>
+<td>Number of level segments for flight <span class="math inline">\(f\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(D_f^{+}\)</span></td>
+<td>Total distance flown by flight <span class="math inline">\(f\)</span> during the climb/descent</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(D_f\)</span></td>
+<td>Total distance flown level by flight <span class="math inline">\(f\)</span> during the climb/descent</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(D_{3000, f}\)</span></td>
+<td>Track distance flown by flight <span class="math inline">\(f\)</span> when passing <span class="math inline">\(3000\)</span> feet AGL</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(D_{\textrm{TOC} - \textrm{CCO}, f}\)</span></td>
+<td>Track distance flown by flight <span class="math inline">\(f\)</span> when passing TOC-CCO</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(D_{\textrm{TOD} - \textrm{CDO}, f}\)</span></td>
+<td>Track distance flown by flight <span class="math inline">\(f\)</span> when passing TOD-CDO</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(D_{1800, f}\)</span></td>
+<td>Track distance flown by flight <span class="math inline">\(f\)</span> when passing 1800 feet AGL</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(T_f^{+}\)</span></td>
+<td>Total time flown by flight <span class="math inline">\(f\)</span> during the climb/descent</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(T_f\)</span></td>
+<td>Total time flown level by flight <span class="math inline">\(f\)</span> during the climb/descent</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(T_{3000, f}\)</span></td>
+<td>Time at which flight <span class="math inline">\(f\)</span> passes <span class="math inline">\(3000\)</span> feet AGL</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(T_{\textrm{TOC} - \textrm{CCO}, f}\)</span></td>
+<td>Time at which flight <span class="math inline">\(f\)</span> passes TOC-CCO</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(T_{\textrm{TOD} - \textrm{CDO}, f}\)</span></td>
+<td>Time at which flight <span class="math inline">\(f\)</span> passes TOD-CDO</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(T_{1800, f}\)</span></td>
+<td>Time at which flight <span class="math inline">\(f\)</span> passes <span class="math inline">\(1800\)</span> feet AGL</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="further-information" class="level2">
+<h2 class="anchored" data-anchor-id="further-information">Further Information</h2>
+<p>For further information please refer also to <span class="citation" data-cites="cco-cdo-leaflet icns-vfe vertical-flight-efficiency-during-climb-and-descent_consultation">(<a href="#ref-cco-cdo-leaflet" role="doc-biblioref">Sam Peeters 2016</a>; <a href="#ref-icns-vfe" role="doc-biblioref">S. Peeters et al. 2016</a>; <a href="#ref-vertical-flight-efficiency-during-climb-and-descent_consultation" role="doc-biblioref">Sam Peeters and Guastalla 2017</a>)</span>.</p>
+</section>
+<section id="references" class="level2">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-airbus-cost-index" class="csl-entry" role="listitem">
+Airbus. 1998. <em>Getting to <span>Grips</span> with the <span>Cost Index</span></em>. Getting <span>Grips</span> With 2. <span>Airbus</span>. <a href="https://goo.gl/llIzE6">https://goo.gl/llIzE6</a>.
+</div>
+<div id="ref-icao:8168" class="csl-entry" role="listitem">
+ICAO. 2006. <em>Doc 8168. <span>Aircraft Operations</span></em>. Fifth. Doc 8168 OPS/611. <span>ICAO</span>. <a href="http://www.aptrac.co.za/file/icao_8168_5th_ed..pdf">http://www.aptrac.co.za/file/icao_8168_5th_ed..pdf</a>.
+</div>
+<div id="ref-sam-thesis" class="csl-entry" role="listitem">
+Peeters, Sam. 2013. <span>“Adaptation of Continuous Descent and Climb Operational Techniques at <span>Brussels Airport</span> Aiming at Cost Efficiency.”</span> <span>Belgium</span>: <span>Vrije Universiteit Brussel</span>. <a href="http://ansperformance.eu/library/sam-thesis.pdf">http://ansperformance.eu/library/sam-thesis.pdf</a>.
+</div>
+<div id="ref-cco-cdo-leaflet" class="csl-entry" role="listitem">
+———. 2016. <span>“Vertical <span>Flight Efficiency During Climb</span> and <span>Descent</span>,”</span> April. <a href="http://ansperformance.eu/library/cco-cdo-leaflet.pdf">http://ansperformance.eu/library/cco-cdo-leaflet.pdf</a>.
+</div>
+<div id="ref-vertical-flight-efficiency-during-climb-and-descent_consultation" class="csl-entry" role="listitem">
+Peeters, Sam, and Guglielmo Guastalla. 2017. <span>“Analysis of Vertical Flight Efficiency During Climb and Descent.”</span> 00-04. <span>Eurocontrol/PRU</span>. <a href="http://ansperformance.eu/library/vertical-flight-efficiency-during-climb-and-descent_consultation.pdf">http://ansperformance.eu/library/vertical-flight-efficiency-during-climb-and-descent_consultation.pdf</a>.
+</div>
+<div id="ref-icns-vfe" class="csl-entry" role="listitem">
+Peeters, S., H. Koelman, R. Koelle, R. Galaviz-Schomisch, J. Gulding, and M. Meekma. 2016. <span>“Towards a Common Analysis of Vertical Flight Efficiency.”</span> In <em>2016 <span>Integrated Communications Navigation</span> and <span>Surveillance</span> (<span>ICNS</span>)</em>, 7A2-1-7A2-11. <span>Herndon, VA, USA</span>: <span>IEEE</span>. <a href="https://doi.org/10.1109/ICNSURV.2016.7486368">https://doi.org/10.1109/ICNSURV.2016.7486368</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © EUROCONTROL
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../about/disclaimer/">
+<p><strong>Disclaimer</strong></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.eurocontrol.int/info/privacy-and-website-terms-use">
+<p><strong>Privacy</strong></p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
