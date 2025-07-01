@@ -10,7 +10,7 @@ derived from [ATC](atc.md) surveillance systems
 
 ## See also:
 
-* [Correlated Position Report][cpr].
+* [Correlated Position Report](cpr.md).
 * [Current Tactical Flight Model](ctfm.md).
 * [Filed Tactical Flight Model](ftfm.md).
 * [Flight Models](flight-models.md).
