@@ -1,6 +1,8 @@
 ---
 title: Additional taxi in time
-# bibliography: ["../../static/bib/legislation.bib", "../../static/bib/aviation.bib"]
+bibliography: 
+  - ../bibliography/legislation.bib
+  - ../bibliography/aviation.bib
 link-citations: true
 slug: additional-taxi-in-time
 ---

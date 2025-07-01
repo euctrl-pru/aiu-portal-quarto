@@ -1,0 +1,15 @@
+{
+  "hash": "d220acc9f47071148e736296060778c6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: ATFM Measure\nslug: atfm-measure\nbibliography: [../bibliography/legislation.bib]\nlink-citations: true\n---\n\n::: {.cell}\n\n:::\n\n\n\nIn the context of Air Traffic Flow Management ([ATFM](/acronym/atfm/)) a *measure* refers to [@eu:255/2010]\n\n> the actions taken to perform air traffic flow management and capacity management.\n\n\n## See Also\n\n* [Regulation](/definition/regulation/)\n\n\n## References\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "22791902002e3c9f444913dac4534fb2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Terminal ANS Unit Rate\nslug: terminal-ans-unit-rate\nbibliography: [../bibliography/legislation.bib]\nlink-citations: true\nbiblio-style: apalike\n---\n\n::: {.cell}\n\n:::\n\n\nTerminal unit rates represent the unit price paid by airspace users, mainly\ncommercial airlines, for the air navigation services provided, mainly air\ntraffic control.\n\nTerminal ANS unit rates are defined in the Annex V of the\nEC 1794/2006 Charging Scheme Regulation [@eu:1794/2006]\n(all references below refer to articles of this regulation):\n\n\n----------------------\n\n### 2. Calculation of terminal unit rates\n\n#### 2.1. The terminal unit rate shall be calculated before the beginning of each year of the reference period.\n\n#### 2.2. It shall be calculated by dividing the forecast number of total Terminal ANS Service Unit for the relevant year into the algebraic sum of the following elements:\n\n* the determined costs of the relevant year,\n* the application of the difference between forecasted and actual inflation as referred to in Article 6(1),\n* the carry-overs resulting from the implementation of the traffic risk-sharing referred to in Article 11a(2) to (7) ,\n* the carry-overs from the previous reference period resulting from the implementation of the cost risk-sharing referred to in Article 11a(8),\n* bonuses and penalties resulting from the financial incentives referred to in Article 12(2),\n* for the first two reference periods, the over or under recoveries incurred by Member States up to the year preceding the application of this Regulation to terminal charges,\n* a deduction of the costs of VFR flights as identified in Article 7(4).\n\n--------------------\n\n\n## References\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

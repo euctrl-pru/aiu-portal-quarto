@@ -1,0 +1,15 @@
+{
+  "hash": "fe84792f36c3652d0996e4714cb892d5",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: IATA code 89\nslug: iata-code-89\nbibliography: [../bibliography/aviation.bib]\nlink-citations: true\nbiblio-style: apalike\n---\n\n::: {.cell}\n\n:::\n\n\nCode 89 (alpha AM) is one of IATA's delay codes [@wiki:iatadelaycodes; @iata:delaycodes].\nIt is specified as follows:\n\n| Code | Alpha | Short description | Further info |\n|------|-------|-------------------|--------------|\n| 89   | AM    | Restrictions at airport of departure with or without ATFM restrictions | including Air Traffic Services, start-up and pushback, airport and/or runway closed due to obstruction or weather, industrial action, staff shortage, political unrest, noise abatement, night curfew, special flights. |\n\n## See Also\n\n* [IATA Delay Codes](/definition/iata-delay-codes/)\n* IATA Delay codes table ([PDF](/library/iata-delay-codes.pdf))\n* Appendix of [All-causes delay and cancellations to Air Transport Europe Quaterly Reports](https://www.eurocontrol.int/library?keywords=All-causes+delay+and+cancellations+to+Air+Transport+Europe&sort_by=search_api_relevance&f%5B0%5D=activity%3A777&f%5B1%5D=product%3A805)\n\n## References\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

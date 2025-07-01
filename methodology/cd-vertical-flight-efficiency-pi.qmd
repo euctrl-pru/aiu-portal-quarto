@@ -1,6 +1,6 @@
 ---
 title: Vertical Flight Efficiency during Climb and Descent
-# bibliography: ["../../static/bib/aviation.bib"]
+bibliography: ../bibliography/aviation.bib
 link-citations: true
 slug: cd-vertical-flight-efficiency-pi
 ---

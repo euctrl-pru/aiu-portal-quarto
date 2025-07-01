@@ -1,6 +1,6 @@
 ---
 title: Airport Capacity Utilisation Methodology
-# bibliography: ["../../static/bib/aviation.bib"]
+bibliography: ../../bibliography/aviation.bib
 link-citations: true
 slug: airport-capacity-utilisation
 ---

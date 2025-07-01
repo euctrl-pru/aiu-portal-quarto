@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modification of the ATFM delay calculation (NM release 20.0)</title>
+<title>ECAC Area</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../favicon.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-978f3077c05b287ae57beef2a5c3d2de.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-978f3077c05b287ae57beef2a5c3d2de.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -81,8 +81,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../images/EUROCONTROL-logo-standard-rgb.svg" alt="EUROCONTROL Supporting European Aviation" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/EUROCONTROL-logo-standard-rgb.svg" alt="EUROCONTROL Supporting European Aviation" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -92,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../"> 
+    <a class="nav-link" href="../"> 
 <span class="menu-text"><strong>Home</strong></span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -105,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:th" aria-label="Icon th from fa6-solid Iconify.design set." title="Icon th from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Balanced scorecard</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../traffic/">
+    <a class="dropdown-item" href="../traffic/">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:plane-departure" aria-label="Icon plane-departure from fa6-solid Iconify.design set." title="Icon plane-departure from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Traffic</span></a>
   </li>  
         <li>
@@ -117,11 +117,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Service units</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../traffic/statfor/">
+    <a class="dropdown-item" href="../traffic/statfor/">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Traffic forecast</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../traffic/punctuality/">
+    <a class="dropdown-item" href="../traffic/punctuality/">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:calendar" aria-label="Icon calendar from fa6-solid Iconify.design set." title="Icon calendar from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Punctuality</span></a>
   </li>  
         <li>
@@ -129,15 +129,15 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Daily punctuality dashboard</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../traffic/punctuality/#eurocontrol-area-network-view-1">
+    <a class="dropdown-item" href="../traffic/punctuality/#eurocontrol-area-network-view-1">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Network punctuality</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../traffic/punctuality/#state-view-1">
+    <a class="dropdown-item" href="../traffic/punctuality/#state-view-1">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">State &amp; airport punctuality</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../capacity/">
+    <a class="dropdown-item" href="../capacity/">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:clock" aria-label="Icon clock from fa6-solid Iconify.design set." title="Icon clock from fa6-solid Iconify.design set."></iconify-icon>&nbsp;En-route &amp; airport delays</span></a>
   </li>  
         <li>
@@ -145,51 +145,51 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Daily ATFM delays dashboard</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../capacity/atfm_ert/">
+    <a class="dropdown-item" href="../capacity/atfm_ert/">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">En-route ATFM delays</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../capacity/atfm_apt/">
+    <a class="dropdown-item" href="../capacity/atfm_apt/">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Airport ATFM delays</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../capacity/tot_dly">
+    <a class="dropdown-item" href="../capacity/tot_dly">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">All-causes delays</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../efficiency/">
+    <a class="dropdown-item" href="../efficiency/">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:leaf" aria-label="Icon leaf from fa6-solid Iconify.design set." title="Icon leaf from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Efficiency &amp; environment</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../efficiency/emissions/">
+    <a class="dropdown-item" href="../efficiency/emissions/">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">CO<sub>2</sub> emissions</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../efficiency/hfe/">
+    <a class="dropdown-item" href="../efficiency/hfe/">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Horizontal flight efficiency</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../efficiency/vfe/">
+    <a class="dropdown-item" href="../efficiency/vfe/">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Vertical flight efficiency</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../efficiency/asma/">
+    <a class="dropdown-item" href="../efficiency/asma/">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Terminal holdings</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../efficiency/taxiout/">
+    <a class="dropdown-item" href="../efficiency/taxiout/">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Taxi-out</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../efficiency/taxiin/">
+    <a class="dropdown-item" href="../efficiency/taxiin/">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Taxi-in</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../economics/">
+    <a class="dropdown-item" href="../economics/">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:euro-sign" aria-label="Icon euro-sign from fa6-solid Iconify.design set." title="Icon euro-sign from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Economics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../economics/ace-overview/">
+    <a class="dropdown-item" href="../economics/ace-overview/">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">ATM cost-effectiveness (ACE)</span></span></a>
   </li>  
         <li>
@@ -201,11 +201,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Service units</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../economics/finance/">
+    <a class="dropdown-item" href="../economics/finance/">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">ANSPs financial dashboard</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../economics/cba/">
+    <a class="dropdown-item" href="../economics/cba/">
  <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Standard Inputs for Economic Analyses</span></span></a>
   </li>  
     </ul>
@@ -216,25 +216,25 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-stakeholder-views">    
         <li>
-    <a class="dropdown-item" href="../../dashboard/stakeholder/airport/">
+    <a class="dropdown-item" href="../dashboard/stakeholder/airport/">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:plane-arrival" aria-label="Icon plane-arrival from fa6-solid Iconify.design set." title="Icon plane-arrival from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Airports</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../dashboard/stakeholder/ansp/">
+    <a class="dropdown-item" href="../dashboard/stakeholder/ansp/">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:compass" aria-label="Icon compass from fa6-solid Iconify.design set." title="Icon compass from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Air navigation service provider</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../dashboard/stakeholder/state/">
+    <a class="dropdown-item" href="../dashboard/stakeholder/state/">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:globe" aria-label="Icon globe from fa6-solid Iconify.design set." title="Icon globe from fa6-solid Iconify.design set."></iconify-icon>&nbsp;States</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../data/"> 
+    <a class="nav-link" href="../data/"> 
 <span class="menu-text"><strong>Data</strong></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/"> 
+    <a class="nav-link" href="../publications/"> 
 <span class="menu-text"><strong>Publications</strong></span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -243,19 +243,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-reference">    
         <li>
-    <a class="dropdown-item" href="../../definition/">
+    <a class="dropdown-item" href="../definition/">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:marker" aria-label="Icon marker from fa6-solid Iconify.design set." title="Icon marker from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Definitions</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../methodology/">
+    <a class="dropdown-item" href="../methodology/">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:wrench" aria-label="Icon wrench from fa6-solid Iconify.design set." title="Icon wrench from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Methodology</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../acronym/">
+    <a class="dropdown-item" href="../acronym/">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:quote-left" aria-label="Icon quote-left from fa6-solid Iconify.design set." title="Icon quote-left from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Acronyms</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../bibliography/">
+    <a class="dropdown-item" href="../bibliography/">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:book" aria-label="Icon book from fa6-solid Iconify.design set." title="Icon book from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Bibliography</span></a>
   </li>  
     </ul>
@@ -282,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Connectivity dashboard <i class="fas fa-xs fa-external-link-alt"></i></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../transformation/">
+    <a class="dropdown-item" href="../transformation/">
  <span class="dropdown-text">PRC Transformation Strategy</span></a>
   </li>  
         <li>
@@ -297,23 +297,23 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="../../about/prc/">
+    <a class="dropdown-item" href="../about/prc/">
  <span class="dropdown-text">About the PRC</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../about/aiu/">
+    <a class="dropdown-item" href="../about/aiu/">
  <span class="dropdown-text">About the AIU</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../about/pru/">
+    <a class="dropdown-item" href="../about/pru/">
  <span class="dropdown-text">About the PRU</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../post/">
+    <a class="dropdown-item" href="../post/">
  <span class="dropdown-text">Release notes</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../about/disclaimer/">
+    <a class="dropdown-item" href="../about/disclaimer/">
  <span class="dropdown-text">Disclaimer</span></a>
   </li>  
     </ul>
@@ -335,7 +335,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Modification of the ATFM delay calculation (NM release 20.0)</h1>
+<h1 class="title">ECAC Area</h1>
 </div>
 
 
@@ -352,69 +352,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<style>
-img + em {
-text-align: center;
-}
-
-img + em:before {
-content: ' ';
-display: block;
-}
-</style>
-<section id="background" class="level2">
-<h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>Air Navigation Service Providers (ANSPs) noticed that the use of the Ready Message (REA) - whilst attempting to improve punctuality for aircraft – could result in artificial changes to the computed ATFM delay for individual flights and for the ANSP that has requested the regulation.</p>
-<p>The ANSPs brought this to the attention of the Network Management Board (NMB). The ANSPs, together with the airspace users and the Network Manager reviewed the existing situation and developed a more accurate process which avoids artificial changes to the computed ATFM delay when a REA message is used.</p>
-<p>The more accurate process was presented to the NMB and approved in March 2015 for implementation with NM software release 20.0 on April 04 2016.</p>
-</section>
-<section id="nm-software-version-20.0-related-changes-04-april-2016" class="level2">
-<h2 class="anchored" data-anchor-id="nm-software-version-20.0-related-changes-04-april-2016">NM software version 20.0 related changes (04 April 2016)</h2>
-<p>The changes implemented with the release of NM software version 20.0 on 04 April 2016 reduce the overall level of computed ATFM delay. The changes are described in more detail in the relevant <a href="../../library/NM_20_FB750_Delay_Calculation_improvements.pdf" title="NM 20 Release Notes: Delay calculation improvements">NM Release presentation</a>.</p>
-</section>
-<section id="post-operations-performance-adjustment-process" class="level2">
-<h2 class="anchored" data-anchor-id="post-operations-performance-adjustment-process">Post Operations Performance Adjustment Process</h2>
-<p>The Post Ops Performance Adjustment Process allows operational stakeholders to notify national and European authorities of issues that relate to ATFM delay measurement, classification and assignment. It is a means of enhancing operational ATFM delay data used in the performance scheme (Regulation (EU) 390) – and thus a means of compliance with Article 21(3).</p>
-<p>More information is available from the <a href="https://www.eurocontrol.int/service/post-operations-performance-adjustment" title="Post Operations Performance Adjustment Process">respective NM website</a>.</p>
-</section>
-<section id="impact-on-this-webpage" class="level2">
-<h2 class="anchored" data-anchor-id="impact-on-this-webpage">Impact on this webpage</h2>
-<p>The ATFM delay related graphs shown on this web page and data in the <a href="../../data/performancearea/">download area</a> take the change in methodology as of April 2016 into account.</p>
-<p>In the ATFM delay file downloads, the computation method is indicated in the column “ATFM version”</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 22%">
-<col style="width: 43%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>ATFM version</th>
-<th>REA message adjustment</th>
-<th>Post ops adjustment</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Version 1</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>Version 2</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>Version 3</td>
-<td>Yes (as of 04 April 2016)</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
+<p>European Civil Aviation Conference (ECAC) area</p>
+<p>ECAC Member States are: Albania, Armenia, Austria, Azerbaijan, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Georgia, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Republic of North Macedonia, Turkey, Ukraine and United Kingdom.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -825,7 +766,7 @@ display: block;
  © EUROCONTROL
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../../about/disclaimer/">
+    <a class="nav-link" href="../about/disclaimer/">
 <p><strong>Disclaimer</strong></p>
 </a>
   </li>  

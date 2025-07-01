@@ -14,4 +14,4 @@ Also Known As *Model 1* (M1) trajectory.
 * [Current Tactical Flight Model](ctfm.md).
 * [Correlated Position Report](cpr.md).
 * [ETFMS](etfms.md).
-* [Flight Models](flight-models.md).
+* [Flight Models](../definition/flight-models.md).

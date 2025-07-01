@@ -1,0 +1,15 @@
+{
+  "hash": "7c5043e94c67d258d43c1e456d836f2e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Departure Slot\nslug: departure-slot\n---\n\n::: {.cell}\n\n:::\n\n\nA departure slot is a time when an aircraft can take off,\nthe so called Calculated Time of Take-Off ([CTOT](/acronym/ctot/)).\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

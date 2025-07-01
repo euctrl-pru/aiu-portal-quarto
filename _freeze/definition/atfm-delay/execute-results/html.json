@@ -1,0 +1,15 @@
+{
+  "hash": "040f1b435999f58a1197b73f7903f017",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: ATFM Delay\nslug: atfm-delay\n---\n\n::: {.cell}\n\n:::\n\n\n\nThe duration between the last take-off time requested by the aircraft operator\nand the take-off slot allocated by the Network Manager following a regulation\ncommunicated by the [FMP](/acronym/fmp/), in relation to an\nairport (airport delay) or sector (en-route delay) location.\n\nSee also [ATFM delay causes and codes](/definition/atfm-delay-codes/).\n\n## Unit of Measurement\n\nMinute.\n\n## Modification of the ATFM delay calculation (NM release 20.0)\n\nPlease note that software release 20.0 of the Network Manager on 04 April 2016\nintroduced a change to improve the accuracy of the ATFM delay calculation for\noperational purposes.\n\nATFM delays data and graphs in this website take this change into account as of\nApril 2016.\n\nFor more information on the the change in methodology [click here](/methodology/ATFM-delay-calculation).\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

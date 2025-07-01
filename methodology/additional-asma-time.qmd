@@ -1,6 +1,8 @@
 ---
 title: Additional ASMA time
-# bibliography: ["./../bibliography/legislation.bib", "./../bibibliography/aviation.bib"]
+bibliography: 
+  - ../bibliography/legislation.bib
+  - ../bibliography/aviation.bib
 link-citations: true
 slug: additional-asma-time
 ---

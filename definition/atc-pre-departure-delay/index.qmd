@@ -1,0 +1,9 @@
+---
+title: ATC Pre-departure Delay
+slug: atc-pre-departure-delay
+---
+
+ATC pre-departure delay is the additional time that the aircraft is held at the
+stand to avoid queuing at the departure runway.
+
+![ATC pre-departure delay](atc_pre-departure_delay.png){width="90%"}

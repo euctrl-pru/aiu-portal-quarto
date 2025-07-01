@@ -17,7 +17,7 @@ regard to the limitations set by flow management.
 * [CPR](cpr.md)
 * [CTFM](ctfm.md)
 * [DCT](dct.md)
-* [Flight models](flight-models.md)
+* [Flight models](../definition/flight-models.md)
 * [FTFM](ftfm.md)
 * [SRR](srr.md)
 * [SUR](sur.md)

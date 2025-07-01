@@ -13,4 +13,4 @@ Also known as Actual Profile or *Model 3* (M3).
 * [CPF](cpf.md).
 * [ETFMS](etfms.md).
 * [Filed Tactical Flight Model](ftfm.md).
-* [Flight Models](flight-models.md).
+* [Flight Models](../definition/flight-models.md).

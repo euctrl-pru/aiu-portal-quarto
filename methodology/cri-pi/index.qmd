@@ -1,6 +1,6 @@
 ---
 title: Composite Risk Index (CRI) Methodology Update
-# bibliography: "bibliography/aviation.bib"
+bibliography: ../../bibliography/aviation.bib
 ---
 
 ## Background

@@ -1,6 +1,8 @@
 ---
 title: Additional taxi out time
-# bibliography: ["../../static/bib/legislation.bib", "../../static/bib/aviation.bib"]
+bibliography: 
+  - ../bibliography/legislation.bib
+  - ../bibliography/aviation.bib
 link-citations: true
 slug: additional-taxi-out-time
 ---

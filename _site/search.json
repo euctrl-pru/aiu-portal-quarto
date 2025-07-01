@@ -480,7 +480,7 @@
     "href": "acronym/cpf.html#see-also",
     "title": "CPF - Correlated Position reports for a Flight",
     "section": "See also:",
-    "text": "See also:\n\n[Correlated Position Report][cpr].\nCurrent Tactical Flight Model.\nFiled Tactical Flight Model.\nFlight Models."
+    "text": "See also:\n\nCorrelated Position Report.\nCurrent Tactical Flight Model.\nFiled Tactical Flight Model.\nFlight Models."
   },
   {
     "objectID": "acronym/gto.html",
@@ -1008,6 +1008,230 @@
     "text": "See Also\n\nFlight Data Services  page at EUROCONTROL website.\nCall-sign  page at Skybrary website.\nAutomatic Dependent Surveillance  page at Skybrary website.\nMode S  page at Skybrary website.\nICAO 24-bit address  page at Wikipedia website."
   },
   {
+    "objectID": "definition/kea.html",
+    "href": "definition/kea.html",
+    "title": "KEA",
+    "section": "",
+    "text": "KEA is a key performance indicator measuring the level of horizontal en-route flight inefficiency in actually flown trajectories over a period of 12 months.\nPlease note that the values are NOT monthly averages but the average over the entire 12 months period preceding the last day of the month\nIn order to smooth out the influence of unusual events, the ten best days and the ten worst days (for each measured area) are excluded from the computation.\nThe key performance indicator is used in the Single European Sky (SES) Performance Scheme.\nMore information on the methodology used to compute Horizontal en-route flight efficiency."
+  },
+  {
+    "objectID": "definition/airspace-infringement.html",
+    "href": "definition/airspace-infringement.html",
+    "title": "Airspace Infringement",
+    "section": "",
+    "text": "(also known as unauthorised penetration of airspace).\nThe penetration by an aircraft into a portion of airspace without prior permission of the appropriate authorities (when such prior permission is required). EUROCONTROL HEIDI – ESARR 2 taxonomy"
+  },
+  {
+    "objectID": "definition/airspace-infringement.html#see-also",
+    "href": "definition/airspace-infringement.html#see-also",
+    "title": "Airspace Infringement",
+    "section": "See also",
+    "text": "See also\n\nESARR 2  page at EUROCONTROL website."
+  },
+  {
+    "objectID": "definition/atc-pre-departure-delay/index.html",
+    "href": "definition/atc-pre-departure-delay/index.html",
+    "title": "ATC Pre-departure Delay",
+    "section": "",
+    "text": "ATC pre-departure delay is the additional time that the aircraft is held at the stand to avoid queuing at the departure runway.\n\n\n\nATC pre-departure delay"
+  },
+  {
+    "objectID": "definition/asma-transit-time.html",
+    "href": "definition/asma-transit-time.html",
+    "title": "ASMA Transit Time",
+    "section": "",
+    "text": "The ASMA transit time is the actual time spent by a flight between its first entry in the ASMA cylinder and the actual landing time (ALDT). ASMA stands for Arrival and Sequencing Metering Area and it is defined as a 40NM cylinder around the airport."
+  },
+  {
+    "objectID": "definition/asma-transit-time.html#unit-of-measurement",
+    "href": "definition/asma-transit-time.html#unit-of-measurement",
+    "title": "ASMA Transit Time",
+    "section": "Unit of Measurement",
+    "text": "Unit of Measurement\nMinute."
+  },
+  {
+    "objectID": "definition/asma-transit-time.html#see-also",
+    "href": "definition/asma-transit-time.html#see-also",
+    "title": "ASMA Transit Time",
+    "section": "See also",
+    "text": "See also\n\nAdditional ASMA time methodology"
+  },
+  {
+    "objectID": "definition/eurocontrol-area.html",
+    "href": "definition/eurocontrol-area.html",
+    "title": "EUROCONTROL Area",
+    "section": "",
+    "text": "The EUROCONTROL area consists of the 42 EUROCONTROL Member States.\nIn 2016, EUROCONTROL signed a Comprehensive Agreement with Israel and Morocco with a view to fully integrate both States into its working structures. Where available, data for those two States have been included in the analyses on this portal.\n\nDisclaimer: The designations employed and the presentation of the material on the map does not imply the expression of any opinion whatsoever on the part of EUROCONTROL concerning the legal status of any country, territory city or area or of is authorities, or concerning the delimitation of its frontiers or boundaries."
+  },
+  {
+    "objectID": "definition/additional-taxi-out-time.html",
+    "href": "definition/additional-taxi-out-time.html",
+    "title": "Additional Taxi-out Time",
+    "section": "",
+    "text": "The additional taxi-out time provides an approximate measure for the average departure runway queuing time on the outbound traffic flow, during times that the airport is congested. This indicator is calculated as the difference between the actual taxi-out time and a reference taxi-out time estimated for each stand-runway combination."
+  },
+  {
+    "objectID": "definition/additional-taxi-out-time.html#unit-of-measurement",
+    "href": "definition/additional-taxi-out-time.html#unit-of-measurement",
+    "title": "Additional Taxi-out Time",
+    "section": "Unit of Measurement",
+    "text": "Unit of Measurement\nMinutes per IFR departure [min/dep]."
+  },
+  {
+    "objectID": "definition/additional-taxi-out-time.html#methodology",
+    "href": "definition/additional-taxi-out-time.html#methodology",
+    "title": "Additional Taxi-out Time",
+    "section": "Methodology",
+    "text": "Methodology\nThe methodology for the calculation of the additional taxi-out time can be found here."
+  },
+  {
+    "objectID": "definition/reference-location.html",
+    "href": "definition/reference-location.html",
+    "title": "Reference Location",
+    "section": "",
+    "text": "An identifier used in the ETFMS to describe one or more aerodromes, an Air Traffic Control (ATC) waypoint or an entire ATC sector."
+  },
+  {
+    "objectID": "definition/productivity.html",
+    "href": "definition/productivity.html",
+    "title": "Productivity",
+    "section": "",
+    "text": "Productivity measures relate output to input and are used to reflect changes in technology, processes, training, staffing, and many other factors.\n(Economic) productivity is used in the context of the Air Traffic Management Cost-Effectiveness (ACE) benchmarking. See further details in Section 3.2 of the ACE Handbook."
+  },
+  {
+    "objectID": "definition/terminal-ans-unit-rate.html",
+    "href": "definition/terminal-ans-unit-rate.html",
+    "title": "Terminal ANS Unit Rate",
+    "section": "",
+    "text": "Terminal unit rates represent the unit price paid by airspace users, mainly commercial airlines, for the air navigation services provided, mainly air traffic control.\nTerminal ANS unit rates are defined in the Annex V of the EC 1794/2006 Charging Scheme Regulation (EU 2006) (all references below refer to articles of this regulation):"
+  },
+  {
+    "objectID": "definition/airport-data-flow/index.html",
+    "href": "definition/airport-data-flow/index.html",
+    "title": "Airport operator data flow (APDF)",
+    "section": "",
+    "text": "The Airport operator data flow (APDF) supports the regular operational ANS performance monitoring under the EUROCONTROL Performance Review System established under the ECAC Institutional Strategy for Air Traffic Management (1997) and the Single European Sky Performance Scheme established under Implementing Regulation (EU) No 390 / 2013.\nThe EUROCONTROL Specification for Operational ANS Performance Monitoring - Airport Operator Data Flow (APDF) details the data exchange requirements between reporting entities and EUROCONTROL and subsequent data handling processes.\nThe collected data is used to analyse and compare operational ANS performance (e.g. performance monitoring and benchmarking), supports the validation of other data sources processed by the EUROCONTROL Agency, and the production of regular Agency reports and studies based on aggregated results of the operational performance data (e.g. Performance Review Report, PRU and CODA publications).\nThe data is used for the calculation of Additional taxi-out time, Additional ASMA time and ATC pre-departure delay. The PRU engages with the airport operators on a one by one case to facilitate the implementation of the data flow. The evolution of the number of airport operators submitting data in accordance with the required APDF data specifications standards is shown in the graph below.\n{width = ‘70%’}"
+  },
+  {
+    "objectID": "definition/atfm-delay.html",
+    "href": "definition/atfm-delay.html",
+    "title": "ATFM Delay",
+    "section": "",
+    "text": "The duration between the last take-off time requested by the aircraft operator and the take-off slot allocated by the Network Manager following a regulation communicated by the FMP, in relation to an airport (airport delay) or sector (en-route delay) location.\nSee also ATFM delay causes and codes."
+  },
+  {
+    "objectID": "definition/atfm-delay.html#unit-of-measurement",
+    "href": "definition/atfm-delay.html#unit-of-measurement",
+    "title": "ATFM Delay",
+    "section": "Unit of Measurement",
+    "text": "Unit of Measurement\nMinute."
+  },
+  {
+    "objectID": "definition/atfm-delay.html#modification-of-the-atfm-delay-calculation-nm-release-20.0",
+    "href": "definition/atfm-delay.html#modification-of-the-atfm-delay-calculation-nm-release-20.0",
+    "title": "ATFM Delay",
+    "section": "Modification of the ATFM delay calculation (NM release 20.0)",
+    "text": "Modification of the ATFM delay calculation (NM release 20.0)\nPlease note that software release 20.0 of the Network Manager on 04 April 2016 introduced a change to improve the accuracy of the ATFM delay calculation for operational purposes.\nATFM delays data and graphs in this website take this change into account as of April 2016.\nFor more information on the the change in methodology click here."
+  },
+  {
+    "objectID": "definition/index.html",
+    "href": "definition/index.html",
+    "title": "Definitions",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nASMA Transit Time\n\n\n\n\n\n\nATC Pre-departure Delay\n\n\n\n\n\n\nATFM Delay\n\n\n\n\n\n\nATFM Delay Codes\n\n\n\n\n\n\nATFM Measure\n\n\n\n\n\n\nATFM slot adherence\n\n\n\n\n\n\nAdditional ASMA Time\n\n\n\n\n\n\nAdditional Taxi-in Time\n\n\n\n\n\n\nAdditional Taxi-out Time\n\n\n\n\n\n\nAir transport statistics\n\n\n\n\n\n\nAirport operator data flow (APDF)\n\n\n\n\n\n\nAirspace Infringement\n\n\n\n\n\n\nComposite flight-hour\n\n\n\n\n\n\nDeparture Slot\n\n\n\n\n\n\nECAC Area\n\n\n\n\n\n\nESRA 2008 Area\n\n\n\n\n\n\nEUROCONTROL Area\n\n\n\n\n\n\nEconomic Cost Effectiveness\n\n\n\n\n\n\nEn-route ATFM Delay\n\n\n\n\n\n\nEn-route Charging Zone\n\n\n\n\n\n\nFAB - Functional Airspace Blocks\n\n\n\n\n\n\nFlight Trajectory Models\n\n\n\n\n\n\nIATA code 89\n\n\n\n\n\n\nIATA delay codes\n\n\n\n\n\n\nKEA\n\n\n\n\n\n\nKEP\n\n\n\n\n\n\nMovements (STATFOR definition)\n\n\n\n\n\n\nOperated (non-operated) Schedules (%)\n\n\n\n\n\n\nPrimary delay\n\n\n\n\n\n\nProductivity\n\n\n\n\n\n\nPunctuality (OTP15)\n\n\n\n\n\n\nReactionary delay\n\n\n\n\n\n\nReference Location\n\n\n\n\n\n\nRegulation\n\n\n\n\n\n\nSES Area\n\n\n\n\n\n\nSerious incident\n\n\n\n\n\n\nShort term ATFCM measures\n\n\n\n\n\n\nSlot Tolerance Window\n\n\n\n\n\n\nTerminal ANS Unit Rate\n\n\n\n\n\n\nTraffic Zone\n\n\n\n\n\n\nTurnaround\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "definition/atfm-slot-adherence.html",
+    "href": "definition/atfm-slot-adherence.html",
+    "title": "ATFM slot adherence",
+    "section": "",
+    "text": "ATFM departure slots are allocated centrally by the Network Manager to hold aircraft on the ground when there is an envisaged imbalance between demand and capacity at airports or en-route.\nATFM slot adherence measures the share of take-offs outside the allocated ATFM window. Within the EU, the monitoring of ATFM slot adherence is required by Regulation (EU 2010). ATS units are required to provide information on non-compliance for airports where non-adherence equals or exceeds 20% of regulated departures."
+  },
+  {
+    "objectID": "definition/air-transport-statistics.html",
+    "href": "definition/air-transport-statistics.html",
+    "title": "Air transport statistics",
+    "section": "",
+    "text": "The following links provide perspectives on Statistics in Air Transport:\n\nAir Transports Statistics Explained  page at  website.\nReference Manual on Air Transport Statistics - Version 14  page at  website.\nIllustrated Glossary for Transport Statistics  page at  website."
+  },
+  {
+    "objectID": "definition/iata-delay-codes.html",
+    "href": "definition/iata-delay-codes.html",
+    "title": "IATA delay codes",
+    "section": "",
+    "text": "The following IATA delay codes (from “AHM 780 Aircraft Movement Message” (Wikipedia 2015; IATA 2012) specification”) standardise the reporting of commercial flight departure delays by airlines.\nIATA delay codes\n\n\n\nID\nCode\nDescription\n\n\n\n\nOthers\n\n\n00 ( )\n00\n...\nAIRLINE INTERNAL CODE\n\n\n01 ( )\n01\n...\nAIRLINE INTERNAL CODE\n\n\n02 ( )\n02\n...\nAIRLINE INTERNAL CODE\n\n\n03 ( )\n03\n...\nAIRLINE INTERNAL CODE\n\n\n04 ( )\n04\n...\nAIRLINE INTERNAL CODE\n\n\n05 ( )\n05\n...\nAIRLINE INTERNAL CODE\n\n\n06 (OA)\n06\nOA\nNO GATE/STAND AVAILABILITY DUE TO OWN AIRLINE ACTIVITY\n\n\n09 (SG)\n09\nSG\nSCHEDULED GROUND TIME LESS THAN DECLARED MINIMUM GROUND TIME\n\n\nPassenger and Baggage\n\n\n11 (PD)\n11\nPD\nLATE CHECK-IN, acceptance after deadline\n\n\n12 (PL)\n12\nPL\nLATE CHECK-IN, congestions in check-in area\n\n\n13 (PE)\n13\nPE\nCHECK-IN ERROR, passenger and baggage\n\n\n14 (PO)\n14\nPO\nOVERSALES, booking errors\n\n\n15 (PH)\n15\nPH\nBOARDING, discrepancies and paging, missing checked-in passenger\n\n\n16 (PS)\n16\nPS\nCOMMERCIAL PUBLICITY/PASSENGER CONVENIENCE, VIP, press, ground meals and missing personal items\n\n\n17 (PC)\n17\nPC\nCATERING ORDER, late or incorrect order given to supplier\n\n\n18 (PB)\n18\nPB\nBAGGAGE PROCESSING, sorting etc.\n\n\n19 (PW)\n19\nPW\nREDUCED MOBILITY, boarding / deboarding of passengers with reduced mobility.\n\n\nCargo and Mail\n\n\n21 (CD)\n21\nCD\nDOCUMENTATION, errors etc.\n\n\n22 (CP)\n22\nCP\nLATE POSITIONING\n\n\n23 (CC)\n23\nCC\nLATE ACCEPTANCE\n\n\n24 (CI)\n24\nCI\nINADEQUATE PACKING\n\n\n25 (CO)\n25\nCO\nOVERSALES, booking errors\n\n\n26 (CU)\n26\nCU\nLATE PREPARATION IN WAREHOUSE\n\n\n27 (CE)\n27\nCE\nDOCUMENTATION, PACKING etc (Mail Only)\n\n\n28 (CL)\n28\nCL\nLATE POSITIONING (Mail Only)\n\n\n29 (CA)\n29\nCA\nLATE ACCEPTANCE (Mail Only)\n\n\nAircraft and Ramp Handling\n\n\n31 (GD)\n31\nGD\nAIRCRAFT DOCUMENTATION LATE/INACCURATE, weight and balance, general declaration, pax manifest, etc.\n\n\n32 (GL)\n32\nGL\nLOADING/UNLOADING, bulky, special load, cabin load, lack of loading staff\n\n\n33 (GE)\n33\nGE\nLOADING EQUIPMENT, lack of or breakdown, e.g. container pallet loader, lack of staff\n\n\n34 (GS)\n34\nGS\nSERVICING EQUIPMENT, lack of or breakdown, lack of staff, e.g. steps\n\n\n35 (GC)\n35\nGC\nAIRCRAFT CLEANING\n\n\n36 (GF)\n36\nGF\nFUELLING/DEFUELLING, fuel supplier\n\n\n37 (GB)\n37\nGB\nCATERING, late delivery or loading\n\n\n38 (GU)\n38\nGU\nULD, lack of or serviceability\n\n\n39 (GT)\n39\nGT\nTECHNICAL EQUIPMENT, lack of or breakdown, lack of staff, e.g. pushback\n\n\nTechnical and Aircraft Equipment\n\n\n41 (TD)\n41\nTD\nAIRCRAFT DEFECTS.\n\n\n42 (TM)\n42\nTM\nSCHEDULED MAINTENANCE, late release.\n\n\n43 (TN)\n43\nTN\nNON-SCHEDULED MAINTENANCE, special checks and/or additional works beyond normal maintenance schedule.\n\n\n44 (TS)\n44\nTS\nSPARES AND MAINTENANCE EQUIPMENT, lack of or breakdown.\n\n\n45 (TA)\n45\nTA\nAOG SPARES, to be carried to another station.\n\n\n46 (TC)\n46\nTC\nAIRCRAFT CHANGE, for technical reasons.\n\n\n47 (TL)\n47\nTL\nSTAND-BY AIRCRAFT, lack of planned stand-by aircraft for technical reasons.\n\n\n48 (TV)\n48\nTV\nSCHEDULED CABIN CONFIGURATION/VERSION ADJUSTMENTS.\n\n\nDamage to Aircraft & EDP/Automated Equipment Failure\n\n\n51 (DF)\n51\nDF\nDAMAGE DURING FLIGHT OPERATIONS, bird or lightning strike, turbulence, heavy or overweight landing, collision during taxiing\n\n\n52 (DG)\n52\nDG\nDAMAGE DURING GROUND OPERATIONS, collisions (other than during taxiing), loading/off-loading damage, contamination, towing, extreme weather conditions\n\n\n55 (ED)\n55\nED\nDEPARTURE CONTROL\n\n\n56 (EC)\n56\nEC\nCARGO PREPARATION/DOCUMENTATION\n\n\n57 (EF)\n57\nEF\nFLIGHT PLANS\n\n\n58 (EO)\n58\nEO\nOTHER AUTOMATED SYSTEM\n\n\nFlight Operations and Crewing\n\n\n61 (FP)\n61\nFP\nFLIGHT PLAN, late completion or change of, flight documentation\n\n\n62 (FF)\n62\nFF\nOPERATIONAL REQUIREMENTS, fuel, load alteration\n\n\n63 (FT)\n63\nFT\nLATE CREW BOARDING OR DEPARTURE PROCEDURES, other than connection and standby (flight deck or entire crew)\n\n\n64 (FS)\n64\nFS\nFLIGHT DECK CREW SHORTAGE, sickness, awaiting standby, flight time limitations, crew meals, valid visa, health documents, etc.\n\n\n65 (FR)\n65\nFR\nFLIGHT DECK CREW SPECIAL REQUEST, not within operational requirements\n\n\n66 (FL)\n66\nFL\nLATE CABIN CREW BOARDING OR DEPARTURE PROCEDURES, other than connection and standby\n\n\n67 (FC)\n67\nFC\nCABIN CREW SHORTAGE, sickness, awaiting standby, flight time limitations, crew meals, valid visa, health documents, etc.\n\n\n68 (FA)\n68\nFA\nCABIN CREW ERROR OR SPECIAL REQUEST, not within operational requirements\n\n\n69 (FB)\n69\nFB\nCAPTAIN REQUEST FOR SECURITY CHECK, extraordinary\n\n\nWeather\n\n\n71 (WO)\n71\nWO\nDEPARTURE STATION\n\n\n72 (WT)\n72\nWT\nDESTINATION STATION\n\n\n73 (WR)\n73\nWR\nEN ROUTE OR ALTERNATE\n\n\n75 (WI)\n75\nWI\nDE-ICING OF AIRCRAFT, removal of ice and/or snow, frost prevention excluding unserviceability of equipment\n\n\n76 (WS)\n76\nWS\nREMOVAL OF SNOW, ICE, WATER AND SAND FROM AIRPORT\n\n\n77 (WG)\n77\nWG\nGROUND HANDLING IMPAIRED BY ADVERSE WEATHER CONDITIONS\n\n\nAIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS\n\n\n81 (AT)\n81\nAT\nATFM due to ATC EN-ROUTE DEMAND/CAPACITY, standard demand/capacity problems\n\n\n82 (AX)\n82\nAX\nATFM due to ATC STAFF/EQUIPMENT EN-ROUTE, reduced capacity caused by industrial action or staff shortage, equipment failure, military exercise or extraordinary demand due to capacity reduction in neighbouring area\n\n\n83 (AE)\n83\nAE\nATFM due to RESTRICTION AT DESTINATION AIRPORT, airport and/or runway closed due to obstruction, industrial action, staff shortage, political unrest, noise abatement, night curfew, special flights\n\n\n84 (AW)\n84\nAW\nATFM due to WEATHER AT DESTINATION\n\n\nAIRPORT AND GOVERNMENTAL AUTHORITIES\n\n\n85 (AS)\n85\nAS\nMANDATORY SECURITY\n\n\n86 (AG)\n86\nAG\nIMMIGRATION, CUSTOMS, HEALTH\n\n\n87 (AF)\n87\nAF\nAIRPORT FACILITIES, parking stands, ramp congestion, lighting, buildings, gate limitations, etc.\n\n\n88 (AD)\n88\nAD\nRESTRICTIONS AT AIRPORT OF DESTINATION, airport and/or runway closed due to obstruction, industrial action, staff shortage, political unrest, noise abatement, night curfew, special flights\n\n\n89 (AM)\n89\nAM\nRESTRICTIONS AT AIRPORT OF DEPARTURE WITH OR WITHOUT ATFM RESTRICTIONS, including Air Traffic Services, start-up and pushback, airport and/or runway closed due to obstruction or weather (Restriction due to weather in case of ATFM regulation only, else refer to code 71 (WO)), industrial action, staff shortage, political unrest, noise abatement, night curfew, special flights\n\n\nReactionary\n\n\n91 (RL)\n91\nRL\nLOAD CONNECTION, awaiting load from another flight\n\n\n92 (RT)\n92\nRT\nTHROUGH CHECK-IN ERROR, passenger and baggage\n\n\n93 (RA)\n93\nRA\nAIRCRAFT ROTATION, late arrival of aircraft from another flight or previous sector\n\n\n94 (RS)\n94\nRS\nCABIN CREW ROTATION, awaiting cabin crew from another flight\n\n\n95 (RC)\n95\nRC\nCREW ROTATION, awaiting crew from another flight (flight deck or entire crew)\n\n\n96 (RO)\n96\nRO\nOPERATIONS CONTROL, re-routing, diversion, consolidation, aircraft change for reasons other than technical\n\n\nMiscellaneous\n\n\n97 (MI)\n97\nMI\nINDUSTRIAL ACTION WITH OWN AIRLINE\n\n\n98 (MO)\n98\nMO\nINDUSTRIAL ACTION OUTSIDE OWN AIRLINE, excluding ATS\n\n\n99 (MX)\n99\nMX\nOTHER REASON, not matching any code above"
+  },
+  {
+    "objectID": "definition/iata-delay-codes.html#see-also",
+    "href": "definition/iata-delay-codes.html#see-also",
+    "title": "IATA delay codes",
+    "section": "See Also",
+    "text": "See Also\n\nIATA Delay Code 89\nIATA Delay codes table (PDF)\nAppendix of All-causes delay and cancellations to Air Transport Europe Quaterly Reports"
+  },
+  {
+    "objectID": "definition/kep.html",
+    "href": "definition/kep.html",
+    "title": "KEP",
+    "section": "",
+    "text": "KEP is a key performance indicator measuring the level of horizontal en-route flight inefficiency in filed flight plans over a period of 12 months.\nPlease note that the values are NOT monthly averages but the average over the entire 12 months period preceding the last day of the month\nIn order to smooth out the influence of unusual events, the ten best days and the ten worst days (for each measured area) are excluded from the computation.\nThe key performance indicator is used in the Single European Sky (SES) Performance Scheme.\nMore information on the methodology used to compute Horizontal en-route flight efficiency."
+  },
+  {
+    "objectID": "definition/traffic-zone.html",
+    "href": "definition/traffic-zone.html",
+    "title": "Traffic Zone",
+    "section": "",
+    "text": "Traffic zone (TZ) is a term commonly used by STATFOR and consists of a Flight Information Region (FIR) or a group of FIRs. It is independent of the FIR country of origin. In most of the TZ equals the correspondent State."
+  },
+  {
+    "objectID": "definition/punctuality.html",
+    "href": "definition/punctuality.html",
+    "title": "Punctuality (OTP15)",
+    "section": "",
+    "text": "The share of IFR flights arriving/departing within 15:59 minutes after the scheduled arrival/departure time (airline schedules).\nIFR flights without a commercial schedule are not considered for the punctuality reporting; e.g. non-commercial GA/BA flights, military flights, flight schools, aerial works, etc.\nOTP15: on-time performance within 15:59 minutes after the scheduled arrival/departure time (airline schedules)"
+  },
+  {
+    "objectID": "definition/fab.html",
+    "href": "definition/fab.html",
+    "title": "FAB - Functional Airspace Blocks",
+    "section": "",
+    "text": "The FAB concept was developed in the 1st legislative package of the Single European Sky (SES I) as one of the main means for reducing airspace fragmentation. The 2nd legislative package (SES II) tackled the creation of FABs in terms of service provision, in addition to the airspace organisation issues.\nThe twofold objective of the legislative packagers is to optimise air traffic flows and increase the efficiency of air traffic services in Europe.\nSES II lays down a definite commitment date for the Member States to improve performance by implementing FABs, i.e. 4 December 2012. Nine FAB initiatives have been taken:\nFor the details about the computation of delay at FAB level (i.e. the FIRs used), please refer to the relevant section in the En-route ATFM delays page part of the Datasets Definition section."
+  },
+  {
+    "objectID": "definition/fab.html#see-also",
+    "href": "definition/fab.html#see-also",
+    "title": "FAB - Functional Airspace Blocks",
+    "section": "See Also",
+    "text": "See Also\n\nFAB - Functional Airspace Block  page at Skybrary website."
+  },
+  {
+    "objectID": "definition/additional-asma-time.html",
+    "href": "definition/additional-asma-time.html",
+    "title": "Additional ASMA Time",
+    "section": "",
+    "text": "The additional Arrival Sequencing and Metering (ASMA) time provides an approximate measure of the average inbound queuing time on the inbound traffic flow, during times that the airport is congested. This indicator is calculated as the difference between the actual ASMA transit time and a reference ASMA time estimated for each inbound flow."
+  },
+  {
+    "objectID": "definition/additional-asma-time.html#unit-of-measurement",
+    "href": "definition/additional-asma-time.html#unit-of-measurement",
+    "title": "Additional ASMA Time",
+    "section": "Unit of Measurement",
+    "text": "Unit of Measurement\nMinutes per IFR arrival [min/arr]."
+  },
+  {
+    "objectID": "definition/additional-asma-time.html#methodology",
+    "href": "definition/additional-asma-time.html#methodology",
+    "title": "Additional ASMA Time",
+    "section": "Methodology",
+    "text": "Methodology\nThe methodology for the calculation of the additional taxi-in time can be found here."
+  },
+  {
+    "objectID": "definition/departure-slot.html",
+    "href": "definition/departure-slot.html",
+    "title": "Departure Slot",
+    "section": "",
+    "text": "A departure slot is a time when an aircraft can take off, the so called Calculated Time of Take-Off (CTOT)."
+  },
+  {
     "objectID": "about/prc/index.html",
     "href": "about/prc/index.html",
     "title": "Performance Review Commission - PRC",
@@ -1225,39 +1449,11 @@
     "text": "Further Information\nFor further information please refer also to (S. Peeters et al. 2016; Sam Peeters and Guastalla 2017)."
   },
   {
-    "objectID": "methodology/atfm-delay-calculation/index.html",
-    "href": "methodology/atfm-delay-calculation/index.html",
-    "title": "Modification of the ATFM delay calculation (NM release 20.0)",
+    "objectID": "methodology/additional-taxi-in-time.html",
+    "href": "methodology/additional-taxi-in-time.html",
+    "title": "Additional taxi in time",
     "section": "",
-    "text": "Air Navigation Service Providers (ANSPs) noticed that the use of the Ready Message (REA) - whilst attempting to improve punctuality for aircraft – could result in artificial changes to the computed ATFM delay for individual flights and for the ANSP that has requested the regulation.\nThe ANSPs brought this to the attention of the Network Management Board (NMB). The ANSPs, together with the airspace users and the Network Manager reviewed the existing situation and developed a more accurate process which avoids artificial changes to the computed ATFM delay when a REA message is used.\nThe more accurate process was presented to the NMB and approved in March 2015 for implementation with NM software release 20.0 on April 04 2016."
-  },
-  {
-    "objectID": "methodology/atfm-delay-calculation/index.html#background",
-    "href": "methodology/atfm-delay-calculation/index.html#background",
-    "title": "Modification of the ATFM delay calculation (NM release 20.0)",
-    "section": "",
-    "text": "Air Navigation Service Providers (ANSPs) noticed that the use of the Ready Message (REA) - whilst attempting to improve punctuality for aircraft – could result in artificial changes to the computed ATFM delay for individual flights and for the ANSP that has requested the regulation.\nThe ANSPs brought this to the attention of the Network Management Board (NMB). The ANSPs, together with the airspace users and the Network Manager reviewed the existing situation and developed a more accurate process which avoids artificial changes to the computed ATFM delay when a REA message is used.\nThe more accurate process was presented to the NMB and approved in March 2015 for implementation with NM software release 20.0 on April 04 2016."
-  },
-  {
-    "objectID": "methodology/atfm-delay-calculation/index.html#nm-software-version-20.0-related-changes-04-april-2016",
-    "href": "methodology/atfm-delay-calculation/index.html#nm-software-version-20.0-related-changes-04-april-2016",
-    "title": "Modification of the ATFM delay calculation (NM release 20.0)",
-    "section": "NM software version 20.0 related changes (04 April 2016)",
-    "text": "NM software version 20.0 related changes (04 April 2016)\nThe changes implemented with the release of NM software version 20.0 on 04 April 2016 reduce the overall level of computed ATFM delay. The changes are described in more detail in the relevant NM Release presentation."
-  },
-  {
-    "objectID": "methodology/atfm-delay-calculation/index.html#post-operations-performance-adjustment-process",
-    "href": "methodology/atfm-delay-calculation/index.html#post-operations-performance-adjustment-process",
-    "title": "Modification of the ATFM delay calculation (NM release 20.0)",
-    "section": "Post Operations Performance Adjustment Process",
-    "text": "Post Operations Performance Adjustment Process\nThe Post Ops Performance Adjustment Process allows operational stakeholders to notify national and European authorities of issues that relate to ATFM delay measurement, classification and assignment. It is a means of enhancing operational ATFM delay data used in the performance scheme (Regulation (EU) 390) – and thus a means of compliance with Article 21(3).\nMore information is available from the respective NM website."
-  },
-  {
-    "objectID": "methodology/atfm-delay-calculation/index.html#impact-on-this-webpage",
-    "href": "methodology/atfm-delay-calculation/index.html#impact-on-this-webpage",
-    "title": "Modification of the ATFM delay calculation (NM release 20.0)",
-    "section": "Impact on this webpage",
-    "text": "Impact on this webpage\nThe ATFM delay related graphs shown on this web page and data in the download area take the change in methodology as of April 2016 into account.\nIn the ATFM delay file downloads, the computation method is indicated in the column “ATFM version”\n\n\n\n\n\n\n\n\nATFM version\nREA message adjustment\nPost ops adjustment\n\n\n\n\nVersion 1\nNo\nNo\n\n\nVersion 2\nYes\nNo\n\n\nVersion 3\nYes (as of 04 April 2016)\nYes"
+    "text": "The document describing the methodology for the calculation of the additional taxi-in time can be downloaded here.\nThis methodology is the result of a review process of the previous methodology (used up to December 2022 in the EUROCONTROL Performance Review System).\nThe review was done in collaboration with stakeholders through the creating of a working group. All details about the review work can be found here.\nThe new methodology is applied starting with the analysis of January 2023 performance and retroactively to 2015.\nResults are available in our download page."
   },
   {
     "objectID": "methodology/additional-asma-time.html",
@@ -1295,11 +1491,39 @@
     "text": "References\n\nEU. 1993. “Council Regulation (EEC) No 95/93 of 18 January 1993 on Common Rules for the Allocation of Slots at Community Airports.”\n\n\n———. 2004a. “Regulation (EC) No 549/2004 of the European Parliament and of the Council of 10 March 2004 Laying down the Framework for the Creation of the Single European Sky (the Framework Regulation) (Text with EEA Relevance) - Statement by the Member States on Military Issues Related to the Single European Sky.”\n\n\n———. 2004b. “Regulation (EC) No 793/2004 of the European Parliament and of the Council of 21 April 2004 Amending Council Regulation (EEC) No 95/93 on Common Rules for the Allocation of Slots at Community Airports.”\n\n\nEU. 2005. “Commission Regulation (EC) No 2096/2005 of 20 December 2005 Laying down Common Requirements for the Provision of Air Navigation Services.”\n\n\nEU. 2006. “Commission Regulation (EC) No 1794/2006 of 6 December 2006 Laying down a Common Charging Scheme for Air Navigation Services (Text with EEA Relevance).”\n\n\n———. 2008. “Directive 2008/50/EC of the European Parliament and of the Council of 21 May 2008 on Ambient Air Quality and Cleaner Air for Europe.”\n\n\n———. 2010a. “Commission Regulation (EU) No 255/2010 of 25 March 2010 Laying down Common Rules on Air Traffic Flow Management (Text with EEA Relevance).”\n\n\nEU. 2010b. “Commission Regulation (EU) No 691/2010 of 29 July 2010 Laying down a Performance Scheme for Air Navigation Services and Network Functions and Amending Regulation (EC) No 2096/2005 Laying down Common Requirements for the Provision of Air Navigation Services Text with EEA Relevance.”\n\n\nEU. 2013a. “Commission Implementing Regulation (EU) No 390/2013 of 3 May 2013 Laying down a Performance Scheme for Air Navigation Services and Network Functions Text with EEA Relevance.”\n\n\nEU. 2013b. “Commission Implementing Regulation (EU) No 391/2013 of 3 May 2013 Laying down a Common Charging Scheme for Air Navigation Services Text with EEA Relevance.”\n\n\nEU. 2019. “Commission Implementing Regulation (EU) 2019/317 of 11 February 2019 Laying down a Performance and Charging Scheme in the Single European Sky and Repealing Implementing Regulations (EU) No 390/2013 and (EU) No 391/2013 (Text with EEA Relevance.).”"
   },
   {
-    "objectID": "methodology/additional-taxi-in-time.html",
-    "href": "methodology/additional-taxi-in-time.html",
-    "title": "Additional taxi in time",
+    "objectID": "methodology/atfm-delay-calculation.html",
+    "href": "methodology/atfm-delay-calculation.html",
+    "title": "Modification of the ATFM delay calculation (NM release 20.0)",
     "section": "",
-    "text": "The document describing the methodology for the calculation of the additional taxi-in time can be downloaded here.\nThis methodology is the result of a review process of the previous methodology (used up to December 2022 in the EUROCONTROL Performance Review System).\nThe review was done in collaboration with stakeholders through the creating of a working group. All details about the review work can be found here.\nThe new methodology is applied starting with the analysis of January 2023 performance and retroactively to 2015.\nResults are available in our download page."
+    "text": "Air Navigation Service Providers (ANSPs) noticed that the use of the Ready Message (REA) - whilst attempting to improve punctuality for aircraft – could result in artificial changes to the computed ATFM delay for individual flights and for the ANSP that has requested the regulation.\nThe ANSPs brought this to the attention of the Network Management Board (NMB). The ANSPs, together with the airspace users and the Network Manager reviewed the existing situation and developed a more accurate process which avoids artificial changes to the computed ATFM delay when a REA message is used.\nThe more accurate process was presented to the NMB and approved in March 2015 for implementation with NM software release 20.0 on April 04 2016."
+  },
+  {
+    "objectID": "methodology/atfm-delay-calculation.html#background",
+    "href": "methodology/atfm-delay-calculation.html#background",
+    "title": "Modification of the ATFM delay calculation (NM release 20.0)",
+    "section": "",
+    "text": "Air Navigation Service Providers (ANSPs) noticed that the use of the Ready Message (REA) - whilst attempting to improve punctuality for aircraft – could result in artificial changes to the computed ATFM delay for individual flights and for the ANSP that has requested the regulation.\nThe ANSPs brought this to the attention of the Network Management Board (NMB). The ANSPs, together with the airspace users and the Network Manager reviewed the existing situation and developed a more accurate process which avoids artificial changes to the computed ATFM delay when a REA message is used.\nThe more accurate process was presented to the NMB and approved in March 2015 for implementation with NM software release 20.0 on April 04 2016."
+  },
+  {
+    "objectID": "methodology/atfm-delay-calculation.html#nm-software-version-20.0-related-changes-04-april-2016",
+    "href": "methodology/atfm-delay-calculation.html#nm-software-version-20.0-related-changes-04-april-2016",
+    "title": "Modification of the ATFM delay calculation (NM release 20.0)",
+    "section": "NM software version 20.0 related changes (04 April 2016)",
+    "text": "NM software version 20.0 related changes (04 April 2016)\nThe changes implemented with the release of NM software version 20.0 on 04 April 2016 reduce the overall level of computed ATFM delay. The changes are described in more detail in the relevant NM Release presentation."
+  },
+  {
+    "objectID": "methodology/atfm-delay-calculation.html#post-operations-performance-adjustment-process",
+    "href": "methodology/atfm-delay-calculation.html#post-operations-performance-adjustment-process",
+    "title": "Modification of the ATFM delay calculation (NM release 20.0)",
+    "section": "Post Operations Performance Adjustment Process",
+    "text": "Post Operations Performance Adjustment Process\nThe Post Ops Performance Adjustment Process allows operational stakeholders to notify national and European authorities of issues that relate to ATFM delay measurement, classification and assignment. It is a means of enhancing operational ATFM delay data used in the performance scheme (Regulation (EU) 390) – and thus a means of compliance with Article 21(3).\nMore information is available from the respective NM website."
+  },
+  {
+    "objectID": "methodology/atfm-delay-calculation.html#impact-on-this-webpage",
+    "href": "methodology/atfm-delay-calculation.html#impact-on-this-webpage",
+    "title": "Modification of the ATFM delay calculation (NM release 20.0)",
+    "section": "Impact on this webpage",
+    "text": "Impact on this webpage\nThe ATFM delay related graphs shown on this web page and data in the download area take the change in methodology as of April 2016 into account.\nIn the ATFM delay file downloads, the computation method is indicated in the column “ATFM version”\n\n\n\n\n\n\n\n\nATFM version\nREA message adjustment\nPost ops adjustment\n\n\n\n\nVersion 1\nNo\nNo\n\n\nVersion 2\nYes\nNo\n\n\nVersion 3\nYes (as of 04 April 2016)\nYes"
   },
   {
     "objectID": "methodology/airport-capacity-utilisation/index.html",
@@ -1428,8 +1652,8 @@
     "text": "Specific/special cases and FAQ\nThe origin and destination points are defined via the reference area chosen, while the definition of the end route portion of the flight depends on the 40 nautical miles cylinder (cylinder and circle are used interchangeably) around the airports. In the general case in which the airports and the corresponding circles are fully inside or outside the reference area, the following Table 3 is valid (the definition of the type of flight is based on the location of the airports with respect to the reference area):\n\n\n\nTable 3: General location of origin, destination and en-route end-points\n\n\n\n\n\n\n\n\n\n\n\n\nType of flight\nOrigin\nEn-route Starts\nEn-route Ends\nDestination\n\n\n\n\nInternal\nAirport\n40 NM\n40 NM\nAirport\n\n\nArriving\nBorder\nBorder\n40 NM\nAirport\n\n\nDeparting\nAirport\n40 NM\nBorder\nBorder\n\n\nOverflying\nBorder\nBorder\nBorder\n\n\n\n\n\n\n\n\nFAQ\n\nWhat is the difference between reference area and measured area?\nThe reference area is the one used to identify the origin and the destination of a flight. A measured area is an area for which HFE values are reported. Any measured area (e.g., State, FAB, SES area) must be contained in the reference area.\nWhat is the definition of origin and destination?\nThe origin and destination correspond to the first and last point of the trajectory within the reference area, where the trajectory considered is the entire trajectory from airport to airport. Any portion of the trajectory before the origin and after the destination is ignored when calculating the flight efficiency. There is one origin and one destination for each trajectory. Origin and destination are defined at trajectory level – O and D in the notation used in previous section are the same for all entries and exits of a trajectory.\nWhat happens when the trajectory crosses the 40 nautical miles cylinder several times?\nOnly one point is taken into consideration for each airport. For the departure airport it corresponds to the first crossing, while for the arrival airport it corresponds to the last crossing. The en route part of the flight is the one between those two points. Any portion before or after the en route part is ignored when calculating the en route flight efficiency. The start and the end en route phase are defined at trajectory level.\nWhat happens when the circle around the airport is not fully inside/outside the reference area? What happens when the en route portion begins/ends inside a measured area? What happens when part of the trajectory is not available?\nAll the above questions relate to the definition of the portions of trajectory used for the calculation of the en route indicator for a measured area. Four separate and independent aspects have to be considered:\n\nA portion has to be within the origin and the destination (for flight efficiency to be defined);\nA portion has to be en route (i.e., the cylinders around airports have to excluded);\nA portion has to be within the measured area;\nThe information has to be available.\n\nThe four conditions have to be valid at the same time. This means that in some cases the end points of the portion considered for flight efficiency in a measured area (the entry N and the exit X in the notation used in previous sections) will not correspond to the borders of the measured area.\nThe main reason for the entry/exit points not being on the border of the measured area is the exclusion of the circles around the airport (see table above and the following examples). A secondary reason is the absence of information for a part of a trajectory (see example below).\nConsider the case of a flight departing from a measured area A, with the circle/cylinder entirely contained in the measurement area A. The origin (\\(O_f\\)) will be the airport because it will be the first point into the reference area (a measured area is always part of the reference area). As the part within the cylinder has to be excluded when measuring the en route flight efficiency, the entry into the measured area (\\(N_A\\)) will correspond to the first crossing of the (departure airport) cylinder. It is neither the airport (airports can never be the entry or exit point for en route flight efficiency because of the exclusion of the circle around them) nor the border of the measured area A. The situation corresponds to the standard “departing” or “internal” row in the table above.\nConsider the same case above, except that the circle extends into another measured area B and the first crossing is happening there. The origin will still be located at the airport in measured area A, but there will be no portion of trajectory considered for measured area A because the en route part will not have started. The entry into measured area B (NB) will again correspond to the first crossing of the (departure airport) cylinder and not the airport or the border of measured area B.\nAs a third alternative, consider the case where the circle around area A extends outside the reference area, the first crossing happens there and the flight then re-enter measured area A. The origin will again be located at the airport; the en route portion will start outside the reference area; the first entry into area A (NA) will be the one from outside the reference area.\nLast, consider the case where a flight traverses a measured area, with entry and exit on the borders but with a part of the trajectory for which the information is missing. In that case there will be two portions of the trajectory considered: the first one from the border (\\(N_1\\)) until the information is lost (\\(X_1\\)) and a second one from when the information is again available (\\(N_2\\)) until the exit from the measured area (\\(X_2\\)).\nWhat happens when the trajectory enters an area several times? Every couple of entry and exit points (see the previous answer for why the entry and exit points might not correspond to points on the border of the measured area considered) defines a portion of the flight for which the length of the trajectory and the achieved distance can be calculated. All portions within a measured area are considered in the calculation of the indicator for that area.\nIt is important to note that multiple entries are considered separately and it is not the first point of entry and the last point of exit of a measured area which are considered (see last example in the previous question).\nCan the achieved distance be negative? The achieved distance relies on the order of the points considered; it is therefore possible (although uncommon) for the local achieved distance to be negative. This ensures that the calculation of the local additional distances is consistent (any partition of the trajectory gives the same result).\nWhat is the impact of short flights (for which the great circle distance is small)? The horizontal flight efficiency (HFE) is not an average per flight, but a weighted average which takes into consideration the great circle distance (\\(K\\) is the additional distance, \\(G\\) is the great circle distance, \\(H\\) is the achieved distance; \\(f\\) indicates a flight, \\(j\\) indicates an area, \\(p\\) indicates a portion of the flight):\n\\[\n\\text{HFE} = \\sum w_f \\cdot \\frac{K_f}{G_f} = \\sum \\frac{G_f}{\\sum G_f} \\cdot \\frac{K_f}{G_f}\n= \\frac{\\sum K_f}{\\sum G_f} = \\frac{K_f}{H_f} \\cong \\frac{\\sum K_{fjp}}{\\sum\nH_{fjp}}\n\\]\nThe contribution to the additional distance of each portion of the flight is proportional to the achieved distance of the same portion. The impact of short flights is therefore proportional to their lengths.\nWhat is the impact of unusual circumstances on the annual indicator?\nWhen calculating the annual indicator the values for the ten best days and the ten worst days are excluded from the computation."
   },
   {
-    "objectID": "methodology/additional-taxi-out-time/index.html",
-    "href": "methodology/additional-taxi-out-time/index.html",
+    "objectID": "methodology/additional-taxi-out-time.html",
+    "href": "methodology/additional-taxi-out-time.html",
     "title": "Additional taxi out time",
     "section": "",
     "text": "The document describing the methodology for the calculation of the additional taxi-out time can be downloaded here.\nThis methodology is the result of a review process of the previous methodology (used up to December 2022 in the EUROCONTROL Performance Review System).\nThe review was done in collaboration with stakeholders through the creating of a working group. All details about the review work can be found here.\nThe new methodology is applied starting with the analysis of January 2023 performance and retroactively to 2015.\nResults with the old methodology up to December 2022 are available for consultation in our download page and were used in performance reports up to and including PRR 2022."
@@ -1468,6 +1692,244 @@
     "title": "Dr. Piotr IKANOWICZ",
     "section": "",
     "text": "Dr. Piotr IKANOWICZ joined the PRC in 2023 as the focal point for airlines and serves as PRC vice-chair.\nPiotr IKANOWICZ has thirty years of executive track record in the aviation industry. While working as Chief Financial Officer, he has taken the lead on numerous major restructuring and turnaround projects. With a multicultural and multinational background, proficiency in four languages, and experience working from bases in Poland, Hungary, Cyprus, Denmark, and Ukraine, he has cultivated his expertise in both favourable and challenging times. Demonstrating strong management skills and a creative, mature personality, he has proven adept negotiation abilities in various settings, including multiparty multimillion-dollar projects and trade union dispute resolution.\nCFO Ukrainian Int’l Airlines (UIA), Kyiv (2014 - 2022) - revision of strategy, implementation of the cost cutting program, co-leadership in crisis management (Teheran shooting of PS 752, Covid 19, pre Russian invasion escalation period). Management of a company with $ 1B turnover.\nManaging Director Skyways Leasing, Limassol, Cyprus (2011 - 2014) - managing portfolio of 50 airplanes. Overview of business with multi jurisdiction tax regimes.\nCFO Malev Hungarian Airlines, Budapest (2007 - 2011) - strategy development which led to reshaping of the network, cancelation of long haul. Implementation of the restructuring program. Preparations of a plan presented to EU for state aid.\nCFO LOT Polish Airlines, Warsaw (1990-1995) and (1998-2007) - strategy development which led to creation of a hub, selection of a strategic partner/investor in 1999 privatization, spin off of noncore businesses, introduction of the ERP system, budgeting system, establishment of risk and hedging policies Assistant professor in the Institute of International Economic Relations, SGH (1984 – 1991) – PhD in international economics (1990)."
+  },
+  {
+    "objectID": "definition/slot-tolerance-window.html",
+    "href": "definition/slot-tolerance-window.html",
+    "title": "Slot Tolerance Window",
+    "section": "",
+    "text": "Time window (5 minutes before and 10 minutes after) around the CTOT in which a flight should be taking off."
+  },
+  {
+    "objectID": "definition/operated-schedules.html",
+    "href": "definition/operated-schedules.html",
+    "title": "Operated (non-operated) Schedules (%)",
+    "section": "",
+    "text": "There are a number of indicators measuring the level of flight disruptions in the Network.\nOn the dashboard, the percentage of operated schedules is shown. It corresponds to the % of airline schedules that match to an operated flight (with ATC flight plan) compared to the total number of expected flights. Conversely, the percentage of non-operated schedules corresponds to the % or airline schedules that do NOT match to an operated flight (with ATC flight plan) compared to the total number of expected flights.\nFlight schedules information (covering all market segments) is loaded every day including data for the ongoing date and next two days. If a flight plan and a flight schedule fulfil multiple conditions (slot times, airports and callsign) they will be matched. The indicator is calculated making use of the total number of matched flight plans and schedules that were not related to any flight plan for the selected period. The schedule information consists of data received from EUACA and third parties.\nThe % of non-operated schedules is not to be confused with:\n\nFlight cancellations related to Regulation (EC) No 261/2004 which are typically reported by airlines and which relate to passenger flights only. Airlines are required to compensate a passenger for a cancelled flight if the passenger was notified less than 14 days before the original scheduled departure date.\nOperational flight cancellations within the context of the Single European Sky (SES) Performance Scheme. These relate to tactical flight cancellations (i.e. essentially during the last 24h before the schedule time for all market segments) for flights that received an airport slot. For more information, see also Sections 8 and 17 in the CODA 2019 Digest."
+  },
+  {
+    "objectID": "definition/esra-2008-area.html",
+    "href": "definition/esra-2008-area.html",
+    "title": "ESRA 2008 Area",
+    "section": "",
+    "text": "European Statistical Reference Area (see STATFOR Reports)\nAlbania, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Canary Islands, Croatia, Cyprus, Czech Republic, Denmark, Finland, France, Republic of North Macedonia, Germany, Greece, Hungary, Ireland, Italy, Lisbon FIR, Luxembourg, Malta, Moldova, Montenegro, Netherlands, Norway, Poland, Romania, Santa Maria FIR, Serbia, Slovak Republic , Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, United Kingdom"
+  },
+  {
+    "objectID": "definition/en-route-atfm-delay.html",
+    "href": "definition/en-route-atfm-delay.html",
+    "title": "En-route ATFM Delay",
+    "section": "",
+    "text": "ATFM delay caused by regulations applied by NM at the request of the FMP to protect en-route ATC sectors from overload."
+  },
+  {
+    "objectID": "definition/additional-taxi-in-time.html",
+    "href": "definition/additional-taxi-in-time.html",
+    "title": "Additional Taxi-in Time",
+    "section": "",
+    "text": "The additional taxi-in time provides an approximate measure of for the average holding time during the taxi-in phase, during times that the apron and stands are congested. This indicator is calculated as the difference between the actual taxi-in time and a reference taxi-in time estimated for each runway-stand combination."
+  },
+  {
+    "objectID": "definition/additional-taxi-in-time.html#unit-of-measurement",
+    "href": "definition/additional-taxi-in-time.html#unit-of-measurement",
+    "title": "Additional Taxi-in Time",
+    "section": "Unit of Measurement",
+    "text": "Unit of Measurement\nMinutes per IFR arrival [min/arr]."
+  },
+  {
+    "objectID": "definition/additional-taxi-in-time.html#methodology",
+    "href": "definition/additional-taxi-in-time.html#methodology",
+    "title": "Additional Taxi-in Time",
+    "section": "Methodology",
+    "text": "Methodology\nThe methodology for the calculation of the additional taxi-in time can be found here."
+  },
+  {
+    "objectID": "definition/movements.html",
+    "href": "definition/movements.html",
+    "title": "Movements (STATFOR definition)",
+    "section": "",
+    "text": "The definitions below were extracted from the EUROCONTROL Glossary for Flight Statistics & Forecasts (Edition number: v1.0 (05/01/2005))"
+  },
+  {
+    "objectID": "definition/movements.html#see-also",
+    "href": "definition/movements.html#see-also",
+    "title": "Movements (STATFOR definition)",
+    "section": "See Also",
+    "text": "See Also\n\nr blogdown::shortcode(\"a_blank ectrl\", \"EUROCONTROL - Forecasting\", \"https://www.eurocontrol.int/forecasting\")"
+  },
+  {
+    "objectID": "definition/ecac-area.html",
+    "href": "definition/ecac-area.html",
+    "title": "ECAC Area",
+    "section": "",
+    "text": "European Civil Aviation Conference (ECAC) area\nECAC Member States are: Albania, Armenia, Austria, Azerbaijan, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Georgia, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Republic of North Macedonia, Turkey, Ukraine and United Kingdom."
+  },
+  {
+    "objectID": "definition/composite-flight-hour.html",
+    "href": "definition/composite-flight-hour.html",
+    "title": "Composite flight-hour",
+    "section": "",
+    "text": "See definition and further details in Section 3.1 of the ACE Handbook."
+  },
+  {
+    "objectID": "definition/flight-models.html",
+    "href": "definition/flight-models.html",
+    "title": "Flight Trajectory Models",
+    "section": "",
+    "text": "There are several trajectories of interest for the analysis of horizontal flight efficiency."
+  },
+  {
+    "objectID": "definition/flight-models.html#ftfm-or-model-1",
+    "href": "definition/flight-models.html#ftfm-or-model-1",
+    "title": "Flight Trajectory Models",
+    "section": "FTFM or Model 1",
+    "text": "FTFM or Model 1\nFiled Tactical Flight Model, corresponding to the last filed flight plan (see also [FTFM][ftfm])"
+  },
+  {
+    "objectID": "definition/flight-models.html#ctfm-or-model-3",
+    "href": "definition/flight-models.html#ctfm-or-model-3",
+    "title": "Flight Trajectory Models",
+    "section": "CTFM or Model 3",
+    "text": "CTFM or Model 3\nCurrent Tactical Flight Model (see [CTFM][ctfm])"
+  },
+  {
+    "objectID": "definition/flight-models.html#cpf",
+    "href": "definition/flight-models.html#cpf",
+    "title": "Flight Trajectory Models",
+    "section": "CPF",
+    "text": "CPF\nCorrelated Positions reports for a Flight, i.e., airspace profiles following as much as possible the actual flown trajectory (based on radar positions - see [CPR][cpr])."
+  },
+  {
+    "objectID": "definition/flight-models.html#cpg_gen",
+    "href": "definition/flight-models.html#cpg_gen",
+    "title": "Flight Trajectory Models",
+    "section": "CPG_GEN",
+    "text": "CPG_GEN\nProfiles generated by the CFMU path generation tool.\n\nSCR\nShortest Constrained Route. IFPS compliant route (available CDRs open and RAD compliant).\n\n\nSRR\nShortest RAD restrictions applied Route. All CDRs open.\n\n\nSUR\nShortest Unconstrained Route. No RAD applied, all CDRs open.\n\n\nDCT\nDirect route. Any portion outside the FPM_AREA is “frozen”, i.e, not generated by the tool."
+  },
+  {
+    "objectID": "definition/flight-models.html#comparisons",
+    "href": "definition/flight-models.html#comparisons",
+    "title": "Flight Trajectory Models",
+    "section": "Comparisons",
+    "text": "Comparisons\nThe comparison between values for different trajectories of the same flight provides indication on the effects of different factors:\n\nSUR vs DCT provides a measure of the effects of route design, because it compares the shortest theoretical course with the best one available using the route network.\nSUR vs SCR provides a measure of the effects of route availability, because it compares the route potentially available on the route network with the one that could actually be filed.\nFTFM vs SCR provides a measure of the route utilisation by Aircraft Operators, because it compares the route actually filed to the best that could have been filed.\nCPF vs FTFM provides a measure of the effects of ATC because it compares the actual trajectory to the one that was filed."
+  },
+  {
+    "objectID": "definition/flight-models.html#see-also",
+    "href": "definition/flight-models.html#see-also",
+    "title": "Flight Trajectory Models",
+    "section": "See Also",
+    "text": "See Also\n\nCDR\nCPF\nCPR\nCTFM\nDCT\nFTFM\nSCR\nSRR\nSUR"
+  },
+  {
+    "objectID": "definition/ses-area.html",
+    "href": "definition/ses-area.html",
+    "title": "SES Area",
+    "section": "",
+    "text": "The Single European Sky Area comprises the States included in Performance Scheme of the Single European Sky.\n\nIn RP1 (2012-2014): 27 EU Member States at the start of RP1 plus Norway and Switzerland (29 States in total).\nIn RP2 (2015-2019): 28 EU Member States at the start of RP2 plus Norway and Switzerland (30 States in total).\nIn RP3 (2020-2024): 27 EU Member States at the start of RP2 plus Norway and Switzerland (29 States in total)."
+  },
+  {
+    "objectID": "definition/short-term-atfcm-measures.html",
+    "href": "definition/short-term-atfcm-measures.html",
+    "title": "Short term ATFCM measures",
+    "section": "",
+    "text": "An approach to smooth sector workloads by reducing traffic peaks through short-term application of minor ground delays, appropriate flight level capping and exiguous rerouting to a limited number of flights. Short-term ATFCM measures (STAMs) can reduce the complexity of anticipated traffic peaks. FMPs analyse the associated lists of flights to anticipate ATC workload and identify actions to be taken in order to reduce the traffic complexity generated by those flights."
+  },
+  {
+    "objectID": "definition/turnaround.html",
+    "href": "definition/turnaround.html",
+    "title": "Turnaround",
+    "section": "",
+    "text": "Turnaround shows the time elapsed between an aircraft blocking in and blocking off for the next flight from the same parking stand on the same day. The sample is treated to consider only ground times with the following characteristics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeats\n\nWTC\n\nCutoff time1\n\n\nM\nH\nJ\n\n\n\n\nB\n31-80\nx\n\n\n90 minutes\n\n\nC\n81-180\nx\nx\n\n120 minutes\n\n\nD\n181-220\nx\nx\n\n150 minutes\n\n\nE\n&gt; 220\nx\nx\nx\n180 minutes\n\n\n\n1 Turnaround cutoff time based on scheduled Ground Time.\n\n\n\n\n\n\n\n\nAdditional information, based on Network Manager data, can be found in the tool MIRROR at https://www.eurocontrol.int/tool/mirror"
+  },
+  {
+    "objectID": "definition/iata-code-89.html",
+    "href": "definition/iata-code-89.html",
+    "title": "IATA code 89",
+    "section": "",
+    "text": "Code 89 (alpha AM) is one of IATA’s delay codes (Wikipedia 2015; IATA 2012). It is specified as follows:"
+  },
+  {
+    "objectID": "definition/iata-code-89.html#see-also",
+    "href": "definition/iata-code-89.html#see-also",
+    "title": "IATA code 89",
+    "section": "See Also",
+    "text": "See Also\n\nIATA Delay Codes\nIATA Delay codes table (PDF)\nAppendix of All-causes delay and cancellations to Air Transport Europe Quaterly Reports"
+  },
+  {
+    "objectID": "definition/en-route-charging-zone.html",
+    "href": "definition/en-route-charging-zone.html",
+    "title": "En-route Charging Zone",
+    "section": "",
+    "text": "A route charge is levied for each flight performed in the EUROCONTROL airspace. The EUROCONTROL airspace is divided into route charging zones as defined by the Member States.\nThe EUROCONTROL route charge takes account of three basic elements:\nThe Unit Rate of charge is established at the beginning of the year and, normally, remains valid for a calendar year.\nThe following map shows EUROCONTROL charging zone:"
+  },
+  {
+    "objectID": "definition/en-route-charging-zone.html#see-also",
+    "href": "definition/en-route-charging-zone.html#see-also",
+    "title": "En-route Charging Zone",
+    "section": "See Also",
+    "text": "See Also\n\nr blogdown::shortcode(\"a_blank ectrl\", \"CRCO - Central Route Charges Office\", \"https://www.eurocontrol.int/crco\")"
+  },
+  {
+    "objectID": "definition/eco-cost-eff.html",
+    "href": "definition/eco-cost-eff.html",
+    "title": "Economic Cost Effectiveness",
+    "section": "",
+    "text": "See definition and further details in Section 4 of the ACE Handbook."
+  },
+  {
+    "objectID": "definition/atfm-delay-codes.html",
+    "href": "definition/atfm-delay-codes.html",
+    "title": "ATFM Delay Codes",
+    "section": "",
+    "text": "The reason for the regulation is indicated by the responsible Flow Management Position FMP.\nFor post-ops analysis individual delay codes can be included in a ATFM delay group."
+  },
+  {
+    "objectID": "definition/atfm-delay-codes.html#see-also",
+    "href": "definition/atfm-delay-codes.html#see-also",
+    "title": "ATFM Delay Codes",
+    "section": "See Also",
+    "text": "See Also\n\nATFM delay.\n{{% a_blank ectrl \"ATFCM Users Manual\" \"https://www.eurocontrol.int/publication/atfcm-users-manual\" %}}."
+  },
+  {
+    "objectID": "definition/atfm-measure.html",
+    "href": "definition/atfm-measure.html",
+    "title": "ATFM Measure",
+    "section": "",
+    "text": "In the context of Air Traffic Flow Management (ATFM) a measure refers to (EU 2010)"
+  },
+  {
+    "objectID": "definition/atfm-measure.html#see-also",
+    "href": "definition/atfm-measure.html#see-also",
+    "title": "ATFM Measure",
+    "section": "See Also",
+    "text": "See Also\n\nRegulation"
+  },
+  {
+    "objectID": "definition/primary-delay.html",
+    "href": "definition/primary-delay.html",
+    "title": "Primary delay",
+    "section": "",
+    "text": "A delay other than reactionary."
+  },
+  {
+    "objectID": "definition/reactionary-delay.html",
+    "href": "definition/reactionary-delay.html",
+    "title": "Reactionary delay",
+    "section": "",
+    "text": "Delay caused by late arrival of aircraft, crew, passengers or baggage from previous journeys."
+  },
+  {
+    "objectID": "definition/regulation.html",
+    "href": "definition/regulation.html",
+    "title": "Regulation",
+    "section": "",
+    "text": "In the context of ATFM, a regulation is one of the possible ATFM measures."
+  },
+  {
+    "objectID": "definition/serious-incident.html",
+    "href": "definition/serious-incident.html",
+    "title": "Serious incident",
+    "section": "",
+    "text": "An incident involving circumstances indicating that an accident nearly occurred. (ICAO Annex 13)."
   },
   {
     "objectID": "acronym/casa.html",
@@ -2006,7 +2468,7 @@
     "href": "acronym/ctfm.html#see-also",
     "title": "CTFM - Current Tactical Flight Model",
     "section": "See Also",
-    "text": "See Also\n\nCPF.\nETFMS.\nFiled Tactical Flight Model.\n[Flight Models][fm]."
+    "text": "See Also\n\nCPF.\nETFMS.\nFiled Tactical Flight Model.\nFlight Models."
   },
   {
     "objectID": "acronym/tnsu.html",

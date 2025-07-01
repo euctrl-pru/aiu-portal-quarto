@@ -14,7 +14,7 @@ Route Availability Document (RAD) CDR's are open.
 * [CPR](cpr.md)
 * [CTFM](ctfm.md)
 * [DCT](dct.md)
-* [Flight models](flight-models.md)
+* [Flight models](../definition/flight-models.md)
 * [FTFM](ftfm.md)
 * [SCR](scr.md)
 * [SUR](sur.md)

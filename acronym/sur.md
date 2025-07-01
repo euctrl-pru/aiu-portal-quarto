@@ -18,7 +18,7 @@ The associated distance measures how effectively the route network is designed.
 * [CPR](cpr.md)
 * [CTFM](ctfm.md)
 * [DCT](dct.md)
-* [Flight models](flight-models.md)
+* [Flight models](../definition/flight-models.md)
 * [FTFM](ftfm.md)
 * [ScR](scr.md)
 * [SRR](srr.md)

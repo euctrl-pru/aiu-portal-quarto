@@ -1,0 +1,13 @@
+---
+title: Definitions
+description: "A reference for commonly used terms by the EUROCONTROL Aviation Intelligence Unit and the Performance Review Commission."
+
+listing: 
+  - id: definitions
+    type: table
+    fields: [title]
+    contents: 
+      - "*.qmd"
+      - "*.md"
+
+---

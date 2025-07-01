@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.30">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="A reference for commonly used terms by the EUROCONTROL Aviation Intelligence Unit and the Performance Review Commission.">
+
+<title>Definitions</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-978f3077c05b287ae57beef2a5c3d2de.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-definitions .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      page: 30,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-definitions'] = new List('listing-definitions', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/EUROCONTROL-logo-standard-rgb.svg" alt="EUROCONTROL Supporting European Aviation" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../"> 
+<span class="menu-text"><strong>Home</strong></span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-performance-areas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Performance areas</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-performance-areas">    
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/Economics/BalancedScorecard.html">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:th" aria-label="Icon th from fa6-solid Iconify.design set." title="Icon th from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Balanced scorecard</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:plane-departure" aria-label="Icon plane-departure from fa6-solid Iconify.design set." title="Icon plane-departure from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Traffic</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Daily traffic dashboard</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Service units</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/statfor/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Traffic forecast</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/punctuality/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:calendar" aria-label="Icon calendar from fa6-solid Iconify.design set." title="Icon calendar from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Punctuality</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/Economics/DailyPunctuality-States.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Daily punctuality dashboard</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/punctuality/#eurocontrol-area-network-view-1">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Network punctuality</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../traffic/punctuality/#state-view-1">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">State &amp; airport punctuality</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../capacity/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:clock" aria-label="Icon clock from fa6-solid Iconify.design set." title="Icon clock from fa6-solid Iconify.design set."></iconify-icon>&nbsp;En-route &amp; airport delays</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/Economics/DailyDelay-States.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Daily ATFM delays dashboard</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../capacity/atfm_ert/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">En-route ATFM delays</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../capacity/atfm_apt/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Airport ATFM delays</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../capacity/tot_dly">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">All-causes delays</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:leaf" aria-label="Icon leaf from fa6-solid Iconify.design set." title="Icon leaf from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Efficiency &amp; environment</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/emissions/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">CO<sub>2</sub> emissions</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/hfe/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Horizontal flight efficiency</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/vfe/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Vertical flight efficiency</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/asma/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Terminal holdings</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/taxiout/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Taxi-out</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../efficiency/taxiin/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Taxi-in</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../economics/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:euro-sign" aria-label="Icon euro-sign from fa6-solid Iconify.design set." title="Icon euro-sign from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Economics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../economics/ace-overview/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">ATM cost-effectiveness (ACE)</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteUnitRates.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Unit rates and costs</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Service units</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../economics/finance/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">ANSPs financial dashboard</span></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../economics/cba/">
+ <span class="dropdown-text">&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Standard Inputs for Economic Analyses</span></span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stakeholder-views" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Stakeholder views</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-stakeholder-views">    
+        <li>
+    <a class="dropdown-item" href="../dashboard/stakeholder/airport/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:plane-arrival" aria-label="Icon plane-arrival from fa6-solid Iconify.design set." title="Icon plane-arrival from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Airports</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../dashboard/stakeholder/ansp/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:compass" aria-label="Icon compass from fa6-solid Iconify.design set." title="Icon compass from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Air navigation service provider</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../dashboard/stakeholder/state/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:globe" aria-label="Icon globe from fa6-solid Iconify.design set." title="Icon globe from fa6-solid Iconify.design set."></iconify-icon>&nbsp;States</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../data/"> 
+<span class="menu-text"><strong>Data</strong></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications/"> 
+<span class="menu-text"><strong>Publications</strong></span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Reference</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-reference">    
+        <li>
+    <a class="dropdown-item" href="../definition/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:marker" aria-label="Icon marker from fa6-solid Iconify.design set." title="Icon marker from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Definitions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../methodology/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:wrench" aria-label="Icon wrench from fa6-solid Iconify.design set." title="Icon wrench from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Methodology</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../acronym/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:quote-left" aria-label="Icon quote-left from fa6-solid Iconify.design set." title="Icon quote-left from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Acronyms</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../bibliography/">
+ <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:book" aria-label="Icon book from fa6-solid Iconify.design set." title="Icon book from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Bibliography</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-links" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Links</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-links">    
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/">
+ <span class="dropdown-text">EUROCONTROL <i class="fas fa-xs fa-external-link-alt"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eurocontrol.int/prudata/dashboard/">
+ <span class="dropdown-text">Single European Sky (SES) portal <i class="fas fa-xs fa-external-link-alt"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www4.icao.int/ganpportal/">
+ <span class="dropdown-text">ICAO GANP <i class="fas fa-xs fa-external-link-alt"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://ext.eurocontrol.int/connectivity_web/from">
+ <span class="dropdown-text">Connectivity dashboard <i class="fas fa-xs fa-external-link-alt"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../transformation/">
+ <span class="dropdown-text">PRC Transformation Strategy</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://opdi.aero">
+ <span class="dropdown-text">PRC Open Performance Data Initiative</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>About</strong></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../about/prc/">
+ <span class="dropdown-text">About the PRC</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/aiu/">
+ <span class="dropdown-text">About the AIU</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/pru/">
+ <span class="dropdown-text">About the PRU</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../post/">
+ <span class="dropdown-text">Release notes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/disclaimer/">
+ <span class="dropdown-text">Disclaimer</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Definitions</h1>
+</div>
+
+<div>
+  <div class="description">
+    A reference for commonly used terms by the EUROCONTROL Aviation Intelligence Unit and the Performance Review Commission.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-definitions">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-definitions-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-definitions'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-file-modified-sort="1751377091472" data-listing-reading-time-sort="1" data-listing-word-count-sort="57" data-listing-title-sort="ASMA Transit Time" data-listing-filename-sort="asma-transit-time.md">
+<td>
+<a href="../definition/asma-transit-time.html" class="title listing-title">ASMA Transit Time</a>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-file-modified-sort="1751381772059" data-listing-reading-time-sort="1" data-listing-word-count-sort="23" data-listing-title-sort="ATC Pre-departure Delay" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../definition/atc-pre-departure-delay/index.html" class="title listing-title">ATC Pre-departure Delay</a>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-file-modified-sort="1751377091473" data-listing-reading-time-sort="1" data-listing-word-count-sort="115" data-listing-title-sort="ATFM Delay" data-listing-filename-sort="atfm-delay.qmd">
+<td>
+<a href="../definition/atfm-delay.html" class="title listing-title">ATFM Delay</a>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-file-modified-sort="1751379878858" data-listing-reading-time-sort="2" data-listing-word-count-sort="202" data-listing-title-sort="ATFM Delay Codes" data-listing-filename-sort="atfm-delay-codes.qmd">
+<td>
+<a href="../definition/atfm-delay-codes.html" class="title listing-title">ATFM Delay Codes</a>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-file-modified-sort="1751380199995" data-listing-reading-time-sort="1" data-listing-word-count-sort="39" data-listing-title-sort="ATFM Measure" data-listing-filename-sort="atfm-measure.qmd">
+<td>
+<a href="../definition/atfm-measure.html" class="title listing-title">ATFM Measure</a>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-file-modified-sort="1751380224186" data-listing-reading-time-sort="1" data-listing-word-count-sort="87" data-listing-title-sort="ATFM slot adherence" data-listing-filename-sort="atfm-slot-adherence.qmd">
+<td>
+<a href="../definition/atfm-slot-adherence.html" class="title listing-title">ATFM slot adherence</a>
+</td>
+
+</tr>
+
+<tr data-index="6" data-listing-file-modified-sort="1751382206658" data-listing-reading-time-sort="1" data-listing-word-count-sort="71" data-listing-title-sort="Additional ASMA Time" data-listing-filename-sort="additional-asma-time.qmd">
+<td>
+<a href="../definition/additional-asma-time.html" class="title listing-title">Additional ASMA Time</a>
+</td>
+
+</tr>
+
+<tr data-index="7" data-listing-file-modified-sort="1751380087247" data-listing-reading-time-sort="1" data-listing-word-count-sort="67" data-listing-title-sort="Additional Taxi-in Time" data-listing-filename-sort="additional-taxi-in-time.qmd">
+<td>
+<a href="../definition/additional-taxi-in-time.html" class="title listing-title">Additional Taxi-in Time</a>
+</td>
+
+</tr>
+
+<tr data-index="8" data-listing-file-modified-sort="1751380188130" data-listing-reading-time-sort="1" data-listing-word-count-sort="67" data-listing-title-sort="Additional Taxi-out Time" data-listing-filename-sort="additional-taxi-out-time.qmd">
+<td>
+<a href="../definition/additional-taxi-out-time.html" class="title listing-title">Additional Taxi-out Time</a>
+</td>
+
+</tr>
+
+<tr data-index="9" data-listing-file-modified-sort="1751379875169" data-listing-reading-time-sort="1" data-listing-word-count-sort="59" data-listing-title-sort="Air transport statistics" data-listing-filename-sort="air-transport-statistics.md">
+<td>
+<a href="../definition/air-transport-statistics.html" class="title listing-title">Air transport statistics</a>
+</td>
+
+</tr>
+
+<tr data-index="10" data-listing-file-modified-sort="1751382382994" data-listing-reading-time-sort="2" data-listing-word-count-sort="217" data-listing-title-sort="Airport operator data flow (APDF)" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../definition/airport-data-flow/index.html" class="title listing-title">Airport operator data flow (APDF)</a>
+</td>
+
+</tr>
+
+<tr data-index="11" data-listing-file-modified-sort="1751379875169" data-listing-reading-time-sort="1" data-listing-word-count-sort="43" data-listing-title-sort="Airspace Infringement" data-listing-filename-sort="airspace-infringement.md">
+<td>
+<a href="../definition/airspace-infringement.html" class="title listing-title">Airspace Infringement</a>
+</td>
+
+</tr>
+
+<tr data-index="12" data-listing-file-modified-sort="1751377091474" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="Composite flight-hour" data-listing-filename-sort="composite-flight-hour.md">
+<td>
+<a href="../definition/composite-flight-hour.html" class="title listing-title">Composite flight-hour</a>
+</td>
+
+</tr>
+
+<tr data-index="13" data-listing-file-modified-sort="1751377091474" data-listing-reading-time-sort="1" data-listing-word-count-sort="28" data-listing-title-sort="Departure Slot" data-listing-filename-sort="departure-slot.qmd">
+<td>
+<a href="../definition/departure-slot.html" class="title listing-title">Departure Slot</a>
+</td>
+
+</tr>
+
+<tr data-index="14" data-listing-file-modified-sort="1751377091474" data-listing-reading-time-sort="1" data-listing-word-count-sort="62" data-listing-title-sort="ECAC Area" data-listing-filename-sort="ecac-area.md">
+<td>
+<a href="../definition/ecac-area.html" class="title listing-title">ECAC Area</a>
+</td>
+
+</tr>
+
+<tr data-index="15" data-listing-file-modified-sort="1751377091475" data-listing-reading-time-sort="1" data-listing-word-count-sort="56" data-listing-title-sort="ESRA 2008 Area" data-listing-filename-sort="esra-2008-area.md">
+<td>
+<a href="../definition/esra-2008-area.html" class="title listing-title">ESRA 2008 Area</a>
+</td>
+
+</tr>
+
+<tr data-index="16" data-listing-file-modified-sort="1751377091475" data-listing-reading-time-sort="1" data-listing-word-count-sort="112" data-listing-title-sort="EUROCONTROL Area" data-listing-filename-sort="eurocontrol-area.qmd">
+<td>
+<a href="../definition/eurocontrol-area.html" class="title listing-title">EUROCONTROL Area</a>
+</td>
+
+</tr>
+
+<tr data-index="17" data-listing-file-modified-sort="1751377091474" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="Economic Cost Effectiveness" data-listing-filename-sort="eco-cost-eff.md">
+<td>
+<a href="../definition/eco-cost-eff.html" class="title listing-title">Economic Cost Effectiveness</a>
+</td>
+
+</tr>
+
+<tr data-index="18" data-listing-file-modified-sort="1751377091474" data-listing-reading-time-sort="1" data-listing-word-count-sort="29" data-listing-title-sort="En-route ATFM Delay" data-listing-filename-sort="en-route-atfm-delay.md">
+<td>
+<a href="../definition/en-route-atfm-delay.html" class="title listing-title">En-route ATFM Delay</a>
+</td>
+
+</tr>
+
+<tr data-index="19" data-listing-file-modified-sort="1751379878859" data-listing-reading-time-sort="1" data-listing-word-count-sort="112" data-listing-title-sort="En-route Charging Zone" data-listing-filename-sort="en-route-charging-zone.qmd">
+<td>
+<a href="../definition/en-route-charging-zone.html" class="title listing-title">En-route Charging Zone</a>
+</td>
+
+</tr>
+
+<tr data-index="20" data-listing-file-modified-sort="1751379875170" data-listing-reading-time-sort="5" data-listing-word-count-sort="909" data-listing-title-sort="FAB - Functional Airspace Blocks" data-listing-filename-sort="fab.md">
+<td>
+<a href="../definition/fab.html" class="title listing-title">FAB - Functional Airspace Blocks</a>
+</td>
+
+</tr>
+
+<tr data-index="21" data-listing-file-modified-sort="1751382583116" data-listing-reading-time-sort="2" data-listing-word-count-sort="270" data-listing-title-sort="Flight Trajectory Models" data-listing-filename-sort="flight-models.md">
+<td>
+<a href="../definition/flight-models.html" class="title listing-title">Flight Trajectory Models</a>
+</td>
+
+</tr>
+
+<tr data-index="22" data-listing-file-modified-sort="1751380236570" data-listing-reading-time-sort="1" data-listing-word-count-sort="107" data-listing-title-sort="IATA code 89" data-listing-filename-sort="iata-code-89.qmd">
+<td>
+<a href="../definition/iata-code-89.html" class="title listing-title">IATA code 89</a>
+</td>
+
+</tr>
+
+<tr data-index="23" data-listing-file-modified-sort="1751380248826" data-listing-reading-time-sort="1" data-listing-word-count-sort="184" data-listing-title-sort="IATA delay codes" data-listing-filename-sort="iata-delay-codes.qmd">
+<td>
+<a href="../definition/iata-delay-codes.html" class="title listing-title">IATA delay codes</a>
+</td>
+
+</tr>
+
+<tr data-index="24" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="1" data-listing-word-count-sort="93" data-listing-title-sort="KEA" data-listing-filename-sort="kea.md">
+<td>
+<a href="../definition/kea.html" class="title listing-title">KEA</a>
+</td>
+
+</tr>
+
+<tr data-index="25" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="1" data-listing-word-count-sort="94" data-listing-title-sort="KEP" data-listing-filename-sort="kep.md">
+<td>
+<a href="../definition/kep.html" class="title listing-title">KEP</a>
+</td>
+
+</tr>
+
+<tr data-index="26" data-listing-file-modified-sort="1751379878859" data-listing-reading-time-sort="3" data-listing-word-count-sort="427" data-listing-title-sort="Movements (STATFOR definition)" data-listing-filename-sort="movements.qmd">
+<td>
+<a href="../definition/movements.html" class="title listing-title">Movements (STATFOR definition)</a>
+</td>
+
+</tr>
+
+<tr data-index="27" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="2" data-listing-word-count-sort="279" data-listing-title-sort="Operated (non-operated) Schedules (%)" data-listing-filename-sort="operated-schedules.md">
+<td>
+<a href="../definition/operated-schedules.html" class="title listing-title">Operated (non-operated) Schedules (%)</a>
+</td>
+
+</tr>
+
+<tr data-index="28" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="1" data-listing-word-count-sort="5" data-listing-title-sort="Primary delay" data-listing-filename-sort="primary-delay.md">
+<td>
+<a href="../definition/primary-delay.html" class="title listing-title">Primary delay</a>
+</td>
+
+</tr>
+
+<tr data-index="29" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="1" data-listing-word-count-sort="45" data-listing-title-sort="Productivity" data-listing-filename-sort="productivity.md">
+<td>
+<a href="../definition/productivity.html" class="title listing-title">Productivity</a>
+</td>
+
+</tr>
+
+<tr data-index="30" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="1" data-listing-word-count-sort="56" data-listing-title-sort="Punctuality (OTP15)" data-listing-filename-sort="punctuality.md">
+<td>
+<a href="../definition/punctuality.html" class="title listing-title">Punctuality (OTP15)</a>
+</td>
+
+</tr>
+
+<tr data-index="31" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="1" data-listing-word-count-sort="14" data-listing-title-sort="Reactionary delay" data-listing-filename-sort="reactionary-delay.md">
+<td>
+<a href="../definition/reactionary-delay.html" class="title listing-title">Reactionary delay</a>
+</td>
+
+</tr>
+
+<tr data-index="32" data-listing-file-modified-sort="1751377091477" data-listing-reading-time-sort="1" data-listing-word-count-sort="22" data-listing-title-sort="Reference Location" data-listing-filename-sort="reference-location.md">
+<td>
+<a href="../definition/reference-location.html" class="title listing-title">Reference Location</a>
+</td>
+
+</tr>
+
+<tr data-index="33" data-listing-file-modified-sort="1751377091477" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Regulation" data-listing-filename-sort="regulation.md">
+<td>
+<a href="../definition/regulation.html" class="title listing-title">Regulation</a>
+</td>
+
+</tr>
+
+<tr data-index="34" data-listing-file-modified-sort="1751377091477" data-listing-reading-time-sort="1" data-listing-word-count-sort="77" data-listing-title-sort="SES Area" data-listing-filename-sort="ses-area.md">
+<td>
+<a href="../definition/ses-area.html" class="title listing-title">SES Area</a>
+</td>
+
+</tr>
+
+<tr data-index="35" data-listing-file-modified-sort="1751377091477" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Serious incident" data-listing-filename-sort="serious-incident.md">
+<td>
+<a href="../definition/serious-incident.html" class="title listing-title">Serious incident</a>
+</td>
+
+</tr>
+
+<tr data-index="36" data-listing-file-modified-sort="1751377091477" data-listing-reading-time-sort="1" data-listing-word-count-sort="69" data-listing-title-sort="Short term ATFCM measures" data-listing-filename-sort="short-term-atfcm-measures.md">
+<td>
+<a href="../definition/short-term-atfcm-measures.html" class="title listing-title">Short term ATFCM measures</a>
+</td>
+
+</tr>
+
+<tr data-index="37" data-listing-file-modified-sort="1751377091477" data-listing-reading-time-sort="1" data-listing-word-count-sort="23" data-listing-title-sort="Slot Tolerance Window" data-listing-filename-sort="slot-tolerance-window.md">
+<td>
+<a href="../definition/slot-tolerance-window.html" class="title listing-title">Slot Tolerance Window</a>
+</td>
+
+</tr>
+
+<tr data-index="38" data-listing-file-modified-sort="1751380178015" data-listing-reading-time-sort="2" data-listing-word-count-sort="223" data-listing-title-sort="Terminal ANS Unit Rate" data-listing-filename-sort="terminal-ans-unit-rate.qmd">
+<td>
+<a href="../definition/terminal-ans-unit-rate.html" class="title listing-title">Terminal ANS Unit Rate</a>
+</td>
+
+</tr>
+
+<tr data-index="39" data-listing-file-modified-sort="1751377091478" data-listing-reading-time-sort="1" data-listing-word-count-sort="41" data-listing-title-sort="Traffic Zone" data-listing-filename-sort="traffic-zone.md">
+<td>
+<a href="../definition/traffic-zone.html" class="title listing-title">Traffic Zone</a>
+</td>
+
+</tr>
+
+<tr data-index="40" data-listing-file-modified-sort="1751377091478" data-listing-reading-time-sort="2" data-listing-word-count-sort="265" data-listing-title-sort="Turnaround" data-listing-filename-sort="turnaround.qmd">
+<td>
+<a href="../definition/turnaround.html" class="title listing-title">Turnaround</a>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+<nav id="definitions-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © EUROCONTROL
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../about/disclaimer/">
+<p><strong>Disclaimer</strong></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.eurocontrol.int/info/privacy-and-website-terms-use">
+<p><strong>Privacy</strong></p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
