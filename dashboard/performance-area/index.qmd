@@ -1,0 +1,8 @@
+---
+title: Dashboard - Performance Areas
+listing:
+  - id: gallery
+    template: ../../ejs/performance-areas-gallery.ejs
+    contents: ../../performance-areas-gallery.yml
+
+---

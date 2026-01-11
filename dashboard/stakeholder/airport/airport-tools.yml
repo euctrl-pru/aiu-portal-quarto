@@ -1,6 +1,5 @@
-
-- category: Performance areas
-  tiles:
+- category: Airport Performance Analysis Tools
+  tools:
     - title: Traffic
       subtitle: "IFR flight and service unit evolution and forecast"
       href: /traffic/
@@ -17,3 +16,16 @@
       subtitle: "Analysis of ANS cost-efficiency"
       href: /economics/
       thumbnail: /images/landing/ectl_cef_th.jpg
+
+
+blogdown::shortcode(
+  "bootstrap-card-alt",
+  img = "aiu_apt_db.jpg",
+  link = "db/",
+  title = "AIU Airport Performance Dashboard",
+  text = "Consolidated monthly overview of operational performance at European airports across a wide spectrum of indicators. <br><br> <div class='badge-container'><span class='badge badge-secondary'>General Performance</span></div>",
+  alt = "AIU airport performance dashboard",
+  command = "Resize",
+  options = "300x",
+  class = "mb-2"
+)
