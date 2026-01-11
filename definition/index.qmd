@@ -4,10 +4,13 @@ description: "A reference for commonly used terms by the EUROCONTROL Aviation In
 
 listing: 
   - id: definitions
-    type: table
-    fields: [title]
+    template: ../ejs/acronym-alphabetic.ejs
     contents: 
       - "*.qmd"
       - "*.md"
+      - "!index.qmd"
 
 ---
+
+::: {#definitions}
+:::
