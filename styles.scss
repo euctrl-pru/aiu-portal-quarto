@@ -41,7 +41,7 @@ $card-shadow: 0 0.1875rem 0.375rem rgba(140, 152, 164, 0.25);
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  
+
   p {
     margin-bottom: 0;
   }
@@ -63,15 +63,15 @@ $card-shadow: 0 0.1875rem 0.375rem rgba(140, 152, 164, 0.25);
 /* Mixin for tab panel styling */
 @mixin tab-panel-base {
   border: none;
-  
-  > .tab-content {
+
+  >.tab-content {
     border: none;
   }
-  
-  > .nav-tabs {
+
+  >.nav-tabs {
     padding: 0.25rem;
     border: none;
-    
+
     .nav-link {
       background-color: $bg-light;
       border-radius: 0.5rem;
@@ -85,8 +85,8 @@ $card-shadow: 0 0.1875rem 0.375rem rgba(140, 152, 164, 0.25);
 /* Network status tabs (main dashboard) */
 #network-status-flights {
   @include tab-panel-base;
-  
-  > .nav-tabs {
+
+  >.nav-tabs {
     @extend .justify-content-center;
     @extend .nav-pills;
   }
@@ -95,8 +95,8 @@ $card-shadow: 0 0.1875rem 0.375rem rgba(140, 152, 164, 0.25);
 /* Flights sub-tabs */
 #tab-flights {
   @include tab-panel-base;
-  
-  > .nav-tabs {
+
+  >.nav-tabs {
     margin-top: 0;
     @extend .justify-content-end;
     @extend .nav-pills;
@@ -106,8 +106,8 @@ $card-shadow: 0 0.1875rem 0.375rem rgba(140, 152, 164, 0.25);
 /* Delay sub-tabs */
 #tab-delay {
   @include tab-panel-base;
-  
-  > .nav-tabs {
+
+  >.nav-tabs {
     margin-top: 0;
     border-radius: 1rem;
     @extend .justify-content-end;
@@ -172,13 +172,13 @@ body.quarto-dark .carousel-dark .carousel-control-prev-icon {
   padding-top: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+/* Add padding to account for fixed navbar on listing pages */
+#quarto-content {
+  padding-top: 2rem;
 }
 
-/* Hide default title block on homepage */
-header#title-block-header {
-  display: none;
+html {
+  scroll-behavior: smooth;
 }
 
 /* ==========================================================================
@@ -189,16 +189,16 @@ header#title-block-header {
   font-size: 1.25em;
   font-weight: 300;
   padding-bottom: 1em;
-  
+
   p {
     margin: 0;
     padding-bottom: 0.2rem;
   }
-  
+
   a {
     text-decoration: none;
   }
-  
+
   ul li {
     margin-bottom: 0.3em;
   }
@@ -213,10 +213,10 @@ header#title-block-header {
   color: white;
   padding: 2rem 0;
   text-align: center;
-  
+
   a {
     color: white;
-    
+
     &:hover {
       color: lighten($brand-secondary, 20%);
     }
@@ -228,7 +228,7 @@ header#title-block-header {
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  
+
   img {
     width: 100px;
     height: auto;
@@ -241,11 +241,11 @@ header#title-block-header {
 
 .perf-area-card {
   transition: transform 0.2s ease-in-out;
-  
+
   &:hover {
     transform: translateY(-4px);
   }
-  
+
   img {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -260,13 +260,13 @@ header#title-block-header {
 .stat-card {
   text-align: center;
   padding: 1rem;
-  
+
   .stat-label {
     @extend .text-muted;
     @extend .small;
     margin-bottom: 0.25rem;
   }
-  
+
   .stat-value {
     font-size: 1.5rem;
     font-weight: 700;

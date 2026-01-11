@@ -2882,5 +2882,47 @@
     "title": "GCD - Great-Circle Distance",
     "section": "See Also",
     "text": "See Also\n\nGreat-Circle Distance  page at Wikipedia website."
+  },
+  {
+    "objectID": "dashboard/index.html",
+    "href": "dashboard/index.html",
+    "title": "Dashboard - Performance Areas",
+    "section": "",
+    "text": "Traffic\nCapacity & delays\nEfficiency & environment\nEconomics"
+  },
+  {
+    "objectID": "dashboard/performance-area/index.html",
+    "href": "dashboard/performance-area/index.html",
+    "title": "Dashboard - Performance Areas",
+    "section": "",
+    "text": "Performance areas\n\n\n\n\n\n  \n    \n      \n    \n    \n      \n        Traffic\n        \n        IFR flight and service unit evolution and forecast\n      \n    \n    \n    \n    \n  \n\n  \n    \n      \n    \n    \n      \n        Capacity & Delay\n        \n        En-route and airport ATFM delays\n      \n    \n    \n    \n    \n  \n\n  \n    \n      \n    \n    \n      \n        Efficiency & Environment\n        \n        Flight efficiency affecting fuel burn and emissions\n      \n    \n    \n    \n    \n  \n\n  \n    \n      \n    \n    \n      \n        Economics\n        \n        Analysis of ANS cost-efficiency\n      \n    \n    \n    \n    \n  \n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "dashboard/stakeholder/ansp/ansp_db.html",
+    "href": "dashboard/stakeholder/ansp/ansp_db.html",
+    "title": "Air Navigation Service Provider (ANSP) View",
+    "section": "",
+    "text": "The analysis may take a few moments to load and is best viewed in Chrome."
+  },
+  {
+    "objectID": "dashboard/stakeholder/airport/acft_ground.html",
+    "href": "dashboard/stakeholder/airport/acft_ground.html",
+    "title": "Active and inactive aircraft parked across EUROCONTROL area",
+    "section": "",
+    "text": "The drastic reduction in traffic due to the COVID crisis forced many aircraft operators to withdraw from service a significant part of their fleet, be it temporarily or permanently. The analysis of these massive groundings of aircraft across Europe in the dashboard below provided another perspective on the magnitude of the impact on the airline sector, with more than 6000 aircraft inactive in Europe in April and May 2020.\nThe timeline shows how the majority of the groundings took place in the second half of March 2020, while a clear recovery was observed since the beginning of June 2020, with progressively more aircraft returning to fly in the EUROCONTROL area.\nThe interactive dashboard below enables an analysis of the number of active and inactive aircraft by state, airport they sleep at, or aircraft operator.\n\n\nPlease note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.\n\n\n\n\nFor feedback or questions please contact us at: Performance Review Unit"
+  },
+  {
+    "objectID": "dashboard/stakeholder/index.html",
+    "href": "dashboard/stakeholder/index.html",
+    "title": "Dashboard - Stakeholder views",
+    "section": "",
+    "text": "ANSP\nState\nFAB\nAirport"
+  },
+  {
+    "objectID": "dashboard/stakeholder/airport/index.html",
+    "href": "dashboard/stakeholder/airport/index.html",
+    "title": "Airport Performance Analysis Tools",
+    "section": "",
+    "text": "{{% bootstrap-card-alt img=\"aiu_apt_db.jpg\" link=\"db/\" title=\"AIU Airport Performance Dashboard\" text=\"Consolidated monthly overview of operational performance at European airports across a wide spectrum of indicators.  General Performance\" alt=\"AIU airport performance dashboard\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"aiu_apt_daily.jpg\" link=\"https://www.eurocontrol.int/Economics/DailyTrafficVariation-Airports.html\" title=\"Daily Traffic Variation Dashboard \" text=\"Monitor the daily traffic variation at major European airports.  Traffic\" alt=\"Daily traffic @ airports\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"cdo_icon.jpg\" link=\"/efficiency/vfe/\" title=\"CCO and CDO Overview\" text=\"Explore the vertical flight efficiency during continuous climb (CCO) and descent (CDO) operations.  Efficiency\" alt=\"Vertical flight efficiency @ airports\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"apt_taxi.jpg\" link=\"/efficiency/taxiout/\" title=\"Additional Taxi-Out Time\" text=\"See the taxi-out efficiency at airports.  Efficiency\" alt=\"Taxi-out additional time @ airports\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n\n\n\n\n\n\n\n{{% bootstrap-card-alt img=\"apt_asma.jpg\" link=\"/efficiency/asma/\" title=\"Additional ASMA time\" text=\"Find out more about the efficiency in the Arrival Sequencing and Metering Area (ASMA) around airports.  Efficiency\" alt=\"ASMA additional time @ airports\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"ectl_tx_stand.jpeg\" link=\"https://www.eurocontrol.int/publication/taxi-times-summer-2022\" title=\"Taxi-time planning values \" text=\"Taxi time planning values, by IATA season for airline schedulers.  Capacity & Delays\" alt=\"Taxi-time planning values\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"ectl_3.jpg\" link=\"/capacity/atfm_apt/\" title=\"ATFM Delays at Airports\" text=\"Analyse the airport ATFM arrival delays at airports.   Capacity & Delays\" alt=\"ATFM delays @ airports\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"ectl_mirror.jpg\" link=\"https://www.eurocontrol.int/tool/mirror\" title=\"MIRROR - Operational Decision Support Tool \" text=\"Check out the innovative tool that helps stakeholders predict and mitigate delays.   Capacity & Delays\" alt=\"MIRROR - Operational Decision Support Tool\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n\n\n\n\n\n\n\n{{% bootstrap-card-alt img=\"ectl_aircraft1.jpg\" link=\"acft_ground/\" title=\"Active and Inactive Aircraft at Airports\" text=\"See how many aircraft are parked across European airports.   General Performance\" alt=\"Parked aircraft at European airports\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"ectl_apt_corner1.jpg\" link=\"https://ext.eurocontrol.int/airport_corner_public/\" title=\"EUROCONTROL airport corner \" text=\"Get information on airport infrastructure and ongoing and planned activities.   General Performance\" alt=\"EUROCONTROL airport corner\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"ectl_apt_int1.jpg\" link=\"https://www.eurocontrol.int/airport-integration\" title=\"EUROCONTROL airport network integration \" text=\"Learn how EUROCONTROL helps to better integrate airports in the ATM network.  General Performance\" alt=\"EUROCONTROL airport network integration\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nActive and inactive aircraft parked across EUROCONTROL area\n\n\n\n\n\n\nNo matching items"
   }
 ]

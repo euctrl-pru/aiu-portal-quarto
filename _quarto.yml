@@ -23,7 +23,7 @@ website:
     right:
       - text: "**Home**"
         href: /
-      - text: "**Performance areas**"
+      - text: "**Performance<br>areas**"
         menu:
           - text: "{{< iconify fa6-solid th >}}&nbsp;Balanced scorecard"
             href: "https://www.eurocontrol.int/Economics/BalancedScorecard.html"
@@ -80,7 +80,7 @@ website:
           - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Standard Inputs for Economic Analyses</span>"
             href: /economics/cba/
 
-      - text: "**Stakeholder views**"
+      - text: "**Stakeholder<br>views**"
         menu:
           - text: "{{< iconify fa6-solid plane-arrival >}}&nbsp;Airports"
             href: /dashboard/stakeholder/airport/

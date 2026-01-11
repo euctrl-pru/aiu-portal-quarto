@@ -218,5 +218,15 @@
       "/acronym/wf.html",
       "/acronym/xman.html"
     ]
+  },
+  {
+    "listing": "/dashboard/performance-area/index.html",
+    "items": []
+  },
+  {
+    "listing": "/dashboard/stakeholder/airport/index.html",
+    "items": [
+      "/dashboard/stakeholder/airport/acft_ground.html"
+    ]
   }
 ]
