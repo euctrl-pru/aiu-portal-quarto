@@ -149,7 +149,6 @@ website:
         href: https://twitter.com/
 format:
   html:
-    css: styles.css
     theme:
       - cosmo
       - styles.scss

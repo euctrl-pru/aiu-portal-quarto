@@ -1,6 +1,52 @@
 /*-- scss:defaults --*/
 
+/* Brand colors */
+$brand-primary: #053253;
+$brand-secondary: #337ab7;
+$bg-light: #f8f9fa;
+$hero-bg: rgb(240, 245, 249);
+
+/* Shadows */
+$card-shadow: 0 0.1875rem 0.375rem rgba(140, 152, 164, 0.25);
+
 /*-- scss:rules --*/
+
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+
+.navbar-brand-logo {
+  width: 100%;
+  min-width: 10rem !important;
+  max-width: 10rem !important;
+}
+
+.navbar-logo {
+  max-height: 76px;
+  width: auto;
+  padding-right: 4px;
+}
+
+/* ==========================================================================
+   Network Dashboard - Homepage
+   ========================================================================== */
+
+#status-and-news {
+  background-color: $bg-light !important;
+}
+
+/* Network values display */
+.nw-values-cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+  p {
+    margin-bottom: 0;
+  }
+}
+
 .nw-col-name {
   @extend .text-muted;
   @extend .small;
@@ -10,17 +56,219 @@
   font-weight: 700 !important;
 }
 
-#network-status-flights > .nav-tabs {
-  @extend .justify-content-center;
-  @extend .nav-pills;
+/* ==========================================================================
+   Tab Panels - Shared Styles
+   ========================================================================== */
+
+/* Mixin for tab panel styling */
+@mixin tab-panel-base {
+  border: none;
+  
+  > .tab-content {
+    border: none;
+  }
+  
+  > .nav-tabs {
+    padding: 0.25rem;
+    border: none;
+    
+    .nav-link {
+      background-color: $bg-light;
+      border-radius: 0.5rem;
+      margin: 0.25rem;
+      padding: 0.25rem;
+      box-shadow: $card-shadow;
+    }
+  }
 }
 
-#tab-flights > .nav-tabs {
-  @extend .justify-content-end;
-  @extend .nav-pills;
+/* Network status tabs (main dashboard) */
+#network-status-flights {
+  @include tab-panel-base;
+  
+  > .nav-tabs {
+    @extend .justify-content-center;
+    @extend .nav-pills;
+  }
 }
 
-#tab-delay > .nav-tabs {
-  @extend .justify-content-end;
-  @extend .nav-pills;
+/* Flights sub-tabs */
+#tab-flights {
+  @include tab-panel-base;
+  
+  > .nav-tabs {
+    margin-top: 0;
+    @extend .justify-content-end;
+    @extend .nav-pills;
+  }
+}
+
+/* Delay sub-tabs */
+#tab-delay {
+  @include tab-panel-base;
+  
+  > .nav-tabs {
+    margin-top: 0;
+    border-radius: 1rem;
+    @extend .justify-content-end;
+    @extend .nav-pills;
+  }
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+body.quarto-light #hero-banner {
+  background-color: $hero-bg;
+}
+
+body.quarto-dark #hero-banner {
+  background-color: #17212b;
+}
+
+/* ==========================================================================
+   Carousel
+   ========================================================================== */
+
+div.carousel {
+  margin-top: 2rem;
+}
+
+.carousel.card {
+  padding-top: 2em;
+}
+
+.carousel img {
+  width: 100%;
+  margin-bottom: 110px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  margin-bottom: 110px;
+}
+
+.carousel-caption {
+  padding-top: 1em;
+}
+
+/* Dark mode carousel adjustments */
+body.quarto-dark .carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: rgb(255, 255, 255);
+}
+
+body.quarto-dark .carousel-dark .carousel-control-next-icon,
+body.quarto-dark .carousel-dark .carousel-control-prev-icon {
+  filter: inherit;
+}
+
+/* ==========================================================================
+   Content Layout
+   ========================================================================== */
+
+#quarto-content main {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide default title block on homepage */
+header#title-block-header {
+  display: none;
+}
+
+/* ==========================================================================
+   Headlines & Typography
+   ========================================================================== */
+
+.headline {
+  font-size: 1.25em;
+  font-weight: 300;
+  padding-bottom: 1em;
+  
+  p {
+    margin: 0;
+    padding-bottom: 0.2rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul li {
+    margin-bottom: 0.3em;
+  }
+}
+
+/* ==========================================================================
+   Footer Subscribe Section
+   ========================================================================== */
+
+.footer-subscribe {
+  background-color: $brand-primary;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  
+  a {
+    color: white;
+    
+    &:hover {
+      color: lighten($brand-secondary, 20%);
+    }
+  }
+}
+
+.footer-apps {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    width: 100px;
+    height: auto;
+  }
+}
+
+/* ==========================================================================
+   Performance Area Cards
+   ========================================================================== */
+
+.perf-area-card {
+  transition: transform 0.2s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-4px);
+  }
+  
+  img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+}
+
+/* ==========================================================================
+   Stat Cards (Network Dashboard)
+   ========================================================================== */
+
+.stat-card {
+  text-align: center;
+  padding: 1rem;
+  
+  .stat-label {
+    @extend .text-muted;
+    @extend .small;
+    margin-bottom: 0.25rem;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
 }
