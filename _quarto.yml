@@ -11,7 +11,9 @@ execute:
 
 
 website:
-  title: ""
+  title: "Aviation Intelligence Unit portal"
+  site-url: "https://ansperformance.eu/"
+  description: "EUROCONTROL Aviation Intelligence Unit portal for performance data, analysis and publications."
   favicon: "favicon.png"
   # google-analytics: "G-RJ3R0C35X7"
   # Note: You need to install: ```quarto install extension mcanouil/quarto-iconify```
@@ -143,25 +145,22 @@ website:
       - text: " | "
       - text: "**Privacy**"
         href: https://www.eurocontrol.int/info/privacy-and-website-terms-use
+    center:
+      - text: "{{< iconify fa6-solid envelope >}} Subscribe to our Newsletter"
+        href: https://www.eurocontrol.int/form/aviation-intelligence-unit-aiu-newsletter
     right: 
+      - icon: linkedin 
+        href: https://www.linkedin.com/company/eurocontrol
+        aria-label: EUROCONTROL's LinkedIn page
       - icon: github
-        href: https://github.com/
-      - icon: twitter 
-        href: https://twitter.com/
+        href: https://github.com/euctrl-pru
+        aria-label: AIU Portal's GitHub page
+
 format:
   html:
     theme:
       - cosmo
       - styles.scss
     toc: false
-    # grid: 
-    #   body-width: 1200px
-    # include-after-body:
-    #   - "_subscribe.qmd"
-    # grid:
-    #   sidebar-width: 300px
-    #   body-width: 900px
-    #   margin-width: 300px
-    #   gutter-width: 1.5rem
 
 

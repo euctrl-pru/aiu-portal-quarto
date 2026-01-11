@@ -1,48 +1,53 @@
 ```{=html}
-<%
-// Sort items alphabetically by title
-const sortedItems = items.slice().sort((a, b) => {
+<% // Sort items alphabetically by title const sortedItems=items.slice().sort((a, b)=> {
   const titleA = (a.title || '').toUpperCase();
   const titleB = (b.title || '').toUpperCase();
   return titleA.localeCompare(titleB);
-});
+  });
 
-// Group items by first letter
-const grouped = {};
-for (const item of sortedItems) {
+  // Group items by first letter
+  const grouped = {};
+  for (const item of sortedItems) {
   const title = item.title || '';
   const firstLetter = title.charAt(0).toUpperCase();
   if (/[A-Z]/.test(firstLetter)) {
-    if (!grouped[firstLetter]) {
-      grouped[firstLetter] = [];
-    }
-    grouped[firstLetter].push(item);
+  if (!grouped[firstLetter]) {
+  grouped[firstLetter] = [];
   }
-}
+  grouped[firstLetter].push(item);
+  }
+  }
 
-// Get sorted letters
-const letters = Object.keys(grouped).sort();
-%>
+  // Get sorted letters
+  const letters = Object.keys(grouped).sort();
+  %>
 
-<!-- Alphabetic navigation -->
-<nav class="acronym-nav mb-4" id="acronym-top">
-<% for (const letter of letters) { %>
-  <a href="#letter-<%= letter %>" class="acronym-letter-link"><%= letter %></a><% if (letter !== letters[letters.length - 1]) { %> , <% } %>
-<% } %>
-</nav>
+  <!-- Alphabetic navigation -->
+  <nav class="acronym-nav mb-4" id="acronym-top">
+    <% for (const letter of letters) { %>
+      <a href="#letter-<%= letter %>" class="acronym-letter-link">
+        <%= letter %>
+      </a>
+      <% if (letter !==letters[letters.length - 1]) { %> , <% } %>
+          <% } %>
+  </nav>
 
-<!-- Acronym listings by letter -->
-<% for (const letter of letters) { %>
-<section class="acronym-section" id="letter-<%= letter %>">
-  <h2><%= letter %></h2>
-  <div class="acronym-list">
-  <% for (const item of grouped[letter]) { %>
-    <span class="acronym-item">— <a href="<%= item.path %>"><%= item.title %></a></span>
-  <% } %>
-  </div>
-</section>
-<% } %>
+  <!-- Acronym listings by letter -->
+  <% for (const letter of letters) { %>
+    <section class="acronym-section" id="letter-<%= letter %>">
+      <h2>
+        <%= letter %>
+      </h2>
+      <div class="acronym-list">
+        <% for (const item of grouped[letter]) { %>
+          <span class="acronym-item">— <a href="<%= item.path %>">
+              <%= item.title %>
+            </a></span>
+          <% } %>
+      </div>
+    </section>
+    <% } %>
 
-<!-- Floating back to top button -->
-<a href="#acronym-top" class="floating-top-btn" title="Back to top">↑</a>
-```
+      <!-- Floating back to top button -->
+      <a href="#acronym-top" class="floating-top-btn" title="Back to top">↑</a>
+      ```

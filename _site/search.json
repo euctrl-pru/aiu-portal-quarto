@@ -3022,5 +3022,12 @@
     "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
     "section": "",
     "text": "Original Hugo site repo\nLive site\nQuarto documentation\nBootstrap 5 docs"
+  },
+  {
+    "objectID": "data/index.html",
+    "href": "data/index.html",
+    "title": "Data",
+    "section": "",
+    "text": "This page brought to you by https://example.com"
   }
 ]
