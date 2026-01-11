@@ -398,3 +398,54 @@ html {
     font-weight: 700;
   }
 }
+
+/* ==========================================================================
+   Acronym Alphabetic Listing
+   ========================================================================== */
+
+.acronym-nav {
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #dee2e6;
+  
+  .acronym-letter-link {
+    color: $brand-secondary;
+    text-decoration: none;
+    font-weight: 600;
+    
+    &:hover {
+      color: $brand-primary;
+      text-decoration: underline;
+    }
+  }
+}
+
+.acronym-section {
+  margin-bottom: 1.5rem;
+  
+  h2 {
+    color: $brand-primary;
+    font-size: 1.5rem;
+    border-bottom: 2px solid $brand-secondary;
+    padding-bottom: 0.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.acronym-list {
+  line-height: 1.8;
+  
+  .acronym-item {
+    display: inline;
+    
+    a {
+      color: $brand-secondary;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
