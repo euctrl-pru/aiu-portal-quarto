@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.30">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>network-dashboard</title>
+<title>Air traffic statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,57 +20,21 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="_network-dashboard_files/libs/clipboard/clipboard.min.js"></script>
-<script src="_network-dashboard_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="_network-dashboard_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="_network-dashboard_files/libs/quarto-html/popper.min.js"></script>
-<script src="_network-dashboard_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="_network-dashboard_files/libs/quarto-html/anchor.min.js"></script>
-<link href="_network-dashboard_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="_network-dashboard_files/libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="_network-dashboard_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="_network-dashboard_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="_network-dashboard_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script type="module" src="_network-dashboard_files/libs/quarto-ojs/quarto-ojs-runtime.js"></script>
-<link href="_network-dashboard_files/libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<script src="_flights_files/libs/clipboard/clipboard.min.js"></script>
+<script src="_flights_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="_flights_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="_flights_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="_flights_files/libs/quarto-html/popper.min.js"></script>
+<script src="_flights_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="_flights_files/libs/quarto-html/anchor.min.js"></script>
+<link href="_flights_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="_flights_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="_flights_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="_flights_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="_flights_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -81,156 +45,190 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Air traffic statistics</h1>
+</div>
 
 
 
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="2" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 1;"><span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">// poll again in 10 hours</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>dd <span class="op">=</span> {</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> url_api <span class="op">=</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://aiu-portal.pockethost.io/api/collections/network_situation/records?sort=-date&amp;perPage=1&amp;skipTotal=1"</span><span class="op">;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> nl <span class="op">=</span> <span class="cf">await</span> d3<span class="op">.</span><span class="fu">json</span>(url_api)<span class="op">;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">yield</span> nl<span class="op">.</span><span class="at">items</span>[<span class="dv">0</span>]<span class="op">;</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> (<span class="kw">true</span>) {</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    nl <span class="op">=</span> <span class="cf">await</span> d3<span class="op">.</span><span class="fu">json</span>(url_api)<span class="op">;</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">yield</span> Promises<span class="op">.</span><span class="fu">delay</span>(<span class="dv">3600</span> <span class="op">*</span> <span class="dv">10</span> <span class="op">*</span> <span class="dv">1000</span><span class="op">,</span> nl<span class="op">.</span><span class="at">items</span>[<span class="dv">0</span>])<span class="op">;</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-1" data-nodetype="declaration">
+<div class="quarto-title-meta">
 
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="21" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 20;"><span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>formatTime <span class="op">=</span> d3<span class="op">.</span><span class="fu">utcFormat</span>(<span class="st">"%d %B %Y"</span>)<span class="op">;</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>latest_date <span class="op">=</span> <span class="fu">formatTime</span>(d3<span class="op">.</span><span class="fu">isoParse</span>(dd<span class="op">.</span><span class="at">date</span>))</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>ld <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#y2d_day_text"</span>)</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(latest_date)<span class="op">;</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>tr <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#y2d_traffic"</span>)</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(dd<span class="op">.</span><span class="at">y2d_flights_total</span>))<span class="op">;</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>av <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#avg_y2d_traffic"</span>)</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(<span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(dd<span class="op">.</span><span class="at">y2d_flights_daily_average</span>)))<span class="op">;</span></span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>y9 <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_y2d_2019"</span>)</span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">y2d_diff_2019_year_percentage</span>))<span class="op">;</span></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>yp <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_y2d_prev_year"</span>)</span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">y2d_diff_previous_year_percentage</span>))<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-1" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-2" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-3" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-4" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-5" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-6" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-7" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-</div>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Flights</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">ATFM Delay</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Punctuality</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>Evolution of daily flights in the EUROCONTROL area<br>
-<span class="text-muted">(7-day average)</span></p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Day</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Week</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Y2D</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div id="nw-container">
-  <div id="container-cell" class="nw-values-cell">
-    <div id="total-flights-cell">
-      <p class="text-muted">Total flights</p>
-      <p id="y2d_traffic">n/a</p>
-    </div>
-    <div id="average-flights-cell">
-      <p class="text-muted">Avg. daily flights</p>
-      <p id="avg_y2d_traffic">n/a</p>
-    </div>
-    <div id="percentage-flights-vs-2019-cell">
-      <p class="text-muted">vs. 2019</p>
-      <p id="dif_y2d_2019">n/a</p>
-    </div>
-    <div id="percentage-flights-vs-prev-year-cell">
-      <p class="text-muted">vs. prev. year</p>
-      <p id="dif_y2d_prev_year">n/a</p>
-    </div>
     
-    <div class="" style="margin: 0px;  width=8em;">
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="eurocontrol-area-network-view" class="level4">
+<h4 class="anchored" data-anchor-id="eurocontrol-area-network-view">EUROCONTROL area (Network view)</h4>
+<div class="quarto-layout-panel" data-layout="[1, 1]">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="col-md-6 ">
+  <div class="col-12">
+    <p id="day_date" class="period">Day</p>
+  </div>
+  <!-- day -->
+  <div class="row align-items-start mb-1" style="background-color: #F7F7F7; border-radius: 5px;">
+    <div class="col-3">
+      <p id="day_traffic" class="Scorecard"></p>
+      <p class="scorecard-subt">flights</p>
     </div>
+    <div class="col-3">
+      <p id="dif_day_prev_week" class="Scorecard2"></p>
+      <p class="scorecard-subt">vs prev. week</p>
+    </div>
+    <div class="col-3">
+      <p id="dif_day_prev_year" class="Scorecard2"></p>
+      <p class="scorecard-subt">vs prev. year</p>
+    </div>
+    <div class="col-3">
+      <p id="dif_day_2019" class="Scorecard2"></p>
+      <p class="scorecard-subt">vs 2019</p>
+    </div>
+  </div><!-- closes day row -->
+
+  <!-- week -->
+  <div class="row align-items-start mb-1" style="background-color: #F7F7F7; border-radius: 5px;">
+    <div class="col-12">
+      <p id="week_date" class="period">Week</p>
+    </div>
+    <div class="col-3">
+      <p id="week_traffic" class="Scorecard"></p>
+      <p id="avg_week_traffic" class="scorecard-subt"></p>
+    </div>
+    <div class="col-3">
+      <p id="dif_week_prev_week" class="Scorecard2"></p>
+      <p class="scorecard-subt">vs prev. week</p>
+    </div>
+    <div class="col-3">
+      <p id="dif_week_prev_year" class="Scorecard2"></p>
+      <p class="scorecard-subt">vs prev. year</p>
+    </div>
+    <div class="col-3">
+      <p id="dif_week_2019" class="Scorecard2"></p>
+      <p class="scorecard-subt">vs 2019</p>
+    </div>
+  </div><!-- closes week row -->
+  
+  <!-- y2d-->
+  <div class="row align-items-start mb-1" style="background-color: #F7F7F7; border-radius: 5px;">
+    <div class="col-12">
+      <p id="y2d_day_text" class="period">Year to date</p>
+    </div>
+    <div class="col-3">
+      <p id="y2d_traffic" class="Scorecard"></p>
+      <p id="avg_y2d_traffic" class="scorecard-subt"></p>
+    </div>
+    <div class="col-3">
+    </div>
+    <div class="col-3">
+      <p id="dif_y2d_prev_year" class="Scorecard2"></p>
+      <p class="scorecard-subt">vs prev. year</p>
+    </div>
+    <div class="col-3">
+      <p id="dif_y2d_2019" class="Scorecard2"></p>
+      <p class="scorecard-subt">vs 2019</p>
+    </div>
+  </div><!-- closes y2d row -->
+</div><!-- closes col md-6-->
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="col-md-6 text-center" style=" padding-left: 0px">
+  <p id="graphtitle" class="h6 mb-0">Evolution of daily flights in the EUROCONTROL area</p>
+  <p style="font-size: 0.8rem">(7-day average)</p>
+  <div id="graphcontainer" style=" height: 350px;">
+    <iframe id="traffic-plot" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-traffic-lp_new.html" frameborder="0" style="border:0; margin-top: 38px;">
+    </iframe>
+  </div><!-- closes iframe container -->
+</div><!-- closes col -->
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><a href="https://www.eurocontrol.int/Economics/Download/Network_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{&lt; fa download &gt;}} Download network flight data</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="stakeholder-views" class="level4">
+<h4 class="anchored" data-anchor-id="stakeholder-views">Stakeholder views</h4>
+<p>Only the top 40 in terms of flights are shown in the tables (latest day, rolling week and year to date).</p>
+<div class="quarto-layout-panel" data-layout="[1, 1]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="col-md-6 pl-3 pr-0">
+  <h5 class="anchored">Aircraft Operators</h5>
+  <div id="aos" class="resp-container">
+    <iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-ao-ranking-table.html" frameborder="0" style="border:0, padding-left: 0px" allowfullscreen="">
+    </iframe>
+  </div>
+  <br>
+  <a href="https://www.eurocontrol.int/directory/airline-groups-lookup" class="btn btn-info" role="button" target="_blank">See aircraft operator groupings
+  </a>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="col-md-6 pr-0">
+  <h5 class="anchored">Airports</h5>
+  <div id="apts" class="resp-container">
+    <iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-apt-ranking-table.html" frameborder="0" style="border:0" allowfullscreen="">
+    </iframe>
   </div>
 </div>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-
-</div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="col-md-6 pl-3 pr-0">
+  <h5 class="anchored">Air Navigation Service Providers (ANSPs)</h5>
+  <div id="ansps" class="resp-container" style="align-text: center">
+    <iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-ansp-ranking-table.html" frameborder="0" style="border:0" allowfullscreen="">
+    </iframe>
+  </div>
 </div>
 </div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="col-md-6 pr-0">
+  <h5 class="anchored">Countries</h5>
+  <div id="cps" class="resp-container">
+    <iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-ctry-dai-ranking-table.html" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+  </div>
 </div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="col-md-6 pl-3 pr-0">
+  <h5 class="anchored">Air Navigation Service Providers (ANSPs)</h5>
+  <div id="ansps" class="resp-container" style="align-text: center">
+    <iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-ansp-ranking-table.html" frameborder="0" style="border:0" allowfullscreen="">
+    </iframe>
+  </div>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="col-md-6 pr-0">
+  <h5 class="anchored">Countries</h5>
+  <div id="cps" class="resp-container">
+    <iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-ctry-dai-ranking-table.html" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<p><br> <br> <a href="https://www.eurocontrol.int/Economics/Download/Stakeholder_Traffic.xlsx" class="btn btn-info" role="button" target="_blank"><i class="fas fa-download"></i> Download stakeholder data</a></p>
+</section>
 
 </main>
 <!-- /main column -->
-<script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gcG9sbCBhZ2FpbiBpbiAxMCBob3Vyc1xuZGQgPSB7XG4gIGNvbnN0IHVybF9hcGkgPVxuICAgIFwiaHR0cHM6Ly9haXUtcG9ydGFsLnBvY2tldGhvc3QuaW8vYXBpL2NvbGxlY3Rpb25zL25ldHdvcmtfc2l0dWF0aW9uL3JlY29yZHM/c29ydD0tZGF0ZSZwZXJQYWdlPTEmc2tpcFRvdGFsPTFcIjtcbiAgbGV0IG5sID0gYXdhaXQgZDMuanNvbih1cmxfYXBpKTtcbiAgeWllbGQgbmwuaXRlbXNbMF07XG4gIHdoaWxlICh0cnVlKSB7XG4gICAgbmwgPSBhd2FpdCBkMy5qc29uKHVybF9hcGkpO1xuICAgIHlpZWxkIFByb21pc2VzLmRlbGF5KDM2MDAgKiAxMCAqIDEwMDAsIG5sLml0ZW1zWzBdKTtcbiAgfVxufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG5mb3JtYXRUaW1lID0gZDMudXRjRm9ybWF0KFwiJWQgJUIgJVlcIik7XG5sYXRlc3RfZGF0ZSA9IGZvcm1hdFRpbWUoZDMuaXNvUGFyc2UoZGQuZGF0ZSkpXG5cbmxkID0gZDMuc2VsZWN0KFwiI3kyZF9kYXlfdGV4dFwiKVxuICAudGV4dChsYXRlc3RfZGF0ZSk7XG50ciA9IGQzLnNlbGVjdChcIiN5MmRfdHJhZmZpY1wiKVxuICAudGV4dChkMy5mb3JtYXQoXCIsXCIpKGRkLnkyZF9mbGlnaHRzX3RvdGFsKSk7XG5hdiA9IGQzLnNlbGVjdChcIiNhdmdfeTJkX3RyYWZmaWNcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiLFwiKShNYXRoLnJvdW5kKGRkLnkyZF9mbGlnaHRzX2RhaWx5X2F2ZXJhZ2UpKSk7XG55OSA9IGQzLnNlbGVjdChcIiNkaWZfeTJkXzIwMTlcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiKy4wJVwiKShkZC55MmRfZGlmZl8yMDE5X3llYXJfcGVyY2VudGFnZSkpO1xueXAgPSBkMy5zZWxlY3QoXCIjZGlmX3kyZF9wcmV2X3llYXJcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiKy4wJVwiKShkZC55MmRfZGlmZl9wcmV2aW91c195ZWFyX3BlcmNlbnRhZ2UpKTtcbiJ9XX0=
-</script>
-<script type="module">
-if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
-window._ojs.paths.runtimeToDoc = "../../..";
-window._ojs.paths.runtimeToRoot = "../../..";
-window._ojs.paths.docToRoot = "";
-window._ojs.selfContained = false;
-window._ojs.runtime.interpretFromScriptTags();
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -282,13 +280,14 @@ window._ojs.runtime.interpretFromScriptTags();
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

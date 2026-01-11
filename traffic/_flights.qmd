@@ -9,11 +9,11 @@ title: Air traffic statistics
 
 ```{=html}
 <div class="col-md-6 ">
+  <div class="col-12" >
+    <p id="day_date" class = "period">Day</p>
+  </div>
   <!-- day -->
   <div class="row align-items-start mb-1" style="background-color: #F7F7F7; border-radius: 5px;">
-    <div class="col-12" >
-      <p id="day_date" class = "period">Day</p>
-    </div>
     <div class="col-3" >
       <p id="day_traffic" class="Scorecard"></p>
       <p class="scorecard-subt">flights</p>

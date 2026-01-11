@@ -2924,5 +2924,103 @@
     "title": "Airport Performance Analysis Tools",
     "section": "",
     "text": "{{% bootstrap-card-alt img=\"aiu_apt_db.jpg\" link=\"db/\" title=\"AIU Airport Performance Dashboard\" text=\"Consolidated monthly overview of operational performance at European airports across a wide spectrum of indicators.  General Performance\" alt=\"AIU airport performance dashboard\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"aiu_apt_daily.jpg\" link=\"https://www.eurocontrol.int/Economics/DailyTrafficVariation-Airports.html\" title=\"Daily Traffic Variation Dashboard \" text=\"Monitor the daily traffic variation at major European airports.  Traffic\" alt=\"Daily traffic @ airports\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"cdo_icon.jpg\" link=\"/efficiency/vfe/\" title=\"CCO and CDO Overview\" text=\"Explore the vertical flight efficiency during continuous climb (CCO) and descent (CDO) operations.  Efficiency\" alt=\"Vertical flight efficiency @ airports\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"apt_taxi.jpg\" link=\"/efficiency/taxiout/\" title=\"Additional Taxi-Out Time\" text=\"See the taxi-out efficiency at airports.  Efficiency\" alt=\"Taxi-out additional time @ airports\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n\n\n\n\n\n\n\n{{% bootstrap-card-alt img=\"apt_asma.jpg\" link=\"/efficiency/asma/\" title=\"Additional ASMA time\" text=\"Find out more about the efficiency in the Arrival Sequencing and Metering Area (ASMA) around airports.  Efficiency\" alt=\"ASMA additional time @ airports\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"ectl_tx_stand.jpeg\" link=\"https://www.eurocontrol.int/publication/taxi-times-summer-2022\" title=\"Taxi-time planning values \" text=\"Taxi time planning values, by IATA season for airline schedulers.  Capacity & Delays\" alt=\"Taxi-time planning values\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"ectl_3.jpg\" link=\"/capacity/atfm_apt/\" title=\"ATFM Delays at Airports\" text=\"Analyse the airport ATFM arrival delays at airports.   Capacity & Delays\" alt=\"ATFM delays @ airports\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"ectl_mirror.jpg\" link=\"https://www.eurocontrol.int/tool/mirror\" title=\"MIRROR - Operational Decision Support Tool \" text=\"Check out the innovative tool that helps stakeholders predict and mitigate delays.   Capacity & Delays\" alt=\"MIRROR - Operational Decision Support Tool\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n\n\n\n\n\n\n\n{{% bootstrap-card-alt img=\"ectl_aircraft1.jpg\" link=\"acft_ground/\" title=\"Active and Inactive Aircraft at Airports\" text=\"See how many aircraft are parked across European airports.   General Performance\" alt=\"Parked aircraft at European airports\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"ectl_apt_corner1.jpg\" link=\"https://ext.eurocontrol.int/airport_corner_public/\" title=\"EUROCONTROL airport corner \" text=\"Get information on airport infrastructure and ongoing and planned activities.   General Performance\" alt=\"EUROCONTROL airport corner\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n{{% bootstrap-card-alt img=\"ectl_apt_int1.jpg\" link=\"https://www.eurocontrol.int/airport-integration\" title=\"EUROCONTROL airport network integration \" text=\"Learn how EUROCONTROL helps to better integrate airports in the ATM network.  General Performance\" alt=\"EUROCONTROL airport network integration\" command=\"Resize\" options=\"300x\" class=\"mb-2\" %}}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nActive and inactive aircraft parked across EUROCONTROL area\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "CLAUDE.html",
+    "href": "CLAUDE.html",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "This file provides guidance for AI assistants working on this codebase.\n\n\nThis is a Quarto migration of the EUROCONTROL Aviation Intelligence Portal, originally built with Hugo/blogdown. The live site is at ansperformance.eu.\nGoal: Reproduce the website visually while using native Quarto features and cleaner CSS/SCSS, minimizing embedded HTML.\n\n\n\n\nFramework: Quarto (website project)\nLanguage: R (for data processing, some HTML generation)\nStyling: SCSS with Bootstrap 5 (Cosmo theme base)\nExtensions: mcanouil/quarto-iconify, quarto-ext\nDeployment: Netlify\n\n\n\n\n├── _quarto.yml              # Main Quarto config (navbar, footer, theme)\n├── index.qmd                # Homepage with network dashboard + carousel\n├── styles.scss              # SCSS rules (should contain all styles)\n├── styles.css               # Legacy CSS (to be merged into SCSS)\n├── _network-*.qmd           # Network dashboard components\n├── _subscribe.qmd           # Subscribe footer section\n├── carousel.R               # R code generating Bootstrap carousel\n├── carousel.yml             # Carousel content data\n├── performance-areas-gallery.yml  # Performance area cards data\n├── ejs/                     # EJS templates for listings\n├── _extensions/             # Quarto extensions\n├── images/                  # Static images\n│   └── landing/            # Homepage thumbnails\n├── about/                   # About section pages\n├── acronym/                 # Acronym definitions (mostly .md)\n├── bibliography/            # Bibliography pages\n├── dashboard/               # Stakeholder dashboards\n├── data/                    # Data download page\n├── definition/              # Term definitions\n├── methodology/             # Methodology documentation\n├── traffic/                 # Traffic section\n└── _freeze/                 # Quarto freeze cache\n\n\n\n# Preview site locally\nquarto preview\n\n# Render full site\nquarto render\n\n# Render single file\nquarto render index.qmd\n\n\n\n\n\n\nUse ::: div syntax instead of raw HTML &lt;div&gt; where possible\nUse {.class} for CSS classes: [text]{.classname}\nUse shortcodes: \nUse includes: {{&lt; include \"_file.qmd\" &gt;}}\n\n\n\n\nThe styles.scss file should follow Quarto’s structure:\n/*-- scss:defaults --*/\n$brand-primary: #053253;\n// ... variables\n\n/*-- scss:rules --*/\n// ... CSS rules\n\n\n\n\nQuarto files: kebab-case.qmd\nCSS classes: kebab-case\nIDs for JS hooks: snake_case (e.g., #day_traffic)\n\n\n\n\n\n\n\n\nBasic Quarto structure and navigation\nHomepage skeleton with network dashboard\nDefinition, acronym, methodology sections\nAbout pages with PRC member listings\nData download page\n\n\n\n\n\nCSS/SCSS consolidation\nNetwork dashboard (uses raw HTML)\nCarousel (R-generated HTML)\n\n\n\n\n\nPublications section (/publications/)\nCapacity section (/capacity/)\nEfficiency section (/efficiency/)\nEconomics section (/economics/)\nFull footer with app download QR codes\nHero section with CTA buttons\n\n\n\n\n\n\n\n\nMerge styles.css into styles.scss\nFix invalid CSS syntax (// comments → /* */)\nDefine SCSS variables for brand colors\n\n\n\n\nConvert {=html} blocks to Quarto native syntax:\nBefore:\n{=html}\n&lt;div class=\"stat-card\"&gt;\n  &lt;p class=\"label\"&gt;Total flights&lt;/p&gt;\n  &lt;p id=\"day_traffic\" class=\"value\"&gt;n/a&lt;/p&gt;\n&lt;/div&gt;\nAfter:\n::: {.stat-card}\n[Total flights]{.label}\n\n[n/a]{.value #day_traffic}\n:::\n\n\n\nAdd missing elements to footer: - Subscribe section with newsletter button - App download section with QR codes - RSS link\n\n\n\nOptions: 1. Replace R-generated carousel with Quarto native cards 2. Use simpler “What’s New” list format 3. Keep carousel but move to cleaner implementation\n\n\n\n\n/publications/ - listing of reports\n/capacity/, /efficiency/, /economics/ - performance area pages\nStakeholder dashboards (airport, ANSP, state views)\n\n\n\n\n\n\n\n\n\n\n\n\n\nFile\nPurpose\nNotes\n\n\n\n\n_quarto.yml\nSite config\nNavbar structure, footer, theme\n\n\nindex.qmd\nHomepage\nContains dashboard + carousel\n\n\n_network-api.qmd\nAPI data fetching\nJavaScript for live data\n\n\n_network-dashboard-flights.qmd\nFlight stats display\nHeavy HTML, needs refactor\n\n\ncarousel.R\nCarousel generator\nConsider replacing\n\n\ndata/index.qmd\nData downloads\nComplex tables, works well\n\n\n\n\n\n\n$brand-primary: #053253;      // Header/footer background\n$brand-secondary: #337ab7;    // Links, accents\n$bg-light: #f8f9fa;           // Light backgrounds\n$hero-bg: rgb(240, 245, 249); // Hero section\n\n\n\n\nNetwork data: https://www.eurocontrol.int/Economics/Oscar/ (iframes)\nNewsletter signup: https://www.eurocontrol.int/form/aviation-intelligence-unit-aiu-newsletter\nExternal dashboards: Various EUROCONTROL hosted dashboards\n\n\n\n\n\nRun quarto preview and check all navigation links\nVerify network dashboard loads data (requires internet)\nCheck responsive layout at mobile/tablet breakpoints\nValidate carousel transitions work\n\n\n\n\n\n\n\nCheck carousel.yml has valid image paths\nEnsure images exist in images/landing/\n\n\n\n\n\nJavaScript in _network-api.qmd fetches from external API\nMay fail if EUROCONTROL API is down\n\n\n\n\n\nEnsure styles.scss is referenced in _quarto.yml\nCheck for syntax errors (SCSS is strict)\n\n\n\n\n\n\nOriginal Hugo site repo\nLive site\nQuarto documentation\nBootstrap 5 docs"
+  },
+  {
+    "objectID": "CLAUDE.html#project-overview",
+    "href": "CLAUDE.html#project-overview",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "This is a Quarto migration of the EUROCONTROL Aviation Intelligence Portal, originally built with Hugo/blogdown. The live site is at ansperformance.eu.\nGoal: Reproduce the website visually while using native Quarto features and cleaner CSS/SCSS, minimizing embedded HTML."
+  },
+  {
+    "objectID": "CLAUDE.html#tech-stack",
+    "href": "CLAUDE.html#tech-stack",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "Framework: Quarto (website project)\nLanguage: R (for data processing, some HTML generation)\nStyling: SCSS with Bootstrap 5 (Cosmo theme base)\nExtensions: mcanouil/quarto-iconify, quarto-ext\nDeployment: Netlify"
+  },
+  {
+    "objectID": "CLAUDE.html#project-structure",
+    "href": "CLAUDE.html#project-structure",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "├── _quarto.yml              # Main Quarto config (navbar, footer, theme)\n├── index.qmd                # Homepage with network dashboard + carousel\n├── styles.scss              # SCSS rules (should contain all styles)\n├── styles.css               # Legacy CSS (to be merged into SCSS)\n├── _network-*.qmd           # Network dashboard components\n├── _subscribe.qmd           # Subscribe footer section\n├── carousel.R               # R code generating Bootstrap carousel\n├── carousel.yml             # Carousel content data\n├── performance-areas-gallery.yml  # Performance area cards data\n├── ejs/                     # EJS templates for listings\n├── _extensions/             # Quarto extensions\n├── images/                  # Static images\n│   └── landing/            # Homepage thumbnails\n├── about/                   # About section pages\n├── acronym/                 # Acronym definitions (mostly .md)\n├── bibliography/            # Bibliography pages\n├── dashboard/               # Stakeholder dashboards\n├── data/                    # Data download page\n├── definition/              # Term definitions\n├── methodology/             # Methodology documentation\n├── traffic/                 # Traffic section\n└── _freeze/                 # Quarto freeze cache"
+  },
+  {
+    "objectID": "CLAUDE.html#build-commands",
+    "href": "CLAUDE.html#build-commands",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "# Preview site locally\nquarto preview\n\n# Render full site\nquarto render\n\n# Render single file\nquarto render index.qmd"
+  },
+  {
+    "objectID": "CLAUDE.html#key-conventions",
+    "href": "CLAUDE.html#key-conventions",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "Use ::: div syntax instead of raw HTML &lt;div&gt; where possible\nUse {.class} for CSS classes: [text]{.classname}\nUse shortcodes: \nUse includes: {{&lt; include \"_file.qmd\" &gt;}}\n\n\n\n\nThe styles.scss file should follow Quarto’s structure:\n/*-- scss:defaults --*/\n$brand-primary: #053253;\n// ... variables\n\n/*-- scss:rules --*/\n// ... CSS rules\n\n\n\n\nQuarto files: kebab-case.qmd\nCSS classes: kebab-case\nIDs for JS hooks: snake_case (e.g., #day_traffic)"
+  },
+  {
+    "objectID": "CLAUDE.html#migration-status",
+    "href": "CLAUDE.html#migration-status",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "Basic Quarto structure and navigation\nHomepage skeleton with network dashboard\nDefinition, acronym, methodology sections\nAbout pages with PRC member listings\nData download page\n\n\n\n\n\nCSS/SCSS consolidation\nNetwork dashboard (uses raw HTML)\nCarousel (R-generated HTML)\n\n\n\n\n\nPublications section (/publications/)\nCapacity section (/capacity/)\nEfficiency section (/efficiency/)\nEconomics section (/economics/)\nFull footer with app download QR codes\nHero section with CTA buttons"
+  },
+  {
+    "objectID": "CLAUDE.html#migration-priorities",
+    "href": "CLAUDE.html#migration-priorities",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "Merge styles.css into styles.scss\nFix invalid CSS syntax (// comments → /* */)\nDefine SCSS variables for brand colors\n\n\n\n\nConvert {=html} blocks to Quarto native syntax:\nBefore:\n{=html}\n&lt;div class=\"stat-card\"&gt;\n  &lt;p class=\"label\"&gt;Total flights&lt;/p&gt;\n  &lt;p id=\"day_traffic\" class=\"value\"&gt;n/a&lt;/p&gt;\n&lt;/div&gt;\nAfter:\n::: {.stat-card}\n[Total flights]{.label}\n\n[n/a]{.value #day_traffic}\n:::\n\n\n\nAdd missing elements to footer: - Subscribe section with newsletter button - App download section with QR codes - RSS link\n\n\n\nOptions: 1. Replace R-generated carousel with Quarto native cards 2. Use simpler “What’s New” list format 3. Keep carousel but move to cleaner implementation\n\n\n\n\n/publications/ - listing of reports\n/capacity/, /efficiency/, /economics/ - performance area pages\nStakeholder dashboards (airport, ANSP, state views)"
+  },
+  {
+    "objectID": "CLAUDE.html#important-files",
+    "href": "CLAUDE.html#important-files",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "File\nPurpose\nNotes\n\n\n\n\n_quarto.yml\nSite config\nNavbar structure, footer, theme\n\n\nindex.qmd\nHomepage\nContains dashboard + carousel\n\n\n_network-api.qmd\nAPI data fetching\nJavaScript for live data\n\n\n_network-dashboard-flights.qmd\nFlight stats display\nHeavy HTML, needs refactor\n\n\ncarousel.R\nCarousel generator\nConsider replacing\n\n\ndata/index.qmd\nData downloads\nComplex tables, works well"
+  },
+  {
+    "objectID": "CLAUDE.html#brand-colors",
+    "href": "CLAUDE.html#brand-colors",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "$brand-primary: #053253;      // Header/footer background\n$brand-secondary: #337ab7;    // Links, accents\n$bg-light: #f8f9fa;           // Light backgrounds\n$hero-bg: rgb(240, 245, 249); // Hero section"
+  },
+  {
+    "objectID": "CLAUDE.html#external-dependencies",
+    "href": "CLAUDE.html#external-dependencies",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "Network data: https://www.eurocontrol.int/Economics/Oscar/ (iframes)\nNewsletter signup: https://www.eurocontrol.int/form/aviation-intelligence-unit-aiu-newsletter\nExternal dashboards: Various EUROCONTROL hosted dashboards"
+  },
+  {
+    "objectID": "CLAUDE.html#testing",
+    "href": "CLAUDE.html#testing",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "Run quarto preview and check all navigation links\nVerify network dashboard loads data (requires internet)\nCheck responsive layout at mobile/tablet breakpoints\nValidate carousel transitions work"
+  },
+  {
+    "objectID": "CLAUDE.html#common-issues",
+    "href": "CLAUDE.html#common-issues",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "Check carousel.yml has valid image paths\nEnsure images exist in images/landing/\n\n\n\n\n\nJavaScript in _network-api.qmd fetches from external API\nMay fail if EUROCONTROL API is down\n\n\n\n\n\nEnsure styles.scss is referenced in _quarto.yml\nCheck for syntax errors (SCSS is strict)"
+  },
+  {
+    "objectID": "CLAUDE.html#reference",
+    "href": "CLAUDE.html#reference",
+    "title": "CLAUDE.md - AIU Portal Quarto Migration Guide",
+    "section": "",
+    "text": "Original Hugo site repo\nLive site\nQuarto documentation\nBootstrap 5 docs"
   }
 ]

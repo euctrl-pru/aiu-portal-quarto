@@ -26,15 +26,23 @@ listing:
     contents: performance-areas-gallery.yml
 ---
 
+::: {#hero-banner .column-page}
+# Aviation Intelligence Portal
 
-::::: {#status-and-news .grid}
+The portal provides insights into various aviation performance areas and is developed by the EUROCONTROL Aviation Intelligence Unit.
 
-:::: {#network-dashboard .g-col-7}
+[Subscribe](https://www.eurocontrol.int/form/aviation-intelligence-unit-aiu-newsletter){.btn .btn-primary .me-2}
+[About us](/about/){.btn .btn-outline-secondary}
+:::
+
+::::: {#status-and-news .grid .column-page}
+
+:::: {#network-dashboard .g-col-8}
 #### Network status on [NA]{#nw_day_date}
 {{< include "_network-dashboard.qmd" >}}
 ::::
 
-:::: {#whatsnew .g-col-5}
+:::: {#whatsnew .g-col-4}
 #### What's New
 
 ```{r}

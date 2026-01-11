@@ -39,9 +39,7 @@ dif_y2d_delay_prev_year_perc = d3.select("#dif_y2d_delay_prev_year_perc")
   .text(d3.format("+.0%")(dd.dif_y2d_delay_prev_year_perc));
 dif_y2d_delay_2019_perc = d3.select("#dif_y2d_delay_2019_perc")
   .text(d3.format("+.0%")(dd.dif_y2d_delay_2019_perc));
-
 y2d_delay_per_flight = (dd.y2d_flights_total == 0) ? 0 : Math.round(dd.y2d_delay_total / dd.y2d_flights_total * 100) / 100;
-
 y2d_delay_flight = d3.select("#y2d_delay_flight")
   .text(d3.format(",")(y2d_delay_per_flight));
 
@@ -118,11 +116,11 @@ y2d_delay_flight = d3.select("#y2d_delay_flight")
     <p class="nw-col-name">Vs 2019</p>
     <p id="dif_y2d_delay_2019_perc" class="nw-col-value">n/a</p>
   </div>
-</div>
   <div>
     <p class="nw-col-name">Avg. delay/flight</p>
     <p id="y2d_delay_flight" class="nw-col-value">n/a</p>
   </div>
+</div>
 
 ```
 

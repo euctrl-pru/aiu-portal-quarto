@@ -7,7 +7,6 @@
 {{< include "_network-dashboard-flights.qmd" >}}
 
 
-
 ## ATFM Delay
 
 {{< include "_network-dashboard-delay.qmd" >}}
