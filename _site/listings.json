@@ -3,7 +3,6 @@
     "listing": "/definition/index.html",
     "items": [
       "/definition/asma-transit-time.html",
-      "/definition/atc-pre-departure-delay/index.html",
       "/definition/atfm-delay.html",
       "/definition/atfm-delay-codes.html",
       "/definition/atfm-measure.html",
@@ -12,7 +11,6 @@
       "/definition/additional-taxi-in-time.html",
       "/definition/additional-taxi-out-time.html",
       "/definition/air-transport-statistics.html",
-      "/definition/airport-data-flow/index.html",
       "/definition/airspace-infringement.html",
       "/definition/composite-flight-hour.html",
       "/definition/departure-slot.html",

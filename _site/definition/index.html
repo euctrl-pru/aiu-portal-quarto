@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-db46ab340c50d5fcf2ad8a050de4fecb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-99de19a12178d22498c3194c5785ab99.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -83,10 +83,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      page: 30,
+      valueNames: ['listing-project','listing-bibliography','listing-execute','listing-website','listing-format','listing-language','listing-title','listing-slug','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-link-citations','listing-biblio-style',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author"],
+      searchColumns: ["listing-project","listing-bibliography","listing-execute","listing-website","listing-format","listing-language","listing-title","listing-slug","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-link-citations","listing-biblio-style"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -420,333 +420,222 @@ window.Quarto = {
 </header>
 
 
+<div id="listing-definitions" class="quarto-listing quarto-listing-container-custom">
 
+<!-- Alphabetic navigation -->
+<nav class="acronym-nav mb-4" id="acronym-top">
 
+  <a href="#letter-A" class="acronym-letter-link">A</a> , 
 
+  <a href="#letter-C" class="acronym-letter-link">C</a> , 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-definitions">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-definitions-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-definitions'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-    </select>
+  <a href="#letter-D" class="acronym-letter-link">D</a> , 
+
+  <a href="#letter-E" class="acronym-letter-link">E</a> , 
+
+  <a href="#letter-F" class="acronym-letter-link">F</a> , 
+
+  <a href="#letter-I" class="acronym-letter-link">I</a> , 
+
+  <a href="#letter-K" class="acronym-letter-link">K</a> , 
+
+  <a href="#letter-M" class="acronym-letter-link">M</a> , 
+
+  <a href="#letter-O" class="acronym-letter-link">O</a> , 
+
+  <a href="#letter-P" class="acronym-letter-link">P</a> , 
+
+  <a href="#letter-R" class="acronym-letter-link">R</a> , 
+
+  <a href="#letter-S" class="acronym-letter-link">S</a> , 
+
+  <a href="#letter-T" class="acronym-letter-link">T</a>
+
+</nav>
+
+<!-- Acronym listings by letter -->
+
+<section class="acronym-section" id="letter-A">
+  <h2 class="anchored">A</h2>
+  <div class="acronym-list">
+  
+    <span class="acronym-item">— <a href="../definition/additional-asma-time.html">Additional ASMA Time</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/additional-taxi-in-time.html">Additional Taxi-in Time</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/additional-taxi-out-time.html">Additional Taxi-out Time</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/air-transport-statistics.html">Air transport statistics</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/airspace-infringement.html">Airspace Infringement</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/asma-transit-time.html">ASMA Transit Time</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/atfm-delay.html">ATFM Delay</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/atfm-delay-codes.html">ATFM Delay Codes</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/atfm-measure.html">ATFM Measure</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/atfm-slot-adherence.html">ATFM slot adherence</a></span>
+  
   </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-file-modified-sort="1751377091472" data-listing-reading-time-sort="1" data-listing-word-count-sort="57" data-listing-title-sort="ASMA Transit Time" data-listing-filename-sort="asma-transit-time.md">
-<td>
-<a href="../definition/asma-transit-time.html" class="title listing-title">ASMA Transit Time</a>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-file-modified-sort="1751381772059" data-listing-reading-time-sort="1" data-listing-word-count-sort="23" data-listing-title-sort="ATC Pre-departure Delay" data-listing-filename-sort="index.qmd">
-<td>
-<a href="../definition/atc-pre-departure-delay/index.html" class="title listing-title">ATC Pre-departure Delay</a>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-file-modified-sort="1751377091473" data-listing-reading-time-sort="1" data-listing-word-count-sort="115" data-listing-title-sort="ATFM Delay" data-listing-filename-sort="atfm-delay.qmd">
-<td>
-<a href="../definition/atfm-delay.html" class="title listing-title">ATFM Delay</a>
-</td>
-
-</tr>
-
-<tr data-index="3" data-listing-file-modified-sort="1751383406831" data-listing-reading-time-sort="2" data-listing-word-count-sort="203" data-listing-title-sort="ATFM Delay Codes" data-listing-filename-sort="atfm-delay-codes.qmd">
-<td>
-<a href="../definition/atfm-delay-codes.html" class="title listing-title">ATFM Delay Codes</a>
-</td>
-
-</tr>
-
-<tr data-index="4" data-listing-file-modified-sort="1751380199995" data-listing-reading-time-sort="1" data-listing-word-count-sort="39" data-listing-title-sort="ATFM Measure" data-listing-filename-sort="atfm-measure.qmd">
-<td>
-<a href="../definition/atfm-measure.html" class="title listing-title">ATFM Measure</a>
-</td>
-
-</tr>
-
-<tr data-index="5" data-listing-file-modified-sort="1751380224186" data-listing-reading-time-sort="1" data-listing-word-count-sort="87" data-listing-title-sort="ATFM slot adherence" data-listing-filename-sort="atfm-slot-adherence.qmd">
-<td>
-<a href="../definition/atfm-slot-adherence.html" class="title listing-title">ATFM slot adherence</a>
-</td>
-
-</tr>
-
-<tr data-index="6" data-listing-file-modified-sort="1751382206658" data-listing-reading-time-sort="1" data-listing-word-count-sort="71" data-listing-title-sort="Additional ASMA Time" data-listing-filename-sort="additional-asma-time.qmd">
-<td>
-<a href="../definition/additional-asma-time.html" class="title listing-title">Additional ASMA Time</a>
-</td>
-
-</tr>
-
-<tr data-index="7" data-listing-file-modified-sort="1751380087247" data-listing-reading-time-sort="1" data-listing-word-count-sort="67" data-listing-title-sort="Additional Taxi-in Time" data-listing-filename-sort="additional-taxi-in-time.qmd">
-<td>
-<a href="../definition/additional-taxi-in-time.html" class="title listing-title">Additional Taxi-in Time</a>
-</td>
-
-</tr>
-
-<tr data-index="8" data-listing-file-modified-sort="1751380188130" data-listing-reading-time-sort="1" data-listing-word-count-sort="67" data-listing-title-sort="Additional Taxi-out Time" data-listing-filename-sort="additional-taxi-out-time.qmd">
-<td>
-<a href="../definition/additional-taxi-out-time.html" class="title listing-title">Additional Taxi-out Time</a>
-</td>
-
-</tr>
-
-<tr data-index="9" data-listing-file-modified-sort="1751379875169" data-listing-reading-time-sort="1" data-listing-word-count-sort="59" data-listing-title-sort="Air transport statistics" data-listing-filename-sort="air-transport-statistics.md">
-<td>
-<a href="../definition/air-transport-statistics.html" class="title listing-title">Air transport statistics</a>
-</td>
-
-</tr>
-
-<tr data-index="10" data-listing-file-modified-sort="1751382382994" data-listing-reading-time-sort="2" data-listing-word-count-sort="217" data-listing-title-sort="Airport operator data flow (APDF)" data-listing-filename-sort="index.qmd">
-<td>
-<a href="../definition/airport-data-flow/index.html" class="title listing-title">Airport operator data flow (APDF)</a>
-</td>
-
-</tr>
-
-<tr data-index="11" data-listing-file-modified-sort="1751379875169" data-listing-reading-time-sort="1" data-listing-word-count-sort="43" data-listing-title-sort="Airspace Infringement" data-listing-filename-sort="airspace-infringement.md">
-<td>
-<a href="../definition/airspace-infringement.html" class="title listing-title">Airspace Infringement</a>
-</td>
-
-</tr>
-
-<tr data-index="12" data-listing-file-modified-sort="1751377091474" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="Composite flight-hour" data-listing-filename-sort="composite-flight-hour.md">
-<td>
-<a href="../definition/composite-flight-hour.html" class="title listing-title">Composite flight-hour</a>
-</td>
-
-</tr>
-
-<tr data-index="13" data-listing-file-modified-sort="1751377091474" data-listing-reading-time-sort="1" data-listing-word-count-sort="28" data-listing-title-sort="Departure Slot" data-listing-filename-sort="departure-slot.qmd">
-<td>
-<a href="../definition/departure-slot.html" class="title listing-title">Departure Slot</a>
-</td>
-
-</tr>
-
-<tr data-index="14" data-listing-file-modified-sort="1751377091474" data-listing-reading-time-sort="1" data-listing-word-count-sort="62" data-listing-title-sort="ECAC Area" data-listing-filename-sort="ecac-area.md">
-<td>
-<a href="../definition/ecac-area.html" class="title listing-title">ECAC Area</a>
-</td>
-
-</tr>
-
-<tr data-index="15" data-listing-file-modified-sort="1751377091475" data-listing-reading-time-sort="1" data-listing-word-count-sort="56" data-listing-title-sort="ESRA 2008 Area" data-listing-filename-sort="esra-2008-area.md">
-<td>
-<a href="../definition/esra-2008-area.html" class="title listing-title">ESRA 2008 Area</a>
-</td>
-
-</tr>
-
-<tr data-index="16" data-listing-file-modified-sort="1751377091475" data-listing-reading-time-sort="1" data-listing-word-count-sort="112" data-listing-title-sort="EUROCONTROL Area" data-listing-filename-sort="eurocontrol-area.qmd">
-<td>
-<a href="../definition/eurocontrol-area.html" class="title listing-title">EUROCONTROL Area</a>
-</td>
-
-</tr>
-
-<tr data-index="17" data-listing-file-modified-sort="1751377091474" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="Economic Cost Effectiveness" data-listing-filename-sort="eco-cost-eff.md">
-<td>
-<a href="../definition/eco-cost-eff.html" class="title listing-title">Economic Cost Effectiveness</a>
-</td>
-
-</tr>
-
-<tr data-index="18" data-listing-file-modified-sort="1751377091474" data-listing-reading-time-sort="1" data-listing-word-count-sort="29" data-listing-title-sort="En-route ATFM Delay" data-listing-filename-sort="en-route-atfm-delay.md">
-<td>
-<a href="../definition/en-route-atfm-delay.html" class="title listing-title">En-route ATFM Delay</a>
-</td>
-
-</tr>
-
-<tr data-index="19" data-listing-file-modified-sort="1751383447949" data-listing-reading-time-sort="1" data-listing-word-count-sort="113" data-listing-title-sort="En-route Charging Zone" data-listing-filename-sort="en-route-charging-zone.qmd">
-<td>
-<a href="../definition/en-route-charging-zone.html" class="title listing-title">En-route Charging Zone</a>
-</td>
-
-</tr>
-
-<tr data-index="20" data-listing-file-modified-sort="1751379875170" data-listing-reading-time-sort="5" data-listing-word-count-sort="909" data-listing-title-sort="FAB - Functional Airspace Blocks" data-listing-filename-sort="fab.md">
-<td>
-<a href="../definition/fab.html" class="title listing-title">FAB - Functional Airspace Blocks</a>
-</td>
-
-</tr>
-
-<tr data-index="21" data-listing-file-modified-sort="1751382583116" data-listing-reading-time-sort="2" data-listing-word-count-sort="270" data-listing-title-sort="Flight Trajectory Models" data-listing-filename-sort="flight-models.md">
-<td>
-<a href="../definition/flight-models.html" class="title listing-title">Flight Trajectory Models</a>
-</td>
-
-</tr>
-
-<tr data-index="22" data-listing-file-modified-sort="1751380236570" data-listing-reading-time-sort="1" data-listing-word-count-sort="107" data-listing-title-sort="IATA code 89" data-listing-filename-sort="iata-code-89.qmd">
-<td>
-<a href="../definition/iata-code-89.html" class="title listing-title">IATA code 89</a>
-</td>
-
-</tr>
-
-<tr data-index="23" data-listing-file-modified-sort="1751380248826" data-listing-reading-time-sort="1" data-listing-word-count-sort="184" data-listing-title-sort="IATA delay codes" data-listing-filename-sort="iata-delay-codes.qmd">
-<td>
-<a href="../definition/iata-delay-codes.html" class="title listing-title">IATA delay codes</a>
-</td>
-
-</tr>
-
-<tr data-index="24" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="1" data-listing-word-count-sort="93" data-listing-title-sort="KEA" data-listing-filename-sort="kea.md">
-<td>
-<a href="../definition/kea.html" class="title listing-title">KEA</a>
-</td>
-
-</tr>
-
-<tr data-index="25" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="1" data-listing-word-count-sort="94" data-listing-title-sort="KEP" data-listing-filename-sort="kep.md">
-<td>
-<a href="../definition/kep.html" class="title listing-title">KEP</a>
-</td>
-
-</tr>
-
-<tr data-index="26" data-listing-file-modified-sort="1751384433778" data-listing-reading-time-sort="3" data-listing-word-count-sort="428" data-listing-title-sort="Movements (STATFOR definition)" data-listing-filename-sort="movements.qmd">
-<td>
-<a href="../definition/movements.html" class="title listing-title">Movements (STATFOR definition)</a>
-</td>
-
-</tr>
-
-<tr data-index="27" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="2" data-listing-word-count-sort="279" data-listing-title-sort="Operated (non-operated) Schedules (%)" data-listing-filename-sort="operated-schedules.md">
-<td>
-<a href="../definition/operated-schedules.html" class="title listing-title">Operated (non-operated) Schedules (%)</a>
-</td>
-
-</tr>
-
-<tr data-index="28" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="1" data-listing-word-count-sort="5" data-listing-title-sort="Primary delay" data-listing-filename-sort="primary-delay.md">
-<td>
-<a href="../definition/primary-delay.html" class="title listing-title">Primary delay</a>
-</td>
-
-</tr>
-
-<tr data-index="29" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="1" data-listing-word-count-sort="45" data-listing-title-sort="Productivity" data-listing-filename-sort="productivity.md">
-<td>
-<a href="../definition/productivity.html" class="title listing-title">Productivity</a>
-</td>
-
-</tr>
-
-<tr data-index="30" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="1" data-listing-word-count-sort="56" data-listing-title-sort="Punctuality (OTP15)" data-listing-filename-sort="punctuality.md">
-<td>
-<a href="../definition/punctuality.html" class="title listing-title">Punctuality (OTP15)</a>
-</td>
-
-</tr>
-
-<tr data-index="31" data-listing-file-modified-sort="1751377091476" data-listing-reading-time-sort="1" data-listing-word-count-sort="14" data-listing-title-sort="Reactionary delay" data-listing-filename-sort="reactionary-delay.md">
-<td>
-<a href="../definition/reactionary-delay.html" class="title listing-title">Reactionary delay</a>
-</td>
-
-</tr>
-
-<tr data-index="32" data-listing-file-modified-sort="1751377091477" data-listing-reading-time-sort="1" data-listing-word-count-sort="22" data-listing-title-sort="Reference Location" data-listing-filename-sort="reference-location.md">
-<td>
-<a href="../definition/reference-location.html" class="title listing-title">Reference Location</a>
-</td>
-
-</tr>
-
-<tr data-index="33" data-listing-file-modified-sort="1751377091477" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Regulation" data-listing-filename-sort="regulation.md">
-<td>
-<a href="../definition/regulation.html" class="title listing-title">Regulation</a>
-</td>
-
-</tr>
-
-<tr data-index="34" data-listing-file-modified-sort="1751377091477" data-listing-reading-time-sort="1" data-listing-word-count-sort="77" data-listing-title-sort="SES Area" data-listing-filename-sort="ses-area.md">
-<td>
-<a href="../definition/ses-area.html" class="title listing-title">SES Area</a>
-</td>
-
-</tr>
-
-<tr data-index="35" data-listing-file-modified-sort="1751377091477" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Serious incident" data-listing-filename-sort="serious-incident.md">
-<td>
-<a href="../definition/serious-incident.html" class="title listing-title">Serious incident</a>
-</td>
-
-</tr>
-
-<tr data-index="36" data-listing-file-modified-sort="1751377091477" data-listing-reading-time-sort="1" data-listing-word-count-sort="69" data-listing-title-sort="Short term ATFCM measures" data-listing-filename-sort="short-term-atfcm-measures.md">
-<td>
-<a href="../definition/short-term-atfcm-measures.html" class="title listing-title">Short term ATFCM measures</a>
-</td>
-
-</tr>
-
-<tr data-index="37" data-listing-file-modified-sort="1751377091477" data-listing-reading-time-sort="1" data-listing-word-count-sort="23" data-listing-title-sort="Slot Tolerance Window" data-listing-filename-sort="slot-tolerance-window.md">
-<td>
-<a href="../definition/slot-tolerance-window.html" class="title listing-title">Slot Tolerance Window</a>
-</td>
-
-</tr>
-
-<tr data-index="38" data-listing-file-modified-sort="1751380178015" data-listing-reading-time-sort="2" data-listing-word-count-sort="223" data-listing-title-sort="Terminal ANS Unit Rate" data-listing-filename-sort="terminal-ans-unit-rate.qmd">
-<td>
-<a href="../definition/terminal-ans-unit-rate.html" class="title listing-title">Terminal ANS Unit Rate</a>
-</td>
-
-</tr>
-
-<tr data-index="39" data-listing-file-modified-sort="1751377091478" data-listing-reading-time-sort="1" data-listing-word-count-sort="41" data-listing-title-sort="Traffic Zone" data-listing-filename-sort="traffic-zone.md">
-<td>
-<a href="../definition/traffic-zone.html" class="title listing-title">Traffic Zone</a>
-</td>
-
-</tr>
-
-<tr data-index="40" data-listing-file-modified-sort="1751377091478" data-listing-reading-time-sort="2" data-listing-word-count-sort="265" data-listing-title-sort="Turnaround" data-listing-filename-sort="turnaround.qmd">
-<td>
-<a href="../definition/turnaround.html" class="title listing-title">Turnaround</a>
-</td>
-
-</tr>
-
-</tbody>
-</table>
+</section>
+
+<section class="acronym-section" id="letter-C">
+  <h2 class="anchored">C</h2>
+  <div class="acronym-list">
+  
+    <span class="acronym-item">— <a href="../definition/composite-flight-hour.html">Composite flight-hour</a></span>
+  
+  </div>
+</section>
+
+<section class="acronym-section" id="letter-D">
+  <h2 class="anchored">D</h2>
+  <div class="acronym-list">
+  
+    <span class="acronym-item">— <a href="../definition/departure-slot.html">Departure Slot</a></span>
+  
+  </div>
+</section>
+
+<section class="acronym-section" id="letter-E">
+  <h2 class="anchored">E</h2>
+  <div class="acronym-list">
+  
+    <span class="acronym-item">— <a href="../definition/ecac-area.html">ECAC Area</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/eco-cost-eff.html">Economic Cost Effectiveness</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/en-route-atfm-delay.html">En-route ATFM Delay</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/en-route-charging-zone.html">En-route Charging Zone</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/esra-2008-area.html">ESRA 2008 Area</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/eurocontrol-area.html">EUROCONTROL Area</a></span>
+  
+  </div>
+</section>
+
+<section class="acronym-section" id="letter-F">
+  <h2 class="anchored">F</h2>
+  <div class="acronym-list">
+  
+    <span class="acronym-item">— <a href="../definition/fab.html">FAB - Functional Airspace Blocks</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/flight-models.html">Flight Trajectory Models</a></span>
+  
+  </div>
+</section>
+
+<section class="acronym-section" id="letter-I">
+  <h2 class="anchored">I</h2>
+  <div class="acronym-list">
+  
+    <span class="acronym-item">— <a href="../definition/iata-code-89.html">IATA code 89</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/iata-delay-codes.html">IATA delay codes</a></span>
+  
+  </div>
+</section>
+
+<section class="acronym-section" id="letter-K">
+  <h2 class="anchored">K</h2>
+  <div class="acronym-list">
+  
+    <span class="acronym-item">— <a href="../definition/kea.html">KEA</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/kep.html">KEP</a></span>
+  
+  </div>
+</section>
+
+<section class="acronym-section" id="letter-M">
+  <h2 class="anchored">M</h2>
+  <div class="acronym-list">
+  
+    <span class="acronym-item">— <a href="../definition/movements.html">Movements (STATFOR definition)</a></span>
+  
+  </div>
+</section>
+
+<section class="acronym-section" id="letter-O">
+  <h2 class="anchored">O</h2>
+  <div class="acronym-list">
+  
+    <span class="acronym-item">— <a href="../definition/operated-schedules.html">Operated (non-operated) Schedules (%)</a></span>
+  
+  </div>
+</section>
+
+<section class="acronym-section" id="letter-P">
+  <h2 class="anchored">P</h2>
+  <div class="acronym-list">
+  
+    <span class="acronym-item">— <a href="../definition/primary-delay.html">Primary delay</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/productivity.html">Productivity</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/punctuality.html">Punctuality (OTP15)</a></span>
+  
+  </div>
+</section>
+
+<section class="acronym-section" id="letter-R">
+  <h2 class="anchored">R</h2>
+  <div class="acronym-list">
+  
+    <span class="acronym-item">— <a href="../definition/reactionary-delay.html">Reactionary delay</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/reference-location.html">Reference Location</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/regulation.html">Regulation</a></span>
+  
+  </div>
+</section>
+
+<section class="acronym-section" id="letter-S">
+  <h2 class="anchored">S</h2>
+  <div class="acronym-list">
+  
+    <span class="acronym-item">— <a href="../definition/serious-incident.html">Serious incident</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/ses-area.html">SES Area</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/short-term-atfcm-measures.html">Short term ATFCM measures</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/slot-tolerance-window.html">Slot Tolerance Window</a></span>
+  
+  </div>
+</section>
+
+<section class="acronym-section" id="letter-T">
+  <h2 class="anchored">T</h2>
+  <div class="acronym-list">
+  
+    <span class="acronym-item">— <a href="../definition/terminal-ans-unit-rate.html">Terminal ANS Unit Rate</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/traffic-zone.html">Traffic Zone</a></span>
+  
+    <span class="acronym-item">— <a href="../definition/turnaround.html">Turnaround</a></span>
+  
+  </div>
+</section>
+
+<!-- Floating back to top button -->
+<a href="#acronym-top" class="floating-top-btn" title="Back to top">↑</a>
 <div class="listing-no-matching d-none">No matching items</div>
 <nav id="definitions-pagination" class="listing-pagination" aria-label="Page Navigation">
   <ul class="pagination"></ul>
 </nav>
-</div></main> <!-- /main -->
+</div>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
