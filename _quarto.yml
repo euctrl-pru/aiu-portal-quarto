@@ -18,6 +18,7 @@ website:
   # google-analytics: "G-RJ3R0C35X7"
   # Note: You need to install: ```quarto install extension mcanouil/quarto-iconify```
   navbar:
+    title: false
     background: dark
     search: true
     logo: "/images/EUROCONTROL-logo-standard-rgb.svg"
