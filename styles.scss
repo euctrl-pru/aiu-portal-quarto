@@ -434,10 +434,11 @@ html {
 }
 
 .acronym-list {
-  line-height: 1.8;
+  line-height: 1.6;
   
   .acronym-item {
-    display: inline;
+    display: block;
+    padding: 0.15rem 0;
     
     a {
       color: $brand-secondary;
