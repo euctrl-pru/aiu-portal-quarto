@@ -137,9 +137,10 @@ website:
     background: "#053253"
     foreground: white
     left: 
-      - text: "© EUROCONTROL" 
+      - text: "© 2026 EUROCONTROL |" 
       - text: "**Disclaimer**"
         href: /about/disclaimer/
+      - text: " | "
       - text: "**Privacy**"
         href: https://www.eurocontrol.int/info/privacy-and-website-terms-use
     right: 
