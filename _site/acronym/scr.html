@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.30">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SCR - Shortest Constrained Route</title>
+<title>SCR - Shortest Constrained Route – Aviation Intelligence Unit portal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,14 +33,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../favicon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-978f3077c05b287ae57beef2a5c3d2de.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-75d2a094ede796c031a6afd182b0e0e9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -71,7 +72,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -82,7 +82,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/EUROCONTROL-logo-standard-rgb.svg" alt="EUROCONTROL Supporting European Aviation" class="navbar-logo">
+    <img src="../images/EUROCONTROL-logo-standard-rgb.svg" alt="EUROCONTROL Supporting European Aviation" class="navbar-logo light-content">
+    <img src="../images/EUROCONTROL-logo-standard-rgb.svg" alt="EUROCONTROL Supporting European Aviation" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -96,10 +97,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"><strong>Home</strong></span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-performance-areas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text"><strong>Performance areas</strong></span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-performancebrareas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Performance<br>areas</strong></span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-performance-areas">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-performancebrareas">    
         <li>
     <a class="dropdown-item" href="https://www.eurocontrol.int/Economics/BalancedScorecard.html">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:th" aria-label="Icon th from fa6-solid Iconify.design set." title="Icon th from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Balanced scorecard</span></a>
@@ -211,10 +212,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stakeholder-views" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text"><strong>Stakeholder views</strong></span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stakeholderbrviews" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><strong>Stakeholder<br>views</strong></span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-stakeholder-views">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-stakeholderbrviews">    
         <li>
     <a class="dropdown-item" href="../dashboard/stakeholder/airport/">
  <span class="dropdown-text"><iconify-icon role="img" inline="" icon="fa6-solid:plane-arrival" aria-label="Icon plane-arrival from fa6-solid Iconify.design set." title="Icon plane-arrival from fa6-solid Iconify.design set."></iconify-icon>&nbsp;Airports</span></a>
@@ -423,13 +424,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -444,7 +446,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/ansperformance\.eu\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -777,12 +779,15 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- © EUROCONTROL
+ © 2026 EUROCONTROL |
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="../about/disclaimer/">
 <p><strong>Disclaimer</strong></p>
 </a>
+  </li>  
+    <li class="nav-item">
+  | 
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="https://www.eurocontrol.int/info/privacy-and-website-terms-use">
@@ -792,19 +797,25 @@ ul.task-list li input[type="checkbox"] {
 </ul>
     </div>   
     <div class="nav-footer-center">
-      &nbsp;
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.eurocontrol.int/form/aviation-intelligence-unit-aiu-newsletter">
+<p><iconify-icon role="img" inline="" icon="fa6-solid:envelope" aria-label="Icon envelope from fa6-solid Iconify.design set." title="Icon envelope from fa6-solid Iconify.design set."></iconify-icon> Subscribe to our Newsletter</p>
+</a>
+  </li>  
+</ul>
     </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/">
-      <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/company/eurocontrol">
+      <i class="bi bi-linkedin" role="img" aria-label="EUROCONTROL's LinkedIn page">
 </i> 
     </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/">
-      <i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://github.com/euctrl-pru">
+      <i class="bi bi-github" role="img" aria-label="AIU Portal's GitHub page">
 </i> 
     </a>
   </li>  
