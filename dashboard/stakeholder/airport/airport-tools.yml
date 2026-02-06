@@ -1,31 +1,81 @@
-- category: Airport Performance Analysis Tools
-  tools:
-    - title: Traffic
-      subtitle: "IFR flight and service unit evolution and forecast"
-      href: /traffic/
-      thumbnail: /images/landing/ectl_traff_th.jpg
-    - title: "Capacity & Delay"
-      subtitle: "En-route and airport ATFM delays"
-      href: /capacity/
-      thumbnail: /images/landing/ectl_cap_th.jpg
-    - title: "Efficiency & Environment"
-      subtitle: "Flight efficiency affecting fuel burn and emissions"
-      href: /efficiency/
-      thumbnail: /images/landing/ectl_env_th.jpg
-    - title: "Economics"
-      subtitle: "Analysis of ANS cost-efficiency"
-      href: /economics/
-      thumbnail: /images/landing/ectl_cef_th.jpg
+- title: "AIU Airport Performance Dashboard"
+  description: "Consolidated monthly overview of operational performance at European airports across a wide spectrum of indicators."
+  image: aiu_apt_db.jpg
+  href: db/
+  badge: General Performance
+  badgeclass: text-bg-secondary
 
+- title: "Daily Traffic Variation Dashboard"
+  description: "Monitor the daily traffic variation at major European airports."
+  image: aiu_apt_daily.jpg
+  href: https://www.eurocontrol.int/Economics/DailyTrafficVariation-Airports.html
+  external: true
+  badge: Traffic
+  badgeclass: text-bg-primary
 
-blogdown::shortcode(
-  "bootstrap-card-alt",
-  img = "aiu_apt_db.jpg",
-  link = "db/",
-  title = "AIU Airport Performance Dashboard",
-  text = "Consolidated monthly overview of operational performance at European airports across a wide spectrum of indicators. <br><br> <div class='badge-container'><span class='badge badge-secondary'>General Performance</span></div>",
-  alt = "AIU airport performance dashboard",
-  command = "Resize",
-  options = "300x",
-  class = "mb-2"
-)
+- title: "CCO and CDO Overview"
+  description: "Explore the vertical flight efficiency during continuous climb (CCO) and descent (CDO) operations."
+  image: cdo_icon.jpg
+  href: /efficiency/vfe/
+  badge: Efficiency
+  badgeclass: text-bg-info
+
+- title: "Additional Taxi-Out Time"
+  description: "See the taxi-out efficiency at airports."
+  image: apt_taxi.jpg
+  href: /efficiency/taxiout/
+  badge: Efficiency
+  badgeclass: text-bg-info
+
+- title: "Additional ASMA time"
+  description: "Find out more about the efficiency in the Arrival Sequencing and Metering Area (ASMA) around airports."
+  image: apt_asma.jpg
+  href: /efficiency/asma/
+  badge: Efficiency
+  badgeclass: text-bg-info
+
+- title: "Taxi-time planning values"
+  description: "Taxi time planning values, by IATA season for airline schedulers."
+  image: ectl_tx_stand.jpeg
+  href: https://www.eurocontrol.int/publication/taxi-times-summer-2022
+  external: true
+  badge: Capacity & Delays
+  badgeclass: text-bg-warning
+
+- title: "ATFM Delays at Airports"
+  description: "Analyse the airport ATFM arrival delays at airports."
+  image: ectl_3.jpg
+  href: /capacity/atfm_apt/
+  badge: Capacity & Delays
+  badgeclass: text-bg-warning
+
+- title: "MIRROR - Operational Decision Support Tool"
+  description: "Check out the innovative tool that helps stakeholders predict and mitigate delays."
+  image: ectl_mirror.jpg
+  href: https://www.eurocontrol.int/tool/mirror
+  external: true
+  badge: Capacity & Delays
+  badgeclass: text-bg-warning
+
+- title: "Active and Inactive Aircraft at Airports"
+  description: "See how many aircraft are parked across European airports."
+  image: ectl_aircraft1.jpg
+  href: acft_ground/
+  badge: General Performance
+  badgeclass: text-bg-secondary
+
+- title: "EUROCONTROL airport corner"
+  description: "Get information on airport infrastructure and ongoing and planned activities."
+  image: ectl_apt_corner1.jpg
+  href: https://ext.eurocontrol.int/airport_corner_public/
+  external: true
+  badge: General Performance
+  badgeclass: text-bg-secondary
+
+- title: "EUROCONTROL airport network integration"
+  description: "Learn how EUROCONTROL helps to better integrate airports in the ATM network."
+  image: ectl_apt_int1.jpg
+  href: https://www.eurocontrol.int/airport-integration
+  external: true
+  badge: General Performance
+  badgeclass: text-bg-secondary
