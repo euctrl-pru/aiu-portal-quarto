@@ -380,6 +380,43 @@ html {
 }
 
 /* ==========================================================================
+   Tool Cards (Dashboard pages)
+   ========================================================================== */
+
+.tool-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .card-title a {
+    color: $brand-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: $brand-secondary;
+    }
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .badge {
+    font-weight: 500;
+  }
+}
+
+/* ==========================================================================
    Stat Cards (Network Dashboard)
    ========================================================================== */
 
