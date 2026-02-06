@@ -1,6 +1,9 @@
 
 # AIU Portal in Quarto
 
+Preview at <https://aiu-portal-quarto.netlify.app/>
+
+
 These are notes on how to migrate the different (frankenstein-like) parts of the
 current AIU Portal based on blogdown and Hugo to a Quarto based version.
 
@@ -41,8 +44,5 @@ solutiuons for where they are used:
    for the relevant icons in the custom shortcodes
 * `relrel` and `rel`: link directly to the `xxx.qmd`, see examples in `acronym`
 
-## Relative URLs
-
-The various pages are full of 
 
 [fa]: <https://github.com/quarto-ext/fontawesome> "Fontawesome Quarto extension"
