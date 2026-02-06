@@ -10,8 +10,6 @@ listing:
       - "*.md"
       - "!index.qmd"
 ---
-::: {#acronym-top}
-:::
 
 ::: {#acronyms}
 :::
