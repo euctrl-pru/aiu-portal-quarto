@@ -1,65 +1,65 @@
 - title: "ANSP Operational Performance Dashboard"
   description: "Monthly overview of operational ANSP performance across a wide spectrum of indicators."
   image: ansp_db.png
-  link: /dashboard/stakeholder/ansp/ansp_db
+  href: /dashboard/stakeholder/ansp/ansp_db
   badge: General Performance
-  badge-class: secondary
+  badgeclass: text-bg-secondary
 
 - title: "Daily Traffic Variation at State and ACC Level"
   description: "Monitor the daily traffic variation at State and ACC level since the start of the COVID-19 crisis."
   image: acc_traff_db.png
-  link: https://www.eurocontrol.int/Economics/DailyTrafficVariation-ACCs.html
+  href: https://www.eurocontrol.int/Economics/DailyTrafficVariation-ACCs.html
   external: true
   badge: Traffic
-  badge-class: primary
+  badgeclass: text-bg-primary
 
 - title: "ATM Cost-Effectiveness Dashboard"
   description: "Analyse information and data on ANSP cost-effectiveness performance (2002-2020)."
   image: ace_db.png
-  link: https://www.eurocontrol.int/ACE/ACE-Home.html
+  href: https://www.eurocontrol.int/ACE/ACE-Home.html
   external: true
   badge: Economics
-  badge-class: success
+  badgeclass: text-bg-success
 
 - title: "ANSP Financial Dashboard"
   description: "Explore key financial information and indicators for European ANSPs."
   image: fin_db_2022_thmb.png
-  link: /economics/finance/
+  href: /economics/finance/
   badge: Economics
-  badge-class: success
+  badgeclass: text-bg-success
 
 - title: "En-route ATFM Delays"
   description: "Analyse the en-route ATFM delays."
   image: ectl_3.jpg
-  link: /capacity/atfm_ert/
+  href: /capacity/atfm_ert/
   badge: Capacity & Delays
-  badge-class: warning
+  badgeclass: text-bg-warning
 
 - title: "CCO and CDO Overview"
   description: "Explore the vertical flight efficiency during climb (CCO) and descent (CDO)."
   image: cdo_icon.jpg
-  link: /efficiency/vfe/
+  href: /efficiency/vfe/
   badge: Efficiency
-  badge-class: info
+  badgeclass: text-bg-info
 
 - title: "Additional ASMA Time"
   description: "Find out about the efficiency in the Arrival Sequencing and Metering Area (ASMA)."
   image: apt_asma.jpg
-  link: /efficiency/asma/
+  href: /efficiency/asma/
   badge: Efficiency
-  badge-class: info
+  badgeclass: text-bg-info
 
 - title: "Additional Taxi-Out Time"
   description: "See the taxi-out efficiency at airports."
   image: apt_taxi.jpg
-  link: /efficiency/taxiout/
+  href: /efficiency/taxiout/
   badge: Efficiency
-  badge-class: info
+  badgeclass: text-bg-info
 
 - title: "MIRROR - Operational Decision Support Tool"
   description: "Check out the new tool that helps stakeholders predict and mitigate delays."
   image: ectl_mirror.jpg
-  link: https://www.eurocontrol.int/tool/mirror
+  href: https://www.eurocontrol.int/tool/mirror
   external: true
   badge: Capacity & Delays
-  badge-class: warning
+  badgeclass: text-bg-warning
