@@ -4,7 +4,7 @@
 Preview at <https://aiu-portal-quarto.netlify.app/>
 
 
-These are notes on how to migrate the different (frankenstein-like) parts of the
+These are notes on how to migrate the different (Frankenstein-like) parts of the
 current AIU Portal based on blogdown and Hugo to a Quarto based version.
 
 # Migration Steps
@@ -15,16 +15,17 @@ current AIU Portal based on blogdown and Hugo to a Quarto based version.
 1. top-level setup, not ToC for page, i.e. `toc: false` in `_quarto.yml`.
    BUT it can be enabled locally; maybe useful for Methodology ages.
 1. add `library` as a resource in `_quarto.yml`: this is to store the PDF of interesting
-   blibliography works or other materia, typically PDF files.
-1. in **Methodology** and everywhere: links to images either the markdown way, i.e. remove
+   bibliography works or other material, typically PDF files.
+1. in **Methodology** and everywhere: links to images either the markdown way,
+   i.e. remove
    `knitr::include_graphics()` or remove `/images/`
-1. in **Methodology** main page: remove images from the bullets, too difficult to
-   port it in Quarto.
+1. in **Methodology** main page: remove images from the bullets, too difficult
+   to port it in Quarto.
    Create a directory for every page and move to `index.qmd` with its own images
 1. **Acronyms**: listing in Quarto can take care of it.
    *TODO*: do we want to have the letter of alphabets links?
 1. **Data**: embed the params in the YML for the file
-1. spot use of `@ref()` and substiture with relevant `@fig-`/`@tbl-`,...
+1. spot use of `@ref()` and substitute with relevant `@fig-`/`@tbl-`,...
 1. added carousel as from [Quarto's Gallery page](https://quarto.org/docs/gallery/).
    It can be changed/improved but minimalistically ok
 1. images for the carousel should be converted to 11:6 aspect ratio
@@ -34,8 +35,8 @@ current AIU Portal based on blogdown and Hugo to a Quarto based version.
 
 ## shortcodes
 
-We use many custom (in `themes/pru-theme/layout/shortcodes`) and hugo shortcodes,
-here is how to migrate them or alternative
+We use many custom (in `themes/pru-theme/layout/shortcodes`) and Hugo
+shortcodes, here is how to migrate them or alternative
 solutiuons for where they are used:
 
 * `a_blank_xyzzy` can be changed to `a_blank xyzzy`: we have a new Quarto extension

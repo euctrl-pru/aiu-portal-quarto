@@ -18,7 +18,7 @@ This is a **Quarto migration** of the EUROCONTROL Aviation Intelligence Portal, 
 
 ## Project Structure
 
-```
+```text
 ├── _quarto.yml              # Main Quarto config (navbar, footer, theme)
 ├── index.qmd                # Homepage with network dashboard + carousel
 ├── styles.scss              # SCSS rules (should contain all styles)
@@ -68,6 +68,7 @@ quarto render index.qmd
 ### SCSS Organization
 
 The `styles.scss` file should follow Quarto's structure:
+
 ```scss
 /*-- scss:defaults --*/
 $brand-primary: #053253;
@@ -86,6 +87,7 @@ $brand-primary: #053253;
 ## Migration Status
 
 ### ✅ Completed
+
 - Basic Quarto structure and navigation
 - Homepage skeleton with network dashboard
 - Definition, acronym, methodology sections
@@ -93,11 +95,13 @@ $brand-primary: #053253;
 - Data download page
 
 ### 🔄 In Progress
+
 - CSS/SCSS consolidation
 - Network dashboard (uses raw HTML)
 - Carousel (R-generated HTML)
 
 ### ❌ Not Yet Migrated
+
 - Publications section (`/publications/`)
 - Capacity section (`/capacity/`)
 - Efficiency section (`/efficiency/`)
@@ -108,14 +112,17 @@ $brand-primary: #053253;
 ## Migration Priorities
 
 ### Phase 1: CSS Cleanup
+
 1. Merge `styles.css` into `styles.scss`
-2. Fix invalid CSS syntax (// comments → /* */)
+2. Fix invalid CSS syntax (// comments → /**/)
 3. Define SCSS variables for brand colors
 
 ### Phase 2: Remove Embedded HTML
+
 Convert `{=html}` blocks to Quarto native syntax:
 
 **Before:**
+
 ```html
 {=html}
 <div class="stat-card">
@@ -125,6 +132,7 @@ Convert `{=html}` blocks to Quarto native syntax:
 ```
 
 **After:**
+
 ```markdown
 ::: {.stat-card}
 [Total flights]{.label}
@@ -134,18 +142,23 @@ Convert `{=html}` blocks to Quarto native syntax:
 ```
 
 ### Phase 3: Footer Enhancement
+
 Add missing elements to footer:
+
 - Subscribe section with newsletter button
 - App download section with QR codes
 - RSS link
 
 ### Phase 4: Simplify Carousel
+
 Options:
+
 1. Replace R-generated carousel with Quarto native cards
 2. Use simpler "What's New" list format
 3. Keep carousel but move to cleaner implementation
 
 ### Phase 5: Complete Content Sections
+
 - `/publications/` - listing of reports
 - `/capacity/`, `/efficiency/`, `/economics/` - performance area pages
 - Stakeholder dashboards (airport, ANSP, state views)
@@ -186,14 +199,17 @@ $hero-bg: rgb(240, 245, 249); // Hero section
 ## Common Issues
 
 ### Carousel not displaying
+
 - Check `carousel.yml` has valid image paths
 - Ensure images exist in `images/landing/`
 
 ### Network data showing "n/a"
+
 - JavaScript in `_network-api.qmd` fetches from external API
 - May fail if EUROCONTROL API is down
 
 ### SCSS not applying
+
 - Ensure `styles.scss` is referenced in `_quarto.yml`
 - Check for syntax errors (SCSS is strict)
 
