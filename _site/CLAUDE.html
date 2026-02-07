@@ -392,7 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="project-structure" class="level2">
 <h2 class="anchored" data-anchor-id="project-structure">Project Structure</h2>
-<pre><code>├── _quarto.yml              # Main Quarto config (navbar, footer, theme)
+<pre class="text"><code>├── _quarto.yml              # Main Quarto config (navbar, footer, theme)
 ├── index.qmd                # Homepage with network dashboard + carousel
 ├── styles.scss              # SCSS rules (should contain all styles)
 ├── styles.css               # Legacy CSS (to be merged into SCSS)
@@ -494,7 +494,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="phase-1-css-cleanup">Phase 1: CSS Cleanup</h3>
 <ol type="1">
 <li>Merge <code>styles.css</code> into <code>styles.scss</code></li>
-<li>Fix invalid CSS syntax (// comments → /* */)</li>
+<li>Fix invalid CSS syntax (// comments → /**/)</li>
 <li>Define SCSS variables for brand colors</li>
 </ol>
 </section>
@@ -516,11 +516,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="phase-3-footer-enhancement" class="level3">
 <h3 class="anchored" data-anchor-id="phase-3-footer-enhancement">Phase 3: Footer Enhancement</h3>
-<p>Add missing elements to footer: - Subscribe section with newsletter button - App download section with QR codes - RSS link</p>
+<p>Add missing elements to footer:</p>
+<ul>
+<li>Subscribe section with newsletter button</li>
+<li>App download section with QR codes</li>
+<li>RSS link</li>
+</ul>
 </section>
 <section id="phase-4-simplify-carousel" class="level3">
 <h3 class="anchored" data-anchor-id="phase-4-simplify-carousel">Phase 4: Simplify Carousel</h3>
-<p>Options: 1. Replace R-generated carousel with Quarto native cards 2. Use simpler “What’s New” list format 3. Keep carousel but move to cleaner implementation</p>
+<p>Options:</p>
+<ol type="1">
+<li>Replace R-generated carousel with Quarto native cards</li>
+<li>Use simpler “What’s New” list format</li>
+<li>Keep carousel but move to cleaner implementation</li>
+</ol>
 </section>
 <section id="phase-5-complete-content-sections" class="level3">
 <h3 class="anchored" data-anchor-id="phase-5-complete-content-sections">Phase 5: Complete Content Sections</h3>
