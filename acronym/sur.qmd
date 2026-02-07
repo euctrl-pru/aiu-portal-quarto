@@ -1,0 +1,24 @@
+---
+title: SUR - Shortest Unconstrained Route
+slug: sur
+---
+
+Shortest Unconstrained Route is the shortest route between two points planned
+using the existing route network.
+SUR does not take into account limitations by [CDR](cdr.qmd) or 
+Route Availability Document ([RAD](rad.qmd)).
+
+The associated distance measures how effectively the route network is designed.
+
+
+## See Also
+
+* [CDR](cdr.qmd)
+* [CPF](cpf.qmd)
+* [CPR](cpr.qmd)
+* [CTFM](ctfm.qmd)
+* [DCT](dct.qmd)
+* [Flight models](../definition/flight-models.qmd)
+* [FTFM](ftfm.qmd)
+* [ScR](scr.qmd)
+* [SRR](srr.qmd)

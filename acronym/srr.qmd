@@ -1,0 +1,20 @@
+---
+title: SRR - Shortest RAD restrictions applied Route
+slug: srr
+---
+
+Shortest [RAD](rad.qmd) restrictions applied Route is the shortest route between
+two points planned using the existing route network assuming all
+Route Availability Document (RAD) CDR's are open.
+
+## See Also
+
+* [CDR](cdr.qmd)
+* [CPF](cpf.qmd)
+* [CPR](cpr.qmd)
+* [CTFM](ctfm.qmd)
+* [DCT](dct.qmd)
+* [Flight models](../definition/flight-models.qmd)
+* [FTFM](ftfm.qmd)
+* [SCR](scr.qmd)
+* [SUR](sur.qmd)

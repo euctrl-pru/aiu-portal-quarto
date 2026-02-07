@@ -11,16 +11,17 @@ local function is_valid_org(org)
     return ''
   end
   local org_table = {
+    ["easa"]        = "EASA",
     ["ec"]          = "European Union",
-    ["icao"]        = "ICAO",
-    ["eurostat"]    = "Eurostat",
-    ["ivao"]        = "IVAO",
-    ["observable"]  = "Observable",
-    ["wiki"]        = "Wikipedia",
-    ["wikipedia"]   = "Wikipedia",
     ["ectrl"]       = "EUROCONTROL",
     ["eurocontrol"] = "EUROCONTROL",
-    ["skybrary"]    = "Skybrary"
+    ["eurostat"]    = "Eurostat",
+    ["icao"]        = "ICAO",
+    ["ivao"]        = "IVAO",
+    ["observable"]  = "Observable",
+    ["skybrary"]    = "Skybrary",
+    ["wiki"]        = "Wikipedia",
+    ["wikipedia"]   = "Wikipedia"
   }
   
   for key, value in pairs(org_table) do

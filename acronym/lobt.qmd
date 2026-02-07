@@ -1,0 +1,12 @@
+---
+title: LOBT - Last received Off-Block Time
+slug: lobt
+---
+
+Last Received Off-Block-Time from [IFPS](ifps.qmd).
+
+
+## See Also
+
+* [A-CDM](a-cdm.qmd)
+* [OBT - Off-Block Time](obt.qmd)

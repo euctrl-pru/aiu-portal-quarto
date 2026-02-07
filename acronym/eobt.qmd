@@ -1,0 +1,16 @@
+---
+title: EOBT - Estimated Off-Block Time
+slug: eobt
+---
+
+Estimated Off Block Time (EOBT) is the estimated time that an aircraft will
+start movement associated with departure.
+EOBT is a term specified in the Airport Collaborate Decision Making
+([A-CDM](a-cdm.qmd)).
+It is one of several terms related to [Off Block Time (OBT)](obt.qmd).
+
+
+## See Also
+
+* [A-CDM](a-cdm.qmd)
+* [OBT - Off-Block Time](obt.qmd)
