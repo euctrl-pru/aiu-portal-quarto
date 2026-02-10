@@ -26,25 +26,25 @@ const letters = Object.keys(grouped).sort();
 <!-- Alphabetic navigation -->
 <nav class="acronym-nav mb-4" id="acronym-top">
     <% for (const letter of letters) { %>
-        <a href="#letter-<%= letter %>" class="acronym-letter-link">
-            <%= letter %>
-        </a>
-        <% if (letter !== letters[letters.length - 1]) { %> , <% } %>
+    <a href="#letter-<%= letter %>" class="acronym-letter-link">
+        <%= letter %>
+    </a>
+    <% if (letter !== letters[letters.length - 1]) { %> , <% } %>
     <% } %>
 </nav>
 
 <!-- Acronym listings by letter -->
 <% for (const letter of letters) { %>
-    <section class="acronym-section" id="letter-<%= letter %>">
-        <h2><%= letter %></h2>
-        <div class="acronym-list">
-            <% for (const item of grouped[letter]) { %>
-                <span class="acronym-item">— <a href="<%= item.path %>"><%= item.title %></a></span>
-            <% } %>
-        </div>
-    </section>
+<section class="acronym-section" id="letter-<%= letter %>">
+    <h2><%= letter %></h2>
+    <div class="acronym-list">
+        <% for (const item of grouped[letter]) { %>
+        <span class="acronym-item">— <a href="<%= item.path %>"><%= item.title %></a></span>
+        <% } %>
+    </div>
+</section>
 <% } %>
 
-<!-- Floating back to top button (TRICK: target title block) -->
-<a href="#title-block-header" class="floating-top-btn" title="Back to top">↑</a>
+<!-- Floating back to top button (TRICK: target top of page, i.e.'#') -->
+<a href="#" class="floating-top-btn" title="Back to top">↑</a>
 ```
