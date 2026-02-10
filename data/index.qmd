@@ -55,9 +55,6 @@ grid:
   body-width: 1000px
 
 aliases: ["/data/performancearea/"]
-ndwk_i: <i class="fa pru flask"></i>
-fltr_i: <i class="fa pru filter"></i>
-attn_i: <i class="fa pru exclamation-triangle"></i>
 ---
 
 [icaoganp]: http://ansperformance.eu/references/acronym/ganp.html "ICAO GANP"
@@ -79,7 +76,7 @@ attn_i: <i class="fa pru exclamation-triangle"></i>
 
 <br>
 
-## <img src="ectl_env2.jpg" width="60" height="60" alt="CO2 Emissions by State"> CO2 Emissions by State
+## <img src="/assets/images/ectl_env2.jpg" width="60" height="60" alt="CO2 Emissions by State"> CO2 Emissions by State
 
 | Data description                                                                                                  | Period                                                                       | {{< fa file-excel >}}            | {{< fa file-csv >}}              |  Info                    |                                    |
 |-------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|----------------------------|----------------------------|--------------------------|------------------------------------|
@@ -90,7 +87,7 @@ attn_i: <i class="fa pru exclamation-triangle"></i>
 [COmeta]: /reference/dataset/emissions/ "CO2 (Meta)"
 [ENV]: https://www.eurocontrol.int/aviation-sustainability "EUROCONTROL Aviation Sustainability Unit"
 
-## <img src="prcq-operations-enroute.png" width="50" height="50" alt="Operations En-route"> Operations En-route
+## <img src="/assets/images/prcq-operations-enroute.png" width="50" height="50" alt="Operations En-route"> Operations En-route
 
 | Data description                                                                                                                                                                                                        | Period                                                                                           | {{< fa file-excel >}}                         | {{< fa file-csv >}}                 | Info                               | [ICAO GANP][icaoganp]              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------|-------------------------------|------------------------------------|------------------------------------|
@@ -125,7 +122,7 @@ attn_i: <i class="fa pru exclamation-triangle"></i>
 [PostOps]: https://www.eurocontrol.int/service/post-operations-performance-adjustment "Post ops adjustment process"
 
 
-## <img src="prcq-operations-airport.png" width="50" height="50" alt="Operations at Airports"> Operations at Airports
+## <img src="/assets/images/prcq-operations-airport.png" width="50" height="50" alt="Operations at Airports"> Operations at Airports
 
 
 | Data description                                                                                                                                                                                 | Period                                                                                  | {{< fa file-excel >}}                     | {{< fa file-csv >}}                  |  Info                           | [ICAO GANP][icaoganp]              |
@@ -198,7 +195,7 @@ attn_i: <i class="fa pru exclamation-triangle"></i>
 
 
 
-## <img src="prcq-traffic.png" width="50" height="50" alt="Traffic"> Traffic
+## <img src="/assets/images/prcq-traffic.png" width="50" height="50" alt="Traffic"> Traffic
 
 **NOTE**: the two Traffic Complexity time series, 2014 - 2016 and 2017 - 2019, **cannot** be used joinly to study the full time span 2014 - 2019.<br>
 In fact they use different BADA versions and hence different aircraft characteristics for the same aircraft type; this impacts the value of the
@@ -218,7 +215,7 @@ In fact they use different BADA versions and hence different aircraft characteri
 
 
 
-## <img id="eco" src="prcq-economics.png" width="50" height="50" alt="Economics"> Economics
+## <img id="eco" src="/assets/images/prcq-economics.png" width="50" height="50" alt="Economics"> Economics
 
 | Data description                                                     | Period                                                                          | {{< fa file-excel >}}                | {{< fa file-csv >}} |  Info                        |     |
 |----------------------------------------------------------------------|---------------------------------------------------------------------------------|--------------------------------|---------------|------------------------------|-----|

@@ -23,10 +23,10 @@ website:
     search: true
     logo: "/images/EUROCONTROL-logo-standard-rgb.svg"
     logo-alt: "EUROCONTROL Supporting European Aviation"
-    right:
+    left:
       - text: "**Home**"
         href: /
-      - text: "**Performance<br>areas**"
+      - text: "**Performance**"
         menu:
           - text: "{{< iconify fa6-solid th >}}&nbsp;Balanced scorecard"
             href: "https://www.eurocontrol.int/Economics/BalancedScorecard.html"
@@ -82,8 +82,7 @@ website:
             href: /economics/finance/
           - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Standard Inputs for Economic Analyses</span>"
             href: /economics/cba/
-
-      - text: "**Stakeholder<br>views**"
+      - text: "**Stakeholders**"
         menu:
           - text: "{{< iconify fa6-solid plane-arrival >}}&nbsp;Airports"
             href: /dashboard/stakeholder/airport/
@@ -91,13 +90,10 @@ website:
             href: /dashboard/stakeholder/ansp/
           - text: "{{< iconify fa6-solid globe >}}&nbsp;States"
             href: /dashboard/stakeholder/state/
-
       - text: "**Data**"
         href: /data/
-
       - text: "**Publications**"
         href: /publications/
-
       - text: "**Reference**"
         menu:
           - text: "{{< iconify fa6-solid marker >}}&nbsp;Definitions"
@@ -108,7 +104,6 @@ website:
             href: /acronym/
           - text: "{{< iconify fa6-solid book >}}&nbsp;Bibliography"
             href: /bibliography/
-
       - text: "**Links**"
         menu:
           - text: "EUROCONTROL <i class='fas fa-xs fa-external-link-alt'></i>"
@@ -123,7 +118,7 @@ website:
             href: /transformation/
           - text: "PRC Open Performance Data Initiative"
             href: "https://opdi.aero"
-
+    right:
       - text: "**About**"
         menu:
           - text: "About the PRC"
@@ -163,5 +158,3 @@ format:
       - cosmo
       - styles.scss
     toc: false
-
-

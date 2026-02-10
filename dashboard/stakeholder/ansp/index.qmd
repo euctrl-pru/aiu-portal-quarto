@@ -4,8 +4,8 @@ description: "A collection of tools and dashboards which are useful for Air Navi
 
 listing:
   - id: ansp-tools
-    template: ../airport/airport-tools.ejs
-    contents: ansp-tools.yml
+    template: "../../../assets/ejs/airport-tools.ejs"
+    contents: "ansp-tools.yml"
 ---
 
 ::: {#ansp-tools}

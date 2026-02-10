@@ -37,7 +37,7 @@ current AIU Portal based on blogdown and Hugo to a Quarto based version.
 
 We use many custom (in `themes/pru-theme/layout/shortcodes`) and Hugo
 shortcodes, here is how to migrate them or alternative
-solutiuons for where they are used:
+solutions for where they are used:
 
 * `a_blank_xyzzy` can be changed to `a_blank xyzzy`: we have a new Quarto extension
    `qlink` with the new definition

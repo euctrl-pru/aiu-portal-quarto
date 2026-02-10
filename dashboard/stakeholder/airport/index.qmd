@@ -4,8 +4,8 @@ description: "A collection of tools and dashboards which are useful for airport 
 
 listing:
   - id: airport-tools
-    template: airport-tools.ejs
-    contents: airport-tools.yml
+    template: "../../../assets/ejs/airport-tools.ejs"
+    contents: "airport-tools.yml"
 ---
 
 ::: {#airport-tools}

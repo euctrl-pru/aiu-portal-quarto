@@ -4,7 +4,7 @@ description: "A reference for commonly used acronyms by the EUROCONTROL Aviation
 
 listing: 
   - id: acronyms
-    template: ../ejs/acronym-alphabetic.ejs
+    template: "../assets/ejs/acronym-alphabetic.ejs"
     contents: 
       - "*.qmd"
       - "*.md"
