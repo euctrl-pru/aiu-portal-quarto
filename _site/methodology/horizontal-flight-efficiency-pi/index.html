@@ -1034,6 +1034,8 @@ Performance Review Body. 2015. <span>“Dashboard <span>RP1</span>.”</span> <a
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

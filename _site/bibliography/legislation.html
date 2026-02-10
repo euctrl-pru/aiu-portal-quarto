@@ -501,6 +501,8 @@ EU. 2019. <span>“Commission <span>Implementing Regulation</span> (<span>EU</sp
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

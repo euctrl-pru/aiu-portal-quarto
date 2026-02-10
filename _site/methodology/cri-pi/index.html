@@ -530,6 +530,8 @@ Slovic, P. 2016. <span>“Perception of Risk.”</span> <a href="https://www.res
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

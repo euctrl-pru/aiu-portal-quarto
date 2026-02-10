@@ -158,3 +158,4 @@ format:
       - cosmo
       - styles.scss
     toc: false
+    link-external-icon: true
