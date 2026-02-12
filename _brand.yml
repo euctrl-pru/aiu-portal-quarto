@@ -1,0 +1,17 @@
+logo:
+  medium:
+    light: assets/images/logo/eurocontrol-boxed-slogan-right-rgb.svg
+    dark: assets/images/logo/eurocontrol-boxed-slogan-right-rgb.svg
+#   # small:
+#   #   light: assets/images/logo/eurocontrol-boxed-rgb.svg
+#   #   dark: assets/images/logo/eurocontrol-boxed-rgb.svg
+typography:
+  fonts:
+    - family: Exo
+      source: google
+color:
+  background: "#FFFFFF"
+  foreground: "#464646"
+  palette:
+    dark-blue: "#003366"
+    light-blue: "#2990EA"
