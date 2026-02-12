@@ -42,7 +42,7 @@ library(lubridate)
   .Scorecard {
     margin: 0px;
     padding: 0px;
-    font-family: "Roboto", sans-serif; 
+    /* font-family: "Roboto", sans-serif;  */
     font-size: 32px;
     font-weight: bold;
     color: #161b21;
@@ -53,7 +53,7 @@ library(lubridate)
     margin: 0px;
     padding: 0px;
     padding-top: 7px;
-    font-family: "Roboto", sans-serif; 
+    /* font-family: "Roboto", sans-serif;  */
     font-size: 26px;
     font-weight: bold;
     color: #161b21;
@@ -71,7 +71,7 @@ library(lubridate)
   .Scorecard {
     margin: 0px;
     padding: 0px;
-    font-family: "Roboto", sans-serif; 
+    /* font-family: "Roboto", sans-serif;  */
     font-size: 20px;
     font-weight: bold;
     color: #161b21;
@@ -82,7 +82,7 @@ library(lubridate)
     margin: 0px;
     padding: 0px;
     padding-top: 7px;
-    font-family: "Roboto", sans-serif; 
+    /* font-family: "Roboto", sans-serif;  */
     font-size: 18px;
     font-weight: bold;
     color: #161b21;
@@ -344,4 +344,3 @@ Arrival [ATFM delay](/definition/atfm-delay/) for main EUROCONTROL airports.<br>
  
 }
 </script>
-
