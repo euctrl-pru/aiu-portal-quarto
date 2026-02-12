@@ -1,5 +1,6 @@
 ```{ojs}
 //| echo: false
+//| output: false
 
 // poll again in 10 hours
 dd = {
@@ -16,6 +17,7 @@ dd = {
 
 ```{ojs}
 //| echo: false
+//| output: false
 
 format_DD = d3.utcFormat("%d")
 format_DD_MON = d3.utcFormat("%d %B")
@@ -47,6 +49,7 @@ nw_date = d3.select("#nw_day_date")
 
 ```{ojs}
 //| echo: false
+//| output: false
 
 // Day
 day_date = d3.select("#day_date")
