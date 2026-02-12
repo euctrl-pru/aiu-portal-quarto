@@ -20,7 +20,7 @@ website:
   # Note: You need to install: ```quarto install extension mcanouil/quarto-iconify```
   navbar:
     title: false
-    background: white
+    background: transparent
     search: true
     logo-alt: "EUROCONTROL Supporting European Aviation"
     logo-href: https://www.eurocontrol.int/
@@ -159,5 +159,6 @@ format:
     theme:
       light: [cosmo, assets/styles/theme.scss]
       dark: [cosmo, assets/styles/theme-dark.scss]
+    mainfont: "Exo"
     toc: false
     # link-external-icon: true
