@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -98,9 +63,9 @@ div.csl-indent {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-39378417877d376f789c6c85e1e657bb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-b0571bc7c36353aa0fe4ba505d699a0b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-39378417877d376f789c6c85e1e657bb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-84490dfe06551ce4b45c78564b0d8c89.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-b55247d1aa5aba091c356a92b85c5016.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-84490dfe06551ce4b45c78564b0d8c89.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -303,8 +268,8 @@ div.csl-indent {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://www.eurocontrol.int/" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/images/logo/eurocontrol-boxed-slogan-right-rgb.svg" alt="EUROCONTROL Supporting European Aviation" class="navbar-logo light-content">
-    <img src="../assets/images/logo/eurocontrol-boxed-slogan-right-rgb.svg" alt="EUROCONTROL Supporting European Aviation" class="navbar-logo dark-content">
+    <img src="../assets/images/logo/eurocontrol-boxed-slogan-right-rgb.svg" alt="" class="navbar-logo light-content">
+    <img src="../assets/images/logo/eurocontrol-boxed-dark-slogan-right-rgb.svg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -315,11 +280,11 @@ div.csl-indent {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../"> 
-<span class="menu-text"><strong>Home</strong></span></a>
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-performance" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text"><strong>Performance</strong></span>
+ <span class="menu-text">Performance</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-performance">    
         <li>
@@ -434,7 +399,7 @@ div.csl-indent {
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stakeholders" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text"><strong>Stakeholders</strong></span>
+ <span class="menu-text">Stakeholders</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-stakeholders">    
         <li>
@@ -453,15 +418,15 @@ div.csl-indent {
   </li>
   <li class="nav-item">
     <a class="nav-link" href="../data/"> 
-<span class="menu-text"><strong>Data</strong></span></a>
+<span class="menu-text">Data</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../publications/"> 
-<span class="menu-text"><strong>Publications</strong></span></a>
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text"><strong>Reference</strong></span>
+ <span class="menu-text">Reference</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-reference">    
         <li>
@@ -484,7 +449,7 @@ div.csl-indent {
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-links" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text"><strong>Links</strong></span>
+ <span class="menu-text">Links</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-links">    
         <li>
@@ -517,7 +482,7 @@ div.csl-indent {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text"><strong>About</strong></span>
+ <span class="menu-text">About</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
@@ -579,40 +544,1004 @@ div.csl-indent {
 
 
 <p>The following IATA delay codes (from “AHM 780 Aircraft Movement Message” <span class="citation" data-cites="wiki:iatadelaycodes iata:delaycodes">(<a href="#ref-wiki:iatadelaycodes" role="doc-biblioref">Wikipedia 2015</a>; <a href="#ref-iata:delaycodes" role="doc-biblioref">IATA 2012</a>)</span> specification”) standardise the reporting of commercial flight departure delays by airlines.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glue)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>dc <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"https://www.eurocontrol.int/performance/data/download/other/iata_delay_codes.csv"</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>dc <span class="sc">%&gt;%</span> </span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ii =</span> <span class="fu">if_else</span>(<span class="sc">!</span><span class="fu">is.na</span>(cd), <span class="fu">glue</span>(<span class="st">"{id} ({cd})"</span>), <span class="fu">glue</span>(<span class="st">"{id} (  )"</span>))) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(group) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>(<span class="at">rowname_col =</span> <span class="st">"ii"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>   <span class="fu">tab_header</span>(</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"IATA delay codes"</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_missing</span>(</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">columns =</span> <span class="dv">2</span>,</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">missing_text =</span> <span class="st">"..."</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>   <span class="fu">cols_width</span>(</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    ii <span class="sc">~</span> <span class="fu">px</span>(<span class="dv">80</span>),</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    id <span class="sc">~</span> <span class="fu">px</span>(<span class="dv">30</span>),</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    cd <span class="sc">~</span> <span class="fu">px</span>(<span class="dv">40</span>)</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cols_label</span>(</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">"ID"</span>,</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">cd =</span> <span class="st">"Code"</span>,</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">description =</span> <span class="st">"Description"</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_style</span>(</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">list</span>(<span class="fu">cell_text</span>(<span class="at">weight =</span> <span class="st">"bold"</span>)),</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_row_groups</span>()</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="ltajiwcfhd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ltajiwcfhd table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#ltajiwcfhd thead, #ltajiwcfhd tbody, #ltajiwcfhd tfoot, #ltajiwcfhd tr, #ltajiwcfhd td, #ltajiwcfhd th {
+  border-style: none;
+}
+
+#ltajiwcfhd p {
+  margin: 0;
+  padding: 0;
+}
+
+#ltajiwcfhd .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#ltajiwcfhd .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#ltajiwcfhd .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ltajiwcfhd .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ltajiwcfhd .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ltajiwcfhd .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ltajiwcfhd .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ltajiwcfhd .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ltajiwcfhd .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ltajiwcfhd .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ltajiwcfhd .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ltajiwcfhd .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ltajiwcfhd .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#ltajiwcfhd .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#ltajiwcfhd .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ltajiwcfhd .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ltajiwcfhd .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ltajiwcfhd .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ltajiwcfhd .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ltajiwcfhd .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#ltajiwcfhd .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#ltajiwcfhd .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#ltajiwcfhd .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ltajiwcfhd .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#ltajiwcfhd .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#ltajiwcfhd .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ltajiwcfhd .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ltajiwcfhd .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ltajiwcfhd .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ltajiwcfhd .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#ltajiwcfhd .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ltajiwcfhd .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ltajiwcfhd .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ltajiwcfhd .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ltajiwcfhd .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ltajiwcfhd .gt_left {
+  text-align: left;
+}
+
+#ltajiwcfhd .gt_center {
+  text-align: center;
+}
+
+#ltajiwcfhd .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ltajiwcfhd .gt_font_normal {
+  font-weight: normal;
+}
+
+#ltajiwcfhd .gt_font_bold {
+  font-weight: bold;
+}
+
+#ltajiwcfhd .gt_font_italic {
+  font-style: italic;
+}
+
+#ltajiwcfhd .gt_super {
+  font-size: 65%;
+}
+
+#ltajiwcfhd .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#ltajiwcfhd .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#ltajiwcfhd .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#ltajiwcfhd .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#ltajiwcfhd .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#ltajiwcfhd .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#ltajiwcfhd .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#ltajiwcfhd .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#ltajiwcfhd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading header">
+<td colspan="4" class="gt_heading gt_title gt_font_normal gt_bottom_border">IATA delay codes</td>
+</tr>
+<tr class="gt_col_headings even">
+<th id="a::stub" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="id" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">ID</th>
+<th id="cd" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Code</th>
+<th id="description" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Description</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="gt_group_heading_row odd">
+<th colspan="4" id="Others" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Others</th>
+</tr>
+<tr class="gt_row_group_first even">
+<th id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">00 ( )</th>
+<td class="gt_row gt_right" headers="Others stub_1_1 id">00</td>
+<td class="gt_row gt_left" headers="Others stub_1_1 cd">...</td>
+<td class="gt_row gt_left" headers="Others stub_1_1 description">AIRLINE INTERNAL CODE</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">01 ( )</th>
+<td class="gt_row gt_right" headers="Others stub_1_2 id">01</td>
+<td class="gt_row gt_left" headers="Others stub_1_2 cd">...</td>
+<td class="gt_row gt_left" headers="Others stub_1_2 description">AIRLINE INTERNAL CODE</td>
+</tr>
+<tr class="even">
+<th id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">02 ( )</th>
+<td class="gt_row gt_right" headers="Others stub_1_3 id">02</td>
+<td class="gt_row gt_left" headers="Others stub_1_3 cd">...</td>
+<td class="gt_row gt_left" headers="Others stub_1_3 description">AIRLINE INTERNAL CODE</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">03 ( )</th>
+<td class="gt_row gt_right" headers="Others stub_1_4 id">03</td>
+<td class="gt_row gt_left" headers="Others stub_1_4 cd">...</td>
+<td class="gt_row gt_left" headers="Others stub_1_4 description">AIRLINE INTERNAL CODE</td>
+</tr>
+<tr class="even">
+<th id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">04 ( )</th>
+<td class="gt_row gt_right" headers="Others stub_1_5 id">04</td>
+<td class="gt_row gt_left" headers="Others stub_1_5 cd">...</td>
+<td class="gt_row gt_left" headers="Others stub_1_5 description">AIRLINE INTERNAL CODE</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">05 ( )</th>
+<td class="gt_row gt_right" headers="Others stub_1_6 id">05</td>
+<td class="gt_row gt_left" headers="Others stub_1_6 cd">...</td>
+<td class="gt_row gt_left" headers="Others stub_1_6 description">AIRLINE INTERNAL CODE</td>
+</tr>
+<tr class="even">
+<th id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">06 (OA)</th>
+<td class="gt_row gt_right" headers="Others stub_1_7 id">06</td>
+<td class="gt_row gt_left" headers="Others stub_1_7 cd">OA</td>
+<td class="gt_row gt_left" headers="Others stub_1_7 description">NO GATE/STAND AVAILABILITY DUE TO OWN AIRLINE ACTIVITY</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">09 (SG)</th>
+<td class="gt_row gt_right" headers="Others stub_1_8 id">09</td>
+<td class="gt_row gt_left" headers="Others stub_1_8 cd">SG</td>
+<td class="gt_row gt_left" headers="Others stub_1_8 description">SCHEDULED GROUND TIME LESS THAN DECLARED MINIMUM GROUND TIME</td>
+</tr>
+<tr class="gt_group_heading_row even">
+<th colspan="4" id="Passenger and Baggage" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Passenger and Baggage</th>
+</tr>
+<tr class="gt_row_group_first odd">
+<th id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">11 (PD)</th>
+<td class="gt_row gt_right" headers="Passenger and Baggage stub_1_9 id">11</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_9 cd">PD</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_9 description">LATE CHECK-IN, acceptance after deadline</td>
+</tr>
+<tr class="even">
+<th id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">12 (PL)</th>
+<td class="gt_row gt_right" headers="Passenger and Baggage stub_1_10 id">12</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_10 cd">PL</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_10 description">LATE CHECK-IN, congestions in check-in area</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_11" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">13 (PE)</th>
+<td class="gt_row gt_right" headers="Passenger and Baggage stub_1_11 id">13</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_11 cd">PE</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_11 description">CHECK-IN ERROR, passenger and baggage</td>
+</tr>
+<tr class="even">
+<th id="stub_1_12" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">14 (PO)</th>
+<td class="gt_row gt_right" headers="Passenger and Baggage stub_1_12 id">14</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_12 cd">PO</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_12 description">OVERSALES, booking errors</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_13" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">15 (PH)</th>
+<td class="gt_row gt_right" headers="Passenger and Baggage stub_1_13 id">15</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_13 cd">PH</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_13 description">BOARDING, discrepancies and paging, missing checked-in passenger</td>
+</tr>
+<tr class="even">
+<th id="stub_1_14" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">16 (PS)</th>
+<td class="gt_row gt_right" headers="Passenger and Baggage stub_1_14 id">16</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_14 cd">PS</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_14 description">COMMERCIAL PUBLICITY/PASSENGER CONVENIENCE, VIP, press, ground meals and missing personal items</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_15" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">17 (PC)</th>
+<td class="gt_row gt_right" headers="Passenger and Baggage stub_1_15 id">17</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_15 cd">PC</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_15 description">CATERING ORDER, late or incorrect order given to supplier</td>
+</tr>
+<tr class="even">
+<th id="stub_1_16" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">18 (PB)</th>
+<td class="gt_row gt_right" headers="Passenger and Baggage stub_1_16 id">18</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_16 cd">PB</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_16 description">BAGGAGE PROCESSING, sorting etc.</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_17" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">19 (PW)</th>
+<td class="gt_row gt_right" headers="Passenger and Baggage stub_1_17 id">19</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_17 cd">PW</td>
+<td class="gt_row gt_left" headers="Passenger and Baggage stub_1_17 description">REDUCED MOBILITY, boarding / deboarding of passengers with reduced mobility.</td>
+</tr>
+<tr class="gt_group_heading_row even">
+<th colspan="4" id="Cargo and Mail" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Cargo and Mail</th>
+</tr>
+<tr class="gt_row_group_first odd">
+<th id="stub_1_18" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">21 (CD)</th>
+<td class="gt_row gt_right" headers="Cargo and Mail stub_1_18 id">21</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_18 cd">CD</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_18 description">DOCUMENTATION, errors etc.</td>
+</tr>
+<tr class="even">
+<th id="stub_1_19" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">22 (CP)</th>
+<td class="gt_row gt_right" headers="Cargo and Mail stub_1_19 id">22</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_19 cd">CP</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_19 description">LATE POSITIONING</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_20" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">23 (CC)</th>
+<td class="gt_row gt_right" headers="Cargo and Mail stub_1_20 id">23</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_20 cd">CC</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_20 description">LATE ACCEPTANCE</td>
+</tr>
+<tr class="even">
+<th id="stub_1_21" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">24 (CI)</th>
+<td class="gt_row gt_right" headers="Cargo and Mail stub_1_21 id">24</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_21 cd">CI</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_21 description">INADEQUATE PACKING</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_22" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">25 (CO)</th>
+<td class="gt_row gt_right" headers="Cargo and Mail stub_1_22 id">25</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_22 cd">CO</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_22 description">OVERSALES, booking errors</td>
+</tr>
+<tr class="even">
+<th id="stub_1_23" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">26 (CU)</th>
+<td class="gt_row gt_right" headers="Cargo and Mail stub_1_23 id">26</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_23 cd">CU</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_23 description">LATE PREPARATION IN WAREHOUSE</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_24" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">27 (CE)</th>
+<td class="gt_row gt_right" headers="Cargo and Mail stub_1_24 id">27</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_24 cd">CE</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_24 description">DOCUMENTATION, PACKING etc (Mail Only)</td>
+</tr>
+<tr class="even">
+<th id="stub_1_25" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">28 (CL)</th>
+<td class="gt_row gt_right" headers="Cargo and Mail stub_1_25 id">28</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_25 cd">CL</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_25 description">LATE POSITIONING (Mail Only)</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_26" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">29 (CA)</th>
+<td class="gt_row gt_right" headers="Cargo and Mail stub_1_26 id">29</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_26 cd">CA</td>
+<td class="gt_row gt_left" headers="Cargo and Mail stub_1_26 description">LATE ACCEPTANCE (Mail Only)</td>
+</tr>
+<tr class="gt_group_heading_row even">
+<th colspan="4" id="Aircraft and Ramp Handling" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Aircraft and Ramp Handling</th>
+</tr>
+<tr class="gt_row_group_first odd">
+<th id="stub_1_27" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">31 (GD)</th>
+<td class="gt_row gt_right" headers="Aircraft and Ramp Handling stub_1_27 id">31</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_27 cd">GD</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_27 description">AIRCRAFT DOCUMENTATION LATE/INACCURATE, weight and balance, general declaration, pax manifest, etc.</td>
+</tr>
+<tr class="even">
+<th id="stub_1_28" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">32 (GL)</th>
+<td class="gt_row gt_right" headers="Aircraft and Ramp Handling stub_1_28 id">32</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_28 cd">GL</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_28 description">LOADING/UNLOADING, bulky, special load, cabin load, lack of loading staff</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_29" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">33 (GE)</th>
+<td class="gt_row gt_right" headers="Aircraft and Ramp Handling stub_1_29 id">33</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_29 cd">GE</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_29 description">LOADING EQUIPMENT, lack of or breakdown, e.g. container pallet loader, lack of staff</td>
+</tr>
+<tr class="even">
+<th id="stub_1_30" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">34 (GS)</th>
+<td class="gt_row gt_right" headers="Aircraft and Ramp Handling stub_1_30 id">34</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_30 cd">GS</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_30 description">SERVICING EQUIPMENT, lack of or breakdown, lack of staff, e.g. steps</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_31" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">35 (GC)</th>
+<td class="gt_row gt_right" headers="Aircraft and Ramp Handling stub_1_31 id">35</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_31 cd">GC</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_31 description">AIRCRAFT CLEANING</td>
+</tr>
+<tr class="even">
+<th id="stub_1_32" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">36 (GF)</th>
+<td class="gt_row gt_right" headers="Aircraft and Ramp Handling stub_1_32 id">36</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_32 cd">GF</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_32 description">FUELLING/DEFUELLING, fuel supplier</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_33" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">37 (GB)</th>
+<td class="gt_row gt_right" headers="Aircraft and Ramp Handling stub_1_33 id">37</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_33 cd">GB</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_33 description">CATERING, late delivery or loading</td>
+</tr>
+<tr class="even">
+<th id="stub_1_34" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">38 (GU)</th>
+<td class="gt_row gt_right" headers="Aircraft and Ramp Handling stub_1_34 id">38</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_34 cd">GU</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_34 description">ULD, lack of or serviceability</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_35" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">39 (GT)</th>
+<td class="gt_row gt_right" headers="Aircraft and Ramp Handling stub_1_35 id">39</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_35 cd">GT</td>
+<td class="gt_row gt_left" headers="Aircraft and Ramp Handling stub_1_35 description">TECHNICAL EQUIPMENT, lack of or breakdown, lack of staff, e.g. pushback</td>
+</tr>
+<tr class="gt_group_heading_row even">
+<th colspan="4" id="Technical and Aircraft Equipment" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Technical and Aircraft Equipment</th>
+</tr>
+<tr class="gt_row_group_first odd">
+<th id="stub_1_36" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">41 (TD)</th>
+<td class="gt_row gt_right" headers="Technical and Aircraft Equipment stub_1_36 id">41</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_36 cd">TD</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_36 description">AIRCRAFT DEFECTS.</td>
+</tr>
+<tr class="even">
+<th id="stub_1_37" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">42 (TM)</th>
+<td class="gt_row gt_right" headers="Technical and Aircraft Equipment stub_1_37 id">42</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_37 cd">TM</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_37 description">SCHEDULED MAINTENANCE, late release.</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_38" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">43 (TN)</th>
+<td class="gt_row gt_right" headers="Technical and Aircraft Equipment stub_1_38 id">43</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_38 cd">TN</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_38 description">NON-SCHEDULED MAINTENANCE, special checks and/or additional works beyond normal maintenance schedule.</td>
+</tr>
+<tr class="even">
+<th id="stub_1_39" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">44 (TS)</th>
+<td class="gt_row gt_right" headers="Technical and Aircraft Equipment stub_1_39 id">44</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_39 cd">TS</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_39 description">SPARES AND MAINTENANCE EQUIPMENT, lack of or breakdown.</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_40" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">45 (TA)</th>
+<td class="gt_row gt_right" headers="Technical and Aircraft Equipment stub_1_40 id">45</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_40 cd">TA</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_40 description">AOG SPARES, to be carried to another station.</td>
+</tr>
+<tr class="even">
+<th id="stub_1_41" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">46 (TC)</th>
+<td class="gt_row gt_right" headers="Technical and Aircraft Equipment stub_1_41 id">46</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_41 cd">TC</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_41 description">AIRCRAFT CHANGE, for technical reasons.</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_42" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">47 (TL)</th>
+<td class="gt_row gt_right" headers="Technical and Aircraft Equipment stub_1_42 id">47</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_42 cd">TL</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_42 description">STAND-BY AIRCRAFT, lack of planned stand-by aircraft for technical reasons.</td>
+</tr>
+<tr class="even">
+<th id="stub_1_43" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">48 (TV)</th>
+<td class="gt_row gt_right" headers="Technical and Aircraft Equipment stub_1_43 id">48</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_43 cd">TV</td>
+<td class="gt_row gt_left" headers="Technical and Aircraft Equipment stub_1_43 description">SCHEDULED CABIN CONFIGURATION/VERSION ADJUSTMENTS.</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="4" id="Damage to Aircraft &amp;amp; EDP/Automated Equipment Failure" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Damage to Aircraft &amp; EDP/Automated Equipment Failure</th>
+</tr>
+<tr class="gt_row_group_first even">
+<th id="stub_1_44" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">51 (DF)</th>
+<td class="gt_row gt_right" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_44 id">51</td>
+<td class="gt_row gt_left" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_44 cd">DF</td>
+<td class="gt_row gt_left" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_44 description">DAMAGE DURING FLIGHT OPERATIONS, bird or lightning strike, turbulence, heavy or overweight landing, collision during taxiing</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_45" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">52 (DG)</th>
+<td class="gt_row gt_right" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_45 id">52</td>
+<td class="gt_row gt_left" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_45 cd">DG</td>
+<td class="gt_row gt_left" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_45 description">DAMAGE DURING GROUND OPERATIONS, collisions (other than during taxiing), loading/off-loading damage, contamination, towing, extreme weather conditions</td>
+</tr>
+<tr class="even">
+<th id="stub_1_46" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">55 (ED)</th>
+<td class="gt_row gt_right" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_46 id">55</td>
+<td class="gt_row gt_left" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_46 cd">ED</td>
+<td class="gt_row gt_left" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_46 description">DEPARTURE CONTROL</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_47" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">56 (EC)</th>
+<td class="gt_row gt_right" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_47 id">56</td>
+<td class="gt_row gt_left" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_47 cd">EC</td>
+<td class="gt_row gt_left" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_47 description">CARGO PREPARATION/DOCUMENTATION</td>
+</tr>
+<tr class="even">
+<th id="stub_1_48" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">57 (EF)</th>
+<td class="gt_row gt_right" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_48 id">57</td>
+<td class="gt_row gt_left" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_48 cd">EF</td>
+<td class="gt_row gt_left" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_48 description">FLIGHT PLANS</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_49" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">58 (EO)</th>
+<td class="gt_row gt_right" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_49 id">58</td>
+<td class="gt_row gt_left" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_49 cd">EO</td>
+<td class="gt_row gt_left" headers="Damage to Aircraft &amp; EDP/Automated Equipment Failure stub_1_49 description">OTHER AUTOMATED SYSTEM</td>
+</tr>
+<tr class="gt_group_heading_row even">
+<th colspan="4" id="Flight Operations and Crewing" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Flight Operations and Crewing</th>
+</tr>
+<tr class="gt_row_group_first odd">
+<th id="stub_1_50" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">61 (FP)</th>
+<td class="gt_row gt_right" headers="Flight Operations and Crewing stub_1_50 id">61</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_50 cd">FP</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_50 description">FLIGHT PLAN, late completion or change of, flight documentation</td>
+</tr>
+<tr class="even">
+<th id="stub_1_51" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">62 (FF)</th>
+<td class="gt_row gt_right" headers="Flight Operations and Crewing stub_1_51 id">62</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_51 cd">FF</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_51 description">OPERATIONAL REQUIREMENTS, fuel, load alteration</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_52" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">63 (FT)</th>
+<td class="gt_row gt_right" headers="Flight Operations and Crewing stub_1_52 id">63</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_52 cd">FT</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_52 description">LATE CREW BOARDING OR DEPARTURE PROCEDURES, other than connection and standby (flight deck or entire crew)</td>
+</tr>
+<tr class="even">
+<th id="stub_1_53" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">64 (FS)</th>
+<td class="gt_row gt_right" headers="Flight Operations and Crewing stub_1_53 id">64</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_53 cd">FS</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_53 description">FLIGHT DECK CREW SHORTAGE, sickness, awaiting standby, flight time limitations, crew meals, valid visa, health documents, etc.</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_54" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">65 (FR)</th>
+<td class="gt_row gt_right" headers="Flight Operations and Crewing stub_1_54 id">65</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_54 cd">FR</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_54 description">FLIGHT DECK CREW SPECIAL REQUEST, not within operational requirements</td>
+</tr>
+<tr class="even">
+<th id="stub_1_55" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">66 (FL)</th>
+<td class="gt_row gt_right" headers="Flight Operations and Crewing stub_1_55 id">66</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_55 cd">FL</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_55 description">LATE CABIN CREW BOARDING OR DEPARTURE PROCEDURES, other than connection and standby</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_56" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">67 (FC)</th>
+<td class="gt_row gt_right" headers="Flight Operations and Crewing stub_1_56 id">67</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_56 cd">FC</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_56 description">CABIN CREW SHORTAGE, sickness, awaiting standby, flight time limitations, crew meals, valid visa, health documents, etc.</td>
+</tr>
+<tr class="even">
+<th id="stub_1_57" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">68 (FA)</th>
+<td class="gt_row gt_right" headers="Flight Operations and Crewing stub_1_57 id">68</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_57 cd">FA</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_57 description">CABIN CREW ERROR OR SPECIAL REQUEST, not within operational requirements</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_58" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">69 (FB)</th>
+<td class="gt_row gt_right" headers="Flight Operations and Crewing stub_1_58 id">69</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_58 cd">FB</td>
+<td class="gt_row gt_left" headers="Flight Operations and Crewing stub_1_58 description">CAPTAIN REQUEST FOR SECURITY CHECK, extraordinary</td>
+</tr>
+<tr class="gt_group_heading_row even">
+<th colspan="4" id="Weather" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Weather</th>
+</tr>
+<tr class="gt_row_group_first odd">
+<th id="stub_1_59" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">71 (WO)</th>
+<td class="gt_row gt_right" headers="Weather stub_1_59 id">71</td>
+<td class="gt_row gt_left" headers="Weather stub_1_59 cd">WO</td>
+<td class="gt_row gt_left" headers="Weather stub_1_59 description">DEPARTURE STATION</td>
+</tr>
+<tr class="even">
+<th id="stub_1_60" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">72 (WT)</th>
+<td class="gt_row gt_right" headers="Weather stub_1_60 id">72</td>
+<td class="gt_row gt_left" headers="Weather stub_1_60 cd">WT</td>
+<td class="gt_row gt_left" headers="Weather stub_1_60 description">DESTINATION STATION</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_61" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">73 (WR)</th>
+<td class="gt_row gt_right" headers="Weather stub_1_61 id">73</td>
+<td class="gt_row gt_left" headers="Weather stub_1_61 cd">WR</td>
+<td class="gt_row gt_left" headers="Weather stub_1_61 description">EN ROUTE OR ALTERNATE</td>
+</tr>
+<tr class="even">
+<th id="stub_1_62" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">75 (WI)</th>
+<td class="gt_row gt_right" headers="Weather stub_1_62 id">75</td>
+<td class="gt_row gt_left" headers="Weather stub_1_62 cd">WI</td>
+<td class="gt_row gt_left" headers="Weather stub_1_62 description">DE-ICING OF AIRCRAFT, removal of ice and/or snow, frost prevention excluding unserviceability of equipment</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_63" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">76 (WS)</th>
+<td class="gt_row gt_right" headers="Weather stub_1_63 id">76</td>
+<td class="gt_row gt_left" headers="Weather stub_1_63 cd">WS</td>
+<td class="gt_row gt_left" headers="Weather stub_1_63 description">REMOVAL OF SNOW, ICE, WATER AND SAND FROM AIRPORT</td>
+</tr>
+<tr class="even">
+<th id="stub_1_64" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">77 (WG)</th>
+<td class="gt_row gt_right" headers="Weather stub_1_64 id">77</td>
+<td class="gt_row gt_left" headers="Weather stub_1_64 cd">WG</td>
+<td class="gt_row gt_left" headers="Weather stub_1_64 description">GROUND HANDLING IMPAIRED BY ADVERSE WEATHER CONDITIONS</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="4" id="AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS</th>
+</tr>
+<tr class="gt_row_group_first even">
+<th id="stub_1_65" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">81 (AT)</th>
+<td class="gt_row gt_right" headers="AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS stub_1_65 id">81</td>
+<td class="gt_row gt_left" headers="AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS stub_1_65 cd">AT</td>
+<td class="gt_row gt_left" headers="AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS stub_1_65 description">ATFM due to ATC EN-ROUTE DEMAND/CAPACITY, standard demand/capacity problems</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_66" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">82 (AX)</th>
+<td class="gt_row gt_right" headers="AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS stub_1_66 id">82</td>
+<td class="gt_row gt_left" headers="AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS stub_1_66 cd">AX</td>
+<td class="gt_row gt_left" headers="AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS stub_1_66 description">ATFM due to ATC STAFF/EQUIPMENT EN-ROUTE, reduced capacity caused by industrial action or staff shortage, equipment failure, military exercise or extraordinary demand due to capacity reduction in neighbouring area</td>
+</tr>
+<tr class="even">
+<th id="stub_1_67" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">83 (AE)</th>
+<td class="gt_row gt_right" headers="AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS stub_1_67 id">83</td>
+<td class="gt_row gt_left" headers="AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS stub_1_67 cd">AE</td>
+<td class="gt_row gt_left" headers="AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS stub_1_67 description">ATFM due to RESTRICTION AT DESTINATION AIRPORT, airport and/or runway closed due to obstruction, industrial action, staff shortage, political unrest, noise abatement, night curfew, special flights</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_68" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">84 (AW)</th>
+<td class="gt_row gt_right" headers="AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS stub_1_68 id">84</td>
+<td class="gt_row gt_left" headers="AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS stub_1_68 cd">AW</td>
+<td class="gt_row gt_left" headers="AIR TRAFFIC FLOW MANAGEMENT RESTRICTIONS stub_1_68 description">ATFM due to WEATHER AT DESTINATION</td>
+</tr>
+<tr class="gt_group_heading_row even">
+<th colspan="4" id="AIRPORT AND GOVERNMENTAL AUTHORITIES" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">AIRPORT AND GOVERNMENTAL AUTHORITIES</th>
+</tr>
+<tr class="gt_row_group_first odd">
+<th id="stub_1_69" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">85 (AS)</th>
+<td class="gt_row gt_right" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_69 id">85</td>
+<td class="gt_row gt_left" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_69 cd">AS</td>
+<td class="gt_row gt_left" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_69 description">MANDATORY SECURITY</td>
+</tr>
+<tr class="even">
+<th id="stub_1_70" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">86 (AG)</th>
+<td class="gt_row gt_right" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_70 id">86</td>
+<td class="gt_row gt_left" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_70 cd">AG</td>
+<td class="gt_row gt_left" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_70 description">IMMIGRATION, CUSTOMS, HEALTH</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_71" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">87 (AF)</th>
+<td class="gt_row gt_right" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_71 id">87</td>
+<td class="gt_row gt_left" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_71 cd">AF</td>
+<td class="gt_row gt_left" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_71 description">AIRPORT FACILITIES, parking stands, ramp congestion, lighting, buildings, gate limitations, etc.</td>
+</tr>
+<tr class="even">
+<th id="stub_1_72" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">88 (AD)</th>
+<td class="gt_row gt_right" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_72 id">88</td>
+<td class="gt_row gt_left" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_72 cd">AD</td>
+<td class="gt_row gt_left" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_72 description">RESTRICTIONS AT AIRPORT OF DESTINATION, airport and/or runway closed due to obstruction, industrial action, staff shortage, political unrest, noise abatement, night curfew, special flights</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_73" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">89 (AM)</th>
+<td class="gt_row gt_right" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_73 id">89</td>
+<td class="gt_row gt_left" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_73 cd">AM</td>
+<td class="gt_row gt_left" headers="AIRPORT AND GOVERNMENTAL AUTHORITIES stub_1_73 description">RESTRICTIONS AT AIRPORT OF DEPARTURE WITH OR WITHOUT ATFM RESTRICTIONS, including Air Traffic Services, start-up and pushback, airport and/or runway closed due to obstruction or weather (Restriction due to weather in case of ATFM regulation only, else refer to code 71 (WO)), industrial action, staff shortage, political unrest, noise abatement, night curfew, special flights</td>
+</tr>
+<tr class="gt_group_heading_row even">
+<th colspan="4" id="Reactionary" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Reactionary</th>
+</tr>
+<tr class="gt_row_group_first odd">
+<th id="stub_1_74" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">91 (RL)</th>
+<td class="gt_row gt_right" headers="Reactionary stub_1_74 id">91</td>
+<td class="gt_row gt_left" headers="Reactionary stub_1_74 cd">RL</td>
+<td class="gt_row gt_left" headers="Reactionary stub_1_74 description">LOAD CONNECTION, awaiting load from another flight</td>
+</tr>
+<tr class="even">
+<th id="stub_1_75" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">92 (RT)</th>
+<td class="gt_row gt_right" headers="Reactionary stub_1_75 id">92</td>
+<td class="gt_row gt_left" headers="Reactionary stub_1_75 cd">RT</td>
+<td class="gt_row gt_left" headers="Reactionary stub_1_75 description">THROUGH CHECK-IN ERROR, passenger and baggage</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_76" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">93 (RA)</th>
+<td class="gt_row gt_right" headers="Reactionary stub_1_76 id">93</td>
+<td class="gt_row gt_left" headers="Reactionary stub_1_76 cd">RA</td>
+<td class="gt_row gt_left" headers="Reactionary stub_1_76 description">AIRCRAFT ROTATION, late arrival of aircraft from another flight or previous sector</td>
+</tr>
+<tr class="even">
+<th id="stub_1_77" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">94 (RS)</th>
+<td class="gt_row gt_right" headers="Reactionary stub_1_77 id">94</td>
+<td class="gt_row gt_left" headers="Reactionary stub_1_77 cd">RS</td>
+<td class="gt_row gt_left" headers="Reactionary stub_1_77 description">CABIN CREW ROTATION, awaiting cabin crew from another flight</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_78" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">95 (RC)</th>
+<td class="gt_row gt_right" headers="Reactionary stub_1_78 id">95</td>
+<td class="gt_row gt_left" headers="Reactionary stub_1_78 cd">RC</td>
+<td class="gt_row gt_left" headers="Reactionary stub_1_78 description">CREW ROTATION, awaiting crew from another flight (flight deck or entire crew)</td>
+</tr>
+<tr class="even">
+<th id="stub_1_79" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">96 (RO)</th>
+<td class="gt_row gt_right" headers="Reactionary stub_1_79 id">96</td>
+<td class="gt_row gt_left" headers="Reactionary stub_1_79 cd">RO</td>
+<td class="gt_row gt_left" headers="Reactionary stub_1_79 description">OPERATIONS CONTROL, re-routing, diversion, consolidation, aircraft change for reasons other than technical</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="4" id="Miscellaneous" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Miscellaneous</th>
+</tr>
+<tr class="gt_row_group_first even">
+<th id="stub_1_80" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">97 (MI)</th>
+<td class="gt_row gt_right" headers="Miscellaneous stub_1_80 id">97</td>
+<td class="gt_row gt_left" headers="Miscellaneous stub_1_80 cd">MI</td>
+<td class="gt_row gt_left" headers="Miscellaneous stub_1_80 description">INDUSTRIAL ACTION WITH OWN AIRLINE</td>
+</tr>
+<tr class="odd">
+<th id="stub_1_81" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">98 (MO)</th>
+<td class="gt_row gt_right" headers="Miscellaneous stub_1_81 id">98</td>
+<td class="gt_row gt_left" headers="Miscellaneous stub_1_81 cd">MO</td>
+<td class="gt_row gt_left" headers="Miscellaneous stub_1_81 description">INDUSTRIAL ACTION OUTSIDE OWN AIRLINE, excluding ATS</td>
+</tr>
+<tr class="even">
+<th id="stub_1_82" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">99 (MX)</th>
+<td class="gt_row gt_right" headers="Miscellaneous stub_1_82 id">99</td>
+<td class="gt_row gt_left" headers="Miscellaneous stub_1_82 cd">MX</td>
+<td class="gt_row gt_left" headers="Miscellaneous stub_1_82 description">OTHER REASON, not matching any code above</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
 </div>
 <section id="see-also" class="level2">
 <h2 class="anchored" data-anchor-id="see-also">See Also</h2>
@@ -1060,7 +1989,7 @@ Wikipedia. 2015. <span>“<span>IATA</span> Delay Codes.”</span> <a href="http
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="../about/disclaimer/">
-<p><strong>Disclaimer</strong></p>
+<p>Disclaimer</p>
 </a>
   </li>  
     <li class="nav-item">
@@ -1068,7 +1997,7 @@ Wikipedia. 2015. <span>“<span>IATA</span> Delay Codes.”</span> <a href="http
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="https://www.eurocontrol.int/info/privacy-and-website-terms-use">
-<p><strong>Privacy</strong></p>
+<p>Privacy</p>
 </a>
   </li>  
 </ul>
