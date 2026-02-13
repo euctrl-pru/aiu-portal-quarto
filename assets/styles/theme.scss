@@ -4,10 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Brand colors */
-// $brand-primary: #053253;
-// $brand-secondary: #337ab7;
-// $bg-light: #f8f9fa;
-// $hero-bg: rgb(240, 245, 249);
+$brand-primary: #053253;
+$brand-secondary: #337ab7;
+$bg-light: #f8f9fa;
+$hero-bg: rgb(240, 245, 249);
 
 /* Shadows */
 $card-shadow: 0 0.1875rem 0.375rem rgba(140, 152, 164, 0.25);
@@ -192,8 +192,8 @@ $card-shadow: 0 0.1875rem 0.375rem rgba(140, 152, 164, 0.25);
         // border-color: $brand-secondary;
 
         &:hover {
-            // background-color: darken($brand-secondary, 10%);
-            // border-color: darken($brand-secondary, 10%);
+            background-color: darken($brand-secondary, 10%);
+            border-color: darken($brand-secondary, 10%);
         }
     }
 
@@ -209,7 +209,7 @@ $card-shadow: 0 0.1875rem 0.375rem rgba(140, 152, 164, 0.25);
 }
 
 body.quarto-light #hero-banner {
-    // background-color: $hero-bg;
+    background-color: $hero-bg;
 }
 
 body.quarto-dark #hero-banner {
@@ -277,7 +277,7 @@ div.carousel {
     bottom: 60px;
 
     [data-bs-target] {
-        // background-color: $brand-secondary;
+        background-color: $brand-secondary;
     }
 }
 
@@ -346,7 +346,7 @@ html {
         color: white;
 
         &:hover {
-            // color: lighten($brand-secondary, 20%);
+            color: lighten($brand-secondary, 20%);
         }
     }
 }
@@ -404,7 +404,7 @@ html {
         text-decoration: none;
 
         &:hover {
-            // color: $brand-secondary;
+            color: $brand-secondary;
         }
     }
 
