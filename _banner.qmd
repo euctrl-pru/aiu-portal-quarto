@@ -1,0 +1,8 @@
+::: {#hero-banner .column-page}
+# Aviation Intelligence Portal
+
+The portal provides insights into various aviation performance areas and is developed by the EUROCONTROL Aviation Intelligence Unit.
+
+[Subscribe](https://www.eurocontrol.int/form/aviation-intelligence-unit-aiu-newsletter){.btn .btn-primary .me-2}
+[About us](/about/){.btn .btn-outline-secondary}
+:::
