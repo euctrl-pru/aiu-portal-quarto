@@ -1,6 +1,9 @@
 {{< include "_network-api.qmd" >}}
 
 
+:::: {#network-dashboard .g-col-8}
+#### Network status on [NA]{#nw_day_date}
+
 ::: {#network-status-flights .panel-tabset}
 ## Flights
 
@@ -15,3 +18,4 @@
 ## Punctuality
 
 :::
+::::
