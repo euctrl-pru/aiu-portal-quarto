@@ -17,5 +17,9 @@
 
 ## Punctuality
 
+{{< include "_network-dashboard-punctuality.qmd" >}}
+
+
 :::
+
 ::::

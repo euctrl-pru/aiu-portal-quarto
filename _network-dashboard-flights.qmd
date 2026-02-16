@@ -86,10 +86,12 @@ Evolution of daily flights in the EUROCONTROL area [(7-day average)]{.text-muted
 
 ```{=html}
 <div>
-  <iframe style="border: 0; width: 100%; height: 380px;"
-          src="https://www.eurocontrol.int/Economics/Oscar/plot-traffic-lp_new.html"           frameborder="0"
-          scrolling="no"
-          allowfullscreen>
+  <iframe
+    style="border: 0; width: 100%; height: 380px;"
+    src="https://www.eurocontrol.int/Economics/Oscar/plot-traffic-lp_new.html"
+    frameborder="0"
+    scrolling="no"
+    allowfullscreen>
   </iframe>
 </div>
 ```
