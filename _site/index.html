@@ -973,169 +973,169 @@ window.Quarto = {
 </div>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="1" data-source-offset="-7"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>day_delay_date <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#day_delay_date"</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(latest_date)<span class="op">;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>day_delay <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#day_delay"</span>)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(dd<span class="op">.</span><span class="at">day_delay</span>))<span class="op">;</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>dif_day_delay_prev_year_perc <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_day_delay_prev_year_perc"</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">dif_day_delay_prev_year_perc</span>))<span class="op">;</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>dif_day_delay_2019_perc <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_day_delay_2019_perc"</span>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">dif_day_delay_2019_perc</span>))<span class="op">;</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>delay_per_flight <span class="op">=</span> (dd<span class="op">.</span><span class="at">day_traffic</span> <span class="op">==</span> <span class="dv">0</span>) <span class="op">?</span> <span class="dv">0</span> <span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(dd<span class="op">.</span><span class="at">day_delay</span> <span class="op">/</span> dd<span class="op">.</span><span class="at">day_traffic</span> <span class="op">*</span> <span class="dv">100</span>) <span class="op">/</span> <span class="dv">100</span><span class="op">;</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>day_delay_flight <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#day_delay_flight"</span>)</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(delay_per_flight))<span class="op">;</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co">// Week</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>week_delay_date <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#week_delay_date"</span>)</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(latest_week)<span class="op">;</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>avg_week_delay <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#avg_week_delay"</span>)</span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(<span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(dd<span class="op">.</span><span class="at">avg_week_delay</span>)))<span class="op">;</span></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>dif_week_delay_prev_year_perc <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_week_delay_prev_year_perc"</span>)</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">dif_week_delay_prev_year_perc</span>))<span class="op">;</span></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>dif_week_delay_2019_perc <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_week_delay_2019_perc"</span>)</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">dif_week_delay_2019_perc</span>))<span class="op">;</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>week_delay_per_flight <span class="op">=</span> (dd<span class="op">.</span><span class="at">avg_week_traffic</span> <span class="op">==</span> <span class="dv">0</span>) <span class="op">?</span> <span class="dv">0</span> <span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(dd<span class="op">.</span><span class="at">avg_week_delay</span> <span class="op">/</span> dd<span class="op">.</span><span class="at">avg_week_traffic</span> <span class="op">*</span> <span class="dv">100</span>) <span class="op">/</span> <span class="dv">100</span><span class="op">;</span></span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>week_delay_flight <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#week_delay_flight"</span>)</span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(week_delay_per_flight))<span class="op">;</span></span>
+<div class="cell hidden">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="4" data-source-offset="-8"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 3;"><span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>day_delay_date <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#day_delay_date"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(latest_date)<span class="op">;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>day_delay <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#day_delay"</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(dd<span class="op">.</span><span class="at">day_delay</span>))<span class="op">;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>dif_day_delay_prev_year_perc <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_day_delay_prev_year_perc"</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">dif_day_delay_prev_year_perc</span>))<span class="op">;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>dif_day_delay_2019_perc <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_day_delay_2019_perc"</span>)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">dif_day_delay_2019_perc</span>))<span class="op">;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>delay_per_flight <span class="op">=</span> (dd<span class="op">.</span><span class="at">day_traffic</span> <span class="op">==</span> <span class="dv">0</span>) <span class="op">?</span> <span class="dv">0</span> <span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(dd<span class="op">.</span><span class="at">day_delay</span> <span class="op">/</span> dd<span class="op">.</span><span class="at">day_traffic</span> <span class="op">*</span> <span class="dv">100</span>) <span class="op">/</span> <span class="dv">100</span><span class="op">;</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>day_delay_flight <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#day_delay_flight"</span>)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(delay_per_flight))<span class="op">;</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co">// Week</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>week_delay_date <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#week_delay_date"</span>)</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(latest_week)<span class="op">;</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>avg_week_delay <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#avg_week_delay"</span>)</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(<span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(dd<span class="op">.</span><span class="at">avg_week_delay</span>)))<span class="op">;</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>dif_week_delay_prev_year_perc <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_week_delay_prev_year_perc"</span>)</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">dif_week_delay_prev_year_perc</span>))<span class="op">;</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>dif_week_delay_2019_perc <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_week_delay_2019_perc"</span>)</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">dif_week_delay_2019_perc</span>))<span class="op">;</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>week_delay_per_flight <span class="op">=</span> (dd<span class="op">.</span><span class="at">avg_week_traffic</span> <span class="op">==</span> <span class="dv">0</span>) <span class="op">?</span> <span class="dv">0</span> <span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(dd<span class="op">.</span><span class="at">avg_week_delay</span> <span class="op">/</span> dd<span class="op">.</span><span class="at">avg_week_traffic</span> <span class="op">*</span> <span class="dv">100</span>) <span class="op">/</span> <span class="dv">100</span><span class="op">;</span></span>
 <span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="co">// Year</span></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>y2d_delay_date <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#y2d_delay_date"</span>)</span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(latest_y2d)<span class="op">;</span></span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>y2d_delay_daily_average <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#y2d_delay_daily_average"</span>)</span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(<span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(dd<span class="op">.</span><span class="at">y2d_delay_daily_average</span>)))<span class="op">;</span></span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>dif_y2d_delay_prev_year_perc <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_y2d_delay_prev_year_perc"</span>)</span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">dif_y2d_delay_prev_year_perc</span>))<span class="op">;</span></span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>dif_y2d_delay_2019_perc <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_y2d_delay_2019_perc"</span>)</span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">dif_y2d_delay_2019_perc</span>))<span class="op">;</span></span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>y2d_delay_per_flight <span class="op">=</span> (dd<span class="op">.</span><span class="at">y2d_flights_total</span> <span class="op">==</span> <span class="dv">0</span>) <span class="op">?</span> <span class="dv">0</span> <span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(dd<span class="op">.</span><span class="at">y2d_delay_total</span> <span class="op">/</span> dd<span class="op">.</span><span class="at">y2d_flights_total</span> <span class="op">*</span> <span class="dv">100</span>) <span class="op">/</span> <span class="dv">100</span><span class="op">;</span></span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>y2d_delay_flight <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#y2d_delay_flight"</span>)</span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(y2d_delay_per_flight))<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>week_delay_flight <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#week_delay_flight"</span>)</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(week_delay_per_flight))<span class="op">;</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="co">// Year</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>y2d_delay_date <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#y2d_delay_date"</span>)</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(latest_y2d)<span class="op">;</span></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>y2d_delay_daily_average <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#y2d_delay_daily_average"</span>)</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(<span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(dd<span class="op">.</span><span class="at">y2d_delay_daily_average</span>)))<span class="op">;</span></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>dif_y2d_delay_prev_year_perc <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_y2d_delay_prev_year_perc"</span>)</span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">dif_y2d_delay_prev_year_perc</span>))<span class="op">;</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>dif_y2d_delay_2019_perc <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#dif_y2d_delay_2019_perc"</span>)</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">"+.0%"</span>)(dd<span class="op">.</span><span class="at">dif_y2d_delay_2019_perc</span>))<span class="op">;</span></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>y2d_delay_per_flight <span class="op">=</span> (dd<span class="op">.</span><span class="at">y2d_flights_total</span> <span class="op">==</span> <span class="dv">0</span>) <span class="op">?</span> <span class="dv">0</span> <span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(dd<span class="op">.</span><span class="at">y2d_delay_total</span> <span class="op">/</span> dd<span class="op">.</span><span class="at">y2d_flights_total</span> <span class="op">*</span> <span class="dv">100</span>) <span class="op">/</span> <span class="dv">100</span><span class="op">;</span></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>y2d_delay_flight <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"#y2d_delay_flight"</span>)</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">text</span>(d3<span class="op">.</span><span class="fu">format</span>(<span class="st">","</span>)(y2d_delay_per_flight))<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-1" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-2" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-3" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-4" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-5" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-6" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-7" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-8" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-9" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-10" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-11" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-12" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-13" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-14" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-15" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-16" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-17" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-4-18" data-nodetype="declaration">
 
@@ -1212,11 +1212,32 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<iframe id="delay-plot" class="resp-iframe" style="border: 0; width: 100%; height: 380px;" src="https://www.eurocontrol.int/Economics/Oscar/plot-delay-traffic-lp.html" frameborder="0" scrolling="no" allowfullscreen="">
-</iframe>
+<div>
+  <iframe id="delay-plot" class="resp-iframe" style="border: 0; width: 100%; height: 380px;" src="https://www.eurocontrol.int/Economics/Oscar/plot-delay-traffic-lp.html" frameborder="0" scrolling="no" allowfullscreen="">
+  </iframe>
+</div>
 </div>
 <div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
-
+<div id="punctuality-grid" class="grid">
+<div class="g-col-4">
+<!-- <div class="row mt-3"> -->
+  <!-- <div class="col-sm-4"> -->
+    <div>
+      <iframe id="delay-plot-gauge" class="resp-iframe" style="border: 0; width: 100%; height: 400px;" src="https://www.eurocontrol.int/Economics/Oscar/plot-pun-nw-gauge.html" sandbox="allow-scripts allow-same-origin" frameborder="0" scrolling="no" allowfullscreen="">
+      </iframe>
+    </div>
+  <!-- </div> -->
+</div>
+<div class="g-col-8">
+  <!-- <div class="col-sm-8"> -->
+    <div>
+      <iframe id="delay-plot-evo" class="resp-iframe" style="border: 0; width: 100%; height: 400px;" src="https://www.eurocontrol.int/Economics/Oscar/plot-pun-nw-evo.html" sandbox="allow-scripts allow-same-origin" frameborder="0" scrolling="no" allowfullscreen="">
+      </iframe>
+    </div>
+  <!-- </div> -->
+<!-- </div> -->
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1372,7 +1393,7 @@ window.Quarto = {
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gcG9sbCBhZ2FpbiBpbiAxMCBob3Vyc1xuZGQgPSB7XG4gIGNvbnN0IHVybF9hcGkgPVxuICAgIFwiaHR0cHM6Ly9haXUtcG9ydGFsLnBvY2tldGhvc3QuaW8vYXBpL2NvbGxlY3Rpb25zL25ldHdvcmtfc2l0dWF0aW9uL3JlY29yZHM/c29ydD0tZGF0ZSZwZXJQYWdlPTEmc2tpcFRvdGFsPTFcIjtcbiAgbGV0IG5sID0gYXdhaXQgZDMuanNvbih1cmxfYXBpKTtcbiAgeWllbGQgbmwuaXRlbXNbMF07XG4gIHdoaWxlICh0cnVlKSB7XG4gICAgbmwgPSBhd2FpdCBkMy5qc29uKHVybF9hcGkpO1xuICAgIHlpZWxkIFByb21pc2VzLmRlbGF5KDM2MDAgKiAxMCAqIDEwMDAsIG5sLml0ZW1zWzBdKTtcbiAgfVxufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG5mb3JtYXRfREQgPSBkMy51dGNGb3JtYXQoXCIlZFwiKVxuZm9ybWF0X0REX01PTiA9IGQzLnV0Y0Zvcm1hdChcIiVkICVCXCIpXG5mb3JtYXRfRERfTU9OX1lZWVkgPSBkMy51dGNGb3JtYXQoXCIlZCAlQiAlWVwiKTtcblxud2Vla19pbnRlcnZhbCA9IGZ1bmN0aW9uICh0aWwpIHtcbiAgY29uc3Qgd2VmID0gZDMudXRjRGF5Lm9mZnNldCh0aWwsIC02KTtcbiAgbGV0IHJlcyA9IFwiXCI7XG4gIGlmICh3ZWYuZ2V0RnVsbFllYXIoKSAhPSB0aWwuZ2V0RnVsbFllYXIoKSkge1xuICAgIHJlcyA9IGZvcm1hdF9ERF9NT05fWVlZWSh3ZWYpICsgXCIg4oCTIFwiICsgZm9ybWF0X0REX01PTl9ZWVlZKHRpbCk7XG4gIH0gZWxzZSBpZiAod2VmLmdldE1vbnRoKCkgIT0gdGlsLmdldE1vbnRoKCkpIHtcbiAgICByZXMgPSBmb3JtYXRfRERfTU9OKHdlZikgKyBcIiDigJMgXCIgKyBmb3JtYXRfRERfTU9OX1lZWVkodGlsKTtcbiAgfSBlbHNlIHtcbiAgICByZXMgPSBmb3JtYXRfREQod2VmKSArIFwiIOKAkyBcIiArIGZvcm1hdF9ERF9NT05fWVlZWSh0aWwpO1xuICB9XG5cbiAgcmV0dXJuIHJlcztcbn1cblxudGlsID0gZDMuaXNvUGFyc2UoZGQuZGF0ZSlcbmxhdGVzdF9kYXRlID0gZm9ybWF0X0REX01PTl9ZWVlZKHRpbClcbmxhdGVzdF93ZWVrID0gd2Vla19pbnRlcnZhbCh0aWwpXG5sYXRlc3RfeTJkID0gXCIxIEphbiDigJMgXCIgKyBmb3JtYXRfRERfTU9OX1lZWVkodGlsKVxuXG5ud19kYXRlID0gZDMuc2VsZWN0KFwiI253X2RheV9kYXRlXCIpXG4gIC50ZXh0KGxhdGVzdF9kYXRlKTtcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gRGF5XG5kYXlfZGF0ZSA9IGQzLnNlbGVjdChcIiNkYXlfZGF0ZVwiKVxuICAudGV4dChsYXRlc3RfZGF0ZSk7XG5kYXlfdHJhZmZpYyA9IGQzLnNlbGVjdChcIiNkYXlfdHJhZmZpY1wiKVxuICAudGV4dChkMy5mb3JtYXQoXCIsXCIpKGRkLmRheV90cmFmZmljKSk7XG5kaWZfZGF5X3ByZXZfd2VlayA9IGQzLnNlbGVjdChcIiNkaWZfZGF5X3ByZXZfd2Vla1wiKVxuICAudGV4dChkMy5mb3JtYXQoXCIuMCVcIikoZGQuZGlmX2RheV9wcmV2X3dlZWspKTtcbmRpZl9kYXlfcHJldl95ZWFyID0gZDMuc2VsZWN0KFwiI2RpZl9kYXlfcHJldl95ZWFyXCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIisuMCVcIikoZGQuZGlmX2RheV9wcmV2X3llYXIpKTtcbmRpZl9kYXlfMjAxOSA9IGQzLnNlbGVjdChcIiNkaWZfZGF5XzIwMTlcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiKy4wJVwiKShkZC5kaWZfZGF5XzIwMTkpKTtcblxuXG4vLyBXZWVrXG53ZWVrX2RhdGUgPSBkMy5zZWxlY3QoXCIjd2Vla19kYXRlXCIpXG4gIC50ZXh0KGxhdGVzdF93ZWVrKTtcbndlZWtfdHJhZmZpYyA9IGQzLnNlbGVjdChcIiN3ZWVrX3RyYWZmaWNcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiLFwiKShNYXRoLnJvdW5kKGRkLmF2Z193ZWVrX3RyYWZmaWMpKSk7XG5kaWZfd2Vla19wcmV2X3dlZWsgPSBkMy5zZWxlY3QoXCIjZGlmX3dlZWtfcHJldl93ZWVrXCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIi4wJVwiKShkZC5kaWZfd2Vla19wcmV2X3dlZWspKTtcbmRpZl93ZWVrX3ByZXZfeWVhciA9IGQzLnNlbGVjdChcIiNkaWZfd2Vla19wcmV2X3llYXJcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiKy4wJVwiKShkZC5kaWZfd2Vla19wcmV2X3llYXIpKTtcbmRpZl93ZWVrXzIwMTkgPSBkMy5zZWxlY3QoXCIjZGlmX3dlZWtfMjAxOVwiKVxuICAudGV4dChkMy5mb3JtYXQoXCIrLjAlXCIpKGRkLmRpZl93ZWVrXzIwMTkpKTtcblxuXG4vLyBZZWFyXG55MmRfZGF0ZSA9IGQzLnNlbGVjdChcIiN5MmRfZGF0ZVwiKVxuICAudGV4dChsYXRlc3RfeTJkKTtcbnkyZF90cmFmZmljID0gZDMuc2VsZWN0KFwiI3kyZF90cmFmZmljXCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIixcIikoZGQueTJkX2ZsaWdodHNfdG90YWwpKTtcbmF2Z195MmRfdHJhZmZpYyA9IGQzLnNlbGVjdChcIiNhdmdfeTJkX3RyYWZmaWNcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiLFwiKShNYXRoLnJvdW5kKGRkLnkyZF9mbGlnaHRzX2RhaWx5X2F2ZXJhZ2UpKSk7XG5kaWZfeTJkX3ByZXZfeWVhciA9IGQzLnNlbGVjdChcIiNkaWZfeTJkX3ByZXZfeWVhclwiKVxuICAudGV4dChkMy5mb3JtYXQoXCIrLjAlXCIpKGRkLnkyZF9kaWZmX3ByZXZpb3VzX3llYXJfcGVyY2VudGFnZSkpO1xuZGlmX3kyZF8yMDE5ID0gZDMuc2VsZWN0KFwiI2RpZl95MmRfMjAxOVwiKVxuICAudGV4dChkMy5mb3JtYXQoXCIrLjAlXCIpKGRkLnkyZF9kaWZmXzIwMTlfeWVhcl9wZXJjZW50YWdlKSk7XG5cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIERheVxuZGF5X2RlbGF5X2RhdGUgPSBkMy5zZWxlY3QoXCIjZGF5X2RlbGF5X2RhdGVcIilcbiAgLnRleHQobGF0ZXN0X2RhdGUpO1xuZGF5X2RlbGF5ID0gZDMuc2VsZWN0KFwiI2RheV9kZWxheVwiKVxuICAudGV4dChkMy5mb3JtYXQoXCIsXCIpKGRkLmRheV9kZWxheSkpO1xuZGlmX2RheV9kZWxheV9wcmV2X3llYXJfcGVyYyA9IGQzLnNlbGVjdChcIiNkaWZfZGF5X2RlbGF5X3ByZXZfeWVhcl9wZXJjXCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIisuMCVcIikoZGQuZGlmX2RheV9kZWxheV9wcmV2X3llYXJfcGVyYykpO1xuZGlmX2RheV9kZWxheV8yMDE5X3BlcmMgPSBkMy5zZWxlY3QoXCIjZGlmX2RheV9kZWxheV8yMDE5X3BlcmNcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiKy4wJVwiKShkZC5kaWZfZGF5X2RlbGF5XzIwMTlfcGVyYykpO1xuXG5kZWxheV9wZXJfZmxpZ2h0ID0gKGRkLmRheV90cmFmZmljID09IDApID8gMCA6IE1hdGgucm91bmQoZGQuZGF5X2RlbGF5IC8gZGQuZGF5X3RyYWZmaWMgKiAxMDApIC8gMTAwO1xuZGF5X2RlbGF5X2ZsaWdodCA9IGQzLnNlbGVjdChcIiNkYXlfZGVsYXlfZmxpZ2h0XCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIixcIikoZGVsYXlfcGVyX2ZsaWdodCkpO1xuXG5cbi8vIFdlZWtcbndlZWtfZGVsYXlfZGF0ZSA9IGQzLnNlbGVjdChcIiN3ZWVrX2RlbGF5X2RhdGVcIilcbiAgLnRleHQobGF0ZXN0X3dlZWspO1xuYXZnX3dlZWtfZGVsYXkgPSBkMy5zZWxlY3QoXCIjYXZnX3dlZWtfZGVsYXlcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiLFwiKShNYXRoLnJvdW5kKGRkLmF2Z193ZWVrX2RlbGF5KSkpO1xuZGlmX3dlZWtfZGVsYXlfcHJldl95ZWFyX3BlcmMgPSBkMy5zZWxlY3QoXCIjZGlmX3dlZWtfZGVsYXlfcHJldl95ZWFyX3BlcmNcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiKy4wJVwiKShkZC5kaWZfd2Vla19kZWxheV9wcmV2X3llYXJfcGVyYykpO1xuZGlmX3dlZWtfZGVsYXlfMjAxOV9wZXJjID0gZDMuc2VsZWN0KFwiI2RpZl93ZWVrX2RlbGF5XzIwMTlfcGVyY1wiKVxuICAudGV4dChkMy5mb3JtYXQoXCIrLjAlXCIpKGRkLmRpZl93ZWVrX2RlbGF5XzIwMTlfcGVyYykpO1xuXG53ZWVrX2RlbGF5X3Blcl9mbGlnaHQgPSAoZGQuYXZnX3dlZWtfdHJhZmZpYyA9PSAwKSA/IDAgOiBNYXRoLnJvdW5kKGRkLmF2Z193ZWVrX2RlbGF5IC8gZGQuYXZnX3dlZWtfdHJhZmZpYyAqIDEwMCkgLyAxMDA7XG5cbndlZWtfZGVsYXlfZmxpZ2h0ID0gZDMuc2VsZWN0KFwiI3dlZWtfZGVsYXlfZmxpZ2h0XCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIixcIikod2Vla19kZWxheV9wZXJfZmxpZ2h0KSk7XG5cblxuLy8gWWVhclxueTJkX2RlbGF5X2RhdGUgPSBkMy5zZWxlY3QoXCIjeTJkX2RlbGF5X2RhdGVcIilcbiAgLnRleHQobGF0ZXN0X3kyZCk7XG55MmRfZGVsYXlfZGFpbHlfYXZlcmFnZSA9IGQzLnNlbGVjdChcIiN5MmRfZGVsYXlfZGFpbHlfYXZlcmFnZVwiKVxuICAudGV4dChkMy5mb3JtYXQoXCIsXCIpKE1hdGgucm91bmQoZGQueTJkX2RlbGF5X2RhaWx5X2F2ZXJhZ2UpKSk7XG5kaWZfeTJkX2RlbGF5X3ByZXZfeWVhcl9wZXJjID0gZDMuc2VsZWN0KFwiI2RpZl95MmRfZGVsYXlfcHJldl95ZWFyX3BlcmNcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiKy4wJVwiKShkZC5kaWZfeTJkX2RlbGF5X3ByZXZfeWVhcl9wZXJjKSk7XG5kaWZfeTJkX2RlbGF5XzIwMTlfcGVyYyA9IGQzLnNlbGVjdChcIiNkaWZfeTJkX2RlbGF5XzIwMTlfcGVyY1wiKVxuICAudGV4dChkMy5mb3JtYXQoXCIrLjAlXCIpKGRkLmRpZl95MmRfZGVsYXlfMjAxOV9wZXJjKSk7XG55MmRfZGVsYXlfcGVyX2ZsaWdodCA9IChkZC55MmRfZmxpZ2h0c190b3RhbCA9PSAwKSA/IDAgOiBNYXRoLnJvdW5kKGRkLnkyZF9kZWxheV90b3RhbCAvIGRkLnkyZF9mbGlnaHRzX3RvdGFsICogMTAwKSAvIDEwMDtcbnkyZF9kZWxheV9mbGlnaHQgPSBkMy5zZWxlY3QoXCIjeTJkX2RlbGF5X2ZsaWdodFwiKVxuICAudGV4dChkMy5mb3JtYXQoXCIsXCIpKHkyZF9kZWxheV9wZXJfZmxpZ2h0KSk7XG5cbiJ9XX0=
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gcG9sbCBhZ2FpbiBpbiAxMCBob3Vyc1xuZGQgPSB7XG4gIGNvbnN0IHVybF9hcGkgPVxuICAgIFwiaHR0cHM6Ly9haXUtcG9ydGFsLnBvY2tldGhvc3QuaW8vYXBpL2NvbGxlY3Rpb25zL25ldHdvcmtfc2l0dWF0aW9uL3JlY29yZHM/c29ydD0tZGF0ZSZwZXJQYWdlPTEmc2tpcFRvdGFsPTFcIjtcbiAgbGV0IG5sID0gYXdhaXQgZDMuanNvbih1cmxfYXBpKTtcbiAgeWllbGQgbmwuaXRlbXNbMF07XG4gIHdoaWxlICh0cnVlKSB7XG4gICAgbmwgPSBhd2FpdCBkMy5qc29uKHVybF9hcGkpO1xuICAgIHlpZWxkIFByb21pc2VzLmRlbGF5KDM2MDAgKiAxMCAqIDEwMDAsIG5sLml0ZW1zWzBdKTtcbiAgfVxufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG5mb3JtYXRfREQgPSBkMy51dGNGb3JtYXQoXCIlZFwiKVxuZm9ybWF0X0REX01PTiA9IGQzLnV0Y0Zvcm1hdChcIiVkICVCXCIpXG5mb3JtYXRfRERfTU9OX1lZWVkgPSBkMy51dGNGb3JtYXQoXCIlZCAlQiAlWVwiKTtcblxud2Vla19pbnRlcnZhbCA9IGZ1bmN0aW9uICh0aWwpIHtcbiAgY29uc3Qgd2VmID0gZDMudXRjRGF5Lm9mZnNldCh0aWwsIC02KTtcbiAgbGV0IHJlcyA9IFwiXCI7XG4gIGlmICh3ZWYuZ2V0RnVsbFllYXIoKSAhPSB0aWwuZ2V0RnVsbFllYXIoKSkge1xuICAgIHJlcyA9IGZvcm1hdF9ERF9NT05fWVlZWSh3ZWYpICsgXCIg4oCTIFwiICsgZm9ybWF0X0REX01PTl9ZWVlZKHRpbCk7XG4gIH0gZWxzZSBpZiAod2VmLmdldE1vbnRoKCkgIT0gdGlsLmdldE1vbnRoKCkpIHtcbiAgICByZXMgPSBmb3JtYXRfRERfTU9OKHdlZikgKyBcIiDigJMgXCIgKyBmb3JtYXRfRERfTU9OX1lZWVkodGlsKTtcbiAgfSBlbHNlIHtcbiAgICByZXMgPSBmb3JtYXRfREQod2VmKSArIFwiIOKAkyBcIiArIGZvcm1hdF9ERF9NT05fWVlZWSh0aWwpO1xuICB9XG5cbiAgcmV0dXJuIHJlcztcbn1cblxudGlsID0gZDMuaXNvUGFyc2UoZGQuZGF0ZSlcbmxhdGVzdF9kYXRlID0gZm9ybWF0X0REX01PTl9ZWVlZKHRpbClcbmxhdGVzdF93ZWVrID0gd2Vla19pbnRlcnZhbCh0aWwpXG5sYXRlc3RfeTJkID0gXCIxIEphbiDigJMgXCIgKyBmb3JtYXRfRERfTU9OX1lZWVkodGlsKVxuXG5ud19kYXRlID0gZDMuc2VsZWN0KFwiI253X2RheV9kYXRlXCIpXG4gIC50ZXh0KGxhdGVzdF9kYXRlKTtcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gRGF5XG5kYXlfZGF0ZSA9IGQzLnNlbGVjdChcIiNkYXlfZGF0ZVwiKVxuICAudGV4dChsYXRlc3RfZGF0ZSk7XG5kYXlfdHJhZmZpYyA9IGQzLnNlbGVjdChcIiNkYXlfdHJhZmZpY1wiKVxuICAudGV4dChkMy5mb3JtYXQoXCIsXCIpKGRkLmRheV90cmFmZmljKSk7XG5kaWZfZGF5X3ByZXZfd2VlayA9IGQzLnNlbGVjdChcIiNkaWZfZGF5X3ByZXZfd2Vla1wiKVxuICAudGV4dChkMy5mb3JtYXQoXCIuMCVcIikoZGQuZGlmX2RheV9wcmV2X3dlZWspKTtcbmRpZl9kYXlfcHJldl95ZWFyID0gZDMuc2VsZWN0KFwiI2RpZl9kYXlfcHJldl95ZWFyXCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIisuMCVcIikoZGQuZGlmX2RheV9wcmV2X3llYXIpKTtcbmRpZl9kYXlfMjAxOSA9IGQzLnNlbGVjdChcIiNkaWZfZGF5XzIwMTlcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiKy4wJVwiKShkZC5kaWZfZGF5XzIwMTkpKTtcblxuXG4vLyBXZWVrXG53ZWVrX2RhdGUgPSBkMy5zZWxlY3QoXCIjd2Vla19kYXRlXCIpXG4gIC50ZXh0KGxhdGVzdF93ZWVrKTtcbndlZWtfdHJhZmZpYyA9IGQzLnNlbGVjdChcIiN3ZWVrX3RyYWZmaWNcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiLFwiKShNYXRoLnJvdW5kKGRkLmF2Z193ZWVrX3RyYWZmaWMpKSk7XG5kaWZfd2Vla19wcmV2X3dlZWsgPSBkMy5zZWxlY3QoXCIjZGlmX3dlZWtfcHJldl93ZWVrXCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIi4wJVwiKShkZC5kaWZfd2Vla19wcmV2X3dlZWspKTtcbmRpZl93ZWVrX3ByZXZfeWVhciA9IGQzLnNlbGVjdChcIiNkaWZfd2Vla19wcmV2X3llYXJcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiKy4wJVwiKShkZC5kaWZfd2Vla19wcmV2X3llYXIpKTtcbmRpZl93ZWVrXzIwMTkgPSBkMy5zZWxlY3QoXCIjZGlmX3dlZWtfMjAxOVwiKVxuICAudGV4dChkMy5mb3JtYXQoXCIrLjAlXCIpKGRkLmRpZl93ZWVrXzIwMTkpKTtcblxuXG4vLyBZZWFyXG55MmRfZGF0ZSA9IGQzLnNlbGVjdChcIiN5MmRfZGF0ZVwiKVxuICAudGV4dChsYXRlc3RfeTJkKTtcbnkyZF90cmFmZmljID0gZDMuc2VsZWN0KFwiI3kyZF90cmFmZmljXCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIixcIikoZGQueTJkX2ZsaWdodHNfdG90YWwpKTtcbmF2Z195MmRfdHJhZmZpYyA9IGQzLnNlbGVjdChcIiNhdmdfeTJkX3RyYWZmaWNcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiLFwiKShNYXRoLnJvdW5kKGRkLnkyZF9mbGlnaHRzX2RhaWx5X2F2ZXJhZ2UpKSk7XG5kaWZfeTJkX3ByZXZfeWVhciA9IGQzLnNlbGVjdChcIiNkaWZfeTJkX3ByZXZfeWVhclwiKVxuICAudGV4dChkMy5mb3JtYXQoXCIrLjAlXCIpKGRkLnkyZF9kaWZmX3ByZXZpb3VzX3llYXJfcGVyY2VudGFnZSkpO1xuZGlmX3kyZF8yMDE5ID0gZDMuc2VsZWN0KFwiI2RpZl95MmRfMjAxOVwiKVxuICAudGV4dChkMy5mb3JtYXQoXCIrLjAlXCIpKGRkLnkyZF9kaWZmXzIwMTlfeWVhcl9wZXJjZW50YWdlKSk7XG5cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gRGF5XG5kYXlfZGVsYXlfZGF0ZSA9IGQzLnNlbGVjdChcIiNkYXlfZGVsYXlfZGF0ZVwiKVxuICAudGV4dChsYXRlc3RfZGF0ZSk7XG5kYXlfZGVsYXkgPSBkMy5zZWxlY3QoXCIjZGF5X2RlbGF5XCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIixcIikoZGQuZGF5X2RlbGF5KSk7XG5kaWZfZGF5X2RlbGF5X3ByZXZfeWVhcl9wZXJjID0gZDMuc2VsZWN0KFwiI2RpZl9kYXlfZGVsYXlfcHJldl95ZWFyX3BlcmNcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiKy4wJVwiKShkZC5kaWZfZGF5X2RlbGF5X3ByZXZfeWVhcl9wZXJjKSk7XG5kaWZfZGF5X2RlbGF5XzIwMTlfcGVyYyA9IGQzLnNlbGVjdChcIiNkaWZfZGF5X2RlbGF5XzIwMTlfcGVyY1wiKVxuICAudGV4dChkMy5mb3JtYXQoXCIrLjAlXCIpKGRkLmRpZl9kYXlfZGVsYXlfMjAxOV9wZXJjKSk7XG5cbmRlbGF5X3Blcl9mbGlnaHQgPSAoZGQuZGF5X3RyYWZmaWMgPT0gMCkgPyAwIDogTWF0aC5yb3VuZChkZC5kYXlfZGVsYXkgLyBkZC5kYXlfdHJhZmZpYyAqIDEwMCkgLyAxMDA7XG5kYXlfZGVsYXlfZmxpZ2h0ID0gZDMuc2VsZWN0KFwiI2RheV9kZWxheV9mbGlnaHRcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiLFwiKShkZWxheV9wZXJfZmxpZ2h0KSk7XG5cblxuLy8gV2Vla1xud2Vla19kZWxheV9kYXRlID0gZDMuc2VsZWN0KFwiI3dlZWtfZGVsYXlfZGF0ZVwiKVxuICAudGV4dChsYXRlc3Rfd2Vlayk7XG5hdmdfd2Vla19kZWxheSA9IGQzLnNlbGVjdChcIiNhdmdfd2Vla19kZWxheVwiKVxuICAudGV4dChkMy5mb3JtYXQoXCIsXCIpKE1hdGgucm91bmQoZGQuYXZnX3dlZWtfZGVsYXkpKSk7XG5kaWZfd2Vla19kZWxheV9wcmV2X3llYXJfcGVyYyA9IGQzLnNlbGVjdChcIiNkaWZfd2Vla19kZWxheV9wcmV2X3llYXJfcGVyY1wiKVxuICAudGV4dChkMy5mb3JtYXQoXCIrLjAlXCIpKGRkLmRpZl93ZWVrX2RlbGF5X3ByZXZfeWVhcl9wZXJjKSk7XG5kaWZfd2Vla19kZWxheV8yMDE5X3BlcmMgPSBkMy5zZWxlY3QoXCIjZGlmX3dlZWtfZGVsYXlfMjAxOV9wZXJjXCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIisuMCVcIikoZGQuZGlmX3dlZWtfZGVsYXlfMjAxOV9wZXJjKSk7XG5cbndlZWtfZGVsYXlfcGVyX2ZsaWdodCA9IChkZC5hdmdfd2Vla190cmFmZmljID09IDApID8gMCA6IE1hdGgucm91bmQoZGQuYXZnX3dlZWtfZGVsYXkgLyBkZC5hdmdfd2Vla190cmFmZmljICogMTAwKSAvIDEwMDtcblxud2Vla19kZWxheV9mbGlnaHQgPSBkMy5zZWxlY3QoXCIjd2Vla19kZWxheV9mbGlnaHRcIilcbiAgLnRleHQoZDMuZm9ybWF0KFwiLFwiKSh3ZWVrX2RlbGF5X3Blcl9mbGlnaHQpKTtcblxuXG4vLyBZZWFyXG55MmRfZGVsYXlfZGF0ZSA9IGQzLnNlbGVjdChcIiN5MmRfZGVsYXlfZGF0ZVwiKVxuICAudGV4dChsYXRlc3RfeTJkKTtcbnkyZF9kZWxheV9kYWlseV9hdmVyYWdlID0gZDMuc2VsZWN0KFwiI3kyZF9kZWxheV9kYWlseV9hdmVyYWdlXCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIixcIikoTWF0aC5yb3VuZChkZC55MmRfZGVsYXlfZGFpbHlfYXZlcmFnZSkpKTtcbmRpZl95MmRfZGVsYXlfcHJldl95ZWFyX3BlcmMgPSBkMy5zZWxlY3QoXCIjZGlmX3kyZF9kZWxheV9wcmV2X3llYXJfcGVyY1wiKVxuICAudGV4dChkMy5mb3JtYXQoXCIrLjAlXCIpKGRkLmRpZl95MmRfZGVsYXlfcHJldl95ZWFyX3BlcmMpKTtcbmRpZl95MmRfZGVsYXlfMjAxOV9wZXJjID0gZDMuc2VsZWN0KFwiI2RpZl95MmRfZGVsYXlfMjAxOV9wZXJjXCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIisuMCVcIikoZGQuZGlmX3kyZF9kZWxheV8yMDE5X3BlcmMpKTtcbnkyZF9kZWxheV9wZXJfZmxpZ2h0ID0gKGRkLnkyZF9mbGlnaHRzX3RvdGFsID09IDApID8gMCA6IE1hdGgucm91bmQoZGQueTJkX2RlbGF5X3RvdGFsIC8gZGQueTJkX2ZsaWdodHNfdG90YWwgKiAxMDApIC8gMTAwO1xueTJkX2RlbGF5X2ZsaWdodCA9IGQzLnNlbGVjdChcIiN5MmRfZGVsYXlfZmxpZ2h0XCIpXG4gIC50ZXh0KGQzLmZvcm1hdChcIixcIikoeTJkX2RlbGF5X3Blcl9mbGlnaHQpKTtcblxuIn1dfQ==
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
