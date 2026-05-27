@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Composite Risk Index (CRI) Methodology Update – Aviation Intelligence Unit portal</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -24,7 +27,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -53,19 +55,18 @@ div.csl-indent {
 <link href="../../favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e31d0766e5a189c531f84d46f1e7a408.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-b55247d1aa5aba091c356a92b85c5016.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-e31d0766e5a189c531f84d46f1e7a408.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ffd3b8a6818a937ee2906ff01485edaa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b778c3b688de20becf93e619193c8d13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-ffd3b8a6818a937ee2906ff01485edaa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -268,8 +269,8 @@ div.csl-indent {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://www.eurocontrol.int/" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/images/logo/eurocontrol-boxed-slogan-right-rgb.svg" alt="" class="navbar-logo light-content">
-    <img src="../../assets/images/logo/eurocontrol-boxed-dark-slogan-right-rgb.svg" alt="" class="navbar-logo dark-content">
+    <img src="../../assets\images\logo\eurocontrol-boxed-slogan-right-rgb.svg" alt="" class="navbar-logo light-content">
+    <img src="../../assets\images\logo\eurocontrol-boxed-dark-slogan-right-rgb.svg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -546,7 +547,7 @@ div.csl-indent {
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
 <p>In 2019 the PRC published (in PRR2018) its preliminary concept of the Composite Risk Index (CRI) and the corresponding methodology that could be used to measure the performance of the European ATM system, either as a whole or of its individual entities (service providers, Member States).</p>
-<p>Since then, the PRC has refined its CRI methodology to take account of local specific operating conditions and has published the updated and improved methodology in a <a href="../../library/tn_prc_2021_01_composite_risk_index_methodology.pdf" title="PRC Technical Note - Composite Risk Index">Technical Note</a> <span class="citation" data-cites="performancereviewcommissionCompositeRiskIndex2020">(<a href="#ref-performancereviewcommissionCompositeRiskIndex2020" role="doc-biblioref">Commission 2020</a>)</span>.</p>
+<p>Since then, the PRC has refined its CRI methodology to take account of local specific operating conditions and has published the updated and improved methodology in a <a href="../..\library/tn_prc_2021_01_composite_risk_index_methodology.pdf" title="PRC Technical Note - Composite Risk Index">Technical Note</a> <span class="citation" data-cites="performancereviewcommissionCompositeRiskIndex2020">(<a href="#ref-performancereviewcommissionCompositeRiskIndex2020" role="doc-biblioref">Commission 2020</a>)</span>.</p>
 <p>This CRI methodology will be of interest to ATM key decision makers, policymakers and operations staff as well as to Safety specialists, because the PRC’s methodology by nature is scalable and therefore can provide high level information for decision makers as well as more in-depth knowledge about risk exposure to safety experts.</p>
 </section>
 <section id="why-a-composite-risk-index" class="level2">
@@ -566,7 +567,7 @@ div.csl-indent {
 <p>In PRR 2018, the PRC presented the preliminary concept of the CRI and a corresponding methodology that could be used to measure the performance of the European ATM system as a whole or also its individual entities (service providers or Member States).</p>
 <p>This initial calculation of the CRI was mainly based on reported safety occurrences. More specifically, the CRI was represented as a cumulative risk value calculated aggregating all reported, assessed and severity classified key safety‐related incidents to form an index.</p>
 <p>The measure of risk exposure was based on probability and severity that considers the human perception of equivalent risk. The overall idea behind the CRI was that the performance of the safety system can be analysed in three important broad categories: (1) the quality of the reporting system with reporting entity, (2) measured risks within the system, and (3) the human perception of risk.</p>
-<p><a href="../../methodology/cri-pi_v1/" title="Composite Risk Index - Preliminary Methodology">Click here for an explanation of this preliminary CRI methodology including a working example</a></p>
+<p><a href="../..\methodology/cri-pi_v1/" title="Composite Risk Index - Preliminary Methodology">Click here for an explanation of this preliminary CRI methodology including a working example</a></p>
 <p>At the same time, the PRC also has highlighted that there could be possibilities to further improve the CRI by considering specific local operating conditions, airspace size, capacity and/or complexity. In order to improve the initial CRI methodology, further consideration of local operating conditions, airspace size and complexity of the airspace were taken into consideration. As a result, three additional components, besides the original one (Safety Data), were considered in the new methodology. The new CRI methodology includes hence four distinct components, or Intermediate Composite Indexes (ICIs):</p>
 <ol type="1">
 <li>Safety data (with the following parameters: number and type of safety occurrences, severity classification, and human perception of risk),</li>
@@ -588,7 +589,7 @@ Figure&nbsp;1: CRI Methodology Components.
 </section>
 <section id="further-information" class="level2">
 <h2 class="anchored" data-anchor-id="further-information">Further Information</h2>
-<p>For more detailed information, please refer also to the <a href="../../library/tn_prc_2021_01_composite_risk_index_methodology.pdf" title="PRC Technical Note - Composite Risk Index">PRC Technical Note</a> explaining the further development of the methodology <span class="citation" data-cites="performancereviewcommissionCompositeRiskIndex2020">(<a href="#ref-performancereviewcommissionCompositeRiskIndex2020" role="doc-biblioref">Commission 2020</a>)</span>. The technical note explains in detail several statistical methods used to model index weights, overall computation, logic behind it, its use and limitations, and lastly areas of further improvement and expansion.</p>
+<p>For more detailed information, please refer also to the <a href="../..\library/tn_prc_2021_01_composite_risk_index_methodology.pdf" title="PRC Technical Note - Composite Risk Index">PRC Technical Note</a> explaining the further development of the methodology <span class="citation" data-cites="performancereviewcommissionCompositeRiskIndex2020">(<a href="#ref-performancereviewcommissionCompositeRiskIndex2020" role="doc-biblioref">Commission 2020</a>)</span>. The technical note explains in detail several statistical methods used to model index weights, overall computation, logic behind it, its use and limitations, and lastly areas of further improvement and expansion.</p>
 </section>
 <section id="references" class="level2">
 
@@ -597,18 +598,18 @@ Figure&nbsp;1: CRI Methodology Components.
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-burns2016" class="csl-entry" role="listitem">
 Burns, M. 2016. <em>Logistics and Transportation Security, a Strategic, Tactical, and Operational Guide to Resilience</em>. <span>CRC Press, Taylor and Francis Group</span>.
 </div>
 <div id="ref-performancereviewcommissionCompositeRiskIndex2020" class="csl-entry" role="listitem">
-Commission, Performance Review. 2020. <span>“Updated Composite <span>Risk Index</span> (<span>CRI</span>) - Methodology.”</span> <span>EUROCONTROL</span>. <a href="https://ansperformance.eu/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf">https://ansperformance.eu/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf</a>.
+Commission, Performance Review. 2020. <em>Updated Composite <span>Risk Index</span> (<span>CRI</span>) - Methodology</em>. <span>EUROCONTROL</span>. <a href="https://ansperformance.eu/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf">https://ansperformance.eu/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf</a>.
 </div>
 <div id="ref-nardo2005" class="csl-entry" role="listitem">
-Nardo, Saisana, M. 2005. <span>“Handbook on Constructing Composite Indicators: Methodology and User Guide.”</span> <span>Organisation for Economic Co-operation and Development</span>; OECD Statistics Working Papers.
+Nardo, Saisana, M. 2005. <em>Handbook on Constructing Composite Indicators: Methodology and User Guide</em>. <span>Organisation for Economic Co-operation and Development</span>; OECD Statistics Working Papers.
 </div>
 <div id="ref-slovic2016" class="csl-entry" role="listitem">
-Slovic, P. 2016. <span>“Perception of Risk.”</span> <a href="https://www.researchgate.net/publication/325954197_The_perception_of_risk">https://www.researchgate.net/publication/325954197_The_perception_of_risk</a>.
+Slovic, P. 2016. <em>Perception of Risk</em>. <a href="https://www.researchgate.net/publication/325954197_The_perception_of_risk">https://www.researchgate.net/publication/325954197_The_perception_of_risk</a>.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
