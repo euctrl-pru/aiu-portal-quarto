@@ -1,488 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ansperformance.eu/CLAUDE.html</loc>
-    <lastmod>2026-02-07T14:49:18.753Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/aua.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/df.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/gat.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/pli.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ses.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ats.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/prisme.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/twr.html</loc>
-    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/euaca.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/fl.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ri.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/sid.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/statfor.html</loc>
-    <lastmod>2026-05-13T14:17:58.734Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/caa.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/crco.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/cat.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/aci.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/amc.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/atms.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ades.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/sesar.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/rp1.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/metar.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/met.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/fab.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/kep.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/rp3.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/wf.html</loc>
-    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/tobt.html</loc>
-    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ganp.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/lobt.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/fua.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/caep.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/xman.html</loc>
-    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/nop.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ba.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/cdm.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/notam.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/atfm.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/cpr.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/prr.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ais.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/dct.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/asbu.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/cpf.html</loc>
-    <lastmod>2026-05-13T14:17:58.686Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/uac.html</loc>
-    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/iata.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/nm.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/eobt.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/m3.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ifr.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/casa.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/prc.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/apdf.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/sur.html</loc>
-    <lastmod>2026-05-13T14:17:58.734Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/tsa.html</loc>
-    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/pfd.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ctfm.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/alos.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/cri.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/tdi.html</loc>
-    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/essip.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/srr.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/rad.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/mtow.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/atm.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/nm-cfmu.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ssc.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ans.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/src.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/acc.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ctot.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/gcd.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/tcz.html</loc>
-    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/oag.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/aobt.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/gto.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/afil.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/cns.html</loc>
-    <lastmod>2026-05-13T14:17:58.686Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/serious-incident.html</loc>
-    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/regulation.html</loc>
-    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/reactionary-delay.html</loc>
-    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/primary-delay.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/eurocontrol-area.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/additional-taxi-out-time.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/reference-location.html</loc>
-    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/productivity.html</loc>
-    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/terminal-ans-unit-rate.html</loc>
-    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/airport-data-flow/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/atfm-delay.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/atfm-slot-adherence.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/composite-flight-hour.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/ecac-area.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/movements.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/additional-taxi-in-time.html</loc>
-    <lastmod>2026-05-13T14:17:58.787Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/en-route-atfm-delay.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/esra-2008-area.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/operated-schedules.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/slot-tolerance-window.html</loc>
-    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/dashboard/stakeholder/ansp/ansp_db.html</loc>
-    <lastmod>2026-05-13T14:17:58.783Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/dashboard/stakeholder/airport/acft_ground.html</loc>
-    <lastmod>2026-05-13T14:17:58.752Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/dashboard/stakeholder/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.787Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.910Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/about/prc/piotr_ikanowicz.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/about/prc/xavier_fron.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/about/prc/jose_miguel_de_pablo.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/about/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.657Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/about/disclaimer/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.657Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/methodology/additional-taxi-out-time.html</loc>
-    <lastmod>2026-05-13T14:17:58.910Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/methodology/horizontal-flight-efficiency-pi/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.926Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/methodology/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.926Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/methodology/airport-capacity-utilisation/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.910Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/methodology/atfm-delay-calculation.html</loc>
-    <lastmod>2026-05-13T14:17:58.910Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/bibliography/legislation.html</loc>
-    <lastmod>2026-05-27T10:04:29.060Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/bibliography/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.752Z</lastmod>
-  </url>
-  <url>
     <loc>https://ansperformance.eu/traffic/index.html</loc>
     <lastmod>2026-05-13T14:17:58.959Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/bibliography/aviation.html</loc>
-    <lastmod>2026-05-13T14:17:58.752Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/methodology/additional-asma-time.html</loc>
-    <lastmod>2026-05-13T14:17:58.910Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/methodology/additional-taxi-in-time.html</loc>
-    <lastmod>2026-05-13T14:17:58.910Z</lastmod>
+    <loc>https://ansperformance.eu/methodology/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.926Z</lastmod>
   </url>
   <url>
     <loc>https://ansperformance.eu/methodology/en-route-vertical-flight-efficiency-pi.html</loc>
@@ -493,71 +17,51 @@
     <lastmod>2026-05-13T14:17:58.926Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/methodology/cd-vertical-flight-efficiency-pi.html</loc>
+    <loc>https://ansperformance.eu/methodology/atfm-delay-calculation.html</loc>
     <lastmod>2026-05-13T14:17:58.910Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/methodology/cri-pi_v1.html</loc>
-    <lastmod>2026-05-13T14:17:58.926Z</lastmod>
+    <loc>https://ansperformance.eu/methodology/additional-taxi-out-time.html</loc>
+    <lastmod>2026-05-13T14:17:58.910Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/about/pru/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+    <loc>https://ansperformance.eu/methodology/additional-asma-time.html</loc>
+    <lastmod>2026-05-13T14:17:58.910Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/about/aiu/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.657Z</lastmod>
+    <loc>https://ansperformance.eu/definition/turnaround.html</loc>
+    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/about/prc/daniel_weder.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+    <loc>https://ansperformance.eu/definition/terminal-ans-unit-rate.html</loc>
+    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/about/prc/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+    <loc>https://ansperformance.eu/definition/short-term-atfcm-measures.html</loc>
+    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/TODO.html</loc>
-    <lastmod>2026-02-12T13:43:24.192Z</lastmod>
+    <loc>https://ansperformance.eu/definition/serious-incident.html</loc>
+    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/dashboard/performance-area/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.752Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/dashboard/stakeholder/airport/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.767Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/dashboard/stakeholder/ansp/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.787Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/dashboard/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.752Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/departure-slot.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/additional-asma-time.html</loc>
-    <lastmod>2026-05-13T14:17:58.787Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/fab.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+    <loc>https://ansperformance.eu/definition/reference-location.html</loc>
+    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
   </url>
   <url>
     <loc>https://ansperformance.eu/definition/punctuality.html</loc>
     <lastmod>2026-05-13T14:17:58.815Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/definition/traffic-zone.html</loc>
-    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
+    <loc>https://ansperformance.eu/definition/primary-delay.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/definition/kep.html</loc>
+    <loc>https://ansperformance.eu/definition/movements.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/kea.html</loc>
     <lastmod>2026-05-13T14:17:58.799Z</lastmod>
   </url>
   <url>
@@ -565,23 +69,11 @@
     <lastmod>2026-05-13T14:17:58.799Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/definition/air-transport-statistics.html</loc>
-    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/ses-area.html</loc>
-    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
-  </url>
-  <url>
     <loc>https://ansperformance.eu/definition/flight-models.html</loc>
     <lastmod>2026-05-13T14:17:58.799Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/definition/turnaround.html</loc>
-    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/iata-code-89.html</loc>
+    <loc>https://ansperformance.eu/definition/eurocontrol-area.html</loc>
     <lastmod>2026-05-13T14:17:58.799Z</lastmod>
   </url>
   <url>
@@ -593,19 +85,15 @@
     <lastmod>2026-05-13T14:17:58.799Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/definition/atfm-delay-codes.html</loc>
+    <loc>https://ansperformance.eu/definition/departure-slot.html</loc>
     <lastmod>2026-05-13T14:17:58.799Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/definition/atfm-measure.html</loc>
+    <loc>https://ansperformance.eu/definition/atfm-slot-adherence.html</loc>
     <lastmod>2026-05-13T14:17:58.799Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/definition/short-term-atfcm-measures.html</loc>
-    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/definition/asma-transit-time.html</loc>
+    <loc>https://ansperformance.eu/definition/atfm-delay.html</loc>
     <lastmod>2026-05-13T14:17:58.799Z</lastmod>
   </url>
   <url>
@@ -617,223 +105,99 @@
     <lastmod>2026-05-13T14:17:58.799Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/definition/kea.html</loc>
+    <loc>https://ansperformance.eu/definition/air-transport-statistics.html</loc>
     <lastmod>2026-05-13T14:17:58.799Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/su.html</loc>
-    <lastmod>2026-05-13T14:17:58.734Z</lastmod>
+    <loc>https://ansperformance.eu/definition/additional-taxi-in-time.html</loc>
+    <lastmod>2026-05-13T14:17:58.787Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/imc.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+    <loc>https://ansperformance.eu/data/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.787Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/easa.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+    <loc>https://ansperformance.eu/dashboard/stakeholder/ansp/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.787Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/fir.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+    <loc>https://ansperformance.eu/dashboard/stakeholder/airport/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.767Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/bada.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+    <loc>https://ansperformance.eu/dashboard/performance-area/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.752Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/jc.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+    <loc>https://ansperformance.eu/bibliography/legislation.html</loc>
+    <lastmod>2026-05-27T10:04:29.060Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/rat.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+    <loc>https://ansperformance.eu/bibliography/aviation.html</loc>
+    <lastmod>2026-05-13T14:17:58.752Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/aldt.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/eosm.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ssp.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/aman.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ga.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/pi.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/oat.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/atfcm.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ace.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/tma.html</loc>
+    <loc>https://ansperformance.eu/acronym/wf.html</loc>
     <lastmod>2026-05-13T14:17:58.736Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/stam.html</loc>
-    <lastmod>2026-05-13T14:17:58.734Z</lastmod>
   </url>
   <url>
     <loc>https://ansperformance.eu/acronym/usoap.html</loc>
     <lastmod>2026-05-13T14:17:58.736Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/m1.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/laq.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/kpi.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/etot.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/cdr.html</loc>
-    <lastmod>2026-05-13T14:17:58.686Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/lssip.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/tnsu.html</loc>
+    <loc>https://ansperformance.eu/acronym/uac.html</loc>
     <lastmod>2026-05-13T14:17:58.736Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/airac.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/pru.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/sobt.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/asm.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/aip.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/vfr.html</loc>
+    <loc>https://ansperformance.eu/acronym/tsa.html</loc>
     <lastmod>2026-05-13T14:17:58.736Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/bli.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/tobt.html</loc>
+    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/tnc.html</loc>
+    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/tdi.html</loc>
+    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/tbs.html</loc>
+    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
   </url>
   <url>
     <loc>https://ansperformance.eu/acronym/sua.html</loc>
     <lastmod>2026-05-13T14:17:58.734Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/ecac.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/statfor.html</loc>
+    <lastmod>2026-05-13T14:17:58.734Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/cda.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/stam.html</loc>
+    <lastmod>2026-05-13T14:17:58.734Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/tra.html</loc>
-    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/ssc.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/coda.html</loc>
-    <lastmod>2026-05-13T14:17:58.686Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/index.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/src.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
   </url>
   <url>
     <loc>https://ansperformance.eu/acronym/sms.html</loc>
     <lastmod>2026-05-13T14:17:58.720Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/app.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/smi.html</loc>
+    <loc>https://ansperformance.eu/acronym/sm.html</loc>
     <lastmod>2026-05-13T14:17:58.720Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/asma.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/kpa.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/lto.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/kea.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/fmp.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/star.html</loc>
-    <lastmod>2026-05-13T14:17:58.734Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/crinorm.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/icao.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/cdo.html</loc>
-    <lastmod>2026-05-13T14:17:58.686Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/esra.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/rvsm.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/rp2.html</loc>
+    <loc>https://ansperformance.eu/acronym/sesar.html</loc>
     <lastmod>2026-05-13T14:17:58.720Z</lastmod>
   </url>
   <url>
@@ -841,83 +205,135 @@
     <lastmod>2026-05-13T14:17:58.720Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/ast.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/ifps.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ansperformance.eu/acronym/oew.html</loc>
+    <loc>https://ansperformance.eu/acronym/rp3.html</loc>
     <lastmod>2026-05-13T14:17:58.720Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/ftfm.html</loc>
-    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/rp1.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/atco.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/rat.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/pru.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/prisme.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/pli.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/pfd.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
   </url>
   <url>
     <loc>https://ansperformance.eu/acronym/obt.html</loc>
     <lastmod>2026-05-13T14:17:58.720Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/ets.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/oag.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/ddi-g.html</loc>
-    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/nop.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/adep.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/nm-cfmu.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/tnc.html</loc>
-    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/metar.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/alosp.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/m3.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/atc.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/lto.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/lobt.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/kpi.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/kep.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/jc.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/imc.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ifps.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/iata.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/gcd.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ganp.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/fua.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
   </url>
   <url>
     <loc>https://ansperformance.eu/acronym/fra.html</loc>
     <lastmod>2026-05-13T14:17:58.704Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/sm.html</loc>
-    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/fl.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/a-cdm.html</loc>
-    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/fab.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/upa.html</loc>
-    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/ets.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
   </url>
   <url>
     <loc>https://ansperformance.eu/acronym/etfms.html</loc>
     <lastmod>2026-05-13T14:17:58.688Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/tbs.html</loc>
-    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/esra.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/cco.html</loc>
-    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+    <loc>https://ansperformance.eu/acronym/eosm.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/acronym/ec.html</loc>
+    <loc>https://ansperformance.eu/acronym/ecac.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/easa.html</loc>
     <lastmod>2026-05-13T14:17:58.688Z</lastmod>
   </url>
   <url>
@@ -925,15 +341,595 @@
     <lastmod>2026-05-13T14:17:58.688Z</lastmod>
   </url>
   <url>
+    <loc>https://ansperformance.eu/acronym/dct.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ctfm.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/cri.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/cpr.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/coda.html</loc>
+    <lastmod>2026-05-13T14:17:58.686Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/cdr.html</loc>
+    <lastmod>2026-05-13T14:17:58.686Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/cdm.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/cco.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/casa.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/caa.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/bada.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/aua.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/atms.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/atfm.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/atco.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ast.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/asm.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/app.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/aobt.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ans.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/aman.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/alos.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ais.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/aip.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ades.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/aci.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/acc.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/about/pru/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/about/prc/piotr_ikanowicz.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/about/prc/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/about/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.657Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/about/aiu/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.657Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/about/disclaimer/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.657Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/about/prc/daniel_weder.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/about/prc/jose_miguel_de_pablo.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/about/prc/xavier_fron.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/a-cdm.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ace.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/adep.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/afil.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/airac.html</loc>
+    <lastmod>2026-05-13T14:17:58.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/aldt.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/alosp.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/amc.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
     <loc>https://ansperformance.eu/acronym/ansp.html</loc>
     <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/apdf.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/asbu.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/asma.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/atc.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/atfcm.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/atm.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ats.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ba.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/bli.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/caep.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/cat.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/cda.html</loc>
+    <lastmod>2026-05-13T14:17:58.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/cdo.html</loc>
+    <lastmod>2026-05-13T14:17:58.686Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/cns.html</loc>
+    <lastmod>2026-05-13T14:17:58.686Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/cpf.html</loc>
+    <lastmod>2026-05-13T14:17:58.686Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/crco.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/crinorm.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ctot.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ddi-g.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/df.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ec.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/eobt.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
   </url>
   <url>
     <loc>https://ansperformance.eu/acronym/ernip.html</loc>
     <lastmod>2026-05-13T14:17:58.688Z</lastmod>
   </url>
   <url>
-    <loc>https://ansperformance.eu/data/index.html</loc>
+    <loc>https://ansperformance.eu/acronym/essip.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/etot.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/euaca.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/fir.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/fmp.html</loc>
+    <lastmod>2026-05-13T14:17:58.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ftfm.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ga.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/gat.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/gto.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/icao.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ifr.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/kea.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/kpa.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/laq.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/lssip.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/m1.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/met.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/mtow.html</loc>
+    <lastmod>2026-05-13T14:17:58.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/nm.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/notam.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/oat.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/oew.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/pi.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/prc.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/prr.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/rad.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ri.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/rp2.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/rvsm.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ses.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/sid.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/smi.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/sobt.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/srr.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/ssp.html</loc>
+    <lastmod>2026-05-13T14:17:58.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/star.html</loc>
+    <lastmod>2026-05-13T14:17:58.734Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/su.html</loc>
+    <lastmod>2026-05-13T14:17:58.734Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/sur.html</loc>
+    <lastmod>2026-05-13T14:17:58.734Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/tcz.html</loc>
+    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/tma.html</loc>
+    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/tnsu.html</loc>
+    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/tra.html</loc>
+    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/twr.html</loc>
+    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/upa.html</loc>
+    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/vfr.html</loc>
+    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/acronym/xman.html</loc>
+    <lastmod>2026-05-13T14:17:58.736Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/bibliography/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/dashboard/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/dashboard/stakeholder/airport/acft_ground.html</loc>
+    <lastmod>2026-05-13T14:17:58.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/dashboard/stakeholder/ansp/ansp_db.html</loc>
+    <lastmod>2026-05-13T14:17:58.783Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/dashboard/stakeholder/index.html</loc>
     <lastmod>2026-05-13T14:17:58.787Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/additional-asma-time.html</loc>
+    <lastmod>2026-05-13T14:17:58.787Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/additional-taxi-out-time.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/airport-data-flow/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/asma-transit-time.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/atfm-delay-codes.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/atfm-measure.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/composite-flight-hour.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/ecac-area.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/en-route-atfm-delay.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/esra-2008-area.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/fab.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/iata-code-89.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/kep.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/operated-schedules.html</loc>
+    <lastmod>2026-05-13T14:17:58.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/productivity.html</loc>
+    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/reactionary-delay.html</loc>
+    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/regulation.html</loc>
+    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/ses-area.html</loc>
+    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/slot-tolerance-window.html</loc>
+    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/definition/traffic-zone.html</loc>
+    <lastmod>2026-05-13T14:17:58.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.910Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/methodology/additional-taxi-in-time.html</loc>
+    <lastmod>2026-05-13T14:17:58.910Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/methodology/airport-capacity-utilisation/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.910Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/methodology/cd-vertical-flight-efficiency-pi.html</loc>
+    <lastmod>2026-05-13T14:17:58.910Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/methodology/cri-pi_v1.html</loc>
+    <lastmod>2026-05-13T14:17:58.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/methodology/horizontal-flight-efficiency-pi/index.html</loc>
+    <lastmod>2026-05-13T14:17:58.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ansperformance.eu/TODO.html</loc>
+    <lastmod>2026-05-13T14:17:58.276Z</lastmod>
   </url>
 </urlset>
