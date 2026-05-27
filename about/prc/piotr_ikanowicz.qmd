@@ -1,6 +1,6 @@
 ---
 title: "Dr. Piotr IKANOWICZ"
-subtitle: "PRC Vice Chairman"
+subtitle: "PRC Chairman"
 description: "Focus: Airlines"
 rank: 2
 image: prc_PI.jpg

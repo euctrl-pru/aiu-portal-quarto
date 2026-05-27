@@ -12,8 +12,10 @@ listing:
       # - xavier_fron.qmd
       # - piotr_ikanowicz.qmd
       # - jose_miguel_de_pablo.qmd
-      # - daniel_weder.qmd
-      
+      # - claudio_luccioli.qmd
+      # - klaus_meier.qmd
+      # - frank_le_gall.qmd
+      # - joerg_pikolin.qmd
 ---
 
 The Performance Review Commission (PRC) was established in 1998 by EUROCONTROL’s Permanent Commission.
