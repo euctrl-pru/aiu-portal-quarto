@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>Airport Performance Analysis Tools – Aviation Intelligence Unit portal</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -36,19 +39,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-e31d0766e5a189c531f84d46f1e7a408.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-b55247d1aa5aba091c356a92b85c5016.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-e31d0766e5a189c531f84d46f1e7a408.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-ffd3b8a6818a937ee2906ff01485edaa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-b778c3b688de20becf93e619193c8d13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-ffd3b8a6818a937ee2906ff01485edaa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -108,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -309,8 +311,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://www.eurocontrol.int/" class="navbar-brand navbar-brand-logo">
-    <img src="../../../assets/images/logo/eurocontrol-boxed-slogan-right-rgb.svg" alt="" class="navbar-logo light-content">
-    <img src="../../../assets/images/logo/eurocontrol-boxed-dark-slogan-right-rgb.svg" alt="" class="navbar-logo dark-content">
+    <img src="../../../assets\images\logo\eurocontrol-boxed-slogan-right-rgb.svg" alt="" class="navbar-logo light-content">
+    <img src="../../../assets\images\logo\eurocontrol-boxed-dark-slogan-right-rgb.svg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -590,270 +592,387 @@ window.Quarto = {
 
 
 <div id="listing-airport-tools" class="quarto-listing quarto-listing-container-custom">
-<div class="grid list text-center" style="column-gap: 10px;">
+
+<div class="list grid" style="column-gap: 24px; row-gap: 36px;">
+
     
-    <div class="g-col-12 g-col-lg-6 g-col-xl-4" data-index="0">
-        <div class="quarto-grid-item card h-100 card-center airport-tools">
-            <div class="card-img-top">
-                <a href="db/" alt="Consolidated monthly overview of operational performance at European airports across a wide spectrum of indicators.">
-                    <img src="aiu_apt_db.jpg" class="thumbnail-image card-img" loading="lazy" alt="AIU Airport Performance Dashboard">
+
+    <div class="g-col-12 g-col-sm-6 g-col-lg-3" data-index="0">
+
+        <div class="card rounded-3 h-100 overflow-hidden">
+
+            <a href="db/">
+                <img src="aiu_apt_db.jpg" alt="AIU Airport Performance Dashboard" class="card-img-top" loading="lazy">
+            </a>
+
+            <div class="card-body d-flex flex-column text-start">
+
+                <a href="db/" class="text-decoration-none">
+                    <h5 class="card-title listing-title mb-2 anchored">
+                        AIU Airport Performance Dashboard
+                    </h5>
                 </a>
-            </div>
-            <div class="card-body">
-                <a href="db/" class="quarto-grid-link">
-                    <h5 class="no-anchor card-title listing-title">AIU Airport Performance Dashboard</h5>
-                </a>
-                <div class="card-text">
-                    <div class="listing-description">
-                        Consolidated monthly overview of operational performance at European airports across a wide spectrum of indicators.
-                    </div>
-                    <div class="badge-container">
-                        <span class="badge text-bg-secondary">General Performance</span>
-                    </div>
+
+                <p class="card-text mb-3" style="font-size: 0.9rem; line-height: 1.35;">
+                    Consolidated monthly overview of operational performance at European airports across a wide spectrum of indicators.
+                </p>
+
+                <div class="mt-auto">
+                    <span class="badge text-bg-secondary">
+                        General Performance
+                    </span>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
     
-    <div class="g-col-12 g-col-lg-6 g-col-xl-4" data-index="1">
-        <div class="quarto-grid-item card h-100 card-center airport-tools">
-            <div class="card-img-top">
-                <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-Airports.html" alt="Monitor the daily traffic variation at major European airports.">
-                    <img src="aiu_apt_daily.jpg" class="thumbnail-image card-img" loading="lazy" alt="Daily Traffic Variation Dashboard">
+
+    <div class="g-col-12 g-col-sm-6 g-col-lg-3" data-index="1">
+
+        <div class="card rounded-3 h-100 overflow-hidden">
+
+            <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-Airports.html">
+                <img src="aiu_apt_daily.jpg" alt="Daily Traffic Variation Dashboard" class="card-img-top" loading="lazy">
+            </a>
+
+            <div class="card-body d-flex flex-column text-start">
+
+                <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-Airports.html" class="text-decoration-none">
+                    <h5 class="card-title listing-title mb-2 anchored">
+                        Daily Traffic Variation Dashboard
+                    </h5>
                 </a>
-            </div>
-            <div class="card-body">
-                <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-Airports.html" class="quarto-grid-link">
-                    <h5 class="no-anchor card-title listing-title">Daily Traffic Variation Dashboard</h5>
-                </a>
-                <div class="card-text">
-                    <div class="listing-description">
-                        Monitor the daily traffic variation at major European airports.
-                    </div>
-                    <div class="badge-container">
-                        <span class="badge text-bg-primary">Traffic</span>
-                    </div>
+
+                <p class="card-text mb-3" style="font-size: 0.9rem; line-height: 1.35;">
+                    Monitor the daily traffic variation at major European airports.
+                </p>
+
+                <div class="mt-auto">
+                    <span class="badge text-bg-primary">
+                        Traffic
+                    </span>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
     
-    <div class="g-col-12 g-col-lg-6 g-col-xl-4" data-index="2">
-        <div class="quarto-grid-item card h-100 card-center airport-tools">
-            <div class="card-img-top">
-                <a href="../../../efficiency/vfe/" alt="Explore the vertical flight efficiency during continuous climb (CCO) and descent (CDO) operations.">
-                    <img src="cdo_icon.jpg" class="thumbnail-image card-img" loading="lazy" alt="CCO and CDO Overview">
+
+    <div class="g-col-12 g-col-sm-6 g-col-lg-3" data-index="2">
+
+        <div class="card rounded-3 h-100 overflow-hidden">
+
+            <a href="../../../efficiency/vfe/">
+                <img src="cdo_icon.jpg" alt="CCO and CDO Overview" class="card-img-top" loading="lazy">
+            </a>
+
+            <div class="card-body d-flex flex-column text-start">
+
+                <a href="../../../efficiency/vfe/" class="text-decoration-none">
+                    <h5 class="card-title listing-title mb-2 anchored">
+                        CCO and CDO Overview
+                    </h5>
                 </a>
-            </div>
-            <div class="card-body">
-                <a href="../../../efficiency/vfe/" class="quarto-grid-link">
-                    <h5 class="no-anchor card-title listing-title">CCO and CDO Overview</h5>
-                </a>
-                <div class="card-text">
-                    <div class="listing-description">
-                        Explore the vertical flight efficiency during continuous climb (CCO) and descent (CDO) operations.
-                    </div>
-                    <div class="badge-container">
-                        <span class="badge text-bg-info">Efficiency</span>
-                    </div>
+
+                <p class="card-text mb-3" style="font-size: 0.9rem; line-height: 1.35;">
+                    Explore the vertical flight efficiency during continuous climb (CCO) and descent (CDO) operations.
+                </p>
+
+                <div class="mt-auto">
+                    <span class="badge text-bg-info">
+                        Efficiency
+                    </span>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
     
-    <div class="g-col-12 g-col-lg-6 g-col-xl-4" data-index="3">
-        <div class="quarto-grid-item card h-100 card-center airport-tools">
-            <div class="card-img-top">
-                <a href="../../../efficiency/taxiout/" alt="See the taxi-out efficiency at airports.">
-                    <img src="apt_taxi.jpg" class="thumbnail-image card-img" loading="lazy" alt="Additional Taxi-Out Time">
+
+    <div class="g-col-12 g-col-sm-6 g-col-lg-3" data-index="3">
+
+        <div class="card rounded-3 h-100 overflow-hidden">
+
+            <a href="../../../efficiency/taxiout/">
+                <img src="apt_taxi.jpg" alt="Additional Taxi-Out Time" class="card-img-top" loading="lazy">
+            </a>
+
+            <div class="card-body d-flex flex-column text-start">
+
+                <a href="../../../efficiency/taxiout/" class="text-decoration-none">
+                    <h5 class="card-title listing-title mb-2 anchored">
+                        Additional Taxi-Out Time
+                    </h5>
                 </a>
-            </div>
-            <div class="card-body">
-                <a href="../../../efficiency/taxiout/" class="quarto-grid-link">
-                    <h5 class="no-anchor card-title listing-title">Additional Taxi-Out Time</h5>
-                </a>
-                <div class="card-text">
-                    <div class="listing-description">
-                        See the taxi-out efficiency at airports.
-                    </div>
-                    <div class="badge-container">
-                        <span class="badge text-bg-info">Efficiency</span>
-                    </div>
+
+                <p class="card-text mb-3" style="font-size: 0.9rem; line-height: 1.35;">
+                    See the taxi-out efficiency at airports.
+                </p>
+
+                <div class="mt-auto">
+                    <span class="badge text-bg-info">
+                        Efficiency
+                    </span>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
     
-    <div class="g-col-12 g-col-lg-6 g-col-xl-4" data-index="4">
-        <div class="quarto-grid-item card h-100 card-center airport-tools">
-            <div class="card-img-top">
-                <a href="../../../efficiency/asma/" alt="Find out more about the efficiency in the Arrival Sequencing and Metering Area (ASMA) around airports.">
-                    <img src="apt_asma.jpg" class="thumbnail-image card-img" loading="lazy" alt="Additional ASMA time">
+
+    <div class="g-col-12 g-col-sm-6 g-col-lg-3" data-index="4">
+
+        <div class="card rounded-3 h-100 overflow-hidden">
+
+            <a href="../../../efficiency/asma/">
+                <img src="apt_asma.jpg" alt="Additional ASMA time" class="card-img-top" loading="lazy">
+            </a>
+
+            <div class="card-body d-flex flex-column text-start">
+
+                <a href="../../../efficiency/asma/" class="text-decoration-none">
+                    <h5 class="card-title listing-title mb-2 anchored">
+                        Additional ASMA time
+                    </h5>
                 </a>
-            </div>
-            <div class="card-body">
-                <a href="../../../efficiency/asma/" class="quarto-grid-link">
-                    <h5 class="no-anchor card-title listing-title">Additional ASMA time</h5>
-                </a>
-                <div class="card-text">
-                    <div class="listing-description">
-                        Find out more about the efficiency in the Arrival Sequencing and Metering Area (ASMA) around airports.
-                    </div>
-                    <div class="badge-container">
-                        <span class="badge text-bg-info">Efficiency</span>
-                    </div>
+
+                <p class="card-text mb-3" style="font-size: 0.9rem; line-height: 1.35;">
+                    Find out more about the efficiency in the Arrival Sequencing and Metering Area (ASMA) around airports.
+                </p>
+
+                <div class="mt-auto">
+                    <span class="badge text-bg-info">
+                        Efficiency
+                    </span>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
     
-    <div class="g-col-12 g-col-lg-6 g-col-xl-4" data-index="5">
-        <div class="quarto-grid-item card h-100 card-center airport-tools">
-            <div class="card-img-top">
-                <a href="https://www.eurocontrol.int/publication/taxi-times-summer-2022" alt="Taxi time planning values, by IATA season for airline schedulers.">
-                    <img src="ectl_tx_stand.jpeg" class="thumbnail-image card-img" loading="lazy" alt="Taxi-time planning values">
+
+    <div class="g-col-12 g-col-sm-6 g-col-lg-3" data-index="5">
+
+        <div class="card rounded-3 h-100 overflow-hidden">
+
+            <a href="https://www.eurocontrol.int/publication/taxi-times-summer-2022">
+                <img src="ectl_tx_stand.jpeg" alt="Taxi-time planning values" class="card-img-top" loading="lazy">
+            </a>
+
+            <div class="card-body d-flex flex-column text-start">
+
+                <a href="https://www.eurocontrol.int/publication/taxi-times-summer-2022" class="text-decoration-none">
+                    <h5 class="card-title listing-title mb-2 anchored">
+                        Taxi-time planning values
+                    </h5>
                 </a>
-            </div>
-            <div class="card-body">
-                <a href="https://www.eurocontrol.int/publication/taxi-times-summer-2022" class="quarto-grid-link">
-                    <h5 class="no-anchor card-title listing-title">Taxi-time planning values</h5>
-                </a>
-                <div class="card-text">
-                    <div class="listing-description">
-                        Taxi time planning values, by IATA season for airline schedulers.
-                    </div>
-                    <div class="badge-container">
-                        <span class="badge text-bg-warning">Capacity &amp; Delays</span>
-                    </div>
+
+                <p class="card-text mb-3" style="font-size: 0.9rem; line-height: 1.35;">
+                    Taxi time planning values, by IATA season for airline schedulers.
+                </p>
+
+                <div class="mt-auto">
+                    <span class="badge text-bg-warning">
+                        Capacity &amp; Delays
+                    </span>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
     
-    <div class="g-col-12 g-col-lg-6 g-col-xl-4" data-index="6">
-        <div class="quarto-grid-item card h-100 card-center airport-tools">
-            <div class="card-img-top">
-                <a href="../../../capacity/atfm_apt/" alt="Analyse the airport ATFM arrival delays at airports.">
-                    <img src="ectl_3.jpg" class="thumbnail-image card-img" loading="lazy" alt="ATFM Delays at Airports">
+
+    <div class="g-col-12 g-col-sm-6 g-col-lg-3" data-index="6">
+
+        <div class="card rounded-3 h-100 overflow-hidden">
+
+            <a href="../../../capacity/atfm_apt/">
+                <img src="ectl_3.jpg" alt="ATFM Delays at Airports" class="card-img-top" loading="lazy">
+            </a>
+
+            <div class="card-body d-flex flex-column text-start">
+
+                <a href="../../../capacity/atfm_apt/" class="text-decoration-none">
+                    <h5 class="card-title listing-title mb-2 anchored">
+                        ATFM Delays at Airports
+                    </h5>
                 </a>
-            </div>
-            <div class="card-body">
-                <a href="../../../capacity/atfm_apt/" class="quarto-grid-link">
-                    <h5 class="no-anchor card-title listing-title">ATFM Delays at Airports</h5>
-                </a>
-                <div class="card-text">
-                    <div class="listing-description">
-                        Analyse the airport ATFM arrival delays at airports.
-                    </div>
-                    <div class="badge-container">
-                        <span class="badge text-bg-warning">Capacity &amp; Delays</span>
-                    </div>
+
+                <p class="card-text mb-3" style="font-size: 0.9rem; line-height: 1.35;">
+                    Analyse the airport ATFM arrival delays at airports.
+                </p>
+
+                <div class="mt-auto">
+                    <span class="badge text-bg-warning">
+                        Capacity &amp; Delays
+                    </span>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
     
-    <div class="g-col-12 g-col-lg-6 g-col-xl-4" data-index="7">
-        <div class="quarto-grid-item card h-100 card-center airport-tools">
-            <div class="card-img-top">
-                <a href="https://www.eurocontrol.int/tool/mirror" alt="Check out the innovative tool that helps stakeholders predict and mitigate delays.">
-                    <img src="ectl_mirror.jpg" class="thumbnail-image card-img" loading="lazy" alt="MIRROR - Operational Decision Support Tool">
+
+    <div class="g-col-12 g-col-sm-6 g-col-lg-3" data-index="7">
+
+        <div class="card rounded-3 h-100 overflow-hidden">
+
+            <a href="https://www.eurocontrol.int/tool/mirror">
+                <img src="ectl_mirror.jpg" alt="MIRROR - Operational Decision Support Tool" class="card-img-top" loading="lazy">
+            </a>
+
+            <div class="card-body d-flex flex-column text-start">
+
+                <a href="https://www.eurocontrol.int/tool/mirror" class="text-decoration-none">
+                    <h5 class="card-title listing-title mb-2 anchored">
+                        MIRROR - Operational Decision Support Tool
+                    </h5>
                 </a>
-            </div>
-            <div class="card-body">
-                <a href="https://www.eurocontrol.int/tool/mirror" class="quarto-grid-link">
-                    <h5 class="no-anchor card-title listing-title">MIRROR - Operational Decision Support Tool</h5>
-                </a>
-                <div class="card-text">
-                    <div class="listing-description">
-                        Check out the innovative tool that helps stakeholders predict and mitigate delays.
-                    </div>
-                    <div class="badge-container">
-                        <span class="badge text-bg-warning">Capacity &amp; Delays</span>
-                    </div>
+
+                <p class="card-text mb-3" style="font-size: 0.9rem; line-height: 1.35;">
+                    Check out the innovative tool that helps stakeholders predict and mitigate delays.
+                </p>
+
+                <div class="mt-auto">
+                    <span class="badge text-bg-warning">
+                        Capacity &amp; Delays
+                    </span>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
     
-    <div class="g-col-12 g-col-lg-6 g-col-xl-4" data-index="8">
-        <div class="quarto-grid-item card h-100 card-center airport-tools">
-            <div class="card-img-top">
-                <a href="acft_ground/" alt="See how many aircraft are parked across European airports.">
-                    <img src="ectl_aircraft1.jpg" class="thumbnail-image card-img" loading="lazy" alt="Active and Inactive Aircraft at Airports">
+
+    <div class="g-col-12 g-col-sm-6 g-col-lg-3" data-index="8">
+
+        <div class="card rounded-3 h-100 overflow-hidden">
+
+            <a href="acft_ground/">
+                <img src="ectl_aircraft1.jpg" alt="Active and Inactive Aircraft at Airports" class="card-img-top" loading="lazy">
+            </a>
+
+            <div class="card-body d-flex flex-column text-start">
+
+                <a href="acft_ground/" class="text-decoration-none">
+                    <h5 class="card-title listing-title mb-2 anchored">
+                        Active and Inactive Aircraft at Airports
+                    </h5>
                 </a>
-            </div>
-            <div class="card-body">
-                <a href="acft_ground/" class="quarto-grid-link">
-                    <h5 class="no-anchor card-title listing-title">Active and Inactive Aircraft at Airports</h5>
-                </a>
-                <div class="card-text">
-                    <div class="listing-description">
-                        See how many aircraft are parked across European airports.
-                    </div>
-                    <div class="badge-container">
-                        <span class="badge text-bg-secondary">General Performance</span>
-                    </div>
+
+                <p class="card-text mb-3" style="font-size: 0.9rem; line-height: 1.35;">
+                    See how many aircraft are parked across European airports.
+                </p>
+
+                <div class="mt-auto">
+                    <span class="badge text-bg-secondary">
+                        General Performance
+                    </span>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
     
-    <div class="g-col-12 g-col-lg-6 g-col-xl-4" data-index="9">
-        <div class="quarto-grid-item card h-100 card-center airport-tools">
-            <div class="card-img-top">
-                <a href="https://ext.eurocontrol.int/airport_corner_public/" alt="Get information on airport infrastructure and ongoing and planned activities.">
-                    <img src="ectl_apt_corner1.jpg" class="thumbnail-image card-img" loading="lazy" alt="EUROCONTROL airport corner">
+
+    <div class="g-col-12 g-col-sm-6 g-col-lg-3" data-index="9">
+
+        <div class="card rounded-3 h-100 overflow-hidden">
+
+            <a href="https://ext.eurocontrol.int/airport_corner_public/">
+                <img src="ectl_apt_corner1.jpg" alt="EUROCONTROL airport corner" class="card-img-top" loading="lazy">
+            </a>
+
+            <div class="card-body d-flex flex-column text-start">
+
+                <a href="https://ext.eurocontrol.int/airport_corner_public/" class="text-decoration-none">
+                    <h5 class="card-title listing-title mb-2 anchored">
+                        EUROCONTROL airport corner
+                    </h5>
                 </a>
-            </div>
-            <div class="card-body">
-                <a href="https://ext.eurocontrol.int/airport_corner_public/" class="quarto-grid-link">
-                    <h5 class="no-anchor card-title listing-title">EUROCONTROL airport corner</h5>
-                </a>
-                <div class="card-text">
-                    <div class="listing-description">
-                        Get information on airport infrastructure and ongoing and planned activities.
-                    </div>
-                    <div class="badge-container">
-                        <span class="badge text-bg-secondary">General Performance</span>
-                    </div>
+
+                <p class="card-text mb-3" style="font-size: 0.9rem; line-height: 1.35;">
+                    Get information on airport infrastructure and ongoing and planned activities.
+                </p>
+
+                <div class="mt-auto">
+                    <span class="badge text-bg-secondary">
+                        General Performance
+                    </span>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
     
-    <div class="g-col-12 g-col-lg-6 g-col-xl-4" data-index="10">
-        <div class="quarto-grid-item card h-100 card-center airport-tools">
-            <div class="card-img-top">
-                <a href="https://www.eurocontrol.int/airport-integration" alt="Learn how EUROCONTROL helps to better integrate airports in the ATM network.">
-                    <img src="ectl_apt_int1.jpg" class="thumbnail-image card-img" loading="lazy" alt="EUROCONTROL airport network integration">
+
+    <div class="g-col-12 g-col-sm-6 g-col-lg-3" data-index="10">
+
+        <div class="card rounded-3 h-100 overflow-hidden">
+
+            <a href="https://www.eurocontrol.int/airport-integration">
+                <img src="ectl_apt_int1.jpg" alt="EUROCONTROL airport network integration" class="card-img-top" loading="lazy">
+            </a>
+
+            <div class="card-body d-flex flex-column text-start">
+
+                <a href="https://www.eurocontrol.int/airport-integration" class="text-decoration-none">
+                    <h5 class="card-title listing-title mb-2 anchored">
+                        EUROCONTROL airport network integration
+                    </h5>
                 </a>
-            </div>
-            <div class="card-body">
-                <a href="https://www.eurocontrol.int/airport-integration" class="quarto-grid-link">
-                    <h5 class="no-anchor card-title listing-title">EUROCONTROL airport network integration</h5>
-                </a>
-                <div class="card-text">
-                    <div class="listing-description">
-                        Learn how EUROCONTROL helps to better integrate airports in the ATM network.
-                    </div>
-                    <div class="badge-container">
-                        <span class="badge text-bg-secondary">General Performance</span>
-                    </div>
+
+                <p class="card-text mb-3" style="font-size: 0.9rem; line-height: 1.35;">
+                    Learn how EUROCONTROL helps to better integrate airports in the ATM network.
+                </p>
+
+                <div class="mt-auto">
+                    <span class="badge text-bg-secondary">
+                        General Performance
+                    </span>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
     
+
 </div>
-<style>
-    .card .card-body .card-text .badge-container {
-        position: absolute;
-        left: 1.2rem;
-        bottom: 0.75rem;
-        display: block;
-    }
-</style>
+
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 

@@ -1,37 +1,49 @@
 ```{=html}
-<div class="grid list text-center" style="column-gap: 10px;">
+
+<div class="list grid" style="column-gap: 24px; row-gap: 36px;">
+
     <% for (const item of items) { %>
-    <div class="g-col-12 g-col-lg-6 g-col-xl-4" <%= metadataAttrs(item) %>>
-        <div class="quarto-grid-item card h-100 card-center airport-tools">
-            <div class="card-img-top">
-                <a href="<%- item.href %>" alt="<%= item.description %>">
-                    <img src="<%= item.image %>" class="thumbnail-image card-img" loading="lazy"
-                        alt="<%= item.title %>">
+
+    <div class="g-col-12 g-col-sm-6 g-col-lg-3"
+         <%= metadataAttrs(item) %>>
+
+        <div class="card rounded-3 h-100 overflow-hidden">
+
+            <a href="<%- item.href %>">
+                <img src="<%- item.image %>"
+                     alt="<%- item.title %>"
+                     class="card-img-top"
+                     loading="lazy">
+            </a>
+
+            <div class="card-body d-flex flex-column text-start">
+
+                <a href="<%- item.href %>" class="text-decoration-none">
+                    <h5 class="card-title listing-title mb-2">
+                        <%= item.title %>
+                    </h5>
                 </a>
-            </div>
-            <div class="card-body">
-                <a href="<%- item.href %>" class="quarto-grid-link">
-                    <h5 class="no-anchor card-title listing-title"><%= item.title %></h5>
-                </a>
-                <div class="card-text">
-                    <div class="listing-description">
-                        <%= item.description %>
-                    </div>
-                    <div class="badge-container">
-                        <span class="badge <%- item.badgeclass %>"><%= item.badge %></span>
-                    </div>
+
+                <p class="card-text mb-3"
+                   style="font-size: 0.9rem; line-height: 1.35;">
+                    <%= item.description %>
+                </p>
+
+                <div class="mt-auto">
+                    <span class="badge <%- item.badgeclass %>">
+                        <%= item.badge %>
+                    </span>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
     <% } %>
+
 </div>
-<style>
-    .card .card-body .card-text .badge-container {
-        position: absolute;
-        left: 1.2rem;
-        bottom: 0.75rem;
-        display: block;
-    }
-</style>
+
+
 ```
