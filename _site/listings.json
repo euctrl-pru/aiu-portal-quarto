@@ -231,5 +231,9 @@
   {
     "listing": "/index.html",
     "items": []
+  },
+  {
+    "listing": "/economics/index.html",
+    "items": []
   }
 ]

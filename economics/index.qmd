@@ -1,0 +1,36 @@
+---
+title: Economics Overview
+description: "An overview of the economics related analyses and dashboards provided by the Aviation Intelligence Unit." 
+
+listing:
+  
+  - id: economics-cards
+    template: "../assets/ejs/economics-cards-carusel.ejs"
+    contents: "../economics/economics-cards.yml"
+---
+
+The economics dashboards page provides an overview of the economic aspects of pan-European ANS performance through four different sections:
+
+:::: {.columns}
+
+::: {.column width="75%"}
+
+- The [ATM Cost-Effectiveness (ACE)](/economics/ace-overview/) section presents the highlights of the latest ACE Benchmarking report and provides access to the ACE interactive dashboard and ACE related documents. The ACE benchmarking project analyses the cost-effectiveness and productivity of the Pan-European ATM/CNS system as a whole and of 38 indivudual European air navigation service providers (ANSPs).
+- The [Unit rates and costs dashboard][ectl_urdb] comprising actual and historical information on the en-route unit rates and en-route ANS costs in the EUROCONTROL route charges system as well as information on terminal unit rates for the States, which have established terminal charging zones in line with [Regulation (EU) 2019/317][reg_317].
+- The [Total en-route service unit dashboard ][ectl_sudb] presents different views of the monthly and annual evolution of total en-route service units (TSUs) and their components for EUROCONTROL States, which have joined the [EUROCONTROL route charges system][ectl_crco].
+- The [ANSPs Financial Dashboard](finance/) presents financial information and indicators for European ANSPs, and contains interactive features that allow for comparisons over time. All information presented is publicly available, collected from ANSPs’ most recent financial statements.
+- Finally, the [Standard Inputs for Economic Analyses](/economics/cba/standard-inputs/) document provides a set of standard inputs for data commonly used in economic and financial ATM-related analyses and appraisals.
+
+:::
+
+::: {.column width="25%"}
+
+::: {#economics-cards}
+:::
+
+:::
+[ectl_acedb]: https://www.eurocontrol.int/ACE/ACE-Home.html "ACE Dashaboard"
+[ectl_urdb]: https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteUnitRates.html "Unit rates and costs dashboard"
+[ectl_crco]: https://www.eurocontrol.int/crco "EUROCONTROL route charges system"
+[reg_317]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2019.056.01.0001.01.ENG&toc=OJ:L:2019:056:TOC "Regulation (EU) 2019/317"
+[ectl_sudb]: https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html "Total en-route service unit dashboard"

@@ -1,0 +1,42 @@
+```{=html}
+<div id="economic-cards-carousel"
+     class="carousel slide carousel-fade mx-3"
+     data-bs-ride="carousel"
+     data-bs-interval="5000">
+
+  <div class="carousel-inner">
+
+    <% for (const [index, item] of items.entries()) { %>
+
+      <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+
+        <div class="card bg-light border-0 rounded-2 overflow-hidden">
+
+          <a href="<%= item.link %>">
+            <img class="card-img-top mb-0"
+                 src="<%= item.image %>"
+                 alt=""
+                 style="display:block;">
+          </a>
+
+          <div class="card-body pt-1">
+
+            <h5 class="card-title mb-0">
+              <a href="<%= item.link %>"
+                 class="text-decoration-none text-primary">
+                <%= item.title %>
+              </a>
+            </h5>
+
+            <small>
+              <p class="card-text mb-0">
+                <%= item.text %>
+              </p>
+            </small>
+          </div>
+        </div>
+      </div>
+    <% } %>
+  </div>
+</div>
+```
