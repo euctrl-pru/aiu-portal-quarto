@@ -82,7 +82,7 @@ website:
           - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>ANSPs financial dashboard</span>"
             href: /economics/finance/
           - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Standard Inputs for Economic Analyses</span>"
-            href: /economics/cba/
+            href: /economics/standard-inputs/
       - text: "Stakeholders"
         menu:
           - text: "{{< iconify fa6-solid plane-arrival >}}&nbsp;Airports"
